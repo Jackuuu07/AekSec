@@ -37,8 +37,9 @@ import ExploreMoreAINews from "../DrivingAiInovation/ExploreMoreNews";
 import AiCanvasPopUp from "../DrivingAiInovation/PopUp Pages/AiCanvasPopUp";
 import SecureAiPopUp from "../DrivingAiInovation/PopUp Pages/SecureAiPopUp";
 import TrialsAndDemos from "../Pages/TrialAndDemos";
+
 import BusinessCollaboration from "../BrowsByTechnology/Collaboration";
-import Networking from "../BrowsByTechnology/NetWorking";
+import Networking from "../BrowsByTechnology/Networking";
 import Computing from "../BrowsByTechnology/Computing";
 
 export default function AppRouter() {
