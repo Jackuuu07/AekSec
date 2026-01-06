@@ -35,10 +35,10 @@ const Chatbot = () => {
   const handleSend = async () => {
     if (!inputMessage.trim()) return;
 
-    const userMessage = {
-      role: "user",
-      content: inputMessage,
-    };
+    // const userMessage = {
+    //   role: "user",
+    //   content: inputMessage,
+    // };
 
     setMessages((prev) => [
       ...prev,
@@ -54,20 +54,33 @@ const Chatbot = () => {
     setIsTyping(true);
 
     try {
+      // for ai response from node backend
+      // const response = await fetch("https://aeksec-backend.onrender.com/chat", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     messages: [
+      //       { role: "system", content: "You are a helpful AI assistant." },
+      //       ...messages.map((m) => ({
+      //         role: m.sender === "user" ? "user" : "assistant",
+      //         content: m.text,
+      //       })),
+      //       userMessage,
+      //     ],
+      //   }),
+      // });
+
+      
+      // for bot website python reply
       const response = await fetch("http://localhost:5000/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          messages: [
-            { role: "system", content: "You are a helpful AI assistant." },
-            ...messages.map((m) => ({
-              role: m.sender === "user" ? "user" : "assistant",
-              content: m.text,
-            })),
-            userMessage,
-          ],
+          query: inputMessage,
         }),
       });
 
@@ -82,6 +95,7 @@ const Chatbot = () => {
           timestamp: "Just now",
         },
       ]);
+      // eslint-disable-next-line no-unused-vars
     } catch (err) {
       setMessages((prev) => [
         ...prev,

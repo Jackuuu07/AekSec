@@ -6,6 +6,11 @@ export default function RefreshRedirect({ children }) {
   const navigate = useNavigate();
 
   useEffect(() => {
+      // 🚫 Skip redirect for crawler
+    if (navigator.userAgent.includes("PlaywrightCrawler")) {
+      return;
+    }
+    
     const isReload =
       performance.getEntriesByType("navigation")[0]?.type === "reload";
 
