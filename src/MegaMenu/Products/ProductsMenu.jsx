@@ -6,9 +6,9 @@ export default function ProductsMenu() {
   const [active, setActive] = useState(null);
 
   return (
-    <div className="grid grid-cols-[260px_1fr] h-full">
+    <div className="flex flex-col md:grid md:grid-cols-[260px_1fr] h-full">
       {/* LEFT SIDEBAR */}
-      <div className="border-r px-8 py-10 space-y-5 text-sm">
+      <div className="border-b md:border-b-0 md:border-r px-4 md:px-8 py-6 md:py-10 space-y-4 md:space-y-6 text-sm">
         <button
           onClick={() => {
             setActive(null);
@@ -29,7 +29,7 @@ export default function ProductsMenu() {
       </div>
 
       {/* RIGHT AREA */}
-      <div className="px-12 py-10 overflow-y-auto no-scrollbar h-full">
+      <div className="px-4 md:px-12 py-6 md:py-10 overflow-y-auto no-scrollbar h-full">
         {/* ===== DEFAULT (NO ACTIVE) ===== */}
         {active === null && (
           <div className="grid grid-cols-3 gap-10">
@@ -163,7 +163,9 @@ function NetworkingView() {
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">Switches</li>
               <li className="hover:text-blue-400 cursor-pointer">Optics</li>
-              <li className="hover:text-blue-400 cursor-pointer">Network software</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Network software
+              </li>
             </ul>
           </div>
         </div>
@@ -185,8 +187,12 @@ function NetworkingView() {
             <h3 className="font-medium mb-4 text-lg">Networking software</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">DNA Center</li>
-              <li className="hover:text-blue-400 cursor-pointer">Meraki Dashboard</li>
-              <li className="hover:text-blue-400 cursor-pointer">Catalyst Center</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Meraki Dashboard
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Catalyst Center
+              </li>
             </ul>
           </div>
 
@@ -195,9 +201,15 @@ function NetworkingView() {
               Services for enterprise networking
             </h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Professional Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Support Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Managed Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Professional Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Support Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Managed Services
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all networking products →
@@ -230,7 +242,9 @@ function SecurityView() {
             <h3 className="font-medium mb-4 text-lg">Network Security</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">Firewalls</li>
-              <li className="hover:text-blue-400 cursor-pointer">Secure Web Gateway</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Secure Web Gateway
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">VPN</li>
             </ul>
           </div>
@@ -238,9 +252,15 @@ function SecurityView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Access Security</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Firewall</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Security Posture</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Access Security
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Firewall
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Security Posture
+              </li>
             </ul>
           </div>
         </div>
@@ -250,17 +270,27 @@ function SecurityView() {
             <h3 className="font-medium mb-4 text-lg">Endpoint Security</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">Anti-virus</li>
-              <li className="hover:text-blue-400 cursor-pointer">Endpoint Detection</li>
-              <li className="hover:text-blue-400 cursor-pointer">Device Control</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Endpoint Detection
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Device Control
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Security Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Managed Security</li>
-              <li className="hover:text-blue-400 cursor-pointer">Security Consulting</li>
-              <li className="hover:text-blue-400 cursor-pointer">Incident Response</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Managed Security
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Security Consulting
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Incident Response
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all security products →
@@ -292,17 +322,25 @@ function CollaborationView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Calling</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Calling</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Calling
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">IP Phones</li>
-              <li className="hover:text-blue-400 cursor-pointer">Call Management</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Call Management
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Contact Center</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Omnichannel</li>
-              <li className="hover:text-blue-400 cursor-pointer">AI-Powered Routing</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Omnichannel
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI-Powered Routing
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Analytics</li>
             </ul>
           </div>
@@ -312,18 +350,26 @@ function CollaborationView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Meetings</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Video Conferencing</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Video Conferencing
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Webinar</li>
-              <li className="hover:text-blue-400 cursor-pointer">Team Spaces</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Team Spaces
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Devices</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Desk Phones</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Desk Phones
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Headsets</li>
-              <li className="hover:text-blue-400 cursor-pointer">Room Systems</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Room Systems
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all collaboration products →
@@ -357,17 +403,27 @@ function ComputingView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Servers</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Rack Servers</li>
-              <li className="hover:text-blue-400 cursor-pointer">Blade Servers</li>
-              <li className="hover:text-blue-400 cursor-pointer">Modular Systems</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Rack Servers
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Blade Servers
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Modular Systems
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Hyperconverged</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">HCI Software</li>
-              <li className="hover:text-blue-400 cursor-pointer">Integrated Systems</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                HCI Software
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Integrated Systems
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Management</li>
             </ul>
           </div>
@@ -377,17 +433,27 @@ function ComputingView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Storage</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">SAN Storage</li>
-              <li className="hover:text-blue-400 cursor-pointer">NAS Storage</li>
-              <li className="hover:text-blue-400 cursor-pointer">Hyperconverged Storage</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                SAN Storage
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                NAS Storage
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Hyperconverged Storage
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Deployment Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Support Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Deployment Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Support Services
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Consulting</li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
@@ -421,8 +487,12 @@ function ObservabilityView() {
             <h3 className="font-medium mb-4 text-lg">Application Monitoring</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">APM</li>
-              <li className="hover:text-blue-400 cursor-pointer">Real User Monitoring</li>
-              <li className="hover:text-blue-400 cursor-pointer">Synthetic Monitoring</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Real User Monitoring
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Synthetic Monitoring
+              </li>
             </ul>
           </div>
 
@@ -431,9 +501,15 @@ function ObservabilityView() {
               Infrastructure Monitoring
             </h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Server Monitoring</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Monitoring</li>
-              <li className="hover:text-blue-400 cursor-pointer">Container Monitoring</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Server Monitoring
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Monitoring
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Container Monitoring
+              </li>
             </ul>
           </div>
         </div>
@@ -442,18 +518,30 @@ function ObservabilityView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Network Monitoring</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Flow Analysis</li>
-              <li className="hover:text-blue-400 cursor-pointer">Packet Capture</li>
-              <li className="hover:text-blue-400 cursor-pointer">Performance Metrics</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Flow Analysis
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Packet Capture
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Performance Metrics
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">AI Operations</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Anomaly Detection</li>
-              <li className="hover:text-blue-400 cursor-pointer">Root Cause Analysis</li>
-              <li className="hover:text-blue-400 cursor-pointer">Predictive Insights</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Anomaly Detection
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Root Cause Analysis
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Predictive Insights
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all observability products →
@@ -487,18 +575,28 @@ function SoftwareView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Management Software</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Network Management</li>
-              <li className="hover:text-blue-400 cursor-pointer">IT Service Management</li>
-              <li className="hover:text-blue-400 cursor-pointer">Asset Management</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Network Management
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                IT Service Management
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Asset Management
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Security Software</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Identity Management</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Identity Management
+              </li>
               <li className="hover:text-blue-400 cursor-pointer">Encryption</li>
-              <li className="hover:text-blue-400 cursor-pointer">Compliance Tools</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Compliance Tools
+              </li>
             </ul>
           </div>
         </div>
@@ -507,18 +605,30 @@ function SoftwareView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud Software</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">SaaS Applications</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Management</li>
-              <li className="hover:text-blue-400 cursor-pointer">Integration Tools</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                SaaS Applications
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Management
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Integration Tools
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Analytics Software</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Business Intelligence</li>
-              <li className="hover:text-blue-400 cursor-pointer">Data Analytics</li>
-              <li className="hover:text-blue-400 cursor-pointer">Reporting Tools</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Business Intelligence
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Data Analytics
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Reporting Tools
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all software products →
@@ -553,17 +663,27 @@ function ServicesCXView() {
             <h3 className="font-medium mb-4 text-lg">Professional Services</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="hover:text-blue-400 cursor-pointer">Consulting</li>
-              <li className="hover:text-blue-400 cursor-pointer">Implementation</li>
-              <li className="hover:text-blue-400 cursor-pointer">Migration Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Implementation
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Migration Services
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Managed Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">24/7 Monitoring</li>
-              <li className="hover:text-blue-400 cursor-pointer">Managed Security</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Operations</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                24/7 Monitoring
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Managed Security
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Operations
+              </li>
             </ul>
           </div>
         </div>
@@ -572,18 +692,30 @@ function ServicesCXView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Support Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Technical Support</li>
-              <li className="hover:text-blue-400 cursor-pointer">Software Updates</li>
-              <li className="hover:text-blue-400 cursor-pointer">On-site Support</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Technical Support
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Software Updates
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                On-site Support
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Training Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Certification Training</li>
-              <li className="hover:text-blue-400 cursor-pointer">Technical Workshops</li>
-              <li className="hover:text-blue-400 cursor-pointer">Digital Learning</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Certification Training
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Technical Workshops
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Learning
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all services →

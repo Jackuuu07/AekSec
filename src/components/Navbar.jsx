@@ -137,11 +137,40 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="md:hidden max-[960px]:block absolute top-full left-0 w-full bg-white border-t shadow-lg z-40">
           <ul className="flex flex-col text-sm font-medium divide-y">
-            <MobileItem label="Products & Services" />
-            <MobileItem label="Solutions" />
-            <MobileItem label="Support" />
-            <MobileItem label="Learn" />
-            <MobileItem label="Why AekSec" />
+            <MobileItem
+              label="Products & Services"
+              menu="products"
+              setOpenMenu={setOpenMenu}
+              setMobileOpen={setMobileOpen}
+            />
+
+            <MobileItem
+              label="Solutions"
+              menu="solutions"
+              setOpenMenu={setOpenMenu}
+              setMobileOpen={setMobileOpen}
+            />
+
+            <MobileItem
+              label="Support"
+              menu="support"
+              setOpenMenu={setOpenMenu}
+              setMobileOpen={setMobileOpen}
+            />
+
+            <MobileItem
+              label="Learn"
+              menu="learn"
+              setOpenMenu={setOpenMenu}
+              setMobileOpen={setMobileOpen}
+            />
+
+            <MobileItem
+              label="Why AekSec"
+              menu="why"
+              setOpenMenu={setOpenMenu}
+              setMobileOpen={setMobileOpen}
+            />
 
             <li className="p-4">
               <button className="w-full py-2 rounded-full border border-blue-600 text-blue-600">
@@ -168,7 +197,6 @@ export default function Navbar() {
               <MdOutlineAccountCircle className="w-6 h-6" />
               <span>{isLoggedIn ? "Logout" : "Log In"}</span>
             </li>
-            
           </ul>
         </div>
       )}
@@ -201,6 +229,16 @@ function NavItem({ label, menu, openMenu, setOpenMenu, path }) {
 }
 
 /* ---------- Mobile Item ---------- */
-function MobileItem({ label }) {
-  return <li className="p-4 hover:bg-gray-50 cursor-pointer">{label}</li>;
+function MobileItem({ label, menu, setOpenMenu, setMobileOpen }) {
+  return (
+    <li
+      onClick={() => {
+        setOpenMenu(menu);
+        setMobileOpen(false); // close mobile list
+      }}
+      className="p-4 hover:bg-gray-50 cursor-pointer"
+    >
+      {label}
+    </li>
+  );
 }

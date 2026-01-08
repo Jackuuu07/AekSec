@@ -6,24 +6,28 @@ export default function WhyAekSecMenu() {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-[260px_1fr] h-full">
+    <div className="flex flex-col md:grid md:grid-cols-[260px_1fr] h-full">
       {/* LEFT SIDEBAR */}
-      <div className="border-r px-8 py-10 space-y-6 text-sm">
+      <div className="border-b md:border-b-0 md:border-r px-4 md:px-8 py-6 md:py-10 space-y-4 md:space-y-6 text-sm">
         <button
-            onClick={() => {
+          onClick={() => {
             setActive(null);
             navigate("/why/whyAekSec");
-          }}          
+          }}
           className="text-blue-600 font-medium"
         >
           Why AekSec
         </button>
-        <LeftItem label="Outcomes We Deliver" active={active} setActive={setActive} />
+        <LeftItem
+          label="Outcomes We Deliver"
+          active={active}
+          setActive={setActive}
+        />
         <LeftItem label="About Us" active={active} setActive={setActive} />
       </div>
 
       {/* RIGHT AREA */}
-      <div className="px-12 py-10 overflow-y-auto no-scrollbar h-full">
+      <div className="px-4 md:px-12 py-6 md:py-10 overflow-y-auto no-scrollbar h-full">
         {/* ===== DEFAULT (NO ACTIVE OR WHY AEKSEC) ===== */}
         {(active === null || active === "Why AekSec") && (
           <div className="space-y-10">
@@ -31,7 +35,8 @@ export default function WhyAekSecMenu() {
             <div className="mb-8">
               <h2 className="text-2xl font-light mb-4">Why AekSec</h2>
               <p className="text-gray-600 mb-6 max-w-2xl">
-                AekSec creates the infrastructure you need to transform how you connect, protect, and innovate in the AI era.
+                AekSec creates the infrastructure you need to transform how you
+                connect, protect, and innovate in the AI era.
               </p>
               <span className="text-blue-600 font-medium">
                 See the AekSec advantage →
@@ -47,7 +52,7 @@ export default function WhyAekSecMenu() {
                 link="#"
                 additionalLink={{
                   text: "Read FY24 Purpose Report",
-                  link: "#"
+                  link: "#",
                 }}
               />
               <ContentCard
@@ -66,7 +71,9 @@ export default function WhyAekSecMenu() {
 
             {/* Additional Highlights Section */}
             <div className="mt-16">
-              <h3 className="text-xl font-light mb-6">AekSec Differentiators</h3>
+              <h3 className="text-xl font-light mb-6">
+                AekSec Differentiators
+              </h3>
               <div className="grid grid-cols-3 gap-6">
                 <HighlightCard
                   title="AI-Powered Security"
@@ -115,7 +122,9 @@ function LeftItem({ label, active, setActive, isHome = false }) {
     >
       <span
         className={`w-1 h-5 rounded ${
-          isActive || (isHome && active === null) ? "bg-blue-600" : "bg-transparent"
+          isActive || (isHome && active === null)
+            ? "bg-blue-600"
+            : "bg-transparent"
         }`}
       />
       {label}
@@ -130,11 +139,17 @@ function ContentCard({ title, description, cta, link, additionalLink }) {
       <h3 className="font-medium mb-3 text-lg">{title}</h3>
       <p className="text-sm text-gray-600 mb-4">{description}</p>
       <div className="space-y-2">
-        <a href={link} className="block text-blue-600 text-sm font-medium hover:underline">
+        <a
+          href={link}
+          className="block text-blue-600 text-sm font-medium hover:underline"
+        >
           {cta} →
         </a>
         {additionalLink && (
-          <a href={additionalLink.link} className="block text-blue-600 text-sm font-medium hover:underline">
+          <a
+            href={additionalLink.link}
+            className="block text-blue-600 text-sm font-medium hover:underline"
+          >
             {additionalLink.text} →
           </a>
         )}
@@ -163,7 +178,8 @@ function OutcomesView() {
       <div className="mb-8">
         <h2 className="text-2xl font-light mb-4">Outcomes We Deliver</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
-          We partner with organizations to achieve measurable business outcomes through innovative technology solutions and expert guidance.
+          We partner with organizations to achieve measurable business outcomes
+          through innovative technology solutions and expert guidance.
         </p>
         <span className="text-blue-600 font-medium">
           Explore our outcomes framework →
@@ -177,15 +193,26 @@ function OutcomesView() {
             <ul className="space-y-2 text-gray-600">
               <li className="pb-2 border-b border-gray-100">
                 <span className="font-medium text-gray-800">Reduced Risk</span>
-                <p className="text-sm mt-1">97% reduction in security incidents through proactive threat intelligence</p>
+                <p className="text-sm mt-1">
+                  97% reduction in security incidents through proactive threat
+                  intelligence
+                </p>
               </li>
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Compliance Assurance</span>
-                <p className="text-sm mt-1">100% audit success rate with automated compliance reporting</p>
+                <span className="font-medium text-gray-800">
+                  Compliance Assurance
+                </span>
+                <p className="text-sm mt-1">
+                  100% audit success rate with automated compliance reporting
+                </p>
               </li>
               <li className="pb-2">
-                <span className="font-medium text-gray-800">Faster Detection</span>
-                <p className="text-sm mt-1">83% faster threat detection with AI-powered analytics</p>
+                <span className="font-medium text-gray-800">
+                  Faster Detection
+                </span>
+                <p className="text-sm mt-1">
+                  83% faster threat detection with AI-powered analytics
+                </p>
               </li>
             </ul>
           </div>
@@ -194,16 +221,29 @@ function OutcomesView() {
             <h3 className="font-medium mb-4 text-lg">Business Agility</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Faster Innovation</span>
-                <p className="text-sm mt-1">Reduce time-to-market by 40% with agile infrastructure</p>
+                <span className="font-medium text-gray-800">
+                  Faster Innovation
+                </span>
+                <p className="text-sm mt-1">
+                  Reduce time-to-market by 40% with agile infrastructure
+                </p>
               </li>
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Scalable Growth</span>
-                <p className="text-sm mt-1">Support 300% business growth without infrastructure constraints</p>
+                <span className="font-medium text-gray-800">
+                  Scalable Growth
+                </span>
+                <p className="text-sm mt-1">
+                  Support 300% business growth without infrastructure
+                  constraints
+                </p>
               </li>
               <li className="pb-2">
-                <span className="font-medium text-gray-800">Digital Transformation</span>
-                <p className="text-sm mt-1">Complete digital transformation in 18 months instead of 36</p>
+                <span className="font-medium text-gray-800">
+                  Digital Transformation
+                </span>
+                <p className="text-sm mt-1">
+                  Complete digital transformation in 18 months instead of 36
+                </p>
               </li>
             </ul>
           </div>
@@ -214,20 +254,37 @@ function OutcomesView() {
             <h3 className="font-medium mb-4 text-lg">Operational Excellence</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Cost Optimization</span>
-                <p className="text-sm mt-1">35% reduction in IT operational costs through automation</p>
+                <span className="font-medium text-gray-800">
+                  Cost Optimization
+                </span>
+                <p className="text-sm mt-1">
+                  35% reduction in IT operational costs through automation
+                </p>
               </li>
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Uptime & Reliability</span>
-                <p className="text-sm mt-1">99.999% availability with proactive monitoring and redundancy</p>
+                <span className="font-medium text-gray-800">
+                  Uptime & Reliability
+                </span>
+                <p className="text-sm mt-1">
+                  99.999% availability with proactive monitoring and redundancy
+                </p>
               </li>
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Simplified Management</span>
-                <p className="text-sm mt-1">Unified management of multi-cloud environments from single dashboard</p>
+                <span className="font-medium text-gray-800">
+                  Simplified Management
+                </span>
+                <p className="text-sm mt-1">
+                  Unified management of multi-cloud environments from single
+                  dashboard
+                </p>
               </li>
               <li className="pb-2">
-                <span className="font-medium text-gray-800">Energy Efficiency</span>
-                <p className="text-sm mt-1">45% reduction in data center energy consumption</p>
+                <span className="font-medium text-gray-800">
+                  Energy Efficiency
+                </span>
+                <p className="text-sm mt-1">
+                  45% reduction in data center energy consumption
+                </p>
               </li>
             </ul>
           </div>
@@ -236,16 +293,29 @@ function OutcomesView() {
             <h3 className="font-medium mb-4 text-lg">Customer Experience</h3>
             <ul className="space-y-2 text-gray-600">
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Enhanced Collaboration</span>
-                <p className="text-sm mt-1">75% improvement in team collaboration with unified communication tools</p>
+                <span className="font-medium text-gray-800">
+                  Enhanced Collaboration
+                </span>
+                <p className="text-sm mt-1">
+                  75% improvement in team collaboration with unified
+                  communication tools
+                </p>
               </li>
               <li className="pb-2 border-b border-gray-100">
-                <span className="font-medium text-gray-800">Remote Workforce Enablement</span>
-                <p className="text-sm mt-1">Secure, seamless remote work for 100% of employees</p>
+                <span className="font-medium text-gray-800">
+                  Remote Workforce Enablement
+                </span>
+                <p className="text-sm mt-1">
+                  Secure, seamless remote work for 100% of employees
+                </p>
               </li>
               <li className="pb-2">
-                <span className="font-medium text-gray-800">Customer Satisfaction</span>
-                <p className="text-sm mt-1">92% customer satisfaction rate with 24/7 global support</p>
+                <span className="font-medium text-gray-800">
+                  Customer Satisfaction
+                </span>
+                <p className="text-sm mt-1">
+                  92% customer satisfaction rate with 24/7 global support
+                </p>
               </li>
             </ul>
           </div>
@@ -262,7 +332,9 @@ function AboutUsView() {
       <div className="mb-8">
         <h2 className="text-2xl font-light mb-4">About AekSec</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
-          AekSec is a global leader in cybersecurity and infrastructure solutions, empowering organizations to secure their digital future while driving innovation and growth.
+          AekSec is a global leader in cybersecurity and infrastructure
+          solutions, empowering organizations to secure their digital future
+          while driving innovation and growth.
         </p>
         <span className="text-blue-600 font-medium">
           Learn more about our company →
@@ -275,20 +347,36 @@ function AboutUsView() {
             <h3 className="font-medium mb-4 text-lg">Our Company</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">Founded</span>
-                <p className="text-sm">2010 - 15 years of innovation excellence</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Founded
+                </span>
+                <p className="text-sm">
+                  2010 - 15 years of innovation excellence
+                </p>
               </li>
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">Global Presence</span>
-                <p className="text-sm">Operations in 65+ countries across 6 continents</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Global Presence
+                </span>
+                <p className="text-sm">
+                  Operations in 65+ countries across 6 continents
+                </p>
               </li>
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">Employees</span>
-                <p className="text-sm">25,000+ dedicated professionals worldwide</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Employees
+                </span>
+                <p className="text-sm">
+                  25,000+ dedicated professionals worldwide
+                </p>
               </li>
               <li className="pb-3">
-                <span className="font-medium text-gray-800 block mb-1">Headquarters</span>
-                <p className="text-sm">San Francisco, California with regional hubs globally</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Headquarters
+                </span>
+                <p className="text-sm">
+                  San Francisco, California with regional hubs globally
+                </p>
               </li>
             </ul>
           </div>
@@ -296,10 +384,18 @@ function AboutUsView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Leadership</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-600 cursor-pointer">Executive Team</li>
-              <li className="hover:text-blue-600 cursor-pointer">Board of Directors</li>
-              <li className="hover:text-blue-600 cursor-pointer">Technology Advisory Board</li>
-              <li className="hover:text-blue-600 cursor-pointer">Industry Leadership</li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Executive Team
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Board of Directors
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Technology Advisory Board
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Industry Leadership
+              </li>
             </ul>
           </div>
         </div>
@@ -309,31 +405,58 @@ function AboutUsView() {
             <h3 className="font-medium mb-4 text-lg">Innovation & Research</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">R&D Investment</span>
-                <p className="text-sm">20% of revenue invested in research and development annually</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  R&D Investment
+                </span>
+                <p className="text-sm">
+                  20% of revenue invested in research and development annually
+                </p>
               </li>
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">Patents</span>
-                <p className="text-sm">2,500+ patents granted for breakthrough technologies</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Patents
+                </span>
+                <p className="text-sm">
+                  2,500+ patents granted for breakthrough technologies
+                </p>
               </li>
               <li className="pb-3 border-b border-gray-100">
-                <span className="font-medium text-gray-800 block mb-1">Innovation Centers</span>
-                <p className="text-sm">12 global innovation hubs focusing on AI, quantum security, and IoT</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Innovation Centers
+                </span>
+                <p className="text-sm">
+                  12 global innovation hubs focusing on AI, quantum security,
+                  and IoT
+                </p>
               </li>
               <li className="pb-3">
-                <span className="font-medium text-gray-800 block mb-1">Academic Partnerships</span>
-                <p className="text-sm">Collaborations with 50+ leading universities worldwide</p>
+                <span className="font-medium text-gray-800 block mb-1">
+                  Academic Partnerships
+                </span>
+                <p className="text-sm">
+                  Collaborations with 50+ leading universities worldwide
+                </p>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-medium mb-4 text-lg">Corporate Responsibility</h3>
+            <h3 className="font-medium mb-4 text-lg">
+              Corporate Responsibility
+            </h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-600 cursor-pointer">Sustainability Initiatives</li>
-              <li className="hover:text-blue-600 cursor-pointer">Community Engagement</li>
-              <li className="hover:text-blue-600 cursor-pointer">Diversity & Inclusion</li>
-              <li className="hover:text-blue-600 cursor-pointer">Ethical Business Practices</li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Sustainability Initiatives
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Community Engagement
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Diversity & Inclusion
+              </li>
+              <li className="hover:text-blue-600 cursor-pointer">
+                Ethical Business Practices
+              </li>
             </ul>
           </div>
         </div>
@@ -356,7 +479,9 @@ function AboutUsView() {
           <div className="bg-gray-50 p-4 rounded-lg">
             <div className="text-green-500 text-2xl mb-2">🌱</div>
             <h4 className="font-medium mb-1">Dow Jones Sustainability Index</h4>
-            <p className="text-sm text-gray-600">Industry Leader 3 years running</p>
+            <p className="text-sm text-gray-600">
+              Industry Leader 3 years running
+            </p>
           </div>
         </div>
       </div>

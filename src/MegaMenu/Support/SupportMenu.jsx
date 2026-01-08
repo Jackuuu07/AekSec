@@ -6,9 +6,9 @@ export default function SupportMenu() {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-[260px_1fr] h-full">
+    <div className="flex flex-col md:grid md:grid-cols-[260px_1fr] h-full">
       {/* LEFT SIDEBAR */}
-      <div className="border-r px-8 py-10 space-y-6 text-sm">
+      <div className="border-b md:border-b-0 md:border-r px-4 md:px-8 py-6 md:py-10 space-y-4 md:space-y-6 text-sm">
         <button
           onClick={() => {
             setActive(null);
@@ -31,7 +31,7 @@ export default function SupportMenu() {
       </div>
 
       {/* RIGHT AREA */}
-      <div className="px-12 py-10 overflow-y-auto no-scrollbar h-full">
+      <div className="px-4 md:px-12 py-6 md:py-10 overflow-y-auto no-scrollbar h-full">
         {/* ===== DEFAULT (NO ACTIVE) ===== */}
         {active === null && (
           <div className="grid grid-cols-3 gap-10">
@@ -145,7 +145,9 @@ function DownloadsView() {
             <h3 className="font-medium mb-4 text-lg">Firmware & Updates</h3>
             <ul className="space-y-2 text-gray-600 cursor-pointer">
               <li className="hover:text-blue-400">Network Device Firmware</li>
-              <li className="hover:text-blue-400">Security Appliance Updates</li>
+              <li className="hover:text-blue-400">
+                Security Appliance Updates
+              </li>
               <li className="hover:text-blue-400">Server BIOS/Firmware</li>
               <li className="hover:text-blue-400">Patch Management</li>
             </ul>
@@ -267,7 +269,9 @@ function DocumentationView() {
             <ul className="cursor-pointer space-y-2 text-gray-600">
               <li className="hover:text-blue-400">Troubleshooting Articles</li>
               <li className="hover:text-blue-400">How-To Guides</li>
-              <li className="hover:text-blue-400">Frequently Asked Questions</li>
+              <li className="hover:text-blue-400">
+                Frequently Asked Questions
+              </li>
               <li className="hover:text-blue-400">Error Code References</li>
             </ul>
           </div>
@@ -508,9 +512,13 @@ function ContactSupportView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Support Services</h3>
             <ul className="cursor-pointer space-y-2 text-gray-600">
-              <li className="hover:text-blue-400">Technical Account Managers</li>
+              <li className="hover:text-blue-400">
+                Technical Account Managers
+              </li>
               <li className="hover:text-blue-400">Premium Support</li>
-              <li className="hover:text-blue-400">Dedicated Support Engineers</li>
+              <li className="hover:text-blue-400">
+                Dedicated Support Engineers
+              </li>
               <li className="hover:text-blue-400">Emergency Support</li>
             </ul>
           </div>

@@ -7,9 +7,9 @@ export default function SolutionsMenu() {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-[260px_1fr] h-full">
+    <div className="flex flex-col md:grid md:grid-cols-[260px_1fr] h-full">
       {/* LEFT SIDEBAR */}
-      <div className="border-r px-8 py-10 space-y-6 text-sm">
+      <div className="border-b md:border-b-0 md:border-r px-4 md:px-8 py-6 md:py-10 space-y-4 md:space-y-6 text-sm">
         <button
           onClick={() => {
             setActive(null);
@@ -44,7 +44,7 @@ export default function SolutionsMenu() {
       </div>
 
       {/* RIGHT AREA */}
-      <div className="px-12 py-10 overflow-y-auto no-scrollbar h-full">
+      <div className="px-4 md:px-12 py-6 md:py-10 overflow-y-auto no-scrollbar h-full">
         {/* ===== DEFAULT (NO ACTIVE) ===== */}
         {active === null && (
           <div className="grid grid-cols-3 gap-10">
@@ -147,27 +147,45 @@ function EnterpriseSecurityView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Identity & Access</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Multi-factor Authentication</li>
-              <li className="hover:text-blue-400 cursor-pointer">Single Sign-On</li>
-              <li className="hover:text-blue-400 cursor-pointer">Identity Governance</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Multi-factor Authentication
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Single Sign-On
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Identity Governance
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Network Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Micro-segmentation</li>
-              <li className="hover:text-blue-400 cursor-pointer">Secure Access Service Edge</li>
-              <li className="hover:text-blue-400 cursor-pointer">Network Detection</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Micro-segmentation
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Secure Access Service Edge
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Network Detection
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Endpoint Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Endpoint Protection</li>
-              <li className="hover:text-blue-400 cursor-pointer">Device Compliance</li>
-              <li className="hover:text-blue-400 cursor-pointer">Mobile Security</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Endpoint Protection
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Device Compliance
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Mobile Security
+              </li>
             </ul>
           </div>
         </div>
@@ -176,27 +194,45 @@ function EnterpriseSecurityView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Data Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Data Loss Prevention</li>
-              <li className="hover:text-blue-400 cursor-pointer">Encryption Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Data Classification</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Data Loss Prevention
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Encryption Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Data Classification
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Access Security Broker</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Workload Protection</li>
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Security Posture</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Access Security Broker
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Workload Protection
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Security Posture
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Security Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Managed Detection & Response</li>
-              <li className="hover:text-blue-400 cursor-pointer">Security Consulting</li>
-              <li className="hover:text-blue-400 cursor-pointer">Incident Response</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Managed Detection & Response
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Security Consulting
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Incident Response
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all security solutions →
@@ -230,27 +266,45 @@ function AIInfrastructureView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Compute Platforms</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">GPU-Accelerated Servers</li>
-              <li className="hover:text-blue-400 cursor-pointer">AI-Optimized Processors</li>
-              <li className="hover:text-blue-400 cursor-pointer">High-Performance Computing</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                GPU-Accelerated Servers
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI-Optimized Processors
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                High-Performance Computing
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Storage Solutions</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">High-Performance Storage</li>
-              <li className="hover:text-blue-400 cursor-pointer">Scale-out File Systems</li>
-              <li className="hover:text-blue-400 cursor-pointer">Data Pipeline Storage</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                High-Performance Storage
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Scale-out File Systems
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Data Pipeline Storage
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Networking</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">High-Speed Interconnects</li>
-              <li className="hover:text-blue-400 cursor-pointer">AI Fabric Networking</li>
-              <li className="hover:text-blue-400 cursor-pointer">Low-Latency Networks</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                High-Speed Interconnects
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI Fabric Networking
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Low-Latency Networks
+              </li>
             </ul>
           </div>
         </div>
@@ -259,27 +313,45 @@ function AIInfrastructureView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Software Stack</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">AI Frameworks</li>
-              <li className="hover:text-blue-400 cursor-pointer">ML Operations Platform</li>
-              <li className="hover:text-blue-400 cursor-pointer">Container Orchestration</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI Frameworks
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                ML Operations Platform
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Container Orchestration
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud AI Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">AI-as-a-Service</li>
-              <li className="hover:text-blue-400 cursor-pointer">Model Training Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Inference Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI-as-a-Service
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Model Training Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Inference Services
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Professional Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">AI Strategy Consulting</li>
-              <li className="hover:text-blue-400 cursor-pointer">Implementation Services</li>
-              <li className="hover:text-blue-400 cursor-pointer">Managed AI Operations</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                AI Strategy Consulting
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Implementation Services
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Managed AI Operations
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all AI solutions →
@@ -313,9 +385,15 @@ function CloudDataCenterView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud Infrastructure</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Private Cloud</li>
-              <li className="hover:text-blue-400 cursor-pointer">Hybrid Cloud Management</li>
-              <li className="hover:text-blue-400 cursor-pointer">Multi-cloud Networking</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Private Cloud
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Hybrid Cloud Management
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Multi-cloud Networking
+              </li>
             </ul>
           </div>
 
@@ -324,18 +402,30 @@ function CloudDataCenterView() {
               Data Center Modernization
             </h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Hyperconverged Infrastructure</li>
-              <li className="hover:text-blue-400 cursor-pointer">Software-Defined Data Center</li>
-              <li className="hover:text-blue-400 cursor-pointer">Automation & Orchestration</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Hyperconverged Infrastructure
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Software-Defined Data Center
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Automation & Orchestration
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Storage Solutions</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Software-Defined Storage</li>
-              <li className="hover:text-blue-400 cursor-pointer">Backup & Disaster Recovery</li>
-              <li className="hover:text-blue-400 cursor-pointer">Data Management</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Software-Defined Storage
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Backup & Disaster Recovery
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Data Management
+              </li>
             </ul>
           </div>
         </div>
@@ -344,27 +434,45 @@ function CloudDataCenterView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Cloud Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Infrastructure as a Service</li>
-              <li className="hover:text-blue-400 cursor-pointer">Platform as a Service</li>
-              <li className="hover:text-blue-400 cursor-pointer">Database as a Service</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Infrastructure as a Service
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Platform as a Service
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Database as a Service
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Edge Computing</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Edge Infrastructure</li>
-              <li className="hover:text-blue-400 cursor-pointer">IoT Edge Solutions</li>
-              <li className="hover:text-blue-400 cursor-pointer">5G Edge Computing</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Edge Infrastructure
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                IoT Edge Solutions
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                5G Edge Computing
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Migration Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Cloud Assessment</li>
-              <li className="hover:text-blue-400 cursor-pointer">Workload Migration</li>
-              <li className="hover:text-blue-400 cursor-pointer">Optimization Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Cloud Assessment
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Workload Migration
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Optimization Services
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all cloud solutions →
@@ -398,27 +506,45 @@ function HybridWorkView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Collaboration Tools</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Video Conferencing</li>
-              <li className="hover:text-blue-400 cursor-pointer">Team Messaging</li>
-              <li className="hover:text-blue-400 cursor-pointer">Content Collaboration</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Video Conferencing
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Team Messaging
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Content Collaboration
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Endpoint Solutions</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Laptops & Mobile Devices</li>
-              <li className="hover:text-blue-400 cursor-pointer">Virtual Desktop Infrastructure</li>
-              <li className="hover:text-blue-400 cursor-pointer">Device Management</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Laptops & Mobile Devices
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Virtual Desktop Infrastructure
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Device Management
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Workspace Technology</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Meeting Room Systems</li>
-              <li className="hover:text-blue-400 cursor-pointer">Digital Signage</li>
-              <li className="hover:text-blue-400 cursor-pointer">Smart Office Solutions</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Meeting Room Systems
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Signage
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Smart Office Solutions
+              </li>
             </ul>
           </div>
         </div>
@@ -427,27 +553,45 @@ function HybridWorkView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Network & Security</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Secure Remote Access</li>
-              <li className="hover:text-blue-400 cursor-pointer">SD-WAN for Branch Offices</li>
-              <li className="hover:text-blue-400 cursor-pointer">Zero Trust Network Access</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Secure Remote Access
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                SD-WAN for Branch Offices
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Zero Trust Network Access
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Employee Experience</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Digital Workplace Platforms</li>
-              <li className="hover:text-blue-400 cursor-pointer">Employee Engagement Tools</li>
-              <li className="hover:text-blue-400 cursor-pointer">Wellness Solutions</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Workplace Platforms
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Employee Engagement Tools
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Wellness Solutions
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Consulting Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Hybrid Work Strategy</li>
-              <li className="hover:text-blue-400 cursor-pointer">Change Management</li>
-              <li className="hover:text-blue-400 cursor-pointer">Adoption Services</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Hybrid Work Strategy
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Change Management
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Adoption Services
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all hybrid work solutions →
@@ -481,27 +625,45 @@ function IndustrySolutionsView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Healthcare</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Digital Health Platforms</li>
-              <li className="hover:text-blue-400 cursor-pointer">Medical IoT Security</li>
-              <li className="hover:text-blue-400 cursor-pointer">Healthcare Collaboration</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Health Platforms
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Medical IoT Security
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Healthcare Collaboration
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Financial Services</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Secure Banking Infrastructure</li>
-              <li className="hover:text-blue-400 cursor-pointer">Fraud Detection Systems</li>
-              <li className="hover:text-blue-400 cursor-pointer">Digital Branch Solutions</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Secure Banking Infrastructure
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Fraud Detection Systems
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Branch Solutions
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Manufacturing</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Industrial IoT</li>
-              <li className="hover:text-blue-400 cursor-pointer">Smart Factory Solutions</li>
-              <li className="hover:text-blue-400 cursor-pointer">Supply Chain Visibility</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Industrial IoT
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Smart Factory Solutions
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Supply Chain Visibility
+              </li>
             </ul>
           </div>
         </div>
@@ -510,27 +672,45 @@ function IndustrySolutionsView() {
           <div>
             <h3 className="font-medium mb-4 text-lg">Retail</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Unified Commerce</li>
-              <li className="hover:text-blue-400 cursor-pointer">Customer Experience</li>
-              <li className="hover:text-blue-400 cursor-pointer">Store Digitalization</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Unified Commerce
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Customer Experience
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Store Digitalization
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Education</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Digital Learning Platforms</li>
-              <li className="hover:text-blue-400 cursor-pointer">Campus Networking</li>
-              <li className="hover:text-blue-400 cursor-pointer">Remote Learning Solutions</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Digital Learning Platforms
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Campus Networking
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Remote Learning Solutions
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-medium mb-4 text-lg">Government</h3>
             <ul className="space-y-2 text-gray-600">
-              <li className="hover:text-blue-400 cursor-pointer">Secure Government Networks</li>
-              <li className="hover:text-blue-400 cursor-pointer">Citizen Services Platforms</li>
-              <li className="hover:text-blue-400 cursor-pointer">Public Safety Solutions</li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Secure Government Networks
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Citizen Services Platforms
+              </li>
+              <li className="hover:text-blue-400 cursor-pointer">
+                Public Safety Solutions
+              </li>
             </ul>
             <button className="mt-4 text-blue-600 text-sm font-medium">
               View all industry solutions →
