@@ -8,6 +8,9 @@ import { ShieldCheck } from "lucide-react";
 export default function Navbar() {
   const navigate = useNavigate();
 
+  const isLoggedIn = Boolean(localStorage.getItem("token"));
+  const [profileOpen, setProfileOpen] = useState(false);
+
   const [openMenu, setOpenMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -19,8 +22,8 @@ export default function Navbar() {
           <h1
             onClick={() => (window.location.href = "/")}
             className="cursor-pointer text-2xl font-extrabold tracking-tight
-             bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
-             bg-clip-text text-transparent hover:opacity-90 transition"
+              bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
+              bg-clip-text text-transparent hover:opacity-90 transition"
           >
             Aek<span className="font-light">Sec</span>
           </h1>
@@ -67,7 +70,10 @@ export default function Navbar() {
 
         {/* RIGHT */}
         <div className="hidden max-[960px]:hidden md:flex items-center gap-3">
-          <button onClick={()=>navigate('/trial-demos')} className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
+          <button
+            onClick={() => navigate("/trial-demos")}
+            className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition"
+          >
             Trials & demos
           </button>
 
@@ -75,13 +81,47 @@ export default function Navbar() {
             <Search className="w-5 h-5 text-gray-700" />
           </button>
 
-          <button
-            onClick={() => navigate("/login")}
-            className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100"
-          >
-            <MdOutlineAccountCircle className="w-6 h-6" />
-            <span>Log In</span>
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => {
+                if (!isLoggedIn) {
+                  navigate("/login");
+                } else {
+                  setProfileOpen(!profileOpen);
+                }
+              }}
+              className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-100"
+            >
+              <MdOutlineAccountCircle className="w-6 h-6" />
+              {!isLoggedIn && <span>Log In</span>}
+            </button>
+
+            {/* PROFILE POPUP */}
+            {isLoggedIn && profileOpen && (
+              <div className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg z-50">
+                <button
+                  onClick={() => {
+                    setProfileOpen(false);
+                    navigate("/profile");
+                  }}
+                  className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+                >
+                  👤 Profile
+                </button>
+
+                <button
+                  onClick={() => {
+                    localStorage.removeItem("token");
+                    setProfileOpen(false);
+                    navigate("/login");
+                  }}
+                  className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
+                >
+                  🚪 Logout
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -115,12 +155,20 @@ export default function Navbar() {
             </li>
 
             <li
-              onClick={() => navigate("/login")}
+              onClick={() => {
+                if (!isLoggedIn) {
+                  navigate("/login");
+                } else {
+                  localStorage.removeItem("token");
+                  navigate("/login");
+                }
+              }}
               className="flex items-center gap-2 p-4 cursor-pointer hover:bg-slate-100"
             >
               <MdOutlineAccountCircle className="w-6 h-6" />
-              <span>Log In</span>
+              <span>{isLoggedIn ? "Logout" : "Log In"}</span>
             </li>
+            
           </ul>
         </div>
       )}

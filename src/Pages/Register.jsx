@@ -1,13 +1,85 @@
+import { useState } from "react";
+import Swal from "sweetalert2";
+
 export default function Register() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleRegister = async () => {
+    if (!name || !email || !password) {
+      Swal.fire({
+        icon: "warning",
+        title: "Missing fields",
+        text: "Please fill all fields",
+      });
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      const res = await fetch(
+        "https://aeksec-backend.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, password }),
+        }
+      );
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        Swal.fire({
+          icon: "error",
+          title: "Registration Failed",
+          text: data.error || "Something went wrong",
+        });
+        return;
+      }
+
+      Swal.fire({
+        icon: "success",
+        title: "Account Created",
+        text: "You can now log in",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+
+      // Redirect to login
+      setTimeout(() => {
+        window.location.href = "/login";
+      }, 1500);
+
+    // eslint-disable-next-line no-unused-vars
+    } catch (err) {
+      Swal.fire({
+        icon: "error",
+        title: "Server Error",
+        text: "Please try again later",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50">
       <div className="w-full max-w-md bg-white border rounded-lg shadow-sm">
 
         {/* Header */}
         <div className="relative text-center py-8 border-b">
-          <div className="text-xl font-semibold text-sky-600 tracking-wide">
-            AekSec
-          </div>
+          <h1
+            className="cursor-pointer text-2xl font-extrabold tracking-tight
+            bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
+            bg-clip-text text-transparent hover:opacity-90 transition"
+          >
+            Aek<span className="font-light">Sec</span>
+          </h1>
 
           <div className="absolute top-4 right-4 text-sm text-slate-500">
             🌐 US · EN
@@ -27,6 +99,8 @@ export default function Register() {
           <input
             type="text"
             placeholder="Enter your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="
               w-full rounded-md border border-slate-300 px-4 py-3
               focus:outline-none focus:ring-2 focus:ring-sky-500 mb-5
@@ -40,6 +114,8 @@ export default function Register() {
           <input
             type="email"
             placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="
               w-full rounded-md border border-slate-300 px-4 py-3
               focus:outline-none focus:ring-2 focus:ring-sky-500 mb-5
@@ -53,6 +129,8 @@ export default function Register() {
           <input
             type="password"
             placeholder="Create a password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             className="
               w-full rounded-md border border-slate-300 px-4 py-3
               focus:outline-none focus:ring-2 focus:ring-sky-500 mb-6
@@ -61,18 +139,16 @@ export default function Register() {
 
           {/* Button */}
           <button
+            onClick={handleRegister}
+            disabled={loading}
             className="
-              w-full
-              rounded-full
-              bg-sky-600
-              py-3
-              text-white
-              font-medium
-              hover:bg-sky-700
-              transition
+              w-full rounded-full bg-sky-600 py-3
+              text-white font-medium
+              hover:bg-sky-700 transition
+              disabled:opacity-60
             "
           >
-            Create account
+            {loading ? "Creating account..." : "Create account"}
           </button>
 
           <div className="mt-8 border-t pt-6 text-center text-sm text-slate-600">

@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import Explore from "../Pages/Explore";
 import Login from "../Pages/Login";
@@ -43,10 +43,10 @@ import Networking from "../BrowsByTechnology/Networking";
 import Computing from "../BrowsByTechnology/Computing";
 
 export default function AppRouter() {
-    const location = useLocation();
+    // const location = useLocation();
 
   return (
-            <div data-page={location.pathname}>
+         <>   
 
     {/* <RefreshRedirect> */}
 
@@ -119,8 +119,10 @@ export default function AppRouter() {
       <Route path="/computing" element={<Computing />} /> 
 
     </Routes>
+    
     {/* </RefreshRedirect> */}
 
-    </div>
+    {/* </div> */}
+    </>
   );
 }
