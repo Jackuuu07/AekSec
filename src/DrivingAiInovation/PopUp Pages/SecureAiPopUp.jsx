@@ -1,11 +1,8 @@
 import { FiClock } from "react-icons/fi";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
 export default function ScalingAIEnterprise() {
   return (
     <>
-      <Navbar />
       <section className="max-w-5xl mx-auto px-6 py-20">
         {/* HERO */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
@@ -88,7 +85,6 @@ export default function ScalingAIEnterprise() {
           </p>
         </article>
       </section>
-      <Footer />
     </>
   );
 }

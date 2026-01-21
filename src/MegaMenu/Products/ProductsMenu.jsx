@@ -27,7 +27,7 @@ export default function ProductsMenu() {
         <LeftItem label="Software" active={active} setActive={setActive} />
         <LeftItem label="Services (CX)" active={active} setActive={setActive} />
       </div>
-
+            
       {/* RIGHT AREA */}
       <div className="px-4 md:px-12 py-6 md:py-10 overflow-y-auto no-scrollbar h-full">
         {/* ===== DEFAULT (NO ACTIVE) ===== */}

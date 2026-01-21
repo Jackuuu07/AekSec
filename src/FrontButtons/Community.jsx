@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Community() {
   /* ================= FEATURED CONTENT SLIDER ================= */
@@ -67,7 +65,6 @@ export default function Community() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800">
         {/* ================= SECTION 1: HERO ================= */}
         <section className="relative">
@@ -230,7 +227,6 @@ export default function Community() {
           </aside>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,11 +1,8 @@
 import { Mail, Phone, Globe, Shield, Users, Briefcase, Target, Award, Zap, BarChart, Heart, Clock, ShieldCheck, Lock, Cpu, GitBranch, Cloud, Code, MessageCircle, BookOpen } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function About() {
     return (
         <>
-            <Navbar />
             
             <main className="bg-white text-gray-800">
                 {/* ================= HERO / ABOUT ================= */}
@@ -662,7 +659,6 @@ export default function About() {
                 </section>
             </main>
 
-            <Footer />
         </>
     );
 }

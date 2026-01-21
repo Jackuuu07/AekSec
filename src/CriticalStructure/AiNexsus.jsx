@@ -1,10 +1,7 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AiNexsus() {
   return (
     <>
-      <Navbar />
       <section className="bg-gradient-to-r from-gray-100 to-gray-200 py-28">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* LEFT */}
@@ -251,7 +248,6 @@ export default function AiNexsus() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

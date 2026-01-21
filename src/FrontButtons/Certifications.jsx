@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Certifications() {
   const stories = [
@@ -34,7 +32,6 @@ export default function Certifications() {
 
   return (
     <>
-        <Navbar/>
 
         
     <div className="bg-white text-gray-800">
@@ -189,7 +186,6 @@ export default function Certifications() {
       </section>
     </div>
 
-    <Footer/>
     </>
   );
 }

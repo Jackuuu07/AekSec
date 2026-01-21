@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Training() {
   const tabs = {
@@ -25,7 +23,6 @@ export default function Training() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800">
         {/* ================= SECTION 1: HERO ================= */}
         <section className="relative">
@@ -265,7 +262,6 @@ export default function Training() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

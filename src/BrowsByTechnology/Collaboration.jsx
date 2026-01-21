@@ -37,7 +37,6 @@ export default function BusinessCollaboration() {
 
   return (
     <>
-      <Navbar />
 
       <div className="w-full">
         {/* ================= HERO ================= */}
@@ -292,7 +291,6 @@ export default function BusinessCollaboration() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }

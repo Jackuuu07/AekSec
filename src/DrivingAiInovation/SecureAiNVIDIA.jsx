@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function SecureAiNVIDIA() {
   const [activeTab, setActiveTab] = useState("finance");
@@ -104,7 +102,6 @@ export default function SecureAiNVIDIA() {
 
   return (
     <>
-      <Navbar />
 
       <div className="w-full text-black">
         {/* ================= HERO SECTION ================= */}
@@ -524,7 +521,6 @@ export default function SecureAiNVIDIA() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }

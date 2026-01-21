@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AekSecCanvas() {
   return (
     <>
-      <Navbar />
 
       <div className="w-full bg-white text-black">
         {/* =======================
@@ -160,7 +157,6 @@ export default function AekSecCanvas() {
           </div>
         </footer>
       </div>
-      <Footer />
     </>
   );
 }

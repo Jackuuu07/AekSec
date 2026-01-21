@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function Support() {
   const [openSupport, setOpenSupport] = useState(null);
@@ -11,7 +9,6 @@ export default function Support() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800">
         {/* ================= HEADER ================= */}
         <section className="max-w-7xl mx-auto px-8 py-16">
@@ -180,7 +177,6 @@ export default function Support() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

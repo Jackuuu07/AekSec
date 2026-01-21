@@ -6,12 +6,9 @@ import {
   FiCpu,
   FiShield,
 } from "react-icons/fi";
-import Navbar  from "../components/Navbar";
-import Footer from "../components/Footer";
 export default function ExploreMoreAINews() {
   return (
     <>
-        <Navbar/>
 
       
     <div className="w-full">
@@ -192,7 +189,6 @@ export default function ExploreMoreAINews() {
 
     </div>
 
-      <Footer/>
     </>
   );
 }

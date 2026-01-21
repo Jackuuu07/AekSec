@@ -1,11 +1,8 @@
 import { FiClock, FiMessageCircle } from "react-icons/fi";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
 export default function AgenticEraArticle() {
   return (
     <>
-      <Navbar />
       <section className="max-w-5xl mx-auto px-6 py-20">
         {/* META */}
         <div className="flex items-center justify-between text-sm text-gray-500 mb-8">
@@ -107,7 +104,6 @@ export default function AgenticEraArticle() {
         </article>
       </section>
 
-      <Footer />
     </>
   );
 }

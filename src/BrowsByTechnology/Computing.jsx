@@ -17,7 +17,6 @@ export default function Computing() {
 
   return (
     <>
-      <Navbar />
 
       <main className="bg-white">
         {/* ================= HERO ================= */}
@@ -148,7 +147,6 @@ export default function Computing() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

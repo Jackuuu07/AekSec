@@ -49,7 +49,6 @@ export default function Networking() {
 
   return (
     <>
-      <Navbar />
 
       <div className="w-full bg-white text-gray-900">
         {/* ================= HERO ================= */}
@@ -407,7 +406,6 @@ export default function Networking() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

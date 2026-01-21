@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { useState } from "react";
 
 export default function AekSecValidate() {
@@ -7,7 +5,6 @@ export default function AekSecValidate() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800">
         {/* ================= SECTION 1: HERO ================= */}
         <section className="relative">
@@ -190,7 +187,6 @@ export default function AekSecValidate() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }

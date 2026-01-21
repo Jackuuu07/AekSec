@@ -8,8 +8,6 @@ import {
   Globe,
   ArrowRight,
 } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AiReadinessReport() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -36,7 +34,6 @@ export default function AiReadinessReport() {
 
   return (
     <>
-      <Navbar />
       <div className="w-full bg-white text-gray-900">
         {/* ================= HERO ================= */}
         <section className="relative bg-[#020b1c] text-white overflow-hidden">
@@ -257,7 +254,6 @@ export default function AiReadinessReport() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

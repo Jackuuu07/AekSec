@@ -1,10 +1,6 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
 export default function StateofSecurity() {
   return (
     <>
-      <Navbar />
 <section className="relative">
   {/* RIGHT SIDE BACKGROUND */}
   <div className="absolute top-0 right-0 h-full w-full lg:w-1/2 bg-[#0b2a4a]" />
@@ -157,7 +153,6 @@ export default function StateofSecurity() {
         </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

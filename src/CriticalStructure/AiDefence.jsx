@@ -8,7 +8,6 @@ export default function AiDefence() {
 
   return (
     <>
-      <Navbar />
 
       {/* ================= VIDEO MODAL ================= */}
       {openVideo && (
@@ -310,7 +309,6 @@ export default function AiDefence() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

@@ -1,13 +1,10 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AiPlatform() {
   const [openVideo, setOpenVideo] = useState(null);
 
   return (
     <>
-      <Navbar />
 
       {/* ================= VIDEO MODAL ================= */}
       {openVideo && (
@@ -224,7 +221,6 @@ export default function AiPlatform() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

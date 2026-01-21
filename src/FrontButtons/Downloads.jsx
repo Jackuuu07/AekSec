@@ -1,10 +1,8 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 
 export default function Downloads() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const categories = [
     "Analytics and Automation Software",
     "Cisco Interfaces and Modules",
@@ -20,56 +18,54 @@ export default function Downloads() {
   ];
 
   const [activeCategory, setActiveCategory] = useState(
-    "Analytics and Automation Software"
+    "Analytics and Automation Software",
   );
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800">
         {/* ================= SECTION 1 (FIRST SCREENSHOT) ================= */}
-       <section className="max-w-7xl mx-auto px-8 py-16 border-b">
+        <section className="max-w-7xl mx-auto px-8 py-16 border-b">
+          {/* PAGE HEADING */}
+          <h1 className="text-4xl font-light mb-12">
+            Software <span className="font-normal">Download</span>
+          </h1>
 
-  {/* PAGE HEADING */}
-  <h1 className="text-4xl font-light mb-12">
-    Software <span className="font-normal">Download</span>
-  </h1>
+          {/* MAIN CONTENT */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            {/* LEFT (WIDE) */}
+            <div className="lg:col-span-2">
+              <div className="border rounded-lg p-16 text-center">
+                <h2 className="text-2xl font-light mb-6">
+                  Login to view your download history
+                </h2>
 
-  {/* MAIN CONTENT */}
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                <button
+                  onClick={() => navigate("/login")}
+                  className="px-10 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition"
+                >
+                  LOG IN NOW
+                </button>
+              </div>
+            </div>
 
-    {/* LEFT (WIDE) */}
-    <div className="lg:col-span-2">
-      <div className="border rounded-lg p-16 text-center">
-        <h2 className="text-2xl font-light mb-6">
-          Login to view your download history
-        </h2>
-
-        <button onClick={() => navigate("/login")} className="px-10 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition">
-          LOG IN NOW
-        </button>
-      </div>
-    </div>
-
-    {/* RIGHT (NARROW) */}
-    <aside className="bg-gray-100 p-10 rounded">
-      <h3 className="text-2xl font-light mb-4">Most Popular</h3>
-      <p className="text-sm font-medium mb-3">
-        Most Popular for Analytics and Automation Software
-      </p>
-      <ul className="text-blue-600 space-y-2 text-sm">
-        <li className="cursor-pointer hover:underline">
-          Tidal Agent for Unix 🔒
-        </li>
-        <li className="cursor-pointer hover:underline">
-          Data Predict 🔒
-        </li>
-      </ul>
-    </aside>
-
-  </div>
-</section>
-
+            {/* RIGHT (NARROW) */}
+            <aside className="bg-gray-100 p-10 rounded">
+              <h3 className="text-2xl font-light mb-4">Most Popular</h3>
+              <p className="text-sm font-medium mb-3">
+                Most Popular for Analytics and Automation Software
+              </p>
+              <ul className="text-blue-600 space-y-2 text-sm">
+                <li className="cursor-pointer hover:underline">
+                  Tidal Agent for Unix 🔒
+                </li>
+                <li className="cursor-pointer hover:underline">
+                  Data Predict 🔒
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
 
         {/* ================= SECTION 2 (SECOND SCREENSHOT) ================= */}
         <section className="bg-gray-50">
@@ -156,7 +152,6 @@ export default function Downloads() {
         </footer>
       </div>
 
-      <Footer />
     </>
   );
 }

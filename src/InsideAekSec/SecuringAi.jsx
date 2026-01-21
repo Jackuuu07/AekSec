@@ -6,13 +6,10 @@ import {
   Play,
   ArrowRight,
 } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function SecuringAi() {
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-900">
         {/* ================= HERO ================= */}
         <section className="relative h-[620px] flex items-center">
@@ -207,7 +204,6 @@ export default function SecuringAi() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }

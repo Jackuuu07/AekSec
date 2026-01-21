@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function AekSecInfrastructre() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -76,7 +74,6 @@ export default function AekSecInfrastructre() {
 
   return (
     <>
-      <Navbar />
 
       <div className="w-full text-black">
         {/* ================= HERO ================= */}
@@ -332,7 +329,6 @@ export default function AekSecInfrastructre() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }
