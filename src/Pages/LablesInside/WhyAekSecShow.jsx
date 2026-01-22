@@ -8,7 +8,7 @@ const TABS = {
     desc: `At the McLaren Technology Centre, the team uses AI to analyze massive
     streams of telemetry data from their Formula 1 cars in real time,
     uncovering patterns that drive split-second decisions. From the track
-    to the cloud, when speed and precision matter most, Cisco provides the
+    to the cloud, when speed and precision matter most, KulpTech provides the
     network foundation that connects it all seamlessly.`,
     video: "https://www.w3schools.com/html/mov_bbb.mp4", // replace with your real video
   },
@@ -16,7 +16,7 @@ const TABS = {
   "Future-proofed workplaces": {
     title: "Workplaces built for speed and collaboration",
     desc: `McLaren engineers and strategists collaborate across continents.
-    Cisco collaboration solutions enable real-time communication,
+    KulpTech collaboration solutions enable real-time communication,
     secure access, and seamless teamwork—whether at the track or the factory.`,
     video: "https://www.w3schools.com/html/movie.mp4",
   },
@@ -24,7 +24,7 @@ const TABS = {
   "Digital resilience": {
     title: "Always-on performance under pressure",
     desc: `From race weekends to development cycles, digital resilience is
-    critical. Cisco security and observability solutions help McLaren
+    critical. KulpTech security and observability solutions help McLaren
     stay protected, resilient, and operational—even under extreme demands.`,
     video: "https://www.w3schools.com/html/mov_bbb.mp4",
   },
@@ -46,7 +46,7 @@ export function McLarenTabsSection() {
           <p className="text-slate-600">
             In Formula 1, milliseconds matter. The McLaren F1 Team trusts
             advanced networking, security, observability, and collaboration
-            solutions from Cisco to support real-time data analysis and gain a
+            solutions from KulpTech to support real-time data analysis and gain a
             critical competitive edge.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function WhyAekShow() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
           <div className="max-w-xl text-white">
             <span className="text-sm uppercase tracking-wide text-white/80">
-              Why AekSec
+              Why KulpTech
             </span>
 
             <h1 className="mt-4 text-5xl font-light leading-tight">
@@ -147,7 +147,7 @@ export default function WhyAekShow() {
           {/* RIGHT CONTENT */}
           <div>
             <h2 className="text-4xl font-light text-slate-900 mb-6">
-              Cisco makes the AI era work
+              KulpTech makes the AI era work
             </h2>
 
             <p className="text-slate-600 max-w-xl">
@@ -174,7 +174,7 @@ export default function WhyAekShow() {
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/about/why-cisco/why-cisco-ai-data-center.svg"
+                  src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/icons-and-shapes/about/why-KulpTech/why-KulpTech-ai-data-center.svg"
                   alt="AI infrastructure"
                 />
               </div>
@@ -194,7 +194,7 @@ export default function WhyAekShow() {
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/about/why-cisco/why-cisco-future-proofed-workplace.svg"
+                  src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/icons-and-shapes/about/why-KulpTech/why-KulpTech-future-proofed-workplace.svg"
                   alt="AI infrastructure"
                 />
               </div>
@@ -214,7 +214,7 @@ export default function WhyAekShow() {
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/about/why-cisco/why-cisco-digital-resilience.svg"
+                  src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/icons-and-shapes/about/why-KulpTech/why-KulpTech-digital-resilience.svg"
                   alt="AI infrastructure"
                 />
               </div>
@@ -231,12 +231,12 @@ export default function WhyAekShow() {
         </div>
       </section>
 
-      {/* ----------- AekSec Difference section ------- */}
+      {/* ----------- KulpTech Difference section ------- */}
       <section className="bg-slate-100 py-24">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-20">
           {/* LEFT TITLE */}
           <div className="flex items-center">
-            <h2 className="text-4xl font-light">The AekSec difference</h2>
+            <h2 className="text-4xl font-light">The KulpTech difference</h2>
           </div>
 
           {/* RIGHT CONTENT */}
@@ -246,7 +246,7 @@ export default function WhyAekShow() {
                 Market-defining technology
               </h3>
               <p className="text-slate-600">
-                Cisco solutions set the bar for scale, reliability, and
+                KulpTech solutions set the bar for scale, reliability, and
                 innovation, empowering organizations of all sizes to confidently
                 lead in the AI era.
               </p>
@@ -255,7 +255,7 @@ export default function WhyAekShow() {
             <div>
               <h3 className="text-xl font-medium mb-4">Platform advantage</h3>
               <p className="text-slate-600">
-                Cisco’s platform approach unifies products into powerful systems
+                KulpTech’s platform approach unifies products into powerful systems
                 that deliver greater value with less effort for your IT team.
               </p>
             </div>
@@ -274,7 +274,7 @@ export default function WhyAekShow() {
                 AI plus human expertise
               </h3>
               <p className="text-slate-600">
-                Built on years of experience and data, Cisco blends AI with
+                Built on years of experience and data, KulpTech blends AI with
                 human insight to deliver proactive, personalized, and predictive
                 experiences.
               </p>
@@ -304,7 +304,7 @@ export default function WhyAekShow() {
             className="absolute inset-0 w-full h-full object-cover"
           />
 
-          {/* SUBTLE IMAGE EFFECT (like Cisco glow) */}
+          {/* SUBTLE IMAGE EFFECT (like KulpTech glow) */}
           <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent" />
 
           {/* FLOATING CARD */}
@@ -360,7 +360,7 @@ export default function WhyAekShow() {
             {/* CENTER */}
             <div>
               <h4 className="text-lg font-medium mb-3">
-                Cisco AI Readiness Assessment
+                KulpTech AI Readiness Assessment
               </h4>
               <p className="text-white/80 mb-4 text-sm">
                 AI readiness comprises six pillars: Strategy, Infrastructure,
@@ -375,7 +375,7 @@ export default function WhyAekShow() {
             {/* RIGHT */}
             <div>
               <h4 className="text-lg font-medium mb-3">
-                Cisco AI Readiness Index 2025
+                KulpTech AI Readiness Index 2025
               </h4>
               <p className="text-white/80 mb-4 text-sm">
                 A small group of “Pacesetters” — about 13% of organizations

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AekSecCanvas() {
+export default function KulpTechCanvas() {
   return (
     <>
 
@@ -14,12 +14,12 @@ export default function AekSecCanvas() {
             <p className="text-sm text-gray-500 mb-4">Video · Jun 10, 2025</p>
 
             <h1 className="text-4xl lg:text-5xl font-light leading-tight mb-6">
-              Announcing AekSec AI Canvas. <br />
+              Announcing KulpTech AI Canvas. <br />
               Revolutionizing IT with AgenticOps
             </h1>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-8">
-              AI Canvas is AekSec's first Generative UI for cross-domain IT—a
+              AI Canvas is KulpTech's first Generative UI for cross-domain IT—a
               shared, intelligent workspace that brings real-time telemetry, AI
               insights, and team collaboration into one view.
             </p>
@@ -56,15 +56,15 @@ export default function AekSecCanvas() {
             <div>
               <img
                 src="https://newsroom.cisco.com/c/dam/r/newsroom/en/us/assets/a/y2025/m11/Cisco-live_1200x675_resize_2.jpg"
-                alt="AekSec Live"
+                alt="KulpTech Live"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-medium mb-3">
-                AekSec Live Melbourne 2025: advanced innovation to capture AI
+                KulpTech Live Melbourne 2025: advanced innovation to capture AI
                 value
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                AekSec’s premier APJC event highlights the company’s powerful
+                KulpTech’s premier APJC event highlights the company’s powerful
                 portfolio bridging network, security, compute, observability,
                 and more.
               </p>
@@ -81,10 +81,10 @@ export default function AekSecCanvas() {
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-medium mb-3">
-                AekSec Reports First Quarter Earnings
+                KulpTech Reports First Quarter Earnings
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                AekSec reported first quarter revenue of $14.9 billion and
+                KulpTech reported first quarter revenue of $14.9 billion and
                 non-GAAP net income of $4.0 billion.
               </p>
               <span className="inline-block text-xs text-blue-600 border border-blue-600 px-3 py-1 rounded">
@@ -100,7 +100,7 @@ export default function AekSecCanvas() {
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-medium mb-3">
-                IBM and AekSec Announce Plans to Build a Network of Large-Scale,
+                IBM and KulpTech Announce Plans to Build a Network of Large-Scale,
                 Fault-Tolerant Quantum Computers
               </h3>
               <span className="inline-block text-xs text-blue-600 border border-blue-600 px-3 py-1 rounded">
@@ -116,11 +116,11 @@ export default function AekSecCanvas() {
         <footer className="bg-[#0b2a4a] text-white">
           <div className="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
             <div>
-              <h4 className="font-semibold mb-4">About AekSec</h4>
+              <h4 className="font-semibold mb-4">About KulpTech</h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>Company Overview</li>
                 <li>Executive Team</li>
-                <li>AekSec.com</li>
+                <li>KulpTech.com</li>
               </ul>
             </div>
 
@@ -153,7 +153,7 @@ export default function AekSecCanvas() {
           </div>
 
           <div className="border-t border-white/20 py-6 text-center text-sm text-gray-300">
-            ©2025 AekSec Systems Inc.
+            ©2025 KulpTech Systems Inc.
           </div>
         </footer>
       </div>

@@ -1,6 +1,6 @@
 import { Search, Menu, X } from "lucide-react";
 import { MdOutlineAccountCircle } from "react-icons/md";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MegaMenu from "../MegaMenu/MegaMenu";
 import { Link, useNavigate } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
@@ -12,8 +12,30 @@ export default function Navbar() {
   const [profileOpen, setProfileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  
+
+  const [forceMobile, setForceMobile] = useState(false);
+
+  useEffect(() => {
+    const checkZoomAndWidth = () => {
+      const isZoomed = window.devicePixelRatio >= 1.5;
+      const isSmallScreen = window.innerWidth < 960;
+
+      setForceMobile(isZoomed || isSmallScreen);
+
+      // Close desktop menus when switching to mobile
+      if (isZoomed) {
+        setOpenMenu(null);
+      }
+    };
+
+    checkZoomAndWidth();
+    window.addEventListener("resize", checkZoomAndWidth);
+
+    return () => window.removeEventListener("resize", checkZoomAndWidth);
+  }, []);
+
   // Close mega menu when clicking outside
+
   const handleMouseLeave = () => {
     setTimeout(() => {
       if (!profileOpen) {
@@ -32,10 +54,10 @@ export default function Navbar() {
         >
           {/* Simple but elegant mark */}
           <div className="relative w-12 h-12">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg transform rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg transform rotate-45 group-hover:rotate-90 transition-transform duration-500 border-2 border-blue-500/30"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-white font-bold text-lg transform -rotate-45">
-                KT  
+                KT
               </span>
             </div>
           </div>
@@ -43,103 +65,98 @@ export default function Navbar() {
           {/* Clean typography */}
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="inline-block bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-300 dark:to-indigo-300 bg-clip-text ">
                 Kulp
               </span>
-              <span className="text-gray-800 font-medium">Tech</span>
+
+              <span className="text-gray-900 dark:text-white font-medium">
+                Tech
+              </span>
             </h1>
-            <div className="h-0.5 w-full bg-gradient-to-r from-blue-500/0 via-blue-500 to-blue-500/0 mt-1"></div>
+            <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-300 to-transparent mt-1"></div>
           </div>
         </div>
 
         {/* CENTER - DESKTOP MENU */}
-        <div className="hidden max-[960px]:hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 gap-8 text-xl ">
-          {/* What We Do - WITH MEGA MENU */}
-          <div 
-            className="relative"
-          >
-            <NavItem
-              label="What We Do"
-              menu="what-we-do"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-              hasDropdown={true}
-            />
+        {!forceMobile && (
+          <div className="hidden max-[960px]:hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 gap-8 text-xl ">
+            {/* What We Do - WITH MEGA MENU */}
+            <div className="relative">
+              <NavItem
+                label="What We Do"
+                menu="what-we-do"
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+                hasDropdown={true}
+              />
+            </div>
+
+            {/* What We Think - SIMPLE LINK */}
+            <div className="relative">
+              <NavItem
+                label="What We Think"
+                to="/what-we-think"
+                menu="what-we-think"
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+                hasDropdown={false}
+              />
+            </div>
+
+            {/* About KulpTech - WITH MEGA MENU */}
+            <div className="relative" onMouseEnter={() => setOpenMenu("about")}>
+              <NavItem
+                label="About KulpTech"
+                to="/about"
+                menu="about"
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+                hasDropdown={true}
+              />
+            </div>
+
+            {/* Career - SIMPLE LINK */}
+            <div className="relative">
+              <NavItem
+                label="Career"
+                to="/career"
+                menu="career"
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+                hasDropdown={false}
+              />
+            </div>
+
+            {/* Contact Us - SIMPLE LINK */}
+            <div className="relative">
+              <NavItem
+                label="Contact Us"
+                to="/contact"
+                menu="contact"
+                openMenu={openMenu}
+                setOpenMenu={setOpenMenu}
+                hasDropdown={false}
+              />
+            </div>
           </div>
-          
-          {/* What We Think - SIMPLE LINK */}
-          <div 
-            className="relative"
-          >
-            <NavItem
-              label="What We Think"
-              to="/what-we-think"
-              menu="what-we-think"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-              hasDropdown={false}
-            />
-          </div>
-          
-          {/* About KulpTech - WITH MEGA MENU */}
-          <div 
-            className="relative"
-            onMouseEnter={() => setOpenMenu("about")}
-          >
-            <NavItem
-              label="About KulpTech"
-              to="/about"
-              menu="about"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-              hasDropdown={true}
-            />
-          </div>
-          
-          {/* Career - SIMPLE LINK */}
-          <div 
-            className="relative"
-          >
-            <NavItem
-              label="Career"
-              to="/career"
-              menu="career"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-              hasDropdown={false}
-            />
-          </div>
-          
-          {/* Contact Us - SIMPLE LINK */}
-          <div 
-            className="relative"
-          >
-            <NavItem
-              label="Contact Us"
-              to="/contact"
-              menu="contact"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
-              hasDropdown={false}
-            />
-          </div>
-        </div>
+        )}
 
         {/* RIGHT - ACTIONS */}
-        <div className="hidden max-[960px]:hidden md:flex items-center gap-3">
-          <Link
-            to="/trial-demos"
-            className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition"
-          >
-            Trials & demos
-          </Link>
+        {!forceMobile && (
+          <div className="flex items-center gap-3">
+            <Link
+              to="/trial-demos"
+              className="px-5 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition"
+            >
+              Trials & demos
+            </Link>
 
-          {/* <button className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100">
+            {/* <button className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100">
             <Search className="w-5 h-5 text-gray-700" />
           </button> */}
 
-          <div className="relative">
-            {/* <button
+            <div className="relative">
+              {/* <button
               onClick={() => {
                 if (!isLoggedIn) {
                   navigate("/login");
@@ -153,8 +170,8 @@ export default function Navbar() {
               {!isLoggedIn && <span>Log In</span>}
             </button> */}
 
-            {/* PROFILE POPUP */}
-            {/* {isLoggedIn && profileOpen && (
+              {/* PROFILE POPUP */}
+              {/* {isLoggedIn && profileOpen && (
               <div className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg z-50">
                 <Link
                   to="/profile"
@@ -176,20 +193,23 @@ export default function Navbar() {
                 </button>
               </div>
             )} */}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden max-[960px]:flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-100"
+          className={`${
+            forceMobile ? "flex" : "hidden"
+          } items-center justify-center w-9 h-9 rounded-full hover:bg-gray-100`}
         >
           {mobileOpen ? <X /> : <Menu />}
         </button>
       </nav>
 
       {/* MOBILE DROPDOWN */}
-      {mobileOpen && (
+      {forceMobile && mobileOpen && (
         <div className="md:hidden max-[960px]:block absolute top-full left-0 w-full bg-white border-t shadow-lg z-40">
           <ul className="flex flex-col text-sm font-medium divide-y">
             <MobileItem
@@ -267,8 +287,8 @@ export default function Navbar() {
 
       {/* MEGA MENU - Only for What We Do and About */}
       {(openMenu === "what-we-do" || openMenu === "about") && (
-        <MegaMenu 
-          type={openMenu} 
+        <MegaMenu
+          type={openMenu}
           onClose={() => setOpenMenu(null)}
           onMouseEnter={() => setOpenMenu(openMenu)}
           onMouseLeave={() => setOpenMenu(null)}
@@ -279,7 +299,14 @@ export default function Navbar() {
 }
 
 /* ---------- Desktop Nav Item ---------- */
-function NavItem({ label, menu, openMenu, setOpenMenu, to, hasDropdown = false }) {
+function NavItem({
+  label,
+  menu,
+  openMenu,
+  setOpenMenu,
+  to,
+  hasDropdown = false,
+}) {
   return (
     <Link
       to={to}
@@ -296,7 +323,9 @@ function NavItem({ label, menu, openMenu, setOpenMenu, to, hasDropdown = false }
     >
       {label}
       {hasDropdown && (
-        <FiChevronDown className={`transition-transform duration-200 ${openMenu === menu ? 'rotate-180' : ''}`} />
+        <FiChevronDown
+          className={`transition-transform duration-200 ${openMenu === menu ? "rotate-180" : ""}`}
+        />
       )}
     </Link>
   );

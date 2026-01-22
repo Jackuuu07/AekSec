@@ -14,7 +14,7 @@ export default function SecuringAi() {
         {/* ================= HERO ================= */}
         <section className="relative h-[620px] flex items-center">
           <img
-            src="https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/products/security/industrial-security/idc-2400x1028.png"
+            src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/heroes/products/security/industrial-security/idc-2400x1028.png"
             alt="Industrial security"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -127,7 +127,7 @@ export default function SecuringAi() {
             </div>
 
             <img
-              src="https://www.cisco.com/content/dam/cisco-cdc/site/images/logos/3rd-party/products/security/idc-logo-220x80.png"
+              src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/logos/3rd-party/products/security/idc-logo-220x80.png"
               alt="IDC"
               className="w-40 mx-auto"
             />
@@ -143,16 +143,16 @@ export default function SecuringAi() {
           <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12">
             <div className="bg-white overflow-hidden shadow-sm">
               <img
-                src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/products/security/industrial-security/idc-rlobo-blog-544x306.jpg"
-                alt="Cisco expert"
+                src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/photography/products/security/industrial-security/idc-rlobo-blog-544x306.jpg"
+                alt="KulpTech expert"
                 className="w-full h-56 object-cover"
               />
               <div className="p-8">
                 <h3 className="text-lg font-medium mb-3">
-                  Learn from AekSec OT security experts
+                  Learn from KulpTech OT security experts
                 </h3>
                 <p className="text-sm text-gray-600 mb-6">
-                  Learn how AekSec helps secure IT/OT convergence for modern
+                  Learn how KulpTech helps secure IT/OT convergence for modern
                   industrial environments.
                 </p>
                 <button className="text-blue-600 w-full text-ellipsis font-medium hover:underline">
@@ -163,7 +163,7 @@ export default function SecuringAi() {
 
             <div className="bg-white  overflow-hidden shadow-sm">
               <img
-                src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/products/security/industrial-security/idc-report-get-544x306b.jpg"
+                src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/photography/products/security/industrial-security/idc-report-get-544x306b.jpg"
                 alt="IDC report"
                 className="w-full h-56 object-cover"
               />

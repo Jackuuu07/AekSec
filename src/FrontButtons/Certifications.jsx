@@ -7,7 +7,7 @@ export default function Certifications() {
       role: "Security Analyst",
       company: "FinTech Company",
       quote:
-        "AekSec certification helped me transition into a cybersecurity role within 6 months.",
+        "KulpTech certification helped me transition into a cybersecurity role within 6 months.",
       img: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
@@ -15,7 +15,7 @@ export default function Certifications() {
       role: "Cloud Security Engineer",
       company: "SaaS Startup",
       quote:
-        "The hands-on labs and real-world scenarios made AekSec Academy stand out.",
+        "The hands-on labs and real-world scenarios made KulpTech Academy stand out.",
       img: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
@@ -48,7 +48,7 @@ export default function Certifications() {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-8">
             <h1 className="text-4xl md:text-5xl font-light text-white max-w-3xl leading-tight">
-              Build Industry-Ready Cybersecurity Skills with AekSec Certifications
+              Build Industry-Ready Cybersecurity Skills with KulpTech Certifications
             </h1>
             <p className="text-gray-200 mt-6 max-w-2xl">
               Globally relevant certifications designed for real-world security challenges.
@@ -61,14 +61,14 @@ export default function Certifications() {
         </div>
       </section>
 
-      {/* ================= AEKSEC ACADEMY ================= */}
+      {/* ================= KulpTech ACADEMY ================= */}
       <section className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-3xl font-light mb-6">
-            AekSec Academy
+            KulpTech Academy
           </h2>
           <p className="text-lg mb-4">
-            AekSec Academy is built to bridge the gap between academic learning and
+            KulpTech Academy is built to bridge the gap between academic learning and
             enterprise cybersecurity requirements.
           </p>
           <ul className="list-disc pl-6 space-y-3">

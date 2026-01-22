@@ -12,7 +12,7 @@ export default function Community() {
       date: "11-25-2025",
     },
     {
-      title: "Meet Hideyuki Osaki – AekSec Expert Spotlight",
+      title: "Meet Hideyuki Osaki – KulpTech Expert Spotlight",
       img: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39",
       views: 24552,
       comments: 2,
@@ -20,7 +20,7 @@ export default function Community() {
       date: "11-17-2025",
     },
     {
-      title: "Celebrating 5 years of AekSec Community",
+      title: "Celebrating 5 years of KulpTech Community",
       img: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
       views: 64334,
       comments: 58,
@@ -28,7 +28,7 @@ export default function Community() {
       date: "01-24-2025",
     },
     {
-      title: "Welcome to the AekSec Community – Getting Started",
+      title: "Welcome to the KulpTech Community – Getting Started",
       img: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0",
       views: 3368,
       comments: 0,
@@ -59,7 +59,7 @@ export default function Community() {
       replies: 0,
       likes: 0,
       category: "Security",
-      desc: "Greetings everyone, I'm new with AekSec Firewall Management Center...",
+      desc: "Greetings everyone, I'm new with KulpTech Firewall Management Center...",
     },
   ];
 
@@ -80,14 +80,14 @@ export default function Community() {
               Welcome to the Community!
             </h1>
             <p className="text-gray-200 max-w-3xl mb-8">
-              A hub to connect with peers and AekSec specialists, ask questions,
+              A hub to connect with peers and KulpTech specialists, ask questions,
               share expertise, and grow professionally.
             </p>
 
             <div className="w-full max-w-2xl bg-white rounded-full flex items-center px-6 py-3 shadow-lg">
               <input
                 type="text"
-                placeholder="Search AekSec Community – What are you looking for?"
+                placeholder="Search KulpTech Community – What are you looking for?"
                 className="flex-1 outline-none"
               />
               <span className="text-gray-500">🔍</span>
@@ -157,7 +157,7 @@ export default function Community() {
             <div>
               <h2 className="text-3xl font-light mb-6">Trending Topics</h2>
               <p className="text-gray-600">
-                AekSec Community is an active place to learn, collaborate, and
+                KulpTech Community is an active place to learn, collaborate, and
                 discuss real-world cybersecurity challenges.
               </p>
             </div>

@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 export default function Blog() {
   return (
     <>
-      <Navbar />
 
       <div className="bg-white text-gray-800">
         {/* ================= HERO ================= */}
@@ -20,7 +19,7 @@ export default function Blog() {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-8">
               <span className="text-blue-400 font-semibold tracking-widest">
-                AEKSEC BLOG
+                KulpTech BLOG
               </span>
 
               <h1 className="text-4xl md:text-5xl font-light text-white mt-4 leading-tight max-w-3xl">
@@ -29,7 +28,7 @@ export default function Blog() {
 
               <p className="text-gray-200 mt-6 max-w-2xl">
                 Insights, strategies, and innovations inspired by global
-                security leaders — tailored for modern enterprises by AekSec.
+                security leaders — tailored for modern enterprises by KulpTech.
               </p>
             </div>
           </div>
@@ -50,7 +49,7 @@ export default function Blog() {
             </p>
 
             <p>
-              At <strong>AekSec</strong>, we align with Zero Trust principles
+              At <strong>KulpTech</strong>, we align with Zero Trust principles
               and AI-driven threat intelligence, inspired by global security
               leaders, to proactively defend organizations against ransomware,
               phishing, supply-chain attacks, and advanced persistent threats
@@ -69,7 +68,7 @@ export default function Blog() {
 
             <p>
               Security Operations Centers (SOCs) today must process billions of
-              events daily. Manual analysis is no longer viable. AekSec
+              events daily. Manual analysis is no longer viable. KulpTech
               integrates machine learning to:
             </p>
 
@@ -104,11 +103,11 @@ export default function Blog() {
             </div>
 
             <h2 className="text-3xl font-light">
-              Why Enterprises Choose AekSec
+              Why Enterprises Choose KulpTech
             </h2>
 
             <p>
-              Inspired by industry leaders yet built for agility, AekSec
+              Inspired by industry leaders yet built for agility, KulpTech
               delivers enterprise-grade security without enterprise complexity.
             </p>
 
@@ -153,10 +152,10 @@ export default function Blog() {
                 Secure Your Enterprise
               </h4>
               <p className="text-gray-300 text-sm mb-6">
-                Discover how AekSec protects modern digital infrastructures.
+                Discover how KulpTech protects modern digital infrastructures.
               </p>
               <button className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition">
-                Contact AekSec
+                Contact KulpTech
               </button>
             </div>
           </aside>
@@ -166,7 +165,7 @@ export default function Blog() {
         <section className="bg-gray-300 py-20">
           <div className="max-w-7xl mx-auto px-8 text-center">
             <h2 className="text-3xl font-light">
-              Security Inspired by Global Leaders. Delivered by AekSec.
+              Security Inspired by Global Leaders. Delivered by KulpTech.
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Stay ahead of evolving cyber threats with insights, technology,
@@ -176,7 +175,6 @@ export default function Blog() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }

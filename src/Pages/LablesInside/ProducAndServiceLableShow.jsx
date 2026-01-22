@@ -177,7 +177,7 @@ export default function ProductandServiceShows() {
   return (
     <main className="w-full">
       {/* =====================================================
-         HERO – Cisco products
+         HERO – KulpTech products
       ====================================================== */}
 
       <section className="relative overflow-hidden bg-gradient-to-r from-[#07182d] to-[#0b2447] text-white py-28">
@@ -199,9 +199,9 @@ export default function ProductandServiceShows() {
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <h1 className="text-5xl font-light mb-4">AekSec products</h1>
+          <h1 className="text-5xl font-light mb-4">KulpTech products</h1>
           <p className="text-lg text-white/80 max-w-xl">
-            Find the AekSec products that fit your needs.
+            Find the KulpTech products that fit your needs.
           </p>
         </div>
       </section>
@@ -287,7 +287,7 @@ export default function ProductandServiceShows() {
 
           {/* RIGHT IMAGE */}
           <img
-            src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
+            src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
             alt="Trials and demos"
             className="
         w-full
@@ -300,13 +300,13 @@ export default function ProductandServiceShows() {
       </section>
 
       {/* =====================================================
-         EXPLORE MORE CISCO OFFERINGS
+         EXPLORE MORE KulpTech OFFERINGS
       ====================================================== */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_1px_1fr_1fr_1fr] gap-16">
           {/* HEADING */}
           <h2 className="text-4xl text-black font-light/10">
-            Explore more Cisco offerings
+            Explore more KulpTech offerings
           </h2>
 
           {/* VERTICAL LINE */}
@@ -343,7 +343,7 @@ export default function ProductandServiceShows() {
               Transform your IT environment and deliver business value.
             </p>
             <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
-              Explore Cisco Services
+              Explore KulpTech Services
               <FiChevronRight />
             </button>
           </div>
@@ -358,7 +358,7 @@ export default function ProductandServiceShows() {
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-4xl font-light text-slate-900 leading-snug">
-              Cisco Validated Design
+              KulpTech Validated Design
               <br />
               zone
             </h2>
@@ -388,7 +388,7 @@ export default function ProductandServiceShows() {
           {/* RIGHT IMAGE */}
           <img
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
-            alt="Cisco Validated Design Zone"
+            alt="KulpTech Validated Design Zone"
             className="w-full h-[340px] object-cover"
           />
         </div>
@@ -415,10 +415,10 @@ export default function ProductandServiceShows() {
             <div>
               <h3 className="text-xl font-medium mb-4">Tools</h3>
               <ul className="space-y-3 text-blue-600">
-                <li>Cisco DNA</li>
-                <li>Cisco Feature Navigator</li>
-                <li>Cisco Software Central</li>
-                <li>Cisco Software Central</li>
+                <li>KulpTech DNA</li>
+                <li>KulpTech Feature Navigator</li>
+                <li>KulpTech Software Central</li>
+                <li>KulpTech Software Central</li>
                 <li>Visio stencils</li>
                 <li>All product tools</li>
               </ul>
@@ -429,7 +429,7 @@ export default function ProductandServiceShows() {
                 Product documentation
               </h3>
               <ul className="space-y-3 text-blue-600">
-                <li>Cisco DevNet</li>
+                <li>KulpTech DevNet</li>
                 <li>Product approvals</li>
                 <li>Security vulnerability policy</li>
               </ul>
@@ -448,18 +448,18 @@ export default function ProductandServiceShows() {
           </h2>
 
           <div>
-            <h3 className="text-xl font-medium">Connect with Cisco</h3>
+            <h3 className="text-xl font-medium">Connect with KulpTech</h3>
             <p className="mt-2 text-white/80">
               We're here to help you make informed decisions every step of the
               way.
             </p>
             <a className="mt-4 inline-block text-blue-400 hover:underline">
-              Contact Cisco →
+              Contact KulpTech →
             </a>
           </div>
 
           <div>
-            <h3 className="text-xl font-medium">Contact a Cisco partner</h3>
+            <h3 className="text-xl font-medium">Contact a KulpTech partner</h3>
             <p className="mt-2 text-white/80">
               Find a partner with the expertise and commitment to help you
               succeed.

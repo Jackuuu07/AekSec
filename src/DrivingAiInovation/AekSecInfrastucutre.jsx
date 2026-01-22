@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function AekSecInfrastructre() {
+export default function KulpTechInfrastructre() {
   const [activeTab, setActiveTab] = useState("overview");
 
   const tabs = {
@@ -191,7 +191,7 @@ export default function AekSecInfrastructre() {
               <p className="text-gray-300 leading-relaxed mb-10 max-w-xl">
                 Whether you are building a mass-scale AI data center for
                 pre-training, a large inferencing cluster, or smaller
-                distributed edge clusters—or interconnecting them all—AekSec has
+                distributed edge clusters—or interconnecting them all—KulpTech has
                 you covered.
               </p>
 

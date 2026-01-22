@@ -13,11 +13,11 @@ export default function SupportMenu() {
         <button
           onClick={() => {
             setActive(null);
-            navigate("/learn/learnAekSec");
+            navigate("/learn/learnKulpTech");
           }}
           className="text-blue-600 font-medium"
         >
-          Learn basis on AekSec
+          Learn basis on KulpTech
         </button>
         <LeftItem
           label="Products and Downloads"
@@ -41,7 +41,7 @@ export default function SupportMenu() {
           setActive={setActive}
         />
         <LeftItem
-          label="Cisco Community"
+          label="KulpTech Community"
           active={active}
           setActive={setActive}
         />
@@ -57,10 +57,10 @@ export default function SupportMenu() {
               <h2 className="text-2xl font-light mb-4">Learn</h2>
               <p className="text-gray-600 mb-6 max-w-2xl">
                 Access documentation, security notices, and support tools for
-                Cisco products.
+                KulpTech products.
               </p>
               <span className="text-blue-600 font-medium">
-                View Cisco Support →
+                View KulpTech Support →
               </span>
             </div>
 
@@ -80,7 +80,7 @@ export default function SupportMenu() {
               />
               <SupportCard
                 title="Technical Support"
-                description="Get help from Cisco experts 24/7. Open a case, chat with support, or find troubleshooting resources."
+                description="Get help from KulpTech experts 24/7. Open a case, chat with support, or find troubleshooting resources."
                 cta="Contact Support"
                 link="#"
               />
@@ -125,8 +125,8 @@ export default function SupportMenu() {
         {/* ===== TOOLS AND RESOURCES VIEW ===== */}
         {active === "Tools and Resources" && <ToolsResourcesView />}
 
-        {/* ===== CISCO COMMUNITY VIEW ===== */}
-        {active === "Cisco Community" && <CommunityView />}
+        {/* ===== KulpTech COMMUNITY VIEW ===== */}
+        {active === "KulpTech Community" && <CommunityView />}
       </div>
     </div>
   );
@@ -195,7 +195,7 @@ function ProductsDownloadsView() {
       <div className="mb-8">
         <h2 className="text-2xl font-light mb-4">Products and Downloads</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
-          Find software, firmware, and drivers for all Cisco products. Access
+          Find software, firmware, and drivers for all KulpTech products. Access
           the latest updates, patches, and upgrade paths.
         </p>
         <span className="text-blue-600 font-medium">
@@ -390,7 +390,7 @@ function ContactSupportView() {
       <div className="mb-8">
         <h2 className="text-2xl font-light mb-4">Contact Technical Support</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
-          Get expert assistance for your Cisco products. Open a case, chat with
+          Get expert assistance for your KulpTech products. Open a case, chat with
           support, or find contact information.
         </p>
         <span className="text-blue-600 font-medium">
@@ -487,7 +487,7 @@ function LicensesContractsView() {
         <h2 className="text-2xl font-light mb-4">Licenses and Contracts</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Manage your software licenses, view contracts, and access licensing
-          support for Cisco products.
+          support for KulpTech products.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Licensing Portal →
@@ -583,7 +583,7 @@ function ToolsResourcesView() {
         <h2 className="text-2xl font-light mb-4">Tools and Resources</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Access diagnostic tools, calculators, configuration generators, and
-          other resources for Cisco products.
+          other resources for KulpTech products.
         </p>
         <span className="text-blue-600 font-medium">Visit Tools Portal →</span>
       </div>
@@ -672,10 +672,10 @@ function CommunityView() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-2xl font-light mb-4">Cisco Community</h2>
+        <h2 className="text-2xl font-light mb-4">KulpTech Community</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Connect with peers, share knowledge, and get answers from experts and
-          other Cisco users worldwide.
+          other KulpTech users worldwide.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Community Portal →

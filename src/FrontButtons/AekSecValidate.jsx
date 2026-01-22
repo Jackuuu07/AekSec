@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function AekSecValidate() {
+export default function KulpTechValidate() {
   const [openItem, setOpenItem] = useState(0);
 
   return (
@@ -10,7 +10,7 @@ export default function AekSecValidate() {
         <section className="relative">
           <img
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-            alt="AekSec Validate"
+            alt="KulpTech Validate"
             className="w-full h-[520px] object-cover"
           />
 
@@ -24,7 +24,7 @@ export default function AekSecValidate() {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-8">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6">
-                AekSec Validate
+                KulpTech Validate
               </h1>
 
               <p className="text-gray-200 max-w-2xl text-lg">
@@ -41,7 +41,7 @@ export default function AekSecValidate() {
           {/* LEFT: ACCORDION CONTENT */}
           <div className="lg:col-span-2 space-y-6 text-gray-700">
             <p>
-              AekSec Validate is built for security architects, engineers, and
+              KulpTech Validate is built for security architects, engineers, and
               teams responsible for designing, deploying, and securing critical
               platforms. Our validated solutions help organizations reduce risk
               and accelerate outcomes.
@@ -49,12 +49,12 @@ export default function AekSecValidate() {
 
             {[
               {
-                title: "Who is AekSec Validate for?",
+                title: "Who is KulpTech Validate for?",
                 content:
                   "IT architects, security engineers, deployment teams, and organizations responsible for operating and securing enterprise platforms.",
               },
               {
-                title: "What does AekSec Validate provide?",
+                title: "What does KulpTech Validate provide?",
                 content:
                   "Design guides, deployment frameworks, validated architectures, and best practices aligned with real-world cybersecurity challenges.",
               },
@@ -116,10 +116,10 @@ export default function AekSecValidate() {
           </aside>
         </section>
 
-        {/* ================= SECTION 2: AEKSEC VALIDATE PORTFOLIO ================= */}
+        {/* ================= SECTION 2: KulpTech VALIDATE PORTFOLIO ================= */}
         <section className="max-w-7xl mx-auto px-8 py-20">
           <h2 className="text-3xl font-light mb-16 text-center">
-            AekSec Validate Portfolio
+            KulpTech Validate Portfolio
           </h2>
 
           {/* ITEM 1 */}
@@ -132,11 +132,11 @@ export default function AekSecValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                AekSec Validated Design Zone
+                KulpTech Validated Design Zone
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tested and documented approaches to securely design, deploy,
-                operate, and scale cybersecurity solutions. AekSec Validated
+                operate, and scale cybersecurity solutions. KulpTech Validated
                 Designs provide best practices and proven architectures for
                 enterprise-grade implementations.
               </p>
@@ -153,7 +153,7 @@ export default function AekSecValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                AekSec Validated Framework
+                KulpTech Validated Framework
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 An agile validation framework that delivers deep technical
@@ -174,10 +174,10 @@ export default function AekSecValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                AekSec Validated Profiles
+                KulpTech Validated Profiles
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                AekSec Validated Profiles define tested configurations,
+                KulpTech Validated Profiles define tested configurations,
                 topologies, and deployment models for hardware, software, and
                 cloud-based security environments—ensuring reliability,
                 compliance, and performance.

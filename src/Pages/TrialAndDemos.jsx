@@ -3,13 +3,10 @@ import { FiSearch, FiChevronDown, FiArrowRight,  FiPlayCircle,
   FiShield,
   FiActivity,
   FiLayers, } from "react-icons/fi";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export default function TrialsAndDemos() {
   return (
     <>
-      <Navbar />
       <div className="w-full">
         {/* ================= HERO ================= */}
         <section className="bg-[#071B33] py-28 relative overflow-hidden">
@@ -307,7 +304,8 @@ export default function TrialsAndDemos() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }
+
+

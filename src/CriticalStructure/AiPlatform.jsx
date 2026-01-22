@@ -21,7 +21,7 @@ export default function AiPlatform() {
               className="w-full h-full"
               allow="autoplay; fullscreen"
               allowFullScreen
-              title="AekSec Video"
+              title="KulpTech Video"
             />
           </div>
         </div>
@@ -35,12 +35,12 @@ export default function AiPlatform() {
         />
         <div className="relative max-w-7xl mx-auto px-8 py-32">
           <h1 className="text-5xl font-light max-w-3xl leading-tight">
-            AekSec Hypershield.
+            KulpTech Hypershield.
             <br /> AI-native. Ever aware.
             <br /> Everywhere.
           </h1>
           <p className="mt-6 max-w-2xl text-gray-300">
-            AekSec Hypershield is a next-generation security architecture built
+            KulpTech Hypershield is a next-generation security architecture built
             to defend AI-scale, cloud-first, and modern enterprise environments.
           </p>
 
@@ -153,7 +153,7 @@ export default function AiPlatform() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Discover how AekSec Hypershield is redefining enterprise security
+            Discover how KulpTech Hypershield is redefining enterprise security
             with AI-native protection and autonomous enforcement.
           </p>
 
@@ -183,7 +183,7 @@ export default function AiPlatform() {
             <div key={i}>
               <h3 className="font-medium mb-4">{title}</h3>
               <p className="text-gray-600 mb-4">
-                Insight into how AekSec Hypershield addresses modern attack
+                Insight into how KulpTech Hypershield addresses modern attack
                 surfaces and unknown threats.
               </p>
               <a className="text-blue-600">Read blog →</a>
@@ -205,7 +205,7 @@ export default function AiPlatform() {
               An AI-native security architecture rewriting the rules
             </h2>
             <p className="text-gray-600 mb-6">
-              Industry leaders discuss how AekSec Hypershield enables protection
+              Industry leaders discuss how KulpTech Hypershield enables protection
               against AI-scale attacks and autonomous threats.
             </p>
 

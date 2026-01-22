@@ -15,7 +15,7 @@ export default function About() {
                                     Building the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Trust Layer</span> for AI
                                 </h1>
                                 <p className="text-xl text-gray-600 max-w-4xl leading-relaxed mb-10">
-                                    AekSec is pioneering the critical infrastructure required to securely power the next generation of artificial intelligence. 
+                                    KulpTechis pioneering the critical infrastructure required to securely power the next generation of artificial intelligence. 
                                     We empower enterprises to design, deploy, and protect AI systems with confidence, scale, and trust—transforming how organizations 
                                     integrate AI into their core operations while maintaining uncompromising security and compliance standards.
                                 </p>
@@ -58,7 +58,7 @@ export default function About() {
                         <div className="text-center mb-16">
                             <h2 className="text-4xl font-bold mb-6">Our Story</h2>
                             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                                Founded in 2022 by a team of cybersecurity veterans and AI researchers, AekSec emerged from a simple observation: 
+                                Founded in 2022 by a team of cybersecurity veterans and AI researchers, KulpTechemerged from a simple observation: 
                                 the rapid adoption of artificial intelligence was creating unprecedented security challenges that traditional 
                                 infrastructure tools couldn't address.
                             </p>
@@ -94,7 +94,7 @@ export default function About() {
                                 <h3 className="text-2xl font-bold mb-4">Today</h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     Trusted by Fortune 500 companies, government agencies, and innovative startups, 
-                                    AekSec has become the standard for secure AI infrastructure in regulated industries.
+                                    KulpTechhas become the standard for secure AI infrastructure in regulated industries.
                                 </p>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ export default function About() {
                                     model behavior, and operational complexity.
                                 </p>
                                 <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-                                    AekSec enables businesses to innovate faster while maintaining strong security posture, 
+                                    KulpTechenables businesses to innovate faster while maintaining strong security posture, 
                                     regulatory compliance, and operational clarity across their AI lifecycle. We believe 
                                     that security shouldn't be an afterthought—it should be woven into the very fabric of 
                                     AI infrastructure.
@@ -156,7 +156,7 @@ export default function About() {
                                 </h2>
                                 <p className="text-gray-600 leading-relaxed mb-6 text-lg">
                                     We envision a future where AI systems are transparent, trusted, and safe by default. 
-                                    AekSec aims to become the foundational layer for AI-native enterprises worldwide—the 
+                                    KulpTechaims to become the foundational layer for AI-native enterprises worldwide—the 
                                     invisible infrastructure that makes advanced AI both powerful and trustworthy.
                                 </p>
                                 <p className="text-gray-600 leading-relaxed mb-8 text-lg">
@@ -464,7 +464,7 @@ export default function About() {
                     </div>
                 </section>
 
-                {/* ================= CONNECT WITH AEKSEC ================= */}
+                {/* ================= CONNECT WITH KulpTech================= */}
                 <section className="py-24 px-10 bg-gradient-to-b from-gray-50 to-white">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -477,7 +477,7 @@ export default function About() {
                                 </h2>
                                 
                                 <p className="text-lg text-gray-600 leading-relaxed mb-10">
-                                    Stay connected with AekSec to receive product updates, cutting-edge research insights, 
+                                    Stay connected with KulpTechto receive product updates, cutting-edge research insights, 
                                     security advisories, and announcements about the future of AI infrastructure security.
                                 </p>
                                 
@@ -526,7 +526,7 @@ export default function About() {
                                 
                                 <div className="space-y-6">
                                     <div className="p-5 bg-gradient-to-r from-white to-blue-50 rounded-xl border border-blue-100">
-                                        <h4 className="font-bold text-lg mb-2">AekSec Security Summit</h4>
+                                        <h4 className="font-bold text-lg mb-2">KulpTechSecurity Summit</h4>
                                         <p className="text-gray-600 mb-3">Annual conference on AI security, governance, and infrastructure</p>
                                         <span className="text-sm text-blue-600 font-medium">Next event: October 15-17, 2024</span>
                                     </div>
@@ -611,7 +611,7 @@ export default function About() {
                                     Security & Compliance
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    AekSec maintains industry-leading security certifications including SOC 2 Type II, 
+                                    KulpTechmaintains industry-leading security certifications including SOC 2 Type II, 
                                     ISO 27001, and HIPAA compliance. We employ end-to-end encryption, zero-trust architecture, 
                                     and continuous security monitoring across all our services.
                                 </p>
@@ -627,7 +627,7 @@ export default function About() {
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
                                     Access comprehensive documentation, API references, implementation guides, FAQs, 
-                                    and customer support resources to get the most out of AekSec products. Our technical 
+                                    and customer support resources to get the most out of KulpTechproducts. Our technical 
                                     documentation is continuously updated with best practices and troubleshooting guides.
                                 </p>
                                 <a href="#" className="inline-block mt-4 text-blue-600 font-medium hover:underline">
@@ -641,7 +641,7 @@ export default function About() {
                                     Terms & Conditions
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    By using AekSec services, you agree to our terms governing platform usage, security 
+                                    By using KulpTechservices, you agree to our terms governing platform usage, security 
                                     responsibilities, service limitations, and intellectual property rights. Our terms are 
                                     designed to be fair, transparent, and aligned with industry best practices.
                                 </p>
@@ -652,7 +652,7 @@ export default function About() {
                         </div>
                         
                         <div className="mt-16 pt-10 border-t border-gray-300 text-center text-gray-600">
-                            <p className="mb-4">© 2024 AekSec Technologies, Inc. All rights reserved.</p>
+                            <p className="mb-4">© 2024 KulpTechTechnologies, Inc. All rights reserved.</p>
                             <p className="text-sm">AI infrastructure security for the next generation of enterprise innovation.</p>
                         </div>
                     </div>

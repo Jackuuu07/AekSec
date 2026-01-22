@@ -36,19 +36,19 @@ export default function SupportMenu() {
         {active === null && (
           <div className="grid grid-cols-3 gap-10">
             <MenuCard
-              img="https://www.cisco.com/content/dam/cisco-cdc/site/images/header/support-home-penn1_brandlibrary-DSC0318.jpg"
+              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/support-home-penn1_brandlibrary-DSC0318.jpg"
               title="Technical Support"
-              text="Get help from AekSec experts."
+              text="Get help from KulpTech experts."
               cta="Open a case"
             />
             <MenuCard
-              img="https://www.cisco.com/content/dam/cisco-cdc/site/images/header/support-software-downloads-hatchlibrary-general-gettyPA-Cisco-1309760275.jpg"
+              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/support-software-downloads-hatchlibrary-general-gettyPA-KulpTech-1309760275.jpg"
               title="Product Downloads"
               text="Access software and updates."
               cta="Go to downloads"
             />
             <MenuCard
-              img="https://www.cisco.com/content/dam/cisco-cdc/site/images/header/support-licensing-hatchlibrary-security-gettyPA-Cisco-1518851638.jpg"
+              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/support-licensing-hatchlibrary-security-gettyPA-KulpTech-1518851638.jpg"
               title="Community Forums"
               text="Learn from peers and experts."
               cta="Join the community"
@@ -122,7 +122,7 @@ function DownloadsView() {
         </h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Access the latest software releases, firmware updates, drivers, and
-          tools for all AekSec products and solutions.
+          tools for all KulpTech products and solutions.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Downloads Center →
@@ -213,7 +213,7 @@ function DocumentationView() {
         </h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Comprehensive technical documentation, configuration guides, and
-          troubleshooting resources for all AekSec products.
+          troubleshooting resources for all KulpTech products.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Documentation Portal →
@@ -299,10 +299,10 @@ function CommunityView() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-2xl font-light mb-4">AekSec Community & Forums</h2>
+        <h2 className="text-2xl font-light mb-4">KulpTech Community & Forums</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Connect with peers, share knowledge, and get answers from experts and
-          other AekSec users worldwide.
+          other KulpTech users worldwide.
         </p>
         <span className="text-blue-600 font-medium cursur-pointer">
           Visit Community Portal →
@@ -391,7 +391,7 @@ function LicensingView() {
         </h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Manage your software licenses, view entitlements, and access licensing
-          resources for all AekSec products.
+          resources for all KulpTech products.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Licensing Portal →
@@ -480,7 +480,7 @@ function ContactSupportView() {
         </h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
           Get expert technical assistance, open support cases, and access
-          various support channels for your AekSec products.
+          various support channels for your KulpTech products.
         </p>
         <span className="text-blue-600 font-medium">
           Visit Support Center →

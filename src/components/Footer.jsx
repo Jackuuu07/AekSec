@@ -19,7 +19,7 @@ export default function Footer() {
             <Link to="/about" className="hover:text-blue-600">Careers</Link>
             <Link to="/about" className="hover:text-blue-600">Contact</Link>
             <Link to="/about" className="hover:text-blue-600">
-              Connect with AekSec
+              Connect with KulpTech
             </Link>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div>
-            © 2025 AekSec Systems, Inc.
+            © 2026 KulpTech Security, Inc.
           </div>
 
         </div>

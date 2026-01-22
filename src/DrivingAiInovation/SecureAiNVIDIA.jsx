@@ -6,7 +6,7 @@ export default function SecureAiNVIDIA() {
   const tabContent = {
     finance: {
       title: "AI at the Core: Financial Services",
-      desc: "Explore how AekSec and NVIDIA help financial institutions modernize infrastructure, detect fraud faster, and deliver secure AI-driven services at scale.",
+      desc: "Explore how KulpTech and NVIDIA help financial institutions modernize infrastructure, detect fraud faster, and deliver secure AI-driven services at scale.",
     },
     public: {
       title: "Modernizing the Public Sector",
@@ -108,7 +108,7 @@ export default function SecureAiNVIDIA() {
         <section className="relative bg-[#071b33] text-white overflow-hidden">
           <div className="max-w-7xl mx-auto px-8 py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-sm mb-4">AekSec and NVIDIA</p>
+              <p className="text-sm mb-4">KulpTech and NVIDIA</p>
               <h1 className="text-5xl font-light leading-tight mb-6">
                 Bringing AI to the enterprise
               </h1>
@@ -122,7 +122,7 @@ export default function SecureAiNVIDIA() {
             </div>
 
             <div className="flex items-center justify-center gap-8">
-              <span className="text-4xl font-semibold">AekSec</span>
+              <span className="text-4xl font-semibold">KulpTech</span>
               <span className="h-12 w-px bg-white/40"></span>
               <span className="text-4xl font-semibold">NVIDIA</span>
             </div>
@@ -134,7 +134,7 @@ export default function SecureAiNVIDIA() {
           {/* LEFT COLUMN */}
           <div>
             <h2 className="text-4xl font-light mb-8">
-              AI your way, with AekSec and NVIDIA
+              AI your way, with KulpTech and NVIDIA
             </h2>
 
             {/* Video under heading */}
@@ -170,7 +170,7 @@ export default function SecureAiNVIDIA() {
             <div>
               <h3 className="font-semibold mb-2">Networking your way</h3>
               <p>
-                High-performance networking powered by AekSec and NVIDIA
+                High-performance networking powered by KulpTech and NVIDIA
                 Spectrum-X.
               </p>
             </div>
@@ -223,7 +223,7 @@ export default function SecureAiNVIDIA() {
           <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-4xl font-light mb-6">
-                AekSec Secure AI Factory with NVIDIA
+                KulpTech Secure AI Factory with NVIDIA
               </h2>
               <p className="text-gray-700 text-lg">
                 A modular reference design combining high-performance AI,
@@ -247,7 +247,7 @@ export default function SecureAiNVIDIA() {
         {/* ================= COMPONENTS ================= */}
         <section className="max-w-7xl mx-auto px-8 py-24">
           <h2 className="text-4xl font-light mb-16 text-center">
-            Components of a AekSec Secure AI Factory with NVIDIA
+            Components of a KulpTech Secure AI Factory with NVIDIA
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-x-16 gap-y-20 text-sm">
@@ -278,12 +278,12 @@ export default function SecureAiNVIDIA() {
 
               <p className="text-gray-600 leading-relaxed mb-4">
                 Secure AI models, applications, workloads, and infrastructure
-                with AekSec AI Defense integrated with NVIDIA AI, AekSec Hybrid
+                with KulpTech AI Defense integrated with NVIDIA AI, KulpTech Hybrid
                 Mesh Firewall, and Splunk Enterprise Security TDIR Platform.
               </p>
 
               <a className="text-blue-600 font-medium hover:underline cursor-pointer">
-                Explore AekSec Security →
+                Explore KulpTech Security →
               </a>
             </div>
 
@@ -309,16 +309,16 @@ export default function SecureAiNVIDIA() {
               <h3 className="font-semibold mb-4">Compute</h3>
 
               <p className="font-medium mb-3">
-                AekSec Servers – Unified Computing System (UCS)
+                KulpTech Servers – Unified Computing System (UCS)
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                AekSec UCS® Servers based on NVIDIA HGX, MGX, and RTX PRO 6000
+                KulpTech UCS® Servers based on NVIDIA HGX, MGX, and RTX PRO 6000
                 Blackwell Server Edition.
               </p>
 
               <a className="text-blue-600 font-medium hover:underline cursor-pointer">
-                Explore AekSec UCS →
+                Explore KulpTech UCS →
               </a>
             </div>
 
@@ -329,7 +329,7 @@ export default function SecureAiNVIDIA() {
               <p className="font-medium mb-3">Data center switching</p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Your network, your way: network infrastructure powered by AekSec
+                Your network, your way: network infrastructure powered by KulpTech
                 Data Center switching and NVIDIA Spectrum-X.
               </p>
 
@@ -343,7 +343,7 @@ export default function SecureAiNVIDIA() {
               <h3 className="font-semibold mb-4">Storage</h3>
 
               <p className="font-medium mb-3">
-                AekSec and NVIDIA-certified storage partners
+                KulpTech and NVIDIA-certified storage partners
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -389,7 +389,7 @@ export default function SecureAiNVIDIA() {
             <div className="bg-white p-10 rounded-xl shadow-sm">
               <h3 className="font-semibold text-lg mb-4">Build your own</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Buy and deploy individual AekSec and partner products, as
+                Buy and deploy individual KulpTech and partner products, as
                 needed, to build your Secure AI Factory.
               </p>
             </div>
@@ -400,8 +400,8 @@ export default function SecureAiNVIDIA() {
                 AI PODs with on-prem network management
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Modular, pre-validated infrastructure with AekSec Nexus
-                Dashboard, full-stack buy and deploy, backed by AekSec Validated
+                Modular, pre-validated infrastructure with KulpTech Nexus
+                Dashboard, full-stack buy and deploy, backed by KulpTech Validated
                 Designs (CVDs).
               </p>
             </div>
@@ -412,8 +412,8 @@ export default function SecureAiNVIDIA() {
                 AI PODs with cloud management
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Turnkey infrastructure with full-stack buy and deploy. AekSec
-                Nexus Hyperfabric for cloud-managed networking, and AekSec Nexus
+                Turnkey infrastructure with full-stack buy and deploy. KulpTech
+                Nexus Hyperfabric for cloud-managed networking, and KulpTech Nexus
                 Hyperfabric AI for cloud-managed infrastructure.
               </p>
             </div>
@@ -422,7 +422,7 @@ export default function SecureAiNVIDIA() {
           {/* CTA */}
           <div className="mt-16 text-center">
             <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-10 py-4 rounded-full font-medium">
-              Discover AekSec AI PODs
+              Discover KulpTech AI PODs
             </button>
           </div>
         </section>
@@ -430,13 +430,13 @@ export default function SecureAiNVIDIA() {
         {/* ================= AI DEFENSE ================= */}
         <section className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-light mb-6">AekSec AI Defense</h2>
+            <h2 className="text-4xl font-light mb-6">KulpTech AI Defense</h2>
             <p className="text-gray-700 text-lg mb-8">
               Safeguard the development and usage of AI applications across your
               enterprise.
             </p>
             <button className="bg-blue-600 text-white px-6 py-3 rounded-full">
-              Explore AekSec AI Defense
+              Explore KulpTech AI Defense
             </button>
           </div>
 
@@ -451,7 +451,7 @@ export default function SecureAiNVIDIA() {
         {/* ================= FIRESIDE CHAT (TABS) ================= */}
         <section className="max-w-7xl mx-auto px-8 py-24">
           <h2 className="text-4xl font-light text-center mb-10">
-            AekSec + NVIDIA fireside chats
+            KulpTech + NVIDIA fireside chats
           </h2>
 
           {/* Tabs */}
@@ -484,7 +484,7 @@ export default function SecureAiNVIDIA() {
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-10">
-                Hear directly from AekSec and NVIDIA experts as they share
+                Hear directly from KulpTech and NVIDIA experts as they share
                 real-world insights, architectural best practices, and lessons
                 learned while deploying AI at enterprise scale across
                 industries.
@@ -499,7 +499,7 @@ export default function SecureAiNVIDIA() {
             <div className="w-full">
               <img
                 src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/solutions/artificial-intelligence/Redefining-enterprise-AI_5110_feature.jpg"
-                alt="AekSec and NVIDIA Fireside Chat"
+                alt="KulpTech and NVIDIA Fireside Chat"
                 className="w-full  shadow-lg object-cover"
               />
             </div>
@@ -515,7 +515,7 @@ export default function SecureAiNVIDIA() {
               <li>FAQ</li>
               <li>Reference Architectures</li>
               <li>State of AI Security report</li>
-              <li>AekSec AI PODs overview</li>
+              <li>KulpTech AI PODs overview</li>
             </ul>
           </div>
         </section>

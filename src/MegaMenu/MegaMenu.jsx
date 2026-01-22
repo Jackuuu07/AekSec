@@ -33,12 +33,7 @@ const industrySubmenus = {
       { label: "Banking", to: "/industries/banking/banking" },
       { label: "Capital Markets", to: "/industries/banking/capital-markets" },
       { label: "Insurance", to: "/industries/banking/insurance" },
-      {
-        label: "Wealth Management",
-        to: "/industries/banking/wealth-management",
-      },
-      { label: "FinTech", to: "/industries/banking/fintech" },
-    ],
+      ],
   },
   "Comms, Media & Information Services": {
     items: [
@@ -46,7 +41,6 @@ const industrySubmenus = {
       { label: "Media & Entertainment", to: "/industries/comms/media" },
       { label: "Information Services", to: "/industries/comms/info-services" },
       { label: "Broadcasting", to: "/industries/comms/broadcasting" },
-      { label: "Publishing", to: "/industries/comms/publishing" },
     ],
   },
   Consumer: {
@@ -54,8 +48,6 @@ const industrySubmenus = {
       { label: "Retail", to: "/industries/consumer/retail" },
       { label: "E-commerce", to: "/industries/consumer/ecommerce" },
       { label: "Consumer Goods", to: "/industries/consumer/goods" },
-      { label: "Hospitality", to: "/industries/consumer/hospitality" },
-      { label: "Travel & Tourism", to: "/industries/consumer/travel" },
     ],
   },
   "Energy, Manufacturing and Resources": {
@@ -63,7 +55,6 @@ const industrySubmenus = {
       { label: "Oil & Gas", to: "/industries/energy/oil-gas" },
       { label: "Utilities", to: "/industries/energy/utilities" },
       { label: "Manufacturing", to: "/industries/energy/manufacturing" },
-      { label: "Mining", to: "/industries/energy/mining" },
       { label: "Renewable Energy", to: "/industries/energy/renewable" },
     ],
   },
@@ -76,67 +67,24 @@ const industrySubmenus = {
       { label: "Cloud Services", to: "/industries/technology/cloud-services" },
     ],
   },
-  Healthcare: {
-    items: [
-      {
-        label: "Hospitals & Providers",
-        to: "/industries/healthcare/hospitals",
-      },
-      { label: "Health Insurance", to: "/industries/healthcare/insurance" },
-      { label: "Pharmaceuticals", to: "/industries/healthcare/pharma" },
-      { label: "Medical Research", to: "/industries/healthcare/research" },
-      { label: "Digital Health", to: "/industries/healthcare/digital" },
-    ],
-  },
+  
   "Hi-Tech": {
     items: [
       { label: "Semiconductors", to: "/industries/hi-tech/semiconductors" },
       { label: "Electronics", to: "/industries/hi-tech/electronics" },
       { label: "Robotics", to: "/industries/hi-tech/robotics" },
-      { label: "AI & ML", to: "/industries/hi-tech/ai-ml" },
       { label: "IoT", to: "/industries/hi-tech/iot" },
     ],
   },
-  "Life Sciences & Pharma": {
-    items: [
-      { label: "Biotechnology", to: "/industries/life-sciences/biotech" },
-      { label: "Pharmaceuticals", to: "/industries/life-sciences/pharma" },
-      { label: "Clinical Research", to: "/industries/life-sciences/clinical" },
-      { label: "Medical Devices", to: "/industries/life-sciences/devices" },
-      { label: "Diagnostics", to: "/industries/life-sciences/diagnostics" },
-    ],
-  },
-  "Medical Devices": {
-    items: [
-      {
-        label: "Diagnostic Equipment",
-        to: "/industries/medical-devices/diagnostic",
-      },
-      {
-        label: "Therapeutic Devices",
-        to: "/industries/medical-devices/therapeutic",
-      },
-      {
-        label: "Surgical Instruments",
-        to: "/industries/medical-devices/surgical",
-      },
-      {
-        label: "Patient Monitoring",
-        to: "/industries/medical-devices/monitoring",
-      },
-      { label: "Imaging Systems", to: "/industries/medical-devices/imaging" },
-    ],
-  },
+ 
+  
   "Platforms, Software Products and Gaming": {
     items: [
       { label: "Enterprise Software", to: "/industries/platforms/enterprise" },
       { label: "Consumer Software", to: "/industries/platforms/consumer" },
       { label: "Mobile Apps", to: "/industries/platforms/mobile-apps" },
       { label: "Video Games", to: "/industries/platforms/gaming" },
-      {
-        label: "Platform Development",
-        to: "/industries/platforms/development",
-      },
+      
     ],
   },
 };
@@ -272,22 +220,13 @@ export default function MegaMenu({
               icon: <MdSettings />,
               label: "Technology Products and Services",
             },
-            {
-              icon: <MdLocalHospital />,
-              label: "Healthcare",
-            },
+            
             {
               icon: <MdDevicesOther />,
               label: "Hi-Tech",
             },
-            {
-              icon: <MdScience />,
-              label: "Life Sciences & Pharma",
-            },
-            {
-              icon: <MdBusiness />,
-              label: "Medical Devices",
-            },
+            
+            
             {
               icon: <FiMonitor />,
               label: "Platforms, Software Products and Gaming",
