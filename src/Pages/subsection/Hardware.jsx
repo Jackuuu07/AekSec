@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Shield, Chip, Server, Lock, Zap } from 'lucide-react';
+import { Cpu, Shield, Server, Lock, Zap } from 'lucide-react';
 
 export default function Hardware() {
   return (
@@ -45,7 +45,7 @@ export default function Hardware() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-xl shadow-lg p-8 border border-amber-100">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-amber-500 to-orange-400 flex items-center justify-center mb-6">
-                <Chip className="w-7 h-7 text-white" />
+                <Lock className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Embedded Security</h3>
               <p className="text-gray-600 mb-4">

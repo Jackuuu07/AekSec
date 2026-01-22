@@ -78,6 +78,33 @@ import InnovationNetwork from "../Pages/aboutkulptech/InnovationNetwork";
 import KulpTechVentures from "../Pages/aboutkulptech/KulpTechVentures";
 import KulpTechWellbeing from "../Pages/aboutkulptech/KulpTechWellbeing";
 
+// CORRECT IMPORTS for industry pages:
+import Banking from "../Pages/subsection/Banking";
+import CapitalMarkets from "../Pages/subsection/CapitalMarkets";
+import Insurance from "../Pages/subsection/Insurance";
+import Telecom from "../Pages/subsection/Telecom";
+import Media from "../Pages/subsection/Media";
+import InfoServices from "../Pages/subsection/InfoServices";
+import Retail from "../Pages/subsection/Retail";
+import Ecommerce from "../Pages/subsection/Ecommerce";
+import ConsumerGoods from "../Pages/subsection/ConsumerGoods";
+import OilGas from "../Pages/subsection/OilGas";
+import Utilities from "../Pages/subsection/Utilities";
+import Manufacturing from "../Pages/subsection/Manufacturing";
+import RenewableEnergy from "../Pages/subsection/RenewableEnergy";
+import SoftwareDevelopment from "../Pages/subsection/SoftwareDevelopment";
+import ITServices from "../Pages/subsection/ITServices";
+import Hardware from "../Pages/subsection/Hardware";
+import SaaS from "../Pages/subsection/SaaS";
+import CloudServices from "../Pages/subsection/CloudServices";
+
+// Add these imports to your existing imports section
+import ConnectWithKulpTech from "../connect/ConnectWithKulpTech";
+import Feedback from "../connect/Feedback";
+import PrivacyPolicy from "../connect/PrivacyPolicy";
+import CookiePolicy from "../connect/CookiePolicy";
+import HelpCenter from "../connect/HelpCenter";
+import TermsAndConditions from "../connect/TermsAndConditions";
 export default function AppRouter() {
   // const location = useLocation();
 
@@ -87,86 +114,50 @@ export default function AppRouter() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/explore" element={<Explore />} />
-
         <Route path="/login" element={<Login />} />
-
         <Route path="/register" element={<Register />} />
-
         <Route path="/solutions/solution-lab" element={<SolutionLableShow />} />
-
         <Route path="/learn" element={<LearnAekSecShow />} />
-
         <Route path="/products/product-service" element={<ProductShow />} />
-
         <Route path="/support/support-lab" element={<SupportShow />} />
-
         <Route path="/why/whyAekSec" element={<WhyAekSecShow />} />
-
         <Route path="/about" element={<About />} />
-
         <Route path="/blog" element={<Blog />} />
-
         <Route path="/kulptech-validated" element={<AekSecValidate />} />
-
         <Route path="/certifications" element={<Certifications />} />
-
         <Route path="/Community" element={<Community />} />
-
         <Route path="/Downloads" element={<Downloads />} />
-
         <Route path="/Support" element={<Support />} />
-
         <Route path="/Training" element={<Training />} />
-
         <Route path="/products/ai-platform" element={<AiPlatform />} />
-
         <Route path="/products/ai-defense" element={<AiDefence />} />
-
         <Route path="/products/hyperfabric" element={<AiNexsus />} />
-
         <Route
           path="/report/AiReadiness-report"
           element={<AiReadinessReport />}
         />
-
         <Route
           path="/report/StateofSecurity-report"
           element={<StateofSecurity />}
         />
-
         <Route path="/report/SecuringAi-report" element={<SecuringAi />} />
-
         <Route path="/AekSec-canvas" element={<AekSecCanvas />} />
-
         <Route
           path="/AekSec-infrastructure"
           element={<AekSecInfrastructre />}
         />
-
         <Route path="/AekSec-SecureAiFactory" element={<SecureAiNVIDIA />} />
-
         <Route path="/Exploremoreai-news" element={<ExploreMoreAINews />} />
-
         <Route path="/AiCanvaslearning-inside" element={<AiCanvasPopUp />} />
-
         <Route path="/SecureAi-inside" element={<SecureAiPopUp />} />
-
         <Route path="/trial-demos" element={<TrialsAndDemos />} />
-
         <Route path="/collaboration" element={<BusinessCollaboration />} />
-
         <Route path="/networking" element={<Networking />} />
-
         <Route path="/computing" element={<Computing />} />
-
         <Route path="/career" element={<Career />} />
-
         <Route path="/what-we-think" element={<WhatWeThink />} />
-
         <Route path="/contact" element={<Contact />} />
-
         <Route path="/services/applications" element={<Applications />} />
         <Route
           path="/services/kulp-intelligence"
@@ -186,7 +177,6 @@ export default function AppRouter() {
         />
         <Route path="/services/engineering" element={<Engineering />} />
         <Route path="/services/sustainability" element={<Sustainability />} />
-
         <Route path="/about/analyst-speak" element={<AnalystSpeak />} />
         <Route path="/about/awards" element={<AwardsRecognitions />} />
         <Route path="/about/case-studies" element={<CaseStudies />} />
@@ -196,7 +186,6 @@ export default function AppRouter() {
         />
         <Route path="/about/leadership" element={<Leadership />} />
         <Route path="/about/locations" element={<Locations />} />
-
         {/* Our Values Routes */}
         <Route path="/values/inclusion" element={<InclusionBelonging />} />
         <Route path="/values/investors" element={<Investors />} />
@@ -207,11 +196,58 @@ export default function AppRouter() {
           path="/values/supplier-diversity"
           element={<SupplierDiversity />}
         />
-
         {/* Innovation Routes */}
         <Route path="/innovation/network" element={<InnovationNetwork />} />
         <Route path="/innovation/ventures" element={<KulpTechVentures />} />
         <Route path="/innovation/wellbeing" element={<KulpTechWellbeing />} />
+
+        <Route path="/industries/banking/banking" element={<Banking />} />
+        <Route
+          path="/industries/banking/capital-markets"
+          element={<CapitalMarkets />}
+        />
+        <Route path="/industries/banking/insurance" element={<Insurance />} />
+        <Route path="/industries/comms/telecom" element={<Telecom />} />
+        <Route path="/industries/comms/media" element={<Media />} />
+        <Route
+          path="/industries/comms/info-services"
+          element={<InfoServices />}
+        />
+        {/* <Route path="/industries/comms/broadcasting" element={<Broadcasting />} /> */}
+        <Route path="/industries/consumer/retail" element={<Retail />} />
+        <Route path="/industries/consumer/ecommerce" element={<Ecommerce />} />
+        <Route path="/industries/consumer/goods" element={<ConsumerGoods />} />
+        <Route path="/industries/energy/oil-gas" element={<OilGas />} />
+        <Route path="/industries/energy/utilities" element={<Utilities />} />
+        <Route
+          path="/industries/energy/manufacturing"
+          element={<Manufacturing />}
+        />
+        <Route
+          path="/industries/energy/renewable"
+          element={<RenewableEnergy />}
+        />
+        <Route
+          path="/industries/technology/software"
+          element={<SoftwareDevelopment />}
+        />
+        <Route
+          path="/industries/technology/it-services"
+          element={<ITServices />}
+        />
+        <Route path="/industries/technology/hardware" element={<Hardware />} />
+        <Route path="/industries/technology/saas" element={<SaaS />} />
+        <Route
+          path="/industries/technology/cloud-services"
+          element={<CloudServices />}
+        />
+
+        <Route path="/connect" element={<ConnectWithKulpTech />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/help" element={<HelpCenter />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
         
       </Routes>
 

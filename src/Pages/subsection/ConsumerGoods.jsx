@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, Shield, Factory, Truck, BarCode, TrendingUp, Users, Globe } from 'lucide-react';
+import { Package, Shield, Factory, Truck, TrendingUp, Barcode, Users, Globe } from 'lucide-react';
 
 export default function ConsumerGoods() {
   return (
@@ -73,7 +73,7 @@ export default function ConsumerGoods() {
             
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-emerald-100">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-teal-500 to-cyan-400 flex items-center justify-center mb-6">
-                <BarCode className="w-8 h-8 text-white" />
+                {/* <BarCode className="w-8 h-8 text-white" /> */}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Anti-Counterfeiting</h3>
               <p className="text-gray-600 mb-6">

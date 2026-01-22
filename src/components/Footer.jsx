@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-} from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-100 px-10 pt-16 pb-8 text-gray-500">
       <div className="max-w-7xl mx-auto">
-
         {/* ===== Top Row ===== */}
         <div className="flex flex-col md:flex-row justify-between gap-10 cursor-pointer">
-
           {/* Left Links */}
           <div className="flex flex-wrap gap-6 text-sm font-medium">
-            <Link to="/about" className="hover:text-blue-600">About</Link>
-            <Link to="/about" className="hover:text-blue-600">Careers</Link>
-            <Link to="/about" className="hover:text-blue-600">Contact</Link>
             <Link to="/about" className="hover:text-blue-600">
+              About
+            </Link>
+            <Link to="/career" className="hover:text-blue-600">
+              Careers
+            </Link>
+            <Link to="/contact" className="hover:text-blue-600">
+              Contact
+            </Link>
+            <Link to="/connect" className="hover:text-blue-600">
               Connect with KulpTech
             </Link>
           </div>
@@ -36,14 +36,19 @@ export default function Footer() {
             </Link>
 
             {/* Threads & X */}
-            <Link to="/about" className="font-semibold hover:text-blue-600 transition">
+            <Link
+              to="/about"
+              className="font-semibold hover:text-blue-600 transition"
+            >
               Threads
             </Link>
-            <Link to="/about" className="font-semibold hover:text-blue-600 transition">
+            <Link
+              to="/about"
+              className="font-semibold hover:text-blue-600 transition"
+            >
               X
             </Link>
           </div>
-
         </div>
 
         {/* ===== Divider ===== */}
@@ -51,25 +56,28 @@ export default function Footer() {
 
         {/* ===== Bottom Row ===== */}
         <div className="flex flex-col md:flex-row justify-between gap-6 text-sm">
-
           {/* Legal Links */}
           <div className="flex flex-wrap gap-6 cursor-pointer">
-            <Link to="/about" className="hover:text-blue-600">Feedback</Link>
-            <Link to="/about" className="hover:text-blue-600">Privacy</Link>
-            <Link to="/about" className="hover:text-blue-600">Cookies</Link>
-            <Link to="/about" className="hover:text-blue-600">Help</Link>
-            <Link to="/about" className="hover:text-blue-600">
+            <Link to="/feedback" className="hover:text-blue-600">
+              Feedback
+            </Link>
+            <Link to="/privacy" className="hover:text-blue-600">
+              Privacy
+            </Link>
+            <Link to="/cookie-policy" className="hover:text-blue-600">
+              Cookies
+            </Link>
+            <Link to="/help" className="hover:text-blue-600">
+              Help
+            </Link>
+            <Link to="/terms-conditions" className="hover:text-blue-600">
               Terms & Conditions
             </Link>
           </div>
 
           {/* Copyright */}
-          <div>
-            © 2026 KulpTech Security, Inc.
-          </div>
-
+          <div>© 2026 KulpTech Security, Inc.</div>
         </div>
-
       </div>
     </footer>
   );
