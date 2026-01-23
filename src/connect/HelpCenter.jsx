@@ -46,7 +46,7 @@ const HelpCenter = () => {
             <HelpCircle className="w-12 h-12" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            KulpTech Security Help Center
+            KalpTech Security Help Center
           </h1>
           <p className="text-xl mb-10 max-w-3xl mx-auto">
             Find answers, guides, and resources to secure your organization.
@@ -191,7 +191,7 @@ const HelpCenter = () => {
                     </p>
                     <div className="space-y-2">
                       <p className="font-semibold text-red-900">📞 Emergency Hotline: +1-800-KULP-911</p>
-                      <p className="font-semibold text-red-900">✉️ Emergency Email: soc@kulptech.com</p>
+                      <p className="font-semibold text-red-900">✉️ Emergency Email: soc@KalpTech.com</p>
                     </div>
                   </div>
                 </div>

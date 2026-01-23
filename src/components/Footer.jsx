@@ -19,7 +19,7 @@ export default function Footer() {
               Contact
             </Link>
             <Link to="/connect" className="hover:text-blue-600">
-              Connect with KulpTech
+              Connect with KalpTech
             </Link>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div>© 2026 KulpTech Security, Inc.</div>
+          <div>© 2026 KalpTech Security, Inc.</div>
         </div>
       </div>
     </footer>

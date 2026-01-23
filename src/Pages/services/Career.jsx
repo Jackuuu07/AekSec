@@ -105,7 +105,7 @@ export default function Career() {
       {/* Why Join Us */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Why Join KulpTech?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Why Join KalpTech?</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
@@ -175,7 +175,7 @@ export default function Career() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Innovation & Collaboration</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                At KulpTech, we foster an environment where security experts, engineers, 
+                At KalpTech, we foster an environment where security experts, engineers, 
                 and researchers collaborate to solve complex security challenges. Our 
                 culture encourages experimentation, continuous learning, and pushing 
                 the boundaries of what's possible in cybersecurity.

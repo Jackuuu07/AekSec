@@ -39,7 +39,7 @@ export default function AiReadinessReport() {
         <section className="relative bg-[#020b1c] text-white overflow-hidden">
           <div className="max-w-7xl mx-auto px-8 py-28 text-center">
             <h1 className="text-5xl font-light mb-6">
-              KulpTech AI Readiness Index
+              KalpTech AI Readiness Index
             </h1>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-10">
               Where organizations stand today—and what it takes to compete in an
@@ -87,7 +87,7 @@ export default function AiReadinessReport() {
                 Readiness isn’t the destination, it’s the journey
               </h2>
               <p className="text-gray-600 max-w-3xl">
-                Each year, KulpTech benchmarks how enterprises prepare, deploy,
+                Each year, KalpTech benchmarks how enterprises prepare, deploy,
                 govern, and secure AI—revealing who leads, who follows, and
                 where risks remain.
               </p>
@@ -249,7 +249,7 @@ export default function AiReadinessReport() {
               Design your AI future with confidence
             </h2>
             <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-medium transition">
-              Get started with KulpTech
+              Get started with KalpTech
             </button>
           </div>
         </section>

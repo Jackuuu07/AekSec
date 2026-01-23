@@ -16,7 +16,7 @@ export default function CloudServices() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech provides enterprise-grade security for AWS, Azure, Google Cloud, 
+            KalpTech provides enterprise-grade security for AWS, Azure, Google Cloud, 
             and hybrid cloud environments with unified protection.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

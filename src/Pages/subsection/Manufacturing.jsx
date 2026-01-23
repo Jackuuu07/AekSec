@@ -16,7 +16,7 @@ export default function Manufacturing() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech provides industrial cybersecurity for smart factories, protecting 
+            KalpTech provides industrial cybersecurity for smart factories, protecting 
             production lines, robotics, and IoT manufacturing systems.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -97,7 +97,7 @@ export default function Manufacturing() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-6">KulpTech Solutions</h3>
+                <h3 className="text-2xl font-bold mb-6">KalpTech Solutions</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center">
                     <Shield className="w-5 h-5 text-green-400 mr-3" />

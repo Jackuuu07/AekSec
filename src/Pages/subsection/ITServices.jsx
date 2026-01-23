@@ -16,7 +16,7 @@ export default function ITServices() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech provides comprehensive managed security services for IT infrastructure, 
+            KalpTech provides comprehensive managed security services for IT infrastructure, 
             cloud environments, and enterprise networks.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

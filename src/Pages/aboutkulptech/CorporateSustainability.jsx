@@ -118,7 +118,7 @@ export default function CorporateSustainability() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Sustainability Mission</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              At KulpTech, we believe that cybersecurity and sustainability go hand in hand. We're committed to protecting 
+              At KalpTech, we believe that cybersecurity and sustainability go hand in hand. We're committed to protecting 
               digital assets while minimizing our environmental impact and maximizing our positive social contribution.
             </p>
           </div>

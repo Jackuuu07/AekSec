@@ -20,7 +20,7 @@ export default function Investors() {
                 </div>
               </div>
               <p className="text-xl text-gray-300 max-w-2xl">
-                Investing in the future of cybersecurity. KulpTech Security delivers superior returns through 
+                Investing in the future of cybersecurity. KalpTech Security delivers superior returns through 
                 market-leading protection technology and sustained revenue growth.
               </p>
             </div>

@@ -18,7 +18,7 @@ export default function Banking() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech provides comprehensive security solutions for banking institutions, safeguarding 
+            KalpTech provides comprehensive security solutions for banking institutions, safeguarding 
             transactions, customer data, and financial systems from sophisticated cyber threats.
           </p>
         </div>

@@ -47,9 +47,9 @@ export default function ProductsMenu() {
             />
             <PromoCard
               img="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-              title="KulpTech Services"
+              title="KalpTech Services"
               text="Deliver tangible business value with less risk and effort."
-              cta="Choose KulpTech Services"
+              cta="Choose KalpTech Services"
             />
           </div>
         )}

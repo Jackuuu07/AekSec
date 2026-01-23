@@ -39,7 +39,7 @@ export default function ScalingAIEnterprise() {
           </p>
 
           <p>
-            To address these challenges, KulpTech and NVIDIA are delivering
+            To address these challenges, KalpTech and NVIDIA are delivering
             validated, enterprise-ready AI infrastructure that unifies compute,
             networking, security, and observability into a cohesive
             architecture.

@@ -10,7 +10,7 @@ export default function KulpTechValidate() {
         <section className="relative">
           <img
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-            alt="KulpTech Validate"
+            alt="KalpTech Validate"
             className="w-full h-[520px] object-cover"
           />
 
@@ -24,7 +24,7 @@ export default function KulpTechValidate() {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-8">
               <h1 className="text-4xl md:text-5xl font-light text-white mb-6">
-                KulpTech Validate
+                KalpTech Validate
               </h1>
 
               <p className="text-gray-200 max-w-2xl text-lg">
@@ -41,7 +41,7 @@ export default function KulpTechValidate() {
           {/* LEFT: ACCORDION CONTENT */}
           <div className="lg:col-span-2 space-y-6 text-gray-700">
             <p>
-              KulpTech Validate is built for security architects, engineers, and
+              KalpTech Validate is built for security architects, engineers, and
               teams responsible for designing, deploying, and securing critical
               platforms. Our validated solutions help organizations reduce risk
               and accelerate outcomes.
@@ -49,12 +49,12 @@ export default function KulpTechValidate() {
 
             {[
               {
-                title: "Who is KulpTech Validate for?",
+                title: "Who is KalpTech Validate for?",
                 content:
                   "IT architects, security engineers, deployment teams, and organizations responsible for operating and securing enterprise platforms.",
               },
               {
-                title: "What does KulpTech Validate provide?",
+                title: "What does KalpTech Validate provide?",
                 content:
                   "Design guides, deployment frameworks, validated architectures, and best practices aligned with real-world cybersecurity challenges.",
               },
@@ -116,10 +116,10 @@ export default function KulpTechValidate() {
           </aside>
         </section>
 
-        {/* ================= SECTION 2: KulpTech VALIDATE PORTFOLIO ================= */}
+        {/* ================= SECTION 2: KalpTech VALIDATE PORTFOLIO ================= */}
         <section className="max-w-7xl mx-auto px-8 py-20">
           <h2 className="text-3xl font-light mb-16 text-center">
-            KulpTech Validate Portfolio
+            KalpTech Validate Portfolio
           </h2>
 
           {/* ITEM 1 */}
@@ -132,11 +132,11 @@ export default function KulpTechValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                KulpTech Validated Design Zone
+                KalpTech Validated Design Zone
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Tested and documented approaches to securely design, deploy,
-                operate, and scale cybersecurity solutions. KulpTech Validated
+                operate, and scale cybersecurity solutions. KalpTech Validated
                 Designs provide best practices and proven architectures for
                 enterprise-grade implementations.
               </p>
@@ -153,7 +153,7 @@ export default function KulpTechValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                KulpTech Validated Framework
+                KalpTech Validated Framework
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 An agile validation framework that delivers deep technical
@@ -174,10 +174,10 @@ export default function KulpTechValidate() {
 
             <div>
               <h3 className="text-2xl font-light text-blue-700 mb-4">
-                KulpTech Validated Profiles
+                KalpTech Validated Profiles
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                KulpTech Validated Profiles define tested configurations,
+                KalpTech Validated Profiles define tested configurations,
                 topologies, and deployment models for hardware, software, and
                 cloud-based security environments—ensuring reliability,
                 compliance, and performance.

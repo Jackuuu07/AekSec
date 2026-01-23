@@ -18,7 +18,7 @@ export default function Media() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech secures streaming platforms, content delivery networks, and digital rights 
+            KalpTech secures streaming platforms, content delivery networks, and digital rights 
             management systems for media companies and entertainment providers.
           </p>
         </div>

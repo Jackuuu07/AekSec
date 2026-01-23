@@ -18,7 +18,7 @@ export default function InfoServices() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-12">
-            KulpTech secures data analytics platforms, research databases, and information services 
+            KalpTech secures data analytics platforms, research databases, and information services 
             with advanced encryption, access controls, and threat intelligence.
           </p>
           
@@ -142,7 +142,7 @@ export default function InfoServices() {
 
           {/* Solutions Section */}
           <div className="bg-white rounded-3xl shadow-xl p-12 border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">KulpTech Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">KalpTech Solutions</h2>
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Security Architecture</h3>

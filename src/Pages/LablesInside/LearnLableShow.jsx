@@ -11,7 +11,7 @@ export default function LearnLableshow() {
   return (
     <main className="w-full">
       {/* =====================================================
-         HERO – KulpTech products
+         HERO – KalpTech products
       ====================================================== */}
 
       <section className="relative overflow-hidden bg-gradient-to-r from-[#07182d] to-[#0b2447] text-white py-28">
@@ -62,13 +62,13 @@ export default function LearnLableshow() {
               alt=""
             />
             <div className="p-6">
-              <h3 className="text-xl font-medium">Learn with KulpTech</h3>
+              <h3 className="text-xl font-medium">Learn with KalpTech</h3>
               <p className="mt-3 text-slate-600">
                 Advance your career, upskill your work, or achieve your learning
                 goals.
               </p>
               <a className="mt-4 inline-flex items-center gap-2 text-blue-600 font-medium hover:underline">
-                Explore Learn with KulpTech <FiArrowRight />
+                Explore Learn with KalpTech <FiArrowRight />
               </a>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function LearnLableshow() {
             <div className="p-6">
               <h3 className="text-xl font-medium">Events</h3>
               <p className="mt-3 text-slate-600">
-                Network with customers, partners, and KulpTech experts.
+                Network with customers, partners, and KalpTech experts.
               </p>
               <a className="mt-4 inline-flex items-center gap-2 text-blue-600 font-medium hover:underline">
                 See events calendar <FiArrowRight />
@@ -118,20 +118,20 @@ export default function LearnLableshow() {
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-4xl font-light text-slate-900 leading-snug">
-              KulpTech certifications: Your gateway <br />
+              KalpTech certifications: Your gateway <br />
               to IT excellence
             </h2>
 
             <p className="mt-6 text-slate-600 max-w-xl">
-              Align yourself with the best of the best. KulpTech certifications are
+              Align yourself with the best of the best. KalpTech certifications are
               the recognized gold standard with more than four million
               certifications issued to date. They bring significant value to
               individuals and the organizations that employ them—and employers
-              know it. Grow your skill set and career with KulpTech.
+              know it. Grow your skill set and career with KalpTech.
             </p>
 
             <button className="mt-10 inline-flex items-center rounded-full border border-blue-600 px-8 py-3 text-blue-600 font-medium hover:bg-blue-50 transition">
-              Explore KulpTech certifications
+              Explore KalpTech certifications
             </button>
           </div>
 
@@ -139,7 +139,7 @@ export default function LearnLableshow() {
           <div className="w-full">
             <img
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-              alt="KulpTech certifications"
+              alt="KalpTech certifications"
               className="w-full h-[360px] object-cover rounded-xl"
             />
           </div>
@@ -158,7 +158,7 @@ export default function LearnLableshow() {
             <div>
               <span className="text-sm uppercase text-slate-500">Learning</span>
               <h3 className="text-xl font-medium mt-2">
-                KulpTech Networking Academy
+                KalpTech Networking Academy
               </h3>
               <p className="mt-3 text-slate-600">
                 Build foundational skills with free, career-focused learning.
@@ -170,23 +170,23 @@ export default function LearnLableshow() {
 
             <div>
               <span className="text-sm uppercase text-slate-500">Learning</span>
-              <h3 className="text-xl font-medium mt-2">KulpTech U.</h3>
+              <h3 className="text-xl font-medium mt-2">KalpTech U.</h3>
               <p className="mt-3 text-slate-600">
                 Personalized learning experiences aligned to your goals.
               </p>
               <a className="mt-4 inline-flex items-center gap-2 text-blue-600 hover:underline">
-                Discover KulpTech U. <FiArrowRight />
+                Discover KalpTech U. <FiArrowRight />
               </a>
             </div>
 
             <div>
               <span className="text-sm uppercase text-slate-500">Event</span>
-              <h3 className="text-xl font-medium mt-2">KulpTech Live</h3>
+              <h3 className="text-xl font-medium mt-2">KalpTech Live</h3>
               <p className="mt-3 text-slate-600">
                 Learn and get inspired through live and on-demand experiences.
               </p>
               <a className="mt-4 inline-flex items-center gap-2 text-blue-600 hover:underline">
-                Explore KulpTech Live <FiArrowRight />
+                Explore KalpTech Live <FiArrowRight />
               </a>
             </div>
 
@@ -246,16 +246,16 @@ export default function LearnLableshow() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
               <h3 className="text-xl font-medium mb-4">
-                Learning with KulpTech{" "}
+                Learning with KalpTech{" "}
               </h3>
 
               <ul className="space-y-3 text-blue-600">
-                <li>KulpTech certifications</li>
-                <li>KulpTech exams</li>
-                <li>KulpTech training</li>
-                <li>KulpTech learning subscriptions</li>
+                <li>KalpTech certifications</li>
+                <li>KalpTech exams</li>
+                <li>KalpTech training</li>
+                <li>KalpTech learning subscriptions</li>
                 <li>Learning support</li>
-                <li>KulpTech learning resources</li>
+                <li>KalpTech learning resources</li>
                 <li>All training and certification</li>
               </ul>
             </div>
@@ -271,7 +271,7 @@ export default function LearnLableshow() {
             <div>
               <h3 className="text-xl font-medium mb-4">Webinar and Videos</h3>
               <ul className="space-y-3 text-blue-600">
-                <li>KulpTech Video portal</li>
+                <li>KalpTech Video portal</li>
                 <li>Global Webinar</li>
                 <li>Influencer & Support Events</li>
               </ul>
@@ -280,11 +280,11 @@ export default function LearnLableshow() {
             <div>
               <h3 className="text-xl font-medium mb-4">News and insights</h3>
               <ul className="space-y-3 text-blue-600">
-                <li>KulpTech Blogs</li>
-                <li>KulpTech Newsroom</li>
-                <li>KulpTech Research</li>
-                <li>KulpTech Talos Blogs</li>
-                <li>Outshift by KulpTech Research</li>
+                <li>KalpTech Blogs</li>
+                <li>KalpTech Newsroom</li>
+                <li>KalpTech Research</li>
+                <li>KalpTech Talos Blogs</li>
+                <li>Outshift by KalpTech Research</li>
               </ul>
             </div>
 
@@ -293,8 +293,8 @@ export default function LearnLableshow() {
                 Architecture, design, and developer resources
               </h3>
               <ul className="space-y-3 text-blue-600">
-                <li>KulpTech Insider</li>
-                <li>KulpTech Validated</li>
+                <li>KalpTech Insider</li>
+                <li>KalpTech Validated</li>
                 <li>Devnet</li>
                 <li>Packet Tracer</li>
                 <li>Visio stencile</li>
@@ -312,7 +312,7 @@ export default function LearnLableshow() {
           <h2 className="text-4xl font-light">Ask the community</h2>
 
           <div>
-            <h3 className="text-xl font-medium">Connect with KulpTech</h3>
+            <h3 className="text-xl font-medium">Connect with KalpTech</h3>
             <p className="mt-2 text-white/80">
               We're here to help you make informed decisions every step of the
               way.

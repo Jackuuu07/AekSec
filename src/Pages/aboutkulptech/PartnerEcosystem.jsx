@@ -256,7 +256,7 @@ export default function PartnerEcosystem() {
             <Lock className="w-16 h-16 mx-auto mb-8 text-cyan-400" />
             <h3 className="text-3xl font-bold mb-6">Join Our Security Alliance</h3>
             <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
-              Partner with KulpTech Security to deliver comprehensive protection and drive mutual growth in the cybersecurity market.
+              Partner with KalpTech Security to deliver comprehensive protection and drive mutual growth in the cybersecurity market.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-500 rounded-lg font-semibold hover:opacity-90 transition-opacity">

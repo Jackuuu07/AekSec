@@ -18,7 +18,7 @@ export default function ConsumerGoods() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-12">
-            KulpTech provides comprehensive security solutions for consumer goods manufacturers 
+            KalpTech provides comprehensive security solutions for consumer goods manufacturers 
             and distributors, protecting intellectual property, supply chains, and brand reputation.
           </p>
           

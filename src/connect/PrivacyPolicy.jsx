@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
             <Shield className="w-12 h-12 text-blue-600" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            KulpTech Security Privacy Policy
+            KalpTech Security Privacy Policy
           </h1>
           <p className="text-xl text-gray-600">
             Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Commitment</h2>
           <p className="text-gray-700 mb-4">
-            At KulpTech Security, we take your privacy and data security seriously. As a 
+            At KalpTech Security, we take your privacy and data security seriously. As a 
             cybersecurity company, we understand the importance of protecting personal 
             information. This Privacy Policy explains how we collect, use, disclose, and 
             safeguard your information when you use our services.
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <p className="font-semibold text-gray-900 mb-2">Data Protection Officer</p>
-              <p className="text-gray-700">Email: dpo@kulptech.com</p>
+              <p className="text-gray-700">Email: dpo@KalpTech.com</p>
               <p className="text-gray-700">Phone: +1-800-KULP-PRIVACY</p>
             </div>
             <div>

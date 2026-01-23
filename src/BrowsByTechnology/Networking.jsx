@@ -62,7 +62,7 @@ export default function Networking() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-10 h-full flex items-center">
             <div className="max-w-2xl text-white">
-              <p className="text-sm mb-2">KulpTech Networking</p>
+              <p className="text-sm mb-2">KalpTech Networking</p>
               <h1 className="text-5xl font-light mb-6">
                 Take your network as seriously as your business
               </h1>
@@ -217,7 +217,7 @@ export default function Networking() {
               </div>
 
               <div>
-                <h4 className="font-medium mb-2">KulpTech wireless</h4>
+                <h4 className="font-medium mb-2">KalpTech wireless</h4>
                 <p className="text-sm text-gray-600 mb-3">
                   Build future-proof workspaces with intelligent, secure, and
                   assured Wi-Fi 7.
@@ -266,15 +266,15 @@ export default function Networking() {
             </div>
             <div className="grid md:grid-cols-3 gap-12">
               <Platform
-                title="KulpTech Catalyst Center"
+                title="KalpTech Catalyst Center"
                 text="Automate, secure, and optimize wireless and switching access networks."
               />
               <Platform
-                title="KulpTech Meraki platform"
+                title="KalpTech Meraki platform"
                 text="Scale and secure your entire network with cloud management."
               />
               <Platform
-                title="KulpTech Nexus Dashboard"
+                title="KalpTech Nexus Dashboard"
                 text="Operate and analyze across data center and cloud environments."
               />
             </div>
@@ -374,7 +374,7 @@ export default function Networking() {
               {/* Service 1 */}
               <div className="space-y-4">
                 <h3 className="text-xl font-medium text-gray-900">
-                  KulpTech Professional Services
+                  KalpTech Professional Services
                 </h3>
                 <p className="text-gray-600 leading-relaxed max-w-md">
                   Optimize and transform your IT environment with measurable
@@ -390,7 +390,7 @@ export default function Networking() {
               {/* Service 2 */}
               <div className="space-y-4">
                 <h3 className="text-xl font-medium text-gray-900">
-                  KulpTech Services
+                  KalpTech Services
                 </h3>
                 <p className="text-gray-600 leading-relaxed max-w-md">
                   Deploy faster, improve security, and enhance visibility with

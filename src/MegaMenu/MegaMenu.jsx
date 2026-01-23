@@ -236,7 +236,7 @@ export default function MegaMenu({
       ],
     },
     about: {
-      title: "About KulpTech",
+      title: "About KalpTech",
       sections: [
         {
           title: "About Us",
@@ -286,7 +286,7 @@ export default function MegaMenu({
             },
             {
               icon: <FiShield />,
-              label: "Privacy at KulpTech",
+              label: "Privacy at KalpTech",
               to: "/values/privacy",
             },
             {
@@ -301,17 +301,17 @@ export default function MegaMenu({
           items: [
             {
               icon: <FiTrendingUp />,
-              label: "KulpTech Innovation Network",
+              label: "KalpTech Innovation Network",
               to: "/innovation/network",
             },
             {
               icon: <MdBusiness />,
-              label: "KulpTech Ventures",
+              label: "KalpTech Ventures",
               to: "/innovation/ventures",
             },
             {
               icon: <FiHeart />,
-              label: "KulpTech Wellbeing",
+              label: "KalpTech Wellbeing",
               to: "/innovation/wellbeing",
             },
           ],

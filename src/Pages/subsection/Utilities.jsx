@@ -17,7 +17,7 @@ export default function Utilities() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech secures electric grids, water systems, and gas utilities with industrial-grade 
+            KalpTech secures electric grids, water systems, and gas utilities with industrial-grade 
             cybersecurity solutions for SCADA systems and critical infrastructure.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

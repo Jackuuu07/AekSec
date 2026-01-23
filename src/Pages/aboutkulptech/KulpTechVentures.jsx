@@ -16,7 +16,7 @@ export default function KulpTechVentures() {
             </div>
             <div className="border-l-2 border-emerald-500 pl-4">
               <span className="text-emerald-400 text-sm font-mono tracking-wider">STRATEGIC INVESTMENT</span>
-              <h1 className="text-5xl font-bold mt-1">KulpTech Ventures</h1>
+              <h1 className="text-5xl font-bold mt-1">KalpTech Ventures</h1>
             </div>
           </div>
           
@@ -227,7 +227,7 @@ export default function KulpTechVentures() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-2xl p-12 text-center">
             <DollarSign className="w-16 h-16 mx-auto mb-8 text-emerald-400" />
-            <h3 className="text-3xl font-bold mb-6">Partner with KulpTech Ventures</h3>
+            <h3 className="text-3xl font-bold mb-6">Partner with KalpTech Ventures</h3>
             <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
               Access strategic capital, enterprise partnerships, and security expertise to accelerate 
               your security technology company's growth.

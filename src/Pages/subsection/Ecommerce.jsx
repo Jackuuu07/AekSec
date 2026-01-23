@@ -18,7 +18,7 @@ export default function Ecommerce() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-12">
-            KulpTech delivers comprehensive security solutions for e-commerce platforms, 
+            KalpTech delivers comprehensive security solutions for e-commerce platforms, 
             protecting transactions, customer data, and digital storefronts from evolving cyber threats.
           </p>
           

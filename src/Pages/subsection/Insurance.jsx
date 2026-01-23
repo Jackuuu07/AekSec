@@ -18,7 +18,7 @@ export default function Insurance() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech secures insurance providers with advanced fraud detection, data protection, 
+            KalpTech secures insurance providers with advanced fraud detection, data protection, 
             and compliance solutions for life, health, property, and casualty insurance.
           </p>
         </div>

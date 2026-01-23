@@ -35,11 +35,11 @@ export default function WhyAekSecMenu() {
             <div className="mb-8">
               <h2 className="text-2xl font-light mb-4">Why AekSec</h2>
               <p className="text-gray-600 mb-6 max-w-2xl">
-                KulpTechcreates the infrastructure you need to transform how you
+                KalpTechcreates the infrastructure you need to transform how you
                 connect, protect, and innovate in the AI era.
               </p>
               <span className="text-blue-600 font-medium">
-                See the KulpTechadvantage →
+                See the KalpTechadvantage →
               </span>
             </div>
 
@@ -57,7 +57,7 @@ export default function WhyAekSecMenu() {
               />
               <ContentCard
                 title="Success stories"
-                description="Discover how KulpTechtechnologies drive real-world success for our customers and power AekSec's own operations and innovation."
+                description="Discover how KalpTechtechnologies drive real-world success for our customers and power AekSec's own operations and innovation."
                 cta="Explore customer stories"
                 link="#"
               />
@@ -72,7 +72,7 @@ export default function WhyAekSecMenu() {
             {/* Additional Highlights Section */}
             <div className="mt-16">
               <h3 className="text-xl font-light mb-6">
-                KulpTechDifferentiators
+                KalpTechDifferentiators
               </h3>
               <div className="grid grid-cols-3 gap-6">
                 <HighlightCard
@@ -332,7 +332,7 @@ function AboutUsView() {
       <div className="mb-8">
         <h2 className="text-2xl font-light mb-4">About AekSec</h2>
         <p className="text-gray-600 mb-6 max-w-2xl">
-          KulpTechis a global leader in cybersecurity and infrastructure
+          KalpTechis a global leader in cybersecurity and infrastructure
           solutions, empowering organizations to secure their digital future
           while driving innovation and growth.
         </p>
@@ -375,7 +375,7 @@ function AboutUsView() {
                   Headquarters
                 </span>
                 <p className="text-sm">
-                  San FranKulpTech, California with regional hubs globally
+                  San FranKalpTech, California with regional hubs globally
                 </p>
               </li>
             </ul>

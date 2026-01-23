@@ -15,17 +15,17 @@ const TermsAndConditions = () => {
     {
       id: 'acceptance',
       title: '1. Acceptance of Terms',
-      content: `By accessing or using KulpTech Security services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you are entering into these terms on behalf of a company or other legal entity, you represent that you have the authority to bind such entity.`
+      content: `By accessing or using KalpTech Security services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you are entering into these terms on behalf of a company or other legal entity, you represent that you have the authority to bind such entity.`
     },
     {
       id: 'services',
       title: '2. Description of Services',
-      content: `KulpTech Security provides cloud-based and on-premises cybersecurity solutions including but not limited to threat detection, vulnerability management, security monitoring, and incident response services. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.`
+      content: `KalpTech Security provides cloud-based and on-premises cybersecurity solutions including but not limited to threat detection, vulnerability management, security monitoring, and incident response services. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.`
     },
     {
       id: 'security',
       title: '3. Security Responsibilities',
-      content: `While KulpTech implements industry-standard security measures, customers are responsible for maintaining the security of their credentials, implementing recommended security practices, and promptly reporting any suspected security breaches. We conduct regular security audits but do not guarantee absolute protection against all threats.`
+      content: `While KalpTech implements industry-standard security measures, customers are responsible for maintaining the security of their credentials, implementing recommended security practices, and promptly reporting any suspected security breaches. We conduct regular security audits but do not guarantee absolute protection against all threats.`
     },
     {
       id: 'data',
@@ -35,12 +35,12 @@ const TermsAndConditions = () => {
     {
       id: 'liability',
       title: '5. Limitation of Liability',
-      content: `KulpTech's liability for any claim arising from these terms shall not exceed the fees paid by the customer during the six months preceding the claim. We shall not be liable for any indirect, incidental, or consequential damages, including loss of profits, data, or business opportunities.`
+      content: `KalpTech's liability for any claim arising from these terms shall not exceed the fees paid by the customer during the six months preceding the claim. We shall not be liable for any indirect, incidental, or consequential damages, including loss of profits, data, or business opportunities.`
     },
     {
       id: 'indemnification',
       title: '6. Indemnification',
-      content: `You agree to indemnify and hold harmless KulpTech Security from any claims, damages, or expenses arising from your misuse of our services, violation of these terms, or infringement of third-party rights.`
+      content: `You agree to indemnify and hold harmless KalpTech Security from any claims, damages, or expenses arising from your misuse of our services, violation of these terms, or infringement of third-party rights.`
     },
     {
       id: 'termination',
@@ -71,7 +71,7 @@ const TermsAndConditions = () => {
             <Scale className="w-12 h-12 text-gray-700" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            KulpTech Security Terms and Conditions
+            KalpTech Security Terms and Conditions
           </h1>
           <p className="text-xl text-gray-600">
             Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
@@ -86,7 +86,7 @@ const TermsAndConditions = () => {
               <h3 className="font-bold text-yellow-800 text-lg mb-2">Important Legal Notice</h3>
               <p className="text-yellow-700">
                 These Terms and Conditions constitute a legally binding agreement. By using 
-                KulpTech Security services, you agree to these terms. Please read them carefully 
+                KalpTech Security services, you agree to these terms. Please read them carefully 
                 and consult with legal counsel if you have any questions.
               </p>
             </div>
@@ -149,7 +149,7 @@ const TermsAndConditions = () => {
         <div className="mt-12 bg-gray-50 rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Agreement</h2>
           <p className="text-gray-700 mb-6">
-            By proceeding to use KulpTech Security services, you acknowledge that you have 
+            By proceeding to use KalpTech Security services, you acknowledge that you have 
             read and understood these Terms and Conditions, and agree to be bound by them. 
             If you do not agree with any part of these terms, you must discontinue use of 
             our services immediately.
@@ -158,11 +158,11 @@ const TermsAndConditions = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-5 bg-white rounded-xl border">
               <p className="font-semibold text-gray-900 mb-2">For Questions</p>
-              <p className="text-gray-600">legal@kulptech.com</p>
+              <p className="text-gray-600">legal@KalpTech.com</p>
             </div>
             <div className="p-5 bg-white rounded-xl border">
               <p className="font-semibold text-gray-900 mb-2">For Enterprise Contracts</p>
-              <p className="text-gray-600">sales@kulptech.com</p>
+              <p className="text-gray-600">sales@KalpTech.com</p>
             </div>
           </div>
 

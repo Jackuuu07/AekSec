@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Training() {
   const tabs = {
     "Self-paced training": {
-      title: "Self-paced courses with KulpTech Academy",
+      title: "Self-paced courses with KalpTech Academy",
       desc: "Start with free tutorials and expert-led webinars, or subscribe to structured learning paths and certification-focused training designed for flexible schedules.",
       cta: "Start now for free",
     },
@@ -28,7 +28,7 @@ export default function Training() {
         <section className="relative">
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
-            alt="KulpTech Training"
+            alt="KalpTech Training"
             className="w-full h-[520px] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent" />
@@ -36,7 +36,7 @@ export default function Training() {
           <div className="absolute inset-0 flex items-center">
             <div className="max-w-7xl mx-auto px-8">
               <h1 className="text-4xl md:text-5xl font-light mb-6">
-                KulpTech Training
+                KalpTech Training
               </h1>
               <p className="max-w-xl text-lg text-gray-700">
                 Product, technology, and certification training developed by
@@ -55,7 +55,7 @@ export default function Training() {
           <div className="space-y-6 text-gray-700 text-lg">
             <p>
               Whether you're learning the fundamentals or upskilling your team,
-              KulpTech helps accelerate careers, sharpen technical skills, and
+              KalpTech helps accelerate careers, sharpen technical skills, and
               give organizations a competitive security edge.
             </p>
 
@@ -69,7 +69,7 @@ export default function Training() {
               href="#"
               className="inline-flex items-center text-blue-600 font-medium hover:underline"
             >
-              Visit the KulpTech training catalog →
+              Visit the KalpTech training catalog →
             </a>
           </div>
         </section>
@@ -138,7 +138,7 @@ export default function Training() {
             </h2>
 
             <p className="max-w-3xl mx-auto text-gray-600 mb-16">
-              In addition to certifications for individual employees, KulpTech
+              In addition to certifications for individual employees, KalpTech
               partner companies can qualify for role levels and specializations.
             </p>
 
@@ -209,7 +209,7 @@ export default function Training() {
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   An education framework for partners to become proficient in
-                  selling, deploying, and supporting KulpTech’s latest
+                  selling, deploying, and supporting KalpTech’s latest
                   technologies and solutions.
                 </p>
 
@@ -225,7 +225,7 @@ export default function Training() {
             {/* CTA */}
             <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
               <button className="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
-                Become an KulpTech partner
+                Become an KalpTech partner
               </button>
 
               <a href="#" className="text-blue-600 font-medium hover:underline">
@@ -249,7 +249,7 @@ export default function Training() {
             <div>
               <p className="text-gray-300 text-lg leading-relaxed mb-10">
                 No matter what your team chooses to study, and how they choose
-                to do it, training with KulpTech means gaining a competitive
+                to do it, training with KalpTech means gaining a competitive
                 advantage by staying in sync with security and technology
                 innovations. Pick your products, certifications, or technologies
                 — we’ll create a learning plan to match.

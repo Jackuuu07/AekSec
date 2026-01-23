@@ -18,7 +18,7 @@ export default function Retail() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech protects retail businesses with comprehensive payment security, 
+            KalpTech protects retail businesses with comprehensive payment security, 
             e-commerce protection, and supply chain security solutions.
           </p>
         </div>

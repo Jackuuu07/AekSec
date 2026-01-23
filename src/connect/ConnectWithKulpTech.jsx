@@ -6,28 +6,28 @@ const ConnectWithKulpTech = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "General Inquiries",
-      email: "info@kulptech.com",
+      email: "info@kalptech.com",
       description: "For general questions about our services"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Sales Team",
       phone: "+1-800-KULP-TECH",
-      email: "sales@kulptech.com",
+      email: "sales@kalptech.com",
       description: "For pricing, demos, and enterprise solutions"
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
       title: "Technical Support",
       phone: "+1-800-KULP-SUPPORT",
-      email: "support@kulptech.com",
+      email: "support@kalptech.com",
       description: "24/7 technical assistance for existing customers"
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Partnerships",
-      email: "partners@kulptech.com",
-      description: "Become a KulpTech certified partner"
+      email: "partners@kalptech.com",
+      description: "Become a KalpTech certified partner"
     }
   ];
 
@@ -37,7 +37,7 @@ const ConnectWithKulpTech = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Connect with KulpTech Security
+            Connect with KalpTech Security
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your security is our priority. Reach out to our team of cybersecurity experts.
@@ -75,7 +75,7 @@ const ConnectWithKulpTech = () => {
                 <div className="flex items-start bg-gray-50 rounded-xl p-6">
                   <MapPin className="w-6 h-6 text-blue-600 mt-1 mr-4" />
                   <div>
-                    <p className="font-semibold text-gray-900">KulpTech Security HQ</p>
+                    <p className="font-semibold text-gray-900">KalpTech Security HQ</p>
                     <p className="text-gray-600">123 Cyber Boulevard, Suite 500</p>
                     <p className="text-gray-600">San Francisco, CA 94107, USA</p>
                   </div>

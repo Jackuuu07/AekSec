@@ -24,7 +24,7 @@ export default function AiDefence() {
               className="w-full h-full"
               allow="autoplay; fullscreen"
               allowFullScreen
-              title="KulpTech AI Defense Video"
+              title="KalpTech AI Defense Video"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function AiDefence() {
 
         <div className="relative max-w-7xl mx-auto px-8 py-32">
           <h1 className="text-5xl md:text-6xl font-light max-w-4xl leading-tight">
-            KulpTech AI Defense.
+            KalpTech AI Defense.
             <br />
             AI-native protection.
             <br />
@@ -47,7 +47,7 @@ export default function AiDefence() {
           </h1>
 
           <p className="mt-8 max-w-3xl text-gray-300 text-lg">
-            KulpTech AI Defense is an advanced AI-native security solution
+            KalpTech AI Defense is an advanced AI-native security solution
             designed to continuously monitor model behavior, data pipelines, and
             inference activity — detecting threats before they can impact
             critical AI-driven operations.
@@ -195,7 +195,7 @@ export default function AiDefence() {
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Learn how KulpTech AI Defense continuously observes, understands, and
+            Learn how KalpTech AI Defense continuously observes, understands, and
             protects AI models and pipelines against evolving threats.
           </p>
 
@@ -225,7 +225,7 @@ export default function AiDefence() {
             <div key={i}>
               <h3 className="font-medium mb-4">{title}</h3>
               <p className="text-gray-600 mb-4">
-                Insights from KulpTech researchers and security architects on
+                Insights from KalpTech researchers and security architects on
                 protecting AI at scale.
               </p>
               <a className="text-blue-600">Read blog →</a>
@@ -282,7 +282,7 @@ export default function AiDefence() {
                 <p className="text-gray-600 leading-relaxed mb-10">
                   “The rapid adoption of AI introduces new categories of risk
                   that traditional cybersecurity platforms were never designed
-                  to address. KulpTech AI Defense represents a fundamental shift
+                  to address. KalpTech AI Defense represents a fundamental shift
                   in how enterprises secure AI systems — delivering deep
                   visibility into AI assets, continuous risk detection, and
                   real-time protection against evolving threats.”
@@ -291,7 +291,7 @@ export default function AiDefence() {
                 <div className="text-sm text-gray-700">
                   <p className="font-medium">Head of AI Security Strategy</p>
                   <p className="text-gray-500">
-                    KulpTech Research & Innovation Group
+                    KalpTech Research & Innovation Group
                   </p>
                 </div>
               </div>

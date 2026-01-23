@@ -330,7 +330,7 @@ export default function SupplierDiversity() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-2xl p-12 text-center">
             <Handshake className="w-16 h-16 mx-auto mb-8 text-amber-400" />
-            <h3 className="text-3xl font-bold mb-6">Become a KulpTech Supplier</h3>
+            <h3 className="text-3xl font-bold mb-6">Become a KalpTech Supplier</h3>
             <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
               Join our diverse network of security technology partners and contribute to 
               building more resilient and innovative cybersecurity solutions.

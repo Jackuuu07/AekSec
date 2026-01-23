@@ -21,7 +21,7 @@ export default function StateofSecurity() {
       </p>
 
       <p className="text-gray-700 mb-8 leading-relaxed">
-        KulpTech’s inaugural State of AI Security report provides a comprehensive
+        KalpTech’s inaugural State of AI Security report provides a comprehensive
         overview of critical developments in AI security across threat
         intelligence, policy, and research—empowering organizations to manage
         risk while unlocking AI’s full potential.
@@ -130,7 +130,7 @@ export default function StateofSecurity() {
               </div>
 
               <p className="text-xs text-gray-500 leading-relaxed">
-                KulpTech may use your information to provide updates, offers, and
+                KalpTech may use your information to provide updates, offers, and
                 product news. You may unsubscribe at any time. See our Privacy
                 Statement for more information.
               </p>

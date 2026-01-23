@@ -9,7 +9,7 @@ const DATA = {
       {
         title: "Artificial intelligence",
         desc: "Use artificial intelligence and machine learning to enable flexibility and secure, intelligent experiences.",
-        link: "Explore KulpTech AI",
+        link: "Explore KalpTech AI",
       },
       {
         title: "Collaboration",
@@ -115,7 +115,7 @@ export default function SolutionShow() {
   return (
     <main className="w-full">
       {/* =====================================================
-         HERO – KulpTech products
+         HERO – KalpTech products
       ====================================================== */}
 
       <section className="relative overflow-hidden bg-gradient-to-r from-[#07182d] to-[#0b2447] text-white py-32">
@@ -153,7 +153,7 @@ export default function SolutionShow() {
             {/* <div className="w-12 h-1 bg-blue-500 mb-6 rounded-full" /> */}
 
             <h1 className="text-5xl md:text-6xl font-light leading-tight mb-6">
-              KulpTech Solutions
+              KalpTech Solutions
             </h1>
 
             <p className="text-lg text-white/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function SolutionShow() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* RIGHT IMAGE */}
           <img
-            src="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
+            src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
             alt="Trials and demos"
             className="
         w-full
@@ -255,13 +255,13 @@ export default function SolutionShow() {
       </section>
 
       {/* =====================================================
-         EXPLORE MORE KulpTech OFFERINGS
+         EXPLORE MORE KalpTech OFFERINGS
       ====================================================== */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_1px_1fr_1fr_1fr] gap-16">
           {/* HEADING */}
           <h2 className="text-4xl text-black font-light/10">
-            Explore more KulpTech offerings
+            Explore more KalpTech offerings
           </h2>
 
           {/* VERTICAL LINE */}
@@ -298,7 +298,7 @@ export default function SolutionShow() {
               Transform your IT environment and deliver business value.
             </p>
             <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
-              Explore KulpTech Services
+              Explore KalpTech Services
               <FiChevronRight />
             </button>
           </div>
@@ -315,18 +315,18 @@ export default function SolutionShow() {
           </h2>
 
           <div>
-            <h3 className="text-xl font-medium">Connect with KulpTech</h3>
+            <h3 className="text-xl font-medium">Connect with KalpTech</h3>
             <p className="mt-2 text-white/80">
               We're here to help you make informed decisions every step of the
               way.
             </p>
             <a className="mt-4 inline-block text-blue-400 hover:underline">
-              Contact KulpTech →
+              Contact KalpTech →
             </a>
           </div>
 
           <div>
-            <h3 className="text-xl font-medium">Contact a KulpTech partner</h3>
+            <h3 className="text-xl font-medium">Contact a KalpTech partner</h3>
             <p className="mt-2 text-white/80">
               Find a partner with the expertise and commitment to help you
               succeed.

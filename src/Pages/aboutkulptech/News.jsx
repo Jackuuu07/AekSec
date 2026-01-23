@@ -5,7 +5,7 @@ export default function News() {
   const newsItems = [
     {
       category: "THREAT INTELLIGENCE",
-      title: "KulpTech Discerts New APT Campaign Targeting Critical Infrastructure",
+      title: "KalpTech Discerts New APT Campaign Targeting Critical Infrastructure",
       date: "March 15, 2024",
       description: "Our threat research team identified and mitigated a sophisticated nation-state attack targeting energy grids across North America.",
       tags: ["APT", "Critical Infrastructure", "Zero-Day"],
@@ -21,7 +21,7 @@ export default function News() {
     },
     {
       category: "PRODUCT RELEASE",
-      title: "KulpTech Launches Quantum-Resistant Encryption Platform",
+      title: "KalpTech Launches Quantum-Resistant Encryption Platform",
       date: "March 5, 2024",
       description: "Next-generation encryption solution protecting against future quantum computing threats for government and enterprise clients.",
       tags: ["Quantum", "Encryption", "Innovation"],
@@ -45,7 +45,7 @@ export default function News() {
     },
     {
       category: "INDUSTRY EVENT",
-      title: "KulpTech to Host Global Cyber Defense Summit 2024",
+      title: "KalpTech to Host Global Cyber Defense Summit 2024",
       date: "February 15, 2024",
       description: "Annual security conference featuring threat intelligence sharing and defense strategy workshops.",
       tags: ["Summit", "Conference", "Training"],
@@ -80,7 +80,7 @@ export default function News() {
           
           <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
             Stay informed about emerging threats, security breakthroughs, and industry developments 
-            from KulpTech Security's global research network.
+            from KalpTech Security's global research network.
           </p>
           
           <div className="flex items-center space-x-6">

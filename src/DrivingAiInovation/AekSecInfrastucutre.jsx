@@ -191,7 +191,7 @@ export default function KulpTechInfrastructre() {
               <p className="text-gray-300 leading-relaxed mb-10 max-w-xl">
                 Whether you are building a mass-scale AI data center for
                 pre-training, a large inferencing cluster, or smaller
-                distributed edge clusters—or interconnecting them all—KulpTech has
+                distributed edge clusters—or interconnecting them all—KalpTech has
                 you covered.
               </p>
 

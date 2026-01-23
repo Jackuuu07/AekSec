@@ -66,7 +66,7 @@ export default function Navbar() {
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
               <span className="inline-block bg-gradient-to-r from-blue-700 to-indigo-700 dark:from-blue-300 dark:to-indigo-300 bg-clip-text ">
-                Kulp
+                Kalp
               </span>
 
               <span className="text-gray-900 dark:text-white font-medium">
@@ -103,10 +103,10 @@ export default function Navbar() {
               />
             </div>
 
-            {/* About KulpTech - WITH MEGA MENU */}
+            {/* About KalpTech - WITH MEGA MENU */}
             <div className="relative" onMouseEnter={() => setOpenMenu("about")}>
               <NavItem
-                label="About KulpTech"
+                label="About KalpTech"
                 to="/about"
                 menu="about"
                 openMenu={openMenu}
@@ -229,7 +229,7 @@ export default function Navbar() {
             />
 
             <MobileItem
-              label="About KulpTech"
+              label="About KalpTech"
               to="/about"
               menu="about"
               setOpenMenu={setOpenMenu}

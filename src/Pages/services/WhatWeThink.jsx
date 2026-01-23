@@ -69,7 +69,7 @@ export default function WhatWeThink() {
               What We Think
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Insights, research, and perspectives from KulpTech's security experts. 
+              Insights, research, and perspectives from KalpTech's security experts. 
               Explore our thought leadership on emerging threats, innovative solutions, 
               and the future of cybersecurity.
             </p>

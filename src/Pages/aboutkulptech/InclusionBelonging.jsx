@@ -21,7 +21,7 @@ export default function InclusionBelonging() {
           </div>
           
           <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
-            At KulpTech Security, we believe diverse perspectives strengthen our defense capabilities. 
+            At KalpTech Security, we believe diverse perspectives strengthen our defense capabilities. 
             Our inclusive culture drives innovation in cybersecurity solutions.
           </p>
           

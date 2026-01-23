@@ -49,19 +49,19 @@ export default function SolutionsMenu() {
         {active === null && (
           <div className="grid grid-cols-3 gap-10">
             <MenuCard
-              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/solutions-ai.jpg"
+              img="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/header/solutions-ai.jpg"
               title="Zero Trust Security"
               text="Protect users, apps, and data everywhere."
               cta="Explore security"
             />
             <MenuCard
-              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/solutions-campus-branch.jpg"
+              img="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/header/solutions-campus-branch.jpg"
               title="AI-ready Infrastructure"
               text="Build scalable, high-performance AI systems."
               cta="View AI solutions"
             />
             <MenuCard
-              img="https://www.KulpTech.com/content/dam/KulpTech-cdc/site/images/header/solutions-smb.jpg"
+              img="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/header/solutions-smb.jpg"
               title="Hybrid Work"
               text="Enable secure, flexible work environments."
               cta="Learn more"

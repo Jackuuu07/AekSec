@@ -24,8 +24,8 @@ export default function Explore() {
       {/* ============ AlternatingMediaSections Section ============ */}
       <AlternatingMediaSections />
 
-      {/* ============ KulpTechNewsSlider Section ============ */}
-      <KulpTechNewsSlider />
+      {/* ============ KalpTechNewsSlider Section ============ */}
+      <KalpTechNewsSlider />
 
       {/* ============ AILeadershipExperience Section ============ */}
       <AILeadershipExperience />
@@ -89,11 +89,11 @@ function HeroExplore() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-xl">
               There's no secure AI
               <br />
-              without <span className="font-bold text-blue-300">KulpTech</span>
+              without <span className="font-bold text-blue-300">KalpTech</span>
             </h2>
 
             <p className="mt-6 text-lg text-slate-300 max-w-xl">
-              Only KulpTech delivers robust infrastructure, security fused into
+              Only KalpTech delivers robust infrastructure, security fused into
               the network, and unparalleled insights to power enterprise AI at
               scale.
             </p>
@@ -207,7 +207,7 @@ function ConnectProtectAI() {
           </h2>
 
           <p className="text-xl text-slate-600">
-            KulpTech provides the core building blocks, AI-native capabilities,
+            KalpTech provides the core building blocks, AI-native capabilities,
             and services to accelerate AI adoption and success.
           </p>
         </div>
@@ -424,18 +424,18 @@ const slides = [
   },
   {
     title:
-      "KulpTech Continues to Drive Innovation to Reimagine Security for the AI Era",
+      "KalpTech Continues to Drive Innovation to Reimagine Security for the AI Era",
     desc: "RSA Conference Press Release",
     link: "Read press release",
   },
   {
     title:
-      "KulpTech and ServiceNow Partner to Simplify and Secure AI Adoption for Businesses at Scale",
-    desc: "KulpTech and ServiceNow Partner to Simplify and Secure AI Adoption for Businesses at Scale",
+      "KalpTech and ServiceNow Partner to Simplify and Secure AI Adoption for Businesses at Scale",
+    desc: "KalpTech and ServiceNow Partner to Simplify and Secure AI Adoption for Businesses at Scale",
     link: "Read press release",
   },
   {
-    title: "KulpTech, NVIDIA accelerate AI infrastructure",
+    title: "KalpTech, NVIDIA accelerate AI infrastructure",
     desc: "Secure AI Factory with enterprise AI-ready networking.",
     link: "Read press release",
   },
@@ -484,7 +484,7 @@ const slides = [
 const ITEMS_PER_SLIDE = 3;
 const TOTAL_SLIDES = Math.ceil(slides.length / ITEMS_PER_SLIDE);
 
-function KulpTechNewsSlider() {
+function KalpTechNewsSlider() {
   const [active, setActive] = useState(0);
 
   const next = () => {
@@ -500,7 +500,7 @@ function KulpTechNewsSlider() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-4xl font-light text-slate-900 max-w-3xl">
-          Learn about the latest KulpTech AI innovations and news
+          Learn about the latest KalpTech AI innovations and news
         </h2>
 
         {/* Slider */}
@@ -781,7 +781,7 @@ function ResponsibleAISection() {
             </p>
 
             <button className="mt-10 group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg px-8 py-3 font-medium hover:from-blue-700 hover:to-blue-900 transition-all duration-300">
-              Explore KulpTech's responsible AI
+              Explore KalpTech's responsible AI
               <span className="transform group-hover:translate-x-2 transition-transform">
                 →
               </span>
@@ -807,7 +807,7 @@ function CiscoAIBlogsCTA() {
                 <BookOpen className="w-12 h-12 text-blue-300" />
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-white">
-                KulpTech AI blogs
+                KalpTech AI blogs
               </h2>
             </div>
           </div>
@@ -815,9 +815,9 @@ function CiscoAIBlogsCTA() {
           {/* RIGHT */}
           <div className="max-w-xl">
             <p className="text-lg text-slate-300 leading-relaxed">
-              Learn how KulpTech harnesses AI-powered capabilities across our
+              Learn how KalpTech harnesses AI-powered capabilities across our
               entire product and customer service portfolio. And find out why
-              KulpTech is leading the industry with innovation that enables AI
+              KalpTech is leading the industry with innovation that enables AI
               infrastructure.
             </p>
 

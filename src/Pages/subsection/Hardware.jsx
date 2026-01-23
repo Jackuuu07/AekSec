@@ -16,7 +16,7 @@ export default function Hardware() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech provides hardware security solutions for embedded systems, 
+            KalpTech provides hardware security solutions for embedded systems, 
             IoT devices, and enterprise hardware with root-of-trust protection.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

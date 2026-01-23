@@ -16,7 +16,7 @@ export default function RenewableEnergy() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-8">
-            KulpTech secures solar farms, wind turbines, and energy storage systems 
+            KalpTech secures solar farms, wind turbines, and energy storage systems 
             with specialized cybersecurity for green energy production.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

@@ -64,12 +64,12 @@ export default function Support() {
           {/* ================= MIDDLE: COMMUNITY & LICENSES ================= */}
           <div>
             <h3 className="text-xl font-medium mb-4 border-b pb-2">
-              KulpTech Communities
+              KalpTech Communities
             </h3>
 
             <ul className="space-y-3 text-blue-600 text-sm mb-10">
               <li className="hover:underline cursor-pointer">
-                KulpTech Community Home
+                KalpTech Community Home
               </li>
               <li className="hover:underline cursor-pointer">
                 Partner Community

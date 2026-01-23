@@ -18,7 +18,7 @@ export default function OilGas() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90 mb-12">
-            KulpTech provides industrial cybersecurity solutions for upstream, midstream, 
+            KalpTech provides industrial cybersecurity solutions for upstream, midstream, 
             and downstream operations, protecting SCADA systems, drilling platforms, and refineries.
           </p>
           
@@ -133,7 +133,7 @@ export default function OilGas() {
 
           {/* Security Solutions */}
           <div className="bg-white rounded-3xl shadow-xl p-12 border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">KulpTech Oil & Gas Security Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">KalpTech Oil & Gas Security Solutions</h2>
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Core Security Features</h3>

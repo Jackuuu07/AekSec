@@ -115,7 +115,7 @@ export default function Home() {
                   Secure AI at the edge with enterprise-grade compute,
                   zero-trust networking, and advanced security where your data
                   originates. Protect innovation while enabling real-time
-                  experiences with KulpTech.
+                  experiences with KalpTech.
                 </p>
               </div>
 
@@ -455,7 +455,7 @@ export default function Home() {
               },
               {
                 icon: BadgeCheck,
-                label: "KulpTech Validated",
+                label: "KalpTech Validated",
                 path: "/kulptech-validated",
                 desc: "Verified secure solutions",
               },
@@ -521,7 +521,7 @@ export default function Home() {
               Enterprise-Grade Secure AI Infrastructure
             </h1>
             <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              KulpTech delivers comprehensive AI platforms with built-in
+              KalpTech delivers comprehensive AI platforms with built-in
               security that seamlessly integrate compute, networking, and
               protection for your most demanding AI workloads.
             </p>
@@ -530,7 +530,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                title: "KulpTech AI Platform",
+                title: "KalpTech AI Platform",
                 tagline: "Secure AI Orchestration",
                 icon: Shield,
                 image:
@@ -548,7 +548,7 @@ export default function Home() {
                 secondaryText: "Security Specs",
               },
               {
-                title: "KulpTech AI Defense",
+                title: "KalpTech AI Defense",
                 tagline: "Proactive AI Security",
                 icon: Fingerprint,
                 image:
@@ -566,7 +566,7 @@ export default function Home() {
                 secondaryText: "Security Whitepaper",
               },
               {
-                title: "KulpTech HyperFabric",
+                title: "KalpTech HyperFabric",
                 tagline: "Secure Networking",
                 icon: Network,
                 image:
@@ -673,7 +673,7 @@ export default function Home() {
               Securing the Future of AI
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Discover how KulpTech is protecting enterprises with cutting-edge
+              Discover how KalpTech is protecting enterprises with cutting-edge
               security capabilities and innovative AI solutions.
             </p>
           </div>
@@ -697,7 +697,7 @@ export default function Home() {
               {
                 image:
                   "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                title: "KulpTech AI Defense Platform",
+                title: "KalpTech AI Defense Platform",
                 description:
                   "Secure your AI development with comprehensive visibility, automated guardrails, and real-time threat intelligence.",
                 category: "Security",
@@ -718,7 +718,7 @@ export default function Home() {
                 category: "Partnership",
                 icon: Lock,
                 description:
-                  "From secure AI PODs to managed AI stacks, see how KulpTech protects enterprise AI with NVIDIA's computing.",
+                  "From secure AI PODs to managed AI stacks, see how KalpTech protects enterprise AI with NVIDIA's computing.",
                 primaryAction: {
                   text: "Explore Partnership",
                   path: "/partners/nvidia",
@@ -811,7 +811,7 @@ export default function Home() {
                 onClick={() => navigate("/why/whyAekSec")}
                 className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"
               >
-                Why Choose KulpTech Security?
+                Why Choose KalpTech Security?
                 <span className="text-xl">→</span>
               </button>
             </div>
@@ -827,7 +827,7 @@ export default function Home() {
               Comprehensive Security Technology Portfolio
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Explore KulpTech's integrated security solutions across every
+              Explore KalpTech's integrated security solutions across every
               critical technology domain for modern enterprises.
             </p>
           </div>
@@ -933,7 +933,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Stay ahead with cutting-edge security research, threat analysis,
-              and expert perspectives from KulpTech's security leadership.
+              and expert perspectives from KalpTech's security leadership.
             </p>
           </div>
 
@@ -943,7 +943,7 @@ export default function Home() {
                 {[
                   {
                     category: "Security Report",
-                    title: "KulpTech AI Security Index 2024",
+                    title: "KalpTech AI Security Index 2024",
                     description:
                       "Discover how enterprises are securing AI-driven transformation and why proactive security planning is critical.",
                     cta: "Download Report",
@@ -1007,7 +1007,7 @@ export default function Home() {
               </h3>
               <p className="text-xl text-slate-600 mb-12 leading-relaxed">
                 Access expert security guidance, threat intelligence, and
-                industry-leading practices from KulpTech's security thought
+                industry-leading practices from KalpTech's security thought
                 leadership.
               </p>
 

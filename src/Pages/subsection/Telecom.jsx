@@ -18,7 +18,7 @@ export default function Telecom() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech protects telecom networks with comprehensive security for 5G, IoT, 
+            KalpTech protects telecom networks with comprehensive security for 5G, IoT, 
             and critical communication infrastructure against sophisticated cyber threats.
           </p>
         </div>

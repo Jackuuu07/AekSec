@@ -11,7 +11,7 @@ export default function SupportShow() {
   return (
     <main className="w-full">
       {/* =====================================================
-         HERO – KulpTech products
+         HERO – KalpTech products
       ====================================================== */}
 
       <section className="relative overflow-hidden bg-gradient-to-r from-[#07182d] to-[#0b2447] text-white py-32">
@@ -49,12 +49,12 @@ export default function SupportShow() {
             {/* <div className="w-12 h-1 bg-blue-500 mb-6 rounded-full" /> */}
 
             <h1 className="text-5xl md:text-6xl font-light leading-tight mb-6">
-              KulpTech Support
+              KalpTech Support
             </h1>
 
             <p className="text-lg text-white/80 leading-relaxed">
               Find documentation, software downloads, security notices, 
-              IT support for cases, and more for all supported KulpTech products.
+              IT support for cases, and more for all supported KalpTech products.
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function SupportShow() {
           <div>
             {/* Heading */}
             <h1 className="text-4xl font-light text-slate-900 mb-2">
-              Support for KulpTech products
+              Support for KalpTech products
             </h1>
             <p className="text-slate-600 mb-8">Troubleshoot by product</p>
 
@@ -176,7 +176,7 @@ export default function SupportShow() {
 
             <h3 className="font-medium mb-2">Get technical support</h3>
             <p className="text-sm text-slate-600 mb-4">
-              Open and manage requests with KulpTech Technical Assistance Center
+              Open and manage requests with KalpTech Technical Assistance Center
               (TAC). Service contract required.
             </p>
 
@@ -215,17 +215,17 @@ export default function SupportShow() {
                 status of your hardware shipments.
               </p>
               <a className="text-blue-600 font-medium hover:underline">
-                Visit KulpTech Returns Portal →
+                Visit KalpTech Returns Portal →
               </a>
             </div>
 
-            {/* General KulpTech support */}
+            {/* General KalpTech support */}
             <div>
               <h3 className="text-xl font-medium mb-3">
-                General KulpTech support
+                General KalpTech support
               </h3>
               <p className="text-slate-600 max-w-md mb-6">
-                Discover resources to manage your KulpTech account, contracts and
+                Discover resources to manage your KalpTech account, contracts and
                 orders, certifications, and more with the Web Help Portal.
               </p>
               <a className="text-blue-600 font-medium hover:underline">

@@ -17,7 +17,7 @@ export default function PrivacyAtKulpTech() {
             </div>
             <div className="border-l-2 border-cyan-500 pl-4">
               <span className="text-cyan-400 text-sm font-mono tracking-wider">PRIVACY BY DESIGN</span>
-              <h1 className="text-5xl font-bold mt-1">Privacy at KulpTech</h1>
+              <h1 className="text-5xl font-bold mt-1">Privacy at KalpTech</h1>
             </div>
           </div>
           

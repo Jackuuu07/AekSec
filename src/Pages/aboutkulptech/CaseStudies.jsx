@@ -8,7 +8,7 @@ export default function CaseStudies() {
       title: "Fortune 500 Financial Institution",
       industry: "Banking & Finance",
       challenge: "Legacy security systems failing to detect advanced persistent threats targeting transaction systems.",
-      solution: "Implemented KulpTech's AI-powered threat detection platform with real-time transaction monitoring.",
+      solution: "Implemented KalpTech's AI-powered threat detection platform with real-time transaction monitoring.",
       results: [
         "99.7% reduction in false positives",
         "Detected 3 zero-day attacks in first month",
@@ -103,7 +103,7 @@ export default function CaseStudies() {
           <FileText className="w-16 h-16 mx-auto mb-6" />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Success Stories</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Real-world examples of how KulpTech protects organizations across industries from advanced cyber threats.
+            Real-world examples of how KalpTech protects organizations across industries from advanced cyber threats.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function CaseStudies() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Case Studies</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how leading organizations trust KulpTech to secure their digital assets and maintain business continuity.
+              Discover how leading organizations trust KalpTech to secure their digital assets and maintain business continuity.
             </p>
           </div>
 

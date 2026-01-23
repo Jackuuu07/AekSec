@@ -18,7 +18,7 @@ export default function CapitalMarkets() {
             </div>
           </div>
           <p className="text-lg max-w-3xl opacity-90">
-            KulpTech delivers ultra-low latency security solutions for capital markets, protecting 
+            KalpTech delivers ultra-low latency security solutions for capital markets, protecting 
             trading platforms, market data, and financial operations from cyber threats.
           </p>
         </div>

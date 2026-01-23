@@ -33,28 +33,28 @@ export default function Contact() {
       city: "San Francisco",
       address: "123 Security Way, Suite 500",
       phone: "+1 (415) 555-0199",
-      email: "sf@kulptech.com",
+      email: "sf@KalpTech.com",
       hours: "Mon-Fri, 9AM-6PM PST"
     },
     {
       city: "New York",
       address: "456 Cyber Street, Floor 22",
       phone: "+1 (212) 555-0199",
-      email: "ny@kulptech.com",
+      email: "ny@KalpTech.com",
       hours: "Mon-Fri, 9AM-6PM EST"
     },
     {
       city: "London",
       address: "789 Protection Square",
       phone: "+44 20 5555 0199",
-      email: "london@kulptech.com",
+      email: "london@KalpTech.com",
       hours: "Mon-Fri, 9AM-6PM GMT"
     },
     {
       city: "Singapore",
       address: "101 Security Tower",
       phone: "+65 6555 0199",
-      email: "singapore@kulptech.com",
+      email: "singapore@KalpTech.com",
       hours: "Mon-Fri, 9AM-6PM SGT"
     }
   ];
@@ -88,7 +88,7 @@ export default function Contact() {
                   <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
                   <p className="text-gray-700">
-                    Thank you for contacting KulpTech. Our security experts will get back to you within 24 hours.
+                    Thank you for contacting KalpTech. Our security experts will get back to you within 24 hours.
                   </p>
                 </div>
               ) : (
@@ -226,8 +226,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">General Inquiries</h3>
                     <p className="text-gray-600 mb-1">For non-urgent matters</p>
-                    <a href="mailto:info@kulptech.com" className="text-blue-600 font-medium hover:text-blue-700">
-                      info@kulptech.com
+                    <a href="mailto:info@KalpTech.com" className="text-blue-600 font-medium hover:text-blue-700">
+                      info@KalpTech.com
                     </a>
                   </div>
                 </div>
@@ -290,13 +290,13 @@ export default function Contact() {
               },
               {
                 title: "Technical Support",
-                description: "Get help with your existing KulpTech products",
+                description: "Get help with your existing KalpTech products",
                 link: "/support",
                 buttonText: "Get Support"
               },
               {
                 title: "Partner Program",
-                description: "Become a KulpTech partner and grow your business",
+                description: "Become a KalpTech partner and grow your business",
                 link: "/partners",
                 buttonText: "Join Program"
               },

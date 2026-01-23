@@ -7,7 +7,7 @@ export default function AiNexsus() {
           {/* LEFT */}
           <div>
             <p className="text-sm font-medium text-blue-700 mb-4">
-              KulpTech Nexus HyperFabric
+              KalpTech Nexus HyperFabric
             </p>
 
             <h1 className="text-5xl font-light text-gray-900 leading-tight mb-6">
@@ -19,7 +19,7 @@ export default function AiNexsus() {
             <p className="text-gray-600 max-w-xl mb-10">
               Scale high-performance data center fabrics across on-prem, hybrid,
               and cloud environments with the simplified, cloud-managed
-              architecture of KulpTech Nexus HyperFabric.
+              architecture of KalpTech Nexus HyperFabric.
             </p>
 
             <div className="flex gap-4">
@@ -36,7 +36,7 @@ export default function AiNexsus() {
           <div className="w-full">
             <img
               src="https://thumbs.dreamstime.com/b/data-science-big-data-technology-data-scientists-compute-analyze-visualize-complex-data-sets-computers-data-science-358142047.jpg"
-              alt="KulpTech HyperFabric Dashboard"
+              alt="KalpTech HyperFabric Dashboard"
               className=""
             />
           </div>
@@ -50,7 +50,7 @@ export default function AiNexsus() {
           </h2>
 
           <p className="text-gray-600 max-w-3xl mx-auto mb-20">
-            Let KulpTech Nexus HyperFabric handle the complexity. Teams of all
+            Let KalpTech Nexus HyperFabric handle the complexity. Teams of all
             skill levels can deploy, operate, and scale data center fabrics
             using a unified cloud-managed experience.
           </p>
@@ -107,7 +107,7 @@ export default function AiNexsus() {
 
             <p className="text-gray-600 leading-relaxed mb-10">
               Retain full control of your data center fabric from anywhere.
-              KulpTech Nexus HyperFabric provides cloud-managed orchestration,
+              KalpTech Nexus HyperFabric provides cloud-managed orchestration,
               automated upgrades, secure fabric underlay management, and
               seamless integration with applications and workloads.
             </p>
@@ -140,7 +140,7 @@ export default function AiNexsus() {
 
           <div>
             <h2 className="text-4xl font-light mb-6">
-              KulpTech Nexus HyperFabric AI: AI for all
+              KalpTech Nexus HyperFabric AI: AI for all
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-10">
@@ -199,7 +199,7 @@ export default function AiNexsus() {
                 Direct expert support
               </h3>
               <p className="text-gray-600">
-                Resolve mission-critical issues with direct access to KulpTech
+                Resolve mission-critical issues with direct access to KalpTech
                 networking experts.
               </p>
             </div>
@@ -236,7 +236,7 @@ export default function AiNexsus() {
 
           <div>
             <p className="text-gray-300 mb-8">
-              With your KulpTech account, you can design and validate HyperFabric
+              With your KalpTech account, you can design and validate HyperFabric
               architectures at no cost. No documentation required — just build
               and go.
             </p>

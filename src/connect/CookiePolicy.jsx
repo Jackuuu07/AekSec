@@ -63,7 +63,7 @@ const CookiePolicy = () => {
             <Cookie className="w-12 h-12 text-amber-600" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            KulpTech Security Cookie Policy
+            KalpTech Security Cookie Policy
           </h1>
           <p className="text-xl text-gray-600">
             Transparency in how we use cookies to secure and improve your experience.
