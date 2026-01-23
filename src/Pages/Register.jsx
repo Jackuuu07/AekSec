@@ -78,7 +78,7 @@ export default function Register() {
             bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
             bg-clip-text text-transparent hover:opacity-90 transition"
           >
-            Aek<span className="font-light">Sec</span>
+            Kulp<span className="font-light">Tech</span>
           </h1>
 
           <div className="absolute top-4 right-4 text-sm text-slate-500">
