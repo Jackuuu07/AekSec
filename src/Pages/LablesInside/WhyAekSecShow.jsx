@@ -174,7 +174,7 @@ export default function WhyAekShow() {
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/about/why-KalpTech/why-KalpTech-ai-data-center.svg"
+                  src="https://tse1.mm.bing.net/th/id/OIP.u-MG5VVu1X54LtGHKtbxowHaEJ?pid=Api&P=0&h=180"
                   alt="AI infrastructure"
                 />
               </div>
@@ -185,16 +185,14 @@ export default function WhyAekShow() {
                 Modernize and transform your data centers to power traditional
                 and AI workloads anywhere—with speed, scale, and flexibility.
               </p>
-              <button className="rounded-full bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition">
-                Transform data centers
-              </button>
+              
             </div>
 
             {/* Card 2 */}
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/about/why-KalpTech/why-KalpTech-future-proofed-workplace.svg"
+                  src="https://tse4.mm.bing.net/th/id/OIP.DagKpFMo1jdywMkDavYqNQHaFp?pid=Api&P=0&h=180"
                   alt="AI infrastructure"
                 />
               </div>
@@ -205,16 +203,14 @@ export default function WhyAekShow() {
                 Create agile, resilient workplaces that evolve with employee
                 needs and deliver incredible customer experiences everywhere.
               </p>
-              <button className="rounded-full bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition">
-                Reimagine workplaces
-              </button>
+              
             </div>
 
             {/* Card 3 */}
             <div className="rounded-2xl bg-white p-10 shadow-sm border">
               <div className="mb-6 text-blue-600 text-3xl">
                 <img
-                  src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/about/why-KalpTech/why-KalpTech-digital-resilience.svg"
+                  src="https://tse3.mm.bing.net/th/id/OIP.NSuVXUkAiRo6JhP2L0YT-gHaE8?pid=Api&P=0&h=180"
                   alt="AI infrastructure"
                 />
               </div>
@@ -223,9 +219,7 @@ export default function WhyAekShow() {
                 Keep your organization securely up and running in the face of
                 any disruption—from cyberattacks to outages and failures.
               </p>
-              <button className="rounded-full bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition">
-                Build digital resilience
-              </button>
+            
             </div>
           </div>
         </div>
@@ -367,7 +361,7 @@ export default function WhyAekShow() {
                 Data, Governance, Talent, and Culture. Is your organization AI
                 ready?
               </p>
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:underline">
+              <a href="/" className="inline-flex items-center gap-2 text-blue-400  cursor-pointer hover:underline">
                 Take the assessment →
               </a>
             </div>
@@ -381,7 +375,7 @@ export default function WhyAekShow() {
                 A small group of “Pacesetters” — about 13% of organizations
                 worldwide — outperform across every measure of AI value.
               </p>
-              <a className="inline-flex items-center gap-2 text-blue-400 hover:underline">
+              <a href="/report/AiReadiness-report" className="inline-flex items-center gap-2 cursor-pointer text-blue-400 hover:underline">
                 Read AI Readiness insights →
               </a>
             </div>

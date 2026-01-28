@@ -44,6 +44,7 @@ export default function Explore() {
 function HeroExplore() {
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate();
   // Close on ESC key
   useEffect(() => {
     const handleEsc = (e) => e.key === "Escape" && setOpen(false);
@@ -80,7 +81,7 @@ function HeroExplore() {
               {/* Company Name */}
               <div className="flex-1">
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                  <span className="text-white">Kulp</span>
+                  <span className="text-white">Kalp</span>
                   <span className="text-blue-300">Tech</span>
                 </h1>
                 <div className="h-1 w-full md:w-96 bg-gradient-to-r from-blue-600 to-blue-400 mt-2 md:mt-3"></div>
@@ -158,6 +159,7 @@ function HeroExplore() {
               )}
 
               <button
+                onClick={() => navigate("/")}
                 className="
                   group
                   text-white font-medium

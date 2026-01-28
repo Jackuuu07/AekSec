@@ -125,23 +125,23 @@ export default function Home() {
                 <button
                   onClick={() => navigate("/explore")}
                   className="
-              group
-              relative
-              bg-gradient-to-r from-blue-600 to-blue-800
-              text-white
-              px-8 py-4
-              rounded-lg
-              font-medium
-              flex items-center gap-3
-              transition-all duration-300 ease-out
-              hover:from-blue-700 hover:to-blue-900
-              hover:shadow-2xl
-              hover:shadow-blue-500/20
-              active:scale-[0.98]
-              overflow-hidden
-              tracking-wide
-              border border-blue-500/20
-            "
+                    group
+                    relative
+                    bg-gradient-to-r from-blue-600 to-blue-800
+                    text-white
+                    px-8 py-4
+                    rounded-lg
+                    font-medium
+                    flex items-center gap-3
+                    transition-all duration-300 ease-out
+                    hover:from-blue-700 hover:to-blue-900
+                    hover:shadow-2xl
+                    hover:shadow-blue-500/20
+                    active:scale-[0.98]
+                    overflow-hidden
+                    tracking-wide
+                    border border-blue-500/20
+                  "
                 >
                   <Shield className="w-5 h-5" />
                   <span className="relative z-10">
@@ -713,7 +713,7 @@ export default function Home() {
               },
               {
                 image:
-                  "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                  "https://xtech.nikkei.com/atcl/nxt/column/18/02252/061900032/topm.jpg?20220512",
                 title: "Secure AI with NVIDIA",
                 category: "Partnership",
                 icon: Lock,
@@ -808,7 +808,7 @@ export default function Home() {
                 Explore Innovation Center
               </button>
               <button
-                onClick={() => navigate("/why/whyAekSec")}
+                onClick={() => navigate("/why/whyKalpTech")}
                 className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"
               >
                 Why Choose KalpTech Security?

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Community() {
+  const navigate = useNavigate();
   /* ================= FEATURED CONTENT SLIDER ================= */
   const featured = [
     {
@@ -186,7 +188,7 @@ export default function Community() {
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-3xl font-light">Community Activity</h2>
 
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+              <button onClick={() => {navigate("/contact")}} className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">
                 Start a conversation
               </button>
             </div>

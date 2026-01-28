@@ -121,7 +121,7 @@ export default function AppRouter() {
         <Route path="/learn" element={<LearnAekSecShow />} />
         <Route path="/products/product-service" element={<ProductShow />} />
         <Route path="/support/support-lab" element={<SupportShow />} />
-        <Route path="/why/whyAekSec" element={<WhyAekSecShow />} />
+        <Route path="/why/whyKalpTech" element={<WhyAekSecShow />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/kulptech-validated" element={<AekSecValidate />} />

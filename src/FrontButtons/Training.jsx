@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Training() {
+  const navigate = useNavigate();
+  
   const tabs = {
     "Self-paced training": {
       title: "Self-paced courses with KalpTech Academy",
@@ -65,12 +68,12 @@ export default function Training() {
               can learn anytime, anywhere, and at your own pace.
             </p>
 
-            <a
-              href="#"
+            <Link
+              to="/explore"
               className="inline-flex items-center text-blue-600 font-medium hover:underline"
             >
               Visit the KalpTech training catalog →
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -79,9 +82,9 @@ export default function Training() {
           <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             {/* LEFT IMAGE */}
             <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"
+              src="https://tse3.mm.bing.net/th/id/OIP.lGurYLfhDn3C5j3covHjkQHaE9?pid=Api&P=0&h=180"
               alt="Learning session"
-              className="rounded-xl shadow-lg"
+              className="rounded-xl shadow-lg object-contain"
             />
 
             {/* RIGHT CONTENT */}
@@ -119,12 +122,12 @@ export default function Training() {
                 </h3>
                 <p className="text-gray-600 mb-6">{tabs[activeTab].desc}</p>
 
-                <a
-                  href="#"
+                <Link
+                  to={activeTab === "Self-paced training" ? "/learn" : "/certifications"}
                   className="inline-flex items-center text-blue-600 font-medium hover:underline"
                 >
                   {tabs[activeTab].cta} →
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -146,9 +149,8 @@ export default function Training() {
               {/* CARD 1 */}
               <div className="bg-white rounded-2xl shadow-sm p-10 hover:shadow-md transition">
                 <div className="mb-6 text-gray-700">
-                  {/* Icon placeholder */}
-                  <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/partner-index-icon-customer-64x64.png"/>
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/partner-index-icon-customer-64x64.png" alt="Partner roles"/>
                   </div>
                 </div>
 
@@ -158,24 +160,24 @@ export default function Training() {
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Partner role levels reflect the breadth of a partner
-                  organization’s skills across multiple technologies and require
+                  organization's skills across multiple technologies and require
                   partner specializations. Find the right role(s) and level(s)
                   for your business.
                 </p>
 
-                <a
-                  href="#"
+                <Link
+                  to="/values/partners"
                   className="text-blue-600 font-medium hover:underline"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
 
               {/* CARD 2 */}
               <div className="bg-white rounded-2xl shadow-sm p-10 hover:shadow-md transition">
                 <div className="mb-6 text-gray-700">
-                  <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/icon-acknowledge.png"/>
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/icon-acknowledge.png" alt="Specializations"/>
                   </div>
                 </div>
 
@@ -185,23 +187,23 @@ export default function Training() {
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Partner specializations reflect the depth of a partner
-                  organization’s expertise. They include required exams and
+                  organization's expertise. They include required exams and
                   recommended trainings for employees in various roles.
                 </p>
 
-                <a
-                  href="#"
+                <Link
+                  to="/values/partners"
                   className="text-blue-600 font-medium hover:underline"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
 
               {/* CARD 3 */}
               <div className="bg-white rounded-2xl shadow-sm p-10 hover:shadow-md transition">
                 <div className="mb-6 text-gray-700">
-                  <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/icon-enterprise-agreement.png"/>
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                    <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/partners/icon-enterprise-agreement.png" alt="Black Belt"/>
                   </div>
                 </div>
 
@@ -209,28 +211,34 @@ export default function Training() {
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   An education framework for partners to become proficient in
-                  selling, deploying, and supporting KalpTech’s latest
+                  selling, deploying, and supporting KalpTech's latest
                   technologies and solutions.
                 </p>
 
-                <a
-                  href="#"
+                <Link
+                  to="/certifications"
                   className="text-blue-600 font-medium hover:underline"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
             </div>
 
             {/* CTA */}
             <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+              <button 
+                onClick={() => navigate("/contact")}
+                className="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+              >
                 Become an KalpTech partner
               </button>
 
-              <a href="#" className="text-blue-600 font-medium hover:underline">
+              <Link 
+                to="/login" 
+                className="text-blue-600 font-medium hover:underline"
+              >
                 Already a partner? Log in →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -240,7 +248,7 @@ export default function Training() {
           <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* LEFT */}
             <h2 className="text-4xl md:text-5xl font-light leading-tight">
-              We’ll create a learning
+              We'll create a learning
               <br />
               plan for you
             </h2>
@@ -252,11 +260,14 @@ export default function Training() {
                 to do it, training with KalpTech means gaining a competitive
                 advantage by staying in sync with security and technology
                 innovations. Pick your products, certifications, or technologies
-                — we’ll create a learning plan to match.
+                — we'll create a learning plan to match.
               </p>
 
-              <button className="px-8 py-4 bg-blue-600 rounded-full hover:bg-blue-700 transition">
-                Let’s talk
+              <button 
+                onClick={() => navigate("/contact")}
+                className="px-8 py-4 bg-blue-600 rounded-full hover:bg-blue-700 transition"
+              >
+                Let's talk
               </button>
             </div>
           </div>
