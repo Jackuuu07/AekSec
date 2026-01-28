@@ -80,7 +80,7 @@ export default function Home() {
                   {/* Company Name */}
                   <div className="flex-1">
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                      <span className="text-white">Kulp</span>
+                      <span className="text-white">Kalp</span>
                       <span className="text-blue-300">Tech</span>
                     </h1>
                     <div className="h-1 w-full md:w-96 bg-gradient-to-r from-blue-600 to-blue-400 mt-2 md:mt-3"></div>
@@ -191,7 +191,7 @@ export default function Home() {
 
                           {/* Main luxurious text */}
                           <div className="flex space-x-1 relative z-10">
-                            {["K", "u", "l", "p", "T", "e", "c", "h"].map(
+                            {["K", "a", "l", "p", "T", "e", "c", "h"].map(
                               (letter, index) => (
                                 <div key={index} className="relative group">
                                   <span
