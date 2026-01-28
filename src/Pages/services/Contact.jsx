@@ -1,7 +1,9 @@
-    import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,33 +32,13 @@ export default function Contact() {
 
   const offices = [
     {
-      city: "San Francisco",
-      address: "123 Security Way, Suite 500",
-      phone: "+1 (415) 555-0199",
-      email: "sf@KalpTech.com",
-      hours: "Mon-Fri, 9AM-6PM PST"
+      city: "Ahmedabad HQ",
+      address: "KalpTech IT Solutions, Corporate Tower, 5th Floor, SG Highway",
+      phone: "+91 79 1234 5678",
+      email: "info@kalptechitsolutions.com",
+      hours: "Mon-Fri, 9AM-6PM IST"
     },
-    {
-      city: "New York",
-      address: "456 Cyber Street, Floor 22",
-      phone: "+1 (212) 555-0199",
-      email: "ny@KalpTech.com",
-      hours: "Mon-Fri, 9AM-6PM EST"
-    },
-    {
-      city: "London",
-      address: "789 Protection Square",
-      phone: "+44 20 5555 0199",
-      email: "london@KalpTech.com",
-      hours: "Mon-Fri, 9AM-6PM GMT"
-    },
-    {
-      city: "Singapore",
-      address: "101 Security Tower",
-      phone: "+65 6555 0199",
-      email: "singapore@KalpTech.com",
-      hours: "Mon-Fri, 9AM-6PM SGT"
-    }
+    
   ];
 
   return (
@@ -69,7 +51,7 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Get in touch with our security experts. We're here to help you protect what matters most.
+              Connect with our cybersecurity experts. We're here to help secure your digital assets.
             </p>
           </div>
         </div>
@@ -150,7 +132,7 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 12345 67890"
                       />
                     </div>
                   </div>
@@ -208,13 +190,13 @@ export default function Contact() {
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-blue-100 rounded-xl">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                    <Mail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Emergency Support</h3>
-                    <p className="text-gray-600 mb-1">24/7 Security Operations Center</p>
-                    <a href="tel:+1-800-SECURITY" className="text-blue-600 font-medium hover:text-blue-700">
-                      +1 (800) 732-8743
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Sales Inquiries</h3>
+                    <p className="text-gray-600 mb-1">For product information and pricing</p>
+                    <a href="mailto:sales@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
+                      sales@kalptechitsolutions.com
                     </a>
                   </div>
                 </div>
@@ -226,8 +208,21 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">General Inquiries</h3>
                     <p className="text-gray-600 mb-1">For non-urgent matters</p>
-                    <a href="mailto:info@KalpTech.com" className="text-blue-600 font-medium hover:text-blue-700">
-                      info@KalpTech.com
+                    <a href="mailto:info@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
+                      info@kalptechitsolutions.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-blue-100 rounded-xl">
+                    <Mail className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Support</h3>
+                    <p className="text-gray-600 mb-1">Technical assistance and troubleshooting</p>
+                    <a href="mailto:support@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
+                      support@kalptechitsolutions.com
                     </a>
                   </div>
                 </div>
@@ -238,15 +233,15 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM (Local Time)</p>
-                    <p className="text-gray-600">Emergency Support: 24/7</p>
+                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM (IST)</p>
+                    <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM (IST)</p>
                   </div>
                 </div>
               </div>
 
               {/* Global Offices */}
               <div className="mt-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Global Offices</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Offices</h3>
                 <div className="grid sm:grid-cols-2 gap-6">
                   {offices.map((office, index) => (
                     <div key={index} className="bg-white rounded-xl border border-gray-200 p-6">
@@ -258,9 +253,6 @@ export default function Contact() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <a href={`tel:${office.phone}`} className="block text-sm text-gray-600 hover:text-blue-600">
-                          {office.phone}
-                        </a>
                         <a href={`mailto:${office.email}`} className="block text-sm text-gray-600 hover:text-blue-600">
                           {office.email}
                         </a>
@@ -280,42 +272,36 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Quick Links</h2>
           
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                title: "Sales Inquiry",
-                description: "Speak with our sales team about our security solutions",
-                link: "/sales",
-                buttonText: "Contact Sales"
-              },
               {
                 title: "Technical Support",
                 description: "Get help with your existing KalpTech products",
-                link: "/support",
-                buttonText: "Get Support"
+                buttonText: "Get Support",
+                onClick: () => navigate("/Support")
               },
               {
                 title: "Partner Program",
                 description: "Become a KalpTech partner and grow your business",
-                link: "/partners",
-                buttonText: "Join Program"
+                buttonText: "Learn More",
+                onClick: () => navigate("/values/partners")
               },
               {
-                title: "Media Relations",
-                description: "For press and media inquiries",
-                link: "/media",
-                buttonText: "Media Kit"
+                title: "Training & Certification",
+                description: "Enhance your skills with our security training programs",
+                buttonText: "Browse Courses",
+                onClick: () => navigate("/Training")
               }
             ].map((link, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg p-6 text-center">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{link.title}</h3>
                 <p className="text-gray-600 mb-6">{link.description}</p>
-                <a 
-                  href={link.link}
+                <button
+                  onClick={link.onClick}
                   className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors"
                 >
                   {link.buttonText}
-                </a>
+                </button>
               </div>
             ))}
           </div>
@@ -329,7 +315,13 @@ export default function Contact() {
           <p className="text-xl opacity-90 mb-8">
             Speak directly with our security experts about your organization's unique challenges.
           </p>
-          <button className="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+          <button 
+            onClick={() => {
+              // In a real app, this would open a calendar booking system
+              window.location.href = `mailto:sales@kalptechitsolutions.com?subject=Schedule%20a%20Security%20Consultation&body=Hello%20KalpTech%20Team,%0A%0AI%20would%20like%20to%20schedule%20a%20security%20consultation.%0A%0ABest%20regards,`;
+            }}
+            className="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+          >
             Book a Demo
           </button>
         </div>

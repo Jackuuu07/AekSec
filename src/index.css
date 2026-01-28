@@ -28,3 +28,32 @@
 }
 
 
+/* Base hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+/* When visible on screen */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional variations */
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal-zoom {
+  transform: scale(0.9);
+}
+.reveal-zoom.active {
+  transform: scale(1);
+}

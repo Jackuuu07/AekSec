@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       {/* ============ HeroBanner Section ============ */}
-      <section className="h-screen bg-gradient-to-br from-gray-950 via-blue-950/30 to-gray-950
+      <section className="reveal h-screen bg-gradient-to-br from-gray-950 via-blue-950/30 to-gray-950
  flex items-center px-8 md:px-20 relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-10"></div>
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* ============ QuickLinks Section ============ */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section className="reveal py-24 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light text-slate-900 mb-4">
@@ -514,7 +514,7 @@ export default function Home() {
       </section>
 
       {/* ============ LatestProducts Section ============ */}
-      <section className="py-24 px-6 bg-slate-100">
+      <section className="reveal py-24 px-6 bg-slate-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h1 className="text-4xl font-light text-slate-900 mb-4">
@@ -666,7 +666,7 @@ export default function Home() {
       </section>
 
       {/* ============ InnovationShowcase Section ============ */}
-      <section className="py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
+      <section className="reveal py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-light text-slate-900 mb-4">
@@ -820,7 +820,7 @@ export default function Home() {
       </section>
 
       {/* ============ TechnologyDomains Section ============ */}
-      <section className="py-24 px-6 bg-slate-200">
+      <section className="reveal py-24 px-6 bg-slate-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-light text-slate-900 mb-4">
@@ -925,7 +925,7 @@ export default function Home() {
       </section>
 
       {/* ============ InsightsSection ============ */}
-      <section className="py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
+      <section className="reveal py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-light text-slate-900 mb-4">

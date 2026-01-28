@@ -105,8 +105,10 @@ import PrivacyPolicy from "../connect/PrivacyPolicy";
 import CookiePolicy from "../connect/CookiePolicy";
 import HelpCenter from "../connect/HelpCenter";
 import TermsAndConditions from "../connect/TermsAndConditions";
+import useScrollReveal from "../hooks/useScrollReveal";
 export default function AppRouter() {
   // const location = useLocation();
+  useScrollReveal(); // 🔥 enables animation for whole site
 
   return (
     <>
