@@ -1,8 +1,16 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function useScrollReveal() {
+  const location = useLocation();
+
   useEffect(() => {
-    const reveals = document.querySelectorAll(".reveal");
+    const elements = document.querySelectorAll(".reveal");
+
+    // Reset first (important when coming back to a page)
+    elements.forEach((el) => {
+      el.classList.remove("active");
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,8 +23,8 @@ export default function useScrollReveal() {
       { threshold: 0.15 }
     );
 
-    reveals.forEach((el) => observer.observe(el));
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]); // 🔥 reruns on every route change
 }

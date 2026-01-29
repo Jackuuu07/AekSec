@@ -50,7 +50,10 @@ export default function Navbar() {
         {/* LEFT - LOGO */}
         <div
           className="flex items-center gap-3 cursor-pointer group"
-          onClick={() => navigate("/")}
+          onClick={(e) => {
+            console.log("CLICK WORKED");
+            navigate("/");
+          }}
         >
           {/* Simple but elegant mark */}
           <div className="relative w-12 h-12">

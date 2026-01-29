@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function About() {
     return (
-        <>
-            
+        <>  
             <main className="bg-white text-gray-800">
                 {/* ================= HERO / ABOUT ================= */}
                 <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-28 px-10 overflow-hidden">
@@ -380,7 +379,7 @@ export default function About() {
                                 </p>
                                 
                                 <div className="space-y-6 mb-12">
-                                    <Link to="/connect" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors block">
+                                    <Link to="/connect" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
                                             <Mail className="text-blue-600" size={22} />
                                         </div>
@@ -390,7 +389,7 @@ export default function About() {
                                         </div>
                                     </Link>
                                     
-                                    <Link to="/values/partners" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors block">
+                                    <Link to="/values/partners" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
                                             <Users className="text-green-600" size={22} />
                                         </div>
@@ -400,7 +399,7 @@ export default function About() {
                                         </div>
                                     </Link>
                                     
-                                    <Link to="/Support" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors block">
+                                    <Link to="/Support" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
                                             <MessageCircle className="text-purple-600" size={22} />
                                         </div>
@@ -410,7 +409,7 @@ export default function About() {
                                         </div>
                                     </Link>
                                     
-                                    <Link to="/about/case-studies" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors block">
+                                    <Link to="/about/case-studies" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
                                             <BookOpen className="text-orange-600" size={22} />
                                         </div>
