@@ -1013,7 +1013,7 @@ export default function Home() {
 
               <div className="space-y-8">
                 <button
-                  onClick={() => navigate("/security-research")}
+                  onClick={() => navigate("/explore")}
                   className="flex items-center gap-4 text-blue-600 font-semibold hover:text-blue-800 transition-colors group"
                 >
                   <div className="p-3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg group-hover:from-blue-100 group-hover:to-blue-200 transition-colors">
@@ -1026,7 +1026,7 @@ export default function Home() {
                 </button>
 
                 <button
-                  onClick={() => navigate("/security-webinars")}
+                  onClick={() => navigate("/login")}
                   className="flex items-center gap-4 text-blue-600 font-semibold hover:text-blue-800 transition-colors group"
                 >
                   <div className="p-3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg group-hover:from-blue-100 group-hover:to-blue-200 transition-colors">

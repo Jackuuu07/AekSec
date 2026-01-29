@@ -6,6 +6,7 @@ import {
   Play,
   ArrowRight,
 } from "lucide-react";
+import {Link} from 'react-router-dom';
 
 export default function SecuringAi() {
   return (
@@ -14,7 +15,7 @@ export default function SecuringAi() {
         {/* ================= HERO ================= */}
         <section className="relative h-[620px] flex items-center">
           <img
-            src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/heroes/products/security/industrial-security/idc-2400x1028.png"
+            src="https://www.securityweek.com/wp-content/uploads/2024/06/AI_Weight-Models.jpg"
             alt="Industrial security"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -127,7 +128,7 @@ export default function SecuringAi() {
             </div>
 
             <img
-              src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/logos/3rd-party/products/security/idc-logo-220x80.png"
+              src="https://tse2.mm.bing.net/th/id/OIP.9B0taRGlbIo8gDZyw49YBQHaD3?pid=Api&P=0&h=180"
               alt="IDC"
               className="w-40 mx-auto"
             />
@@ -143,7 +144,7 @@ export default function SecuringAi() {
           <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12">
             <div className="bg-white overflow-hidden shadow-sm">
               <img
-                src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/photography/products/security/industrial-security/idc-rlobo-blog-544x306.jpg"
+                src="https://tse1.mm.bing.net/th/id/OIP.coggK41xvqBh9JmNzaFTxgHaEK?pid=Api&P=0&h=180"
                 alt="KalpTech expert"
                 className="w-full h-56 object-cover"
               />
@@ -155,15 +156,15 @@ export default function SecuringAi() {
                   Learn how KalpTech helps secure IT/OT convergence for modern
                   industrial environments.
                 </p>
-                <button className="text-blue-600 w-full text-ellipsis font-medium hover:underline">
+                <Link to="/blog" className="text-blue-600 w-full text-ellipsis font-medium hover:underline">
                   Read blog →
-                </button>
+                </Link>
               </div>
             </div>
 
             <div className="bg-white  overflow-hidden shadow-sm">
               <img
-                src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/photography/products/security/industrial-security/idc-report-get-544x306b.jpg"
+                src="https://tse4.mm.bing.net/th/id/OIP.Z9n9xqm37tRjupOZbgl3nQHaEt?pid=Api&P=0&h=180"
                 alt="IDC report"
                 className="w-full h-56 object-cover"
               />
@@ -175,9 +176,9 @@ export default function SecuringAi() {
                   Learn from IDC analysts about securing IT/OT convergence at
                   scale.
                 </p>
-                <button className="text-blue-600 font-medium text-center w-full hover:underline">
+                <Link to="/blog" className="text-blue-600 font-medium text-center w-full hover:underline">
                   Get IDC InfoBrief →
-                </button>
+                </Link>
               </div>
             </div>
           </div>

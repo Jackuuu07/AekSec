@@ -106,6 +106,11 @@ import CookiePolicy from "../connect/CookiePolicy";
 import HelpCenter from "../connect/HelpCenter";
 import TermsAndConditions from "../connect/TermsAndConditions";
 import useScrollReveal from "../hooks/useScrollReveal";
+
+import CloudSecurity2024 from '../Pages/services/report/cloud-security-2024';
+import AIPoweredThreatIntelligence from '../Pages/services/report/ai-threat-intelligence';
+import ComplianceDigitalAge from '../Pages/services/report/compliance-digital-age';
+
 export default function AppRouter() {
   // const location = useLocation();
   useScrollReveal(); // 🔥 enables animation for whole site
@@ -135,6 +140,7 @@ export default function AppRouter() {
         <Route path="/products/ai-platform" element={<AiPlatform />} />
         <Route path="/products/ai-defense" element={<AiDefence />} />
         <Route path="/products/hyperfabric" element={<AiNexsus />} />
+        
         <Route
           path="/report/AiReadiness-report"
           element={<AiReadinessReport />}
@@ -149,6 +155,7 @@ export default function AppRouter() {
           path="/AekSec-infrastructure"
           element={<AekSecInfrastructre />}
         />
+
         <Route path="/AekSec-SecureAiFactory" element={<SecureAiNVIDIA />} />
         <Route path="/Exploremoreai-news" element={<ExploreMoreAINews />} />
         <Route path="/AiCanvaslearning-inside" element={<AiCanvasPopUp />} />
@@ -158,7 +165,22 @@ export default function AppRouter() {
         <Route path="/networking" element={<Networking />} />
         <Route path="/computing" element={<Computing />} />
         <Route path="/career" element={<Career />} />
+
         <Route path="/what-we-think" element={<WhatWeThink />} />
+        <Route
+          path="/reports/cloud-security-2024"
+          element={<CloudSecurity2024 />}
+        />
+        <Route
+          path="/reports/ai-threat-intelligence"
+          element={<AIPoweredThreatIntelligence />}
+        />
+        <Route
+          path="/reports/compliance-digital-age"
+          element={<ComplianceDigitalAge />}
+        />
+
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/applications" element={<Applications />} />
         <Route
@@ -250,7 +272,6 @@ export default function AppRouter() {
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/help" element={<HelpCenter />} />
         <Route path="/terms-conditions" element={<TermsAndConditions />} />
-        
       </Routes>
 
       <Footer />

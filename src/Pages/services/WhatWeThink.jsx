@@ -109,7 +109,7 @@ export default function WhatWeThink() {
                     <span>•</span>
                     <span>{article.readTime}</span>
                   </div>
-                  <Link to={`/insights/${article.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-blue-600 font-medium hover:text-blue-700">
+                  <Link to={"/blog"} className="text-blue-600 font-medium hover:text-blue-700">
                     Read Article →
                   </Link>
                 </div>

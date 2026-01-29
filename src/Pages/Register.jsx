@@ -20,16 +20,13 @@ export default function Register() {
     try {
       setLoading(true);
 
-      const res = await fetch(
-        "https://aeksec-backend.onrender.com/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, password }),
-        }
-      );
+      const res = await fetch("https://aeksec-backend.onrender.com/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, password }),
+      });
 
       const data = await res.json();
 
@@ -55,7 +52,7 @@ export default function Register() {
         window.location.href = "/login";
       }, 1500);
 
-    // eslint-disable-next-line no-unused-vars
+      // eslint-disable-next-line no-unused-vars
     } catch (err) {
       Swal.fire({
         icon: "error",
@@ -70,21 +67,35 @@ export default function Register() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50">
       <div className="w-full max-w-md bg-white border rounded-lg shadow-sm">
-
         {/* Header */}
-        <div className="relative text-center py-8 border-b">
-          <h1
-            className="cursor-pointer text-2xl font-extrabold tracking-tight
-            bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600
-            bg-clip-text text-transparent hover:opacity-90 transition"
-          >
-            Kalp<span className="font-light">Tech</span>
-          </h1>
+        <header className="border-b bg-white">
+          <div className="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+            {/* Left: Logo + Brand */}
+            <div className="flex items-center gap-3">
+              {/* Logo Mark */}
+              <div className="relative w-8 h-8 shrink-0">
+                <div className="absolute inset-0 bg-blue-800 rounded-md rotate-45"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-xs font-bold -rotate-45">
+                    KT
+                  </span>
+                </div>
+              </div>
 
-          <div className="absolute top-4 right-4 text-sm text-slate-500">
-            🌐 US · EN
+              {/* Brand Name */}
+              <span className="relative text-lg font-semibold tracking-tight">
+                <span className="text-gray-900">Kalp</span>
+                <span className="text-gray-500">Tech</span>
+
+                {/* Underline Accent */}
+                <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-blue-600/70 to-blue-400/40 rounded-full"></span>
+              </span>
+            </div>
+
+            {/* Right: Region */}
+            <div className="text-sm text-gray-500">🌐 US · EN</div>
           </div>
-        </div>
+        </header>
 
         {/* Body */}
         <div className="px-8 py-10">
