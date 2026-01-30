@@ -124,7 +124,6 @@ export default function Navbar() {
                     openMenu={openMenu}
                     setOpenMenu={setOpenMenu}
                     hasDropdown={true}
-                    to="/what-we-do"
                   />
                 </div>
 
