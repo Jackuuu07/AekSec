@@ -54,221 +54,185 @@ export default function Home() {
   return (
     <>
       {/* ============ HeroBanner Section ============ */}
-      <section className="reveal min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 flex items-center px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
+
+      <section className="reveal min-h-[70vh] sm:min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 flex items-center px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-10"></div>
 
         {/* Grid lines */}
         <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto w-full py-8 md:py-12 lg:py-0">
-          {/* Right Content - 3D Text Effect */}
-          <div className="w-full order-1 lg:order-2">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] flex items-center justify-center">
-              {/* Mobile/Tablet View - Simplified */}
-              <div className="lg:hidden flex items-center justify-center w-full">
-                <div className="relative perspective-1000">
-                  {/* Main text for mobile */}
-                  <div className="flex space-x-0.5 sm:space-x-1 relative z-10">
-                    {["K", "a", "l", "p", "T", "e", "c", "h"].map(
-                      (letter, index) => (
-                        <div key={index} className="relative group">
-                          <span
-                            className="text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
-                            style={{
-                              animationDelay: `${index * 0.05}s`,
-                              fontFamily: "'Inter', -apple-system, sans-serif",
-                              textShadow: `
-                            0 1px 0 rgba(255, 255, 255, 0.4),
-                            0 2px 4px rgba(0, 0, 0, 0.3)
-                          `,
-                            }}
-                          >
-                            {letter}
-                          </span>
-                        </div>
-                      ),
-                    )}
-                  </div>
-
-                  {/* Mobile mantra */}
-                  <div className="mt-6 md:mt-8 text-center">
-                    <div className="relative inline-block">
-                      <span className="text-xs sm:text-sm md:text-base font-light tracking-[0.3em] sm:tracking-[0.4em] text-blue-300/80 uppercase">
-                        SECURE • INTELLIGENT • ENTERPRISE
-                      </span>
-                      <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Desktop View - Full 3D Effect */}
-              <div className="hidden lg:block w-full">
-                <div className="relative h-full flex items-center justify-center">
+        <div className="relative z-10 max-w-7xl mx-auto w-full py-8 md:py-12">
+          <div className="flex flex-col items-center justify-center space-y-8 md:space-y-12 lg:space-y-16">
+            {/* Main Content - 3D Text Effect */}
+            <div className="w-full">
+              <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] flex items-center justify-center">
+                {/* Mobile/Tablet View - Simplified */}
+                <div className="lg:hidden flex flex-col items-center justify-center w-full">
                   <div className="relative perspective-1000">
-                    {/* Deep 3D shadow layer */}
-                    <div className="absolute inset-0 flex space-x-1 -translate-y-1 translate-x-1">
-                      {["K", "a", "l", "p", "T", "e", "c", "h"].map(
-                        (letter, index) => (
-                          <span
-                            key={index}
-                            className="text-7xl xl:text-8xl font-black text-blue-900/40 animate-depth-shadow"
-                            style={{
-                              animationDelay: `${index * 0.1}s`,
-                              fontFamily: "'Inter', -apple-system, sans-serif",
-                            }}
-                          >
-                            {letter}
-                          </span>
-                        ),
-                      )}
-                    </div>
-
-                    {/* Main luxurious text */}
-                    <div className="flex space-x-1 relative z-10">
+                    {/* Main text for mobile */}
+                    <div className="flex space-x-0.5 sm:space-x-1 relative z-10">
                       {["K", "a", "l", "p", "T", "e", "c", "h"].map(
                         (letter, index) => (
                           <div key={index} className="relative group">
                             <span
-                              className="text-7xl xl:text-8xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
+                              className="text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
+                              style={{
+                                animationDelay: `${index * 0.05}s`,
+                                fontFamily:
+                                  "'Inter', -apple-system, sans-serif",
+                                textShadow: `
+                            0 1px 0 rgba(255, 255, 255, 0.4),
+                            0 2px 4px rgba(0, 0, 0, 0.3)
+                          `,
+                              }}
+                            >
+                              {letter}
+                            </span>
+                          </div>
+                        ),
+                      )}
+                    </div>
+
+                    {/* Mobile mantra */}
+                    <div className="mt-6 md:mt-8 text-center">
+                      <div className="relative inline-block">
+                        <span className="text-xs sm:text-sm md:text-base font-light tracking-[0.3em] sm:tracking-[0.4em] text-blue-300/80 uppercase">
+                          SECURE • INTELLIGENT • ENTERPRISE
+                        </span>
+                        <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop View - Full 3D Effect */}
+                <div className="hidden lg:block w-full">
+                  <div className="relative h-full flex flex-col items-center justify-center">
+                    <div className="relative perspective-1000">
+                      {/* Deep 3D shadow layer */}
+                      <div className="absolute inset-0 flex space-x-1 -translate-y-1 translate-x-1 justify-center">
+                        {["K", "a", "l", "p", "T", "e", "c", "h"].map(
+                          (letter, index) => (
+                            <span
+                              key={index}
+                              className="text-7xl xl:text-8xl font-black text-blue-900/40 animate-depth-shadow"
                               style={{
                                 animationDelay: `${index * 0.1}s`,
                                 fontFamily:
                                   "'Inter', -apple-system, sans-serif",
-                                textShadow: `
+                              }}
+                            >
+                              {letter}
+                            </span>
+                          ),
+                        )}
+                      </div>
+
+                      {/* Main luxurious text */}
+                      <div className="flex space-x-1 relative z-10 justify-center">
+                        {["K", "a", "l", "p", "T", "e", "c", "h"].map(
+                          (letter, index) => (
+                            <div key={index} className="relative group">
+                              <span
+                                className="text-7xl xl:text-8xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
+                                style={{
+                                  animationDelay: `${index * 0.1}s`,
+                                  fontFamily:
+                                    "'Inter', -apple-system, sans-serif",
+                                  textShadow: `
                               0 1px 0 rgba(255, 255, 255, 0.4),
                               0 2px 4px rgba(0, 0, 0, 0.3),
                               0 4px 8px rgba(0, 0, 0, 0.2),
                               0 8px 16px rgba(0, 0, 0, 0.1),
                               0 16px 32px rgba(0, 0, 0, 0.05)
                             `,
-                              }}
-                            >
-                              {letter}
-                            </span>
-
-                            {/* Metallic shine overlay */}
-                            <span
-                              className="absolute inset-0 text-7xl xl:text-8xl font-black bg-gradient-to-r from-transparent via-white/20 to-transparent bg-clip-text text-transparent animate-shine"
-                              style={{
-                                animationDelay: `${index * 0.1 + 1.5}s`,
-                                fontFamily:
-                                  "'Inter', -apple-system, sans-serif",
-                              }}
-                            >
-                              {letter}
-                            </span>
-
-                            {/* Glowing aura */}
-                            <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-                              <span className="text-7xl xl:text-8xl font-black text-blue-500/20 blur-xl">
+                                }}
+                              >
                                 {letter}
                               </span>
-                            </div>
-                          </div>
-                        ),
-                      )}
-                    </div>
 
-                    {/* Security mantra */}
-                    <div className="mt-12 xl:mt-16 text-center">
-                      <div className="relative inline-block">
-                        <span className="text-lg xl:text-xl font-light tracking-[0.4em] xl:tracking-[0.5em] text-blue-300/80 uppercase animate-mantra-reveal">
-                          SECURE • INTELLIGENT • ENTERPRISE
-                        </span>
-                        <div className="absolute -bottom-3 xl:-bottom-4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-glow-line"></div>
+                              {/* Metallic shine overlay */}
+                              <span
+                                className="absolute inset-0 text-7xl xl:text-8xl font-black bg-gradient-to-r from-transparent via-white/20 to-transparent bg-clip-text text-transparent animate-shine"
+                                style={{
+                                  animationDelay: `${index * 0.1 + 1.5}s`,
+                                  fontFamily:
+                                    "'Inter', -apple-system, sans-serif",
+                                }}
+                              >
+                                {letter}
+                              </span>
+
+                              {/* Glowing aura */}
+                              <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                                <span className="text-7xl xl:text-8xl font-black text-blue-500/20 blur-xl">
+                                  {letter}
+                                </span>
+                              </div>
+                            </div>
+                          ),
+                        )}
+                      </div>
+
+                      {/* Security mantra */}
+                      <div className="mt-12 xl:mt-16 text-center">
+                        <div className="relative inline-block">
+                          <span className="text-lg xl:text-xl font-light tracking-[0.4em] xl:tracking-[0.5em] text-blue-300/80 uppercase animate-mantra-reveal">
+                            SECURE • INTELLIGENT • ENTERPRISE
+                          </span>
+                          <div className="absolute -bottom-3 xl:-bottom-4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-glow-line"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col lg:grid lg:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-12 lg:gap-16 items-center">
-            {/* Left Content - Visible on all screens */}
-            <div className="w-full order-2 lg:order-1">
-              <div className="space-y-6 md:space-y-10 mb-2">
-                {/* Tagline */}
-                <div className="h-20 md:h-24 lg:h-32 flex items-center">
-                  <div className="space-y-3 md:space-y-4">
-                    <div
-                      className={`transition-all duration-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-                    >
-                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-blue-200 tracking-wide">
-                        AI's Secure Frontier
-                      </h2>
-                    </div>
-
-                    <div
-                      className={`transition-all duration-700 transform ${fadeIn ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-                    >
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white">
-                        {lines[currentLine]}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <div
-                  className={`transition-all duration-1000 delay-500 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+            {/* Explore Button - Centered below the logo */}
+            <div className="w-full flex justify-center">
+              <div className="transition-all duration-1000 delay-700 transform opacity-100">
+                <button
+                  onClick={() => navigate("/explore")}
+                  className="
+              group
+              relative
+              bg-gradient-to-r from-blue-600 to-blue-800
+              text-white
+              px-8 py-4
+              rounded-lg
+              font-medium
+              flex items-center gap-3
+              transition-all duration-300 ease-out
+              hover:from-blue-700 hover:to-blue-900
+              hover:shadow-xl hover:shadow-blue-500/20
+              active:scale-[0.98]
+              overflow-hidden
+              tracking-wide
+              border border-blue-500/20
+            "
                 >
-                  <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed tracking-tight max-w-2xl">
-                    Secure AI at the edge with enterprise-grade compute,
-                    zero-trust networking, and advanced security where your data
-                    originates. Protect innovation while enabling real-time
-                    experiences with KalpTech.
-                  </p>
-                </div>
-
-                {/* CTA Button */}
-                <div
-                  className={`transition-all duration-1000 delay-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
-                >
-                  <button
-                    onClick={() => navigate("/explore")}
+                  <Shield className="w-5 h-5" />
+                  <span className="relative z-10 text-base">
+                    Explore Security Solutions
+                  </span>
+                  <span
                     className="
-                group
-                relative
-                bg-gradient-to-r from-blue-600 to-blue-800
-                text-white
-                px-6 py-3 sm:px-8 sm:py-4
-                rounded-lg
-                font-medium
-                flex items-center gap-2 sm:gap-3
-                transition-all duration-300 ease-out
-                hover:from-blue-700 hover:to-blue-900
-                hover:shadow-xl sm:hover:shadow-2xl
-                hover:shadow-blue-500/20
-                active:scale-[0.98]
-                overflow-hidden
-                tracking-wide
-                border border-blue-500/20
-                w-full sm:w-auto
-                justify-center sm:justify-start
+                relative z-10
+                transition-transform duration-300
+                group-hover:translate-x-2
               "
                   >
-                    <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
-                    <span className="relative z-10 text-sm sm:text-base">
-                      Explore Security Solutions
-                    </span>
-                    <span
-                      className="
-                  relative z-10
-                  transition-transform duration-300
-                  group-hover:translate-x-2
-                "
-                    >
-                      →
-                    </span>
-                    {/* Shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                  </button>
-                </div>
+                    →
+                  </span>
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                </button>
               </div>
             </div>
+
+            {/* Removed the left content section completely */}
           </div>
         </div>
 
@@ -464,7 +428,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-16 pt-8 border-t border-slate-300">
+          <div className="text-center mt-10 pt-8  ">
             <p className="text-slate-600 mb-6">
               Need personalized security guidance? Our experts are ready to
               help.
@@ -502,7 +466,7 @@ export default function Home() {
                 image:
                   "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
                 description:
-                  "A secure platform designed to build, deploy, and protect AI workloads at enterprise scale. Built-in governance, compliance, and threat detection.",
+                  "A secure platform designed to build, deploy, and protect AI workloads at enterprise scale. Built-in governance, and threat detection.",
                 features: [
                   "Secure Model Management",
                   "Protected MLOps",
@@ -749,8 +713,6 @@ export default function Home() {
                         →
                       </span>
                     </button>
-
-                    
                   </div>
                 </div>
               </div>
@@ -998,8 +960,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-         
         </div>
       </section>
     </>
