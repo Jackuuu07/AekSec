@@ -67,26 +67,7 @@ function HeroExplore() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
           {/* LEFT CONTENT */}
           <div>
-            <div className="flex items-center mb-10 gap-4 md:gap-6">
-              {/* Logo Mark - Security Themed */}
-              <div className="relative w-14 h-14 md:w-16 md:h-16 group shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg transform rotate-45 group-hover:rotate-90 transition-transform duration-500 border-2 border-blue-500/30"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white font-bold text-2xl transform -rotate-45">
-                    KT
-                  </span>{" "}
-                </div>
-              </div>
-
-              {/* Company Name */}
-              <div className="flex-1">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                  <span className="text-white">Kalp</span>
-                  <span className="text-blue-300">Tech</span>
-                </h1>
-                <div className="h-1 w-full md:w-96 bg-gradient-to-r from-blue-600 to-blue-400 mt-2 md:mt-3"></div>
-              </div>
-            </div>
+           
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight max-w-xl">
               There's no secure AI
               <br />

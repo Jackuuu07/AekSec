@@ -33,7 +33,7 @@ const industrySubmenus = {
       { label: "Banking", to: "/industries/banking/banking" },
       { label: "Capital Markets", to: "/industries/banking/capital-markets" },
       { label: "Insurance", to: "/industries/banking/insurance" },
-      ],
+    ],
   },
   "Comms, Media & Information Services": {
     items: [
@@ -76,7 +76,6 @@ const industrySubmenus = {
       { label: "IoT", to: "/industries/hi-tech/iot" },
     ],
   },
- 
   
   "Platforms, Software Products and Gaming": {
     items: [
@@ -84,7 +83,6 @@ const industrySubmenus = {
       { label: "Consumer Software", to: "/industries/platforms/consumer" },
       { label: "Mobile Apps", to: "/industries/platforms/mobile-apps" },
       { label: "Video Games", to: "/industries/platforms/gaming" },
-      
     ],
   },
 };
@@ -94,6 +92,7 @@ export default function MegaMenu({
   onClose,
   onMouseEnter,
   onMouseLeave,
+  isMobile = false,
 }) {
   const [hoveredIndustry, setHoveredIndustry] = useState(null);
   const [isSubmenuHovered, setIsSubmenuHovered] = useState(false);
@@ -220,13 +219,10 @@ export default function MegaMenu({
               icon: <MdSettings />,
               label: "Technology Products and Services",
             },
-            
             {
               icon: <MdDevicesOther />,
               label: "Hi-Tech",
             },
-            
-            
             {
               icon: <FiMonitor />,
               label: "Platforms, Software Products and Gaming",
@@ -327,6 +323,133 @@ export default function MegaMenu({
   const showIndustrySubmenu =
     hoveredIndustry && industrySubmenus[hoveredIndustry];
 
+  // Mobile version layout
+ // Mobile version layout
+if (isMobile) {
+  // Add state to track which industry is open in mobile
+  const [openIndustry, setOpenIndustry] = useState(null);
+
+  return (
+    <div className="bg-gray-50 p-4">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl font-bold text-gray-800">{data.title}</h2>
+        <button
+          onClick={onClose}
+          className="text-gray-500 hover:text-gray-700"
+        >
+          ✕
+        </button>
+      </div>
+      
+      {data.sections.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="mb-6">
+          <h3 className="text-lg font-semibold text-gray-700 border-b pb-2 mb-3">
+            {section.title}
+          </h3>
+          <ul className="space-y-2">
+            {section.items.map((item, itemIndex) => (
+              <li key={itemIndex}>
+                {section.title === "Industries" ? (
+                  // Industry items in mobile - show submenu on click
+                  <div className="mb-1">
+                    <div
+                      onClick={() => {
+                        // Toggle the industry submenu
+                        setOpenIndustry(
+                          openIndustry === item.label ? null : item.label
+                        );
+                      }}
+                      className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 cursor-pointer"
+                    >
+                      <span className="text-gray-500">
+                        {item.icon}
+                      </span>
+                      <span className="text-gray-700 font-medium flex-1">
+                        {item.label}
+                      </span>
+                      <FiChevronRight 
+                        className={`text-gray-400 transition-transform duration-200 ${
+                          openIndustry === item.label ? "rotate-90" : ""
+                        }`}
+                      />
+                    </div>
+                    
+                    {/* Industry submenu for mobile */}
+                    {openIndustry === item.label && industrySubmenus[item.label] && (
+                      <div className="ml-6 mt-1 mb-2 space-y-1 animate-fadeIn">
+                        {industrySubmenus[item.label].items.map((subItem, subIndex) => (
+                          <Link
+                            key={subIndex}
+                            to={subItem.to}
+                            onClick={onClose}
+                            className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-200"
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
+                            <span className="text-gray-700">
+                              {subItem.label}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  // Regular items
+                  <Link
+                    to={item.to}
+                    onClick={onClose}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-white hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
+                  >
+                    <span className="text-gray-500">
+                      {item.icon}
+                    </span>
+                    <span className="text-gray-700 font-medium">
+                      {item.label}
+                    </span>
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      
+      {/* Mobile CTA */}
+      <div className="mt-6 pt-4 border-t">
+        <h3 className="text-lg font-semibold text-gray-800">
+          {type === "what-we-do"
+            ? "Ready to transform your business?"
+            : "Want to learn more about us?"}
+        </h3>
+        <p className="text-gray-600 mt-1 mb-4">
+          {type === "what-we-do"
+            ? "Let's discuss how we can help you succeed"
+            : "Get in touch with our team today"}
+        </p>
+        <div className="flex flex-col gap-2">
+          <Link
+            to="/contact"
+            onClick={onClose}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
+          >
+            {type === "what-we-do" ? "Contact Sales" : "Contact Us"}
+          </Link>
+          {type === "what-we-do" && (
+            <Link
+              to="/trial-demos"
+              onClick={onClose}
+              className="px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition text-center"
+            >
+              Request Demo
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+  // Desktop version
   return (
     <div
       className="absolute top-full max-w-6xl left-1/2 -translate-x-1/2 w-full bg-white border-t shadow-xl z-40"
@@ -426,7 +549,7 @@ export default function MegaMenu({
                       className="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 group"
                       onClick={onClose}
                     >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gray-400 group-hover:bg-blue-600" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-gray-400 group-hover:bg-blue-600" />
                       <span className="text-gray-700 group-hover:text-blue-600 font-medium">
                         {item.label}
                       </span>

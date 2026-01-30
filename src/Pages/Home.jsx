@@ -48,359 +48,224 @@ export default function Home() {
       clearTimeout(initialDelay);
       clearInterval(interval);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       {/* ============ HeroBanner Section ============ */}
-      <section className="reveal h-screen bg-gradient-to-br from-gray-950 via-blue-950/30 to-gray-950
- flex items-center px-8 md:px-20 relative overflow-hidden">
+      <section className="reveal min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 flex items-center px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-10"></div>
 
         {/* Grid lines */}
         <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="mb-10">
-                <div className="flex items-center gap-4 md:gap-6">
-                  {/* Logo Mark - Security Themed */}
-                  <div className="relative w-14 h-14 md:w-16 md:h-16 group shrink-0">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg transform rotate-45 group-hover:rotate-90 transition-transform duration-500 border-2 border-blue-500/30"></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-white font-bold text-2xl transform -rotate-45">
-                        KT
-                      </span>{" "}
+        <div className="relative z-10 max-w-7xl mx-auto w-full py-8 md:py-12 lg:py-0">
+          {/* Right Content - 3D Text Effect */}
+          <div className="w-full order-1 lg:order-2">
+            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px] flex items-center justify-center">
+              {/* Mobile/Tablet View - Simplified */}
+              <div className="lg:hidden flex items-center justify-center w-full">
+                <div className="relative perspective-1000">
+                  {/* Main text for mobile */}
+                  <div className="flex space-x-0.5 sm:space-x-1 relative z-10">
+                    {["K", "a", "l", "p", "T", "e", "c", "h"].map(
+                      (letter, index) => (
+                        <div key={index} className="relative group">
+                          <span
+                            className="text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
+                            style={{
+                              animationDelay: `${index * 0.05}s`,
+                              fontFamily: "'Inter', -apple-system, sans-serif",
+                              textShadow: `
+                            0 1px 0 rgba(255, 255, 255, 0.4),
+                            0 2px 4px rgba(0, 0, 0, 0.3)
+                          `,
+                            }}
+                          >
+                            {letter}
+                          </span>
+                        </div>
+                      ),
+                    )}
+                  </div>
+
+                  {/* Mobile mantra */}
+                  <div className="mt-6 md:mt-8 text-center">
+                    <div className="relative inline-block">
+                      <span className="text-xs sm:text-sm md:text-base font-light tracking-[0.3em] sm:tracking-[0.4em] text-blue-300/80 uppercase">
+                        SECURE • INTELLIGENT • ENTERPRISE
+                      </span>
+                      <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
                     </div>
                   </div>
-
-                  {/* Company Name */}
-                  <div className="flex-1">
-                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                      <span className="text-white">Kalp</span>
-                      <span className="text-blue-300">Tech</span>
-                    </h1>
-                    <div className="h-1 w-full md:w-96 bg-gradient-to-r from-blue-600 to-blue-400 mt-2 md:mt-3"></div>
-                  </div>
                 </div>
               </div>
 
-              <div className="h-24 md:h-32 flex items-center">
-                <div className="space-y-4">
-                  <div
-                    className={`transition-all duration-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-                  >
-                    <h2 className="text-3xl md:text-4xl font-light text-blue-200 tracking-wide">
-                      AI's Secure Frontier
-                    </h2>
-                  </div>
+              {/* Desktop View - Full 3D Effect */}
+              <div className="hidden lg:block w-full">
+                <div className="relative h-full flex items-center justify-center">
+                  <div className="relative perspective-1000">
+                    {/* Deep 3D shadow layer */}
+                    <div className="absolute inset-0 flex space-x-1 -translate-y-1 translate-x-1">
+                      {["K", "a", "l", "p", "T", "e", "c", "h"].map(
+                        (letter, index) => (
+                          <span
+                            key={index}
+                            className="text-7xl xl:text-8xl font-black text-blue-900/40 animate-depth-shadow"
+                            style={{
+                              animationDelay: `${index * 0.1}s`,
+                              fontFamily: "'Inter', -apple-system, sans-serif",
+                            }}
+                          >
+                            {letter}
+                          </span>
+                        ),
+                      )}
+                    </div>
 
-                  <div
-                    className={`transition-all duration-700 transform ${fadeIn ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-                  >
-                    <h3 className="text-2xl md:text-3xl font-medium text-white">
-                      {lines[currentLine]}
-                    </h3>
-                  </div>
-                </div>
-              </div>
+                    {/* Main luxurious text */}
+                    <div className="flex space-x-1 relative z-10">
+                      {["K", "a", "l", "p", "T", "e", "c", "h"].map(
+                        (letter, index) => (
+                          <div key={index} className="relative group">
+                            <span
+                              className="text-7xl xl:text-8xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
+                              style={{
+                                animationDelay: `${index * 0.1}s`,
+                                fontFamily:
+                                  "'Inter', -apple-system, sans-serif",
+                                textShadow: `
+                              0 1px 0 rgba(255, 255, 255, 0.4),
+                              0 2px 4px rgba(0, 0, 0, 0.3),
+                              0 4px 8px rgba(0, 0, 0, 0.2),
+                              0 8px 16px rgba(0, 0, 0, 0.1),
+                              0 16px 32px rgba(0, 0, 0, 0.05)
+                            `,
+                              }}
+                            >
+                              {letter}
+                            </span>
 
-              <div
-                className={`transition-all duration-1000 delay-500 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
-              >
-                <p className="text-lg text-slate-300 leading-relaxed max-w-xl tracking-tight">
-                  Secure AI at the edge with enterprise-grade compute,
-                  zero-trust networking, and advanced security where your data
-                  originates. Protect innovation while enabling real-time
-                  experiences with KalpTech.
-                </p>
-              </div>
+                            {/* Metallic shine overlay */}
+                            <span
+                              className="absolute inset-0 text-7xl xl:text-8xl font-black bg-gradient-to-r from-transparent via-white/20 to-transparent bg-clip-text text-transparent animate-shine"
+                              style={{
+                                animationDelay: `${index * 0.1 + 1.5}s`,
+                                fontFamily:
+                                  "'Inter', -apple-system, sans-serif",
+                              }}
+                            >
+                              {letter}
+                            </span>
 
-              <div
-                className={`transition-all duration-1000 delay-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
-              >
-                <button
-                  onClick={() => navigate("/explore")}
-                  className="
-                    group
-                    relative
-                    bg-gradient-to-r from-blue-600 to-blue-800
-                    text-white
-                    px-8 py-4
-                    rounded-lg
-                    font-medium
-                    flex items-center gap-3
-                    transition-all duration-300 ease-out
-                    hover:from-blue-700 hover:to-blue-900
-                    hover:shadow-2xl
-                    hover:shadow-blue-500/20
-                    active:scale-[0.98]
-                    overflow-hidden
-                    tracking-wide
-                    border border-blue-500/20
-                  "
-                >
-                  <Shield className="w-5 h-5" />
-                  <span className="relative z-10">
-                    Explore Security Solutions
-                  </span>
-                  <span
-                    className="
-                relative z-10
-                transition-transform duration-300
-                group-hover:translate-x-2
-              "
-                  >
-                    →
-                  </span>
-                  {/* Shine effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                </button>
-              </div>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="relative h-[400px]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="hidden lg:block">
-                    <div className="relative h-[500px]">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        {/* Luxurious 3D text effect */}
-                        <div className="relative perspective-1000">
-                          {/* Deep 3D shadow layer */}
-                          <div className="absolute inset-0 flex space-x-1 -translate-y-1 translate-x-1">
-                            {["K", "u", "l", "p", "T", "e", "c", "h"].map(
-                              (letter, index) => (
-                                <span
-                                  key={index}
-                                  className="text-8xl font-black text-blue-900/40 animate-depth-shadow"
-                                  style={{
-                                    animationDelay: `${index * 0.1}s`,
-                                    fontFamily:
-                                      "'Inter', -apple-system, sans-serif",
-                                  }}
-                                >
-                                  {letter}
-                                </span>
-                              ),
-                            )}
-                          </div>
-
-                          {/* Main luxurious text */}
-                          <div className="flex space-x-1 relative z-10">
-                            {["K", "a", "l", "p", "T", "e", "c", "h"].map(
-                              (letter, index) => (
-                                <div key={index} className="relative group">
-                                  <span
-                                    className="text-8xl font-black bg-gradient-to-b from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-luxury-reveal relative z-20"
-                                    style={{
-                                      animationDelay: `${index * 0.1}s`,
-                                      fontFamily:
-                                        "'Inter', -apple-system, sans-serif",
-                                      textShadow: `
-                    0 1px 0 rgba(255, 255, 255, 0.4),
-                    0 2px 4px rgba(0, 0, 0, 0.3),
-                    0 4px 8px rgba(0, 0, 0, 0.2),
-                    0 8px 16px rgba(0, 0, 0, 0.1),
-                    0 16px 32px rgba(0, 0, 0, 0.05)
-                  `,
-                                    }}
-                                  >
-                                    {letter}
-                                  </span>
-
-                                  {/* Metallic shine overlay */}
-                                  <span
-                                    className="absolute inset-0 text-8xl font-black bg-gradient-to-r from-transparent via-white/20 to-transparent bg-clip-text text-transparent animate-shine"
-                                    style={{
-                                      animationDelay: `${index * 0.1 + 1.5}s`,
-                                      fontFamily:
-                                        "'Inter', -apple-system, sans-serif",
-                                    }}
-                                  >
-                                    {letter}
-                                  </span>
-
-                                  {/* Glowing aura */}
-                                  <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-                                    <span className="text-8xl font-black text-blue-500/20 blur-xl">
-                                      {letter}
-                                    </span>
-                                  </div>
-                                </div>
-                              ),
-                            )}
-                          </div>
-
-                          {/* Security mantra with luxurious reveal */}
-                          <div className="mt-16 text-center">
-                            <div className="relative inline-block">
-                              <span className="text-xl font-light tracking-[0.5em] text-blue-300/80 uppercase animate-mantra-reveal">
-                                SECURE • INTELLIGENT • ENTERPRISE
+                            {/* Glowing aura */}
+                            <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                              <span className="text-7xl xl:text-8xl font-black text-blue-500/20 blur-xl">
+                                {letter}
                               </span>
-                              <div className="absolute -bottom-4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-glow-line"></div>
                             </div>
                           </div>
-                        </div>
-                      </div>
+                        ),
+                      )}
                     </div>
 
-                    <style jsx>{`
-                      .perspective-1000 {
-                        perspective: 1000px;
-                      }
-
-                      @keyframes luxury-reveal {
-                        0% {
-                          opacity: 0;
-                          transform: translateY(50px) rotateX(-90deg) scale(0.8);
-                          filter: brightness(0) blur(20px);
-                        }
-                        50% {
-                          opacity: 0.7;
-                          filter: brightness(1.2) blur(5px);
-                        }
-                        100% {
-                          opacity: 1;
-                          transform: translateY(0) rotateX(0) scale(1);
-                          filter: brightness(1) blur(0);
-                        }
-                      }
-
-                      @keyframes depth-shadow {
-                        0% {
-                          opacity: 0;
-                          transform: translateY(30px);
-                        }
-                        100% {
-                          opacity: 0.4;
-                          transform: translateY(0);
-                        }
-                      }
-
-                      @keyframes shine {
-                        0% {
-                          transform: translateX(-100%);
-                          opacity: 0;
-                        }
-                        50% {
-                          opacity: 0.8;
-                        }
-                        100% {
-                          transform: translateX(100%);
-                          opacity: 0;
-                        }
-                      }
-
-                      @keyframes mantra-reveal {
-                        0% {
-                          opacity: 0;
-                          letter-spacing: 1em;
-                          filter: blur(10px);
-                        }
-                        100% {
-                          opacity: 1;
-                          letter-spacing: 0.5em;
-                          filter: blur(0);
-                        }
-                      }
-
-                      @keyframes glow-line {
-                        0% {
-                          width: 0;
-                          opacity: 0;
-                        }
-                        100% {
-                          width: 100%;
-                          opacity: 0.5;
-                        }
-                      }
-
-                      @keyframes float-slow {
-                        0%,
-                        100% {
-                          transform: translateY(0);
-                        }
-                        50% {
-                          transform: translateY(-10px);
-                        }
-                      }
-
-                      @keyframes float-medium {
-                        0%,
-                        100% {
-                          transform: translateY(0);
-                        }
-                        50% {
-                          transform: translateY(-15px);
-                        }
-                      }
-
-                      @keyframes float-fast {
-                        0%,
-                        100% {
-                          transform: translateY(0);
-                        }
-                        50% {
-                          transform: translateY(-20px);
-                        }
-                      }
-
-                      @keyframes fade-in-delay {
-                        0% {
-                          opacity: 0;
-                        }
-                        100% {
-                          opacity: 1;
-                        }
-                      }
-
-                      .animate-luxury-reveal {
-                        animation: luxury-reveal 1.2s
-                          cubic-bezier(0.4, 0, 0.2, 1) forwards;
-                        opacity: 0;
-                      }
-
-                      .animate-depth-shadow {
-                        animation: depth-shadow 1s ease-out forwards;
-                        opacity: 0;
-                      }
-
-                      .animate-shine {
-                        animation: shine 2s ease-in-out infinite;
-                        animation-delay: 1.5s;
-                      }
-
-                      .animate-mantra-reveal {
-                        animation: mantra-reveal 2s ease-out 1.8s forwards;
-                        opacity: 0;
-                      }
-
-                      .animate-glow-line {
-                        animation: glow-line 2s ease-out 2.5s forwards;
-                        opacity: 0;
-                      }
-
-                      .animate-float-slow {
-                        animation: float-slow 4s ease-in-out infinite;
-                      }
-
-                      .animate-float-medium {
-                        animation: float-medium 3s ease-in-out infinite;
-                      }
-
-                      .animate-float-fast {
-                        animation: float-fast 2.5s ease-in-out infinite;
-                      }
-
-                      .animate-fade-in-delay {
-                        animation: fade-in-delay 1s ease-out 2.8s forwards;
-                      }
-                    `}</style>
+                    {/* Security mantra */}
+                    <div className="mt-12 xl:mt-16 text-center">
+                      <div className="relative inline-block">
+                        <span className="text-lg xl:text-xl font-light tracking-[0.4em] xl:tracking-[0.5em] text-blue-300/80 uppercase animate-mantra-reveal">
+                          SECURE • INTELLIGENT • ENTERPRISE
+                        </span>
+                        <div className="absolute -bottom-3 xl:-bottom-4 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-glow-line"></div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:grid lg:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-12 lg:gap-16 items-center">
+            {/* Left Content - Visible on all screens */}
+            <div className="w-full order-2 lg:order-1">
+              <div className="space-y-6 md:space-y-10 mb-2">
+                {/* Tagline */}
+                <div className="h-20 md:h-24 lg:h-32 flex items-center">
+                  <div className="space-y-3 md:space-y-4">
+                    <div
+                      className={`transition-all duration-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                    >
+                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-blue-200 tracking-wide">
+                        AI's Secure Frontier
+                      </h2>
+                    </div>
+
+                    <div
+                      className={`transition-all duration-700 transform ${fadeIn ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
+                    >
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white">
+                        {lines[currentLine]}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <div
+                  className={`transition-all duration-1000 delay-500 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+                >
+                  <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed tracking-tight max-w-2xl">
+                    Secure AI at the edge with enterprise-grade compute,
+                    zero-trust networking, and advanced security where your data
+                    originates. Protect innovation while enabling real-time
+                    experiences with KalpTech.
+                  </p>
+                </div>
+
+                {/* CTA Button */}
+                <div
+                  className={`transition-all duration-1000 delay-700 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
+                >
+                  <button
+                    onClick={() => navigate("/explore")}
+                    className="
+                group
+                relative
+                bg-gradient-to-r from-blue-600 to-blue-800
+                text-white
+                px-6 py-3 sm:px-8 sm:py-4
+                rounded-lg
+                font-medium
+                flex items-center gap-2 sm:gap-3
+                transition-all duration-300 ease-out
+                hover:from-blue-700 hover:to-blue-900
+                hover:shadow-xl sm:hover:shadow-2xl
+                hover:shadow-blue-500/20
+                active:scale-[0.98]
+                overflow-hidden
+                tracking-wide
+                border border-blue-500/20
+                w-full sm:w-auto
+                justify-center sm:justify-start
+              "
+                  >
+                    <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <span className="relative z-10 text-sm sm:text-base">
+                      Explore Security Solutions
+                    </span>
+                    <span
+                      className="
+                  relative z-10
+                  transition-transform duration-300
+                  group-hover:translate-x-2
+                "
+                    >
+                      →
+                    </span>
+                    {/* Shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -420,7 +285,108 @@ export default function Home() {
                 rgba(255, 255, 255, 0.05) 1px,
                 transparent 1px
               );
-            background-size: 50px 50px;
+            background-size: 40px 40px;
+          }
+
+          @media (min-width: 1024px) {
+            .bg-grid-white {
+              background-size: 50px 50px;
+            }
+          }
+
+          @keyframes luxury-reveal {
+            0% {
+              opacity: 0;
+              transform: translateY(30px) rotateX(-90deg) scale(0.8);
+              filter: brightness(0) blur(15px);
+            }
+            50% {
+              opacity: 0.7;
+              filter: brightness(1.2) blur(3px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0) rotateX(0) scale(1);
+              filter: brightness(1) blur(0);
+            }
+          }
+
+          @keyframes depth-shadow {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 0.4;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes shine {
+            0% {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            50% {
+              opacity: 0.8;
+            }
+            100% {
+              transform: translateX(100%);
+              opacity: 0;
+            }
+          }
+
+          @keyframes mantra-reveal {
+            0% {
+              opacity: 0;
+              letter-spacing: 1em;
+              filter: blur(8px);
+            }
+            100% {
+              opacity: 1;
+              letter-spacing: 0.4em;
+              filter: blur(0);
+            }
+          }
+
+          @keyframes glow-line {
+            0% {
+              width: 0;
+              opacity: 0;
+            }
+            100% {
+              width: 100%;
+              opacity: 0.5;
+            }
+          }
+
+          .perspective-1000 {
+            perspective: 1000px;
+          }
+
+          .animate-luxury-reveal {
+            animation: luxury-reveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            opacity: 0;
+          }
+
+          .animate-depth-shadow {
+            animation: depth-shadow 0.8s ease-out forwards;
+            opacity: 0;
+          }
+
+          .animate-shine {
+            animation: shine 2s ease-in-out infinite;
+            animation-delay: 1.5s;
+          }
+
+          .animate-mantra-reveal {
+            animation: mantra-reveal 1.5s ease-out 1.5s forwards;
+            opacity: 0;
+          }
+
+          .animate-glow-line {
+            animation: glow-line 1.5s ease-out 2s forwards;
+            opacity: 0;
           }
         `}</style>
       </section>
@@ -439,7 +405,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
               {
                 icon: CloudDownload,
@@ -481,17 +447,17 @@ export default function Home() {
               <button
                 key={index}
                 onClick={() => navigate(item.path)}
-                className="group flex flex-col items-center gap-4 p-8 bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-slate-200 hover:border-blue-200 hover:bg-blue-50/30"
+                className="group flex flex-col items-center gap-4 p-8 bg-white rounded-lg shadow-sm border border-slate-200 transition-all duration-300 lg:hover:shadow-lg lg:hover:-translate-y-2 lg:hover:border-blue-200 lg:hover:bg-blue-50/30"
               >
                 <div className="relative">
-                  <div className="p-4 rounded-full bg-gradient-to-br from-blue-50 to-slate-100 group-hover:from-blue-100 group-hover:to-blue-50 transition-all duration-300">
+                  <div className="p-4 rounded-full bg-gradient-to-br from-blue-50 to-slate-100 transition-all duration-300 lg:group-hover:from-blue-100 lg:group-hover:to-blue-50">
                     <item.icon className="w-8 h-8 text-blue-700" />
                   </div>
                 </div>
                 <span className="font-semibold text-slate-900 group-hover:text-blue-700 transition-colors">
                   {item.label}
                 </span>
-                <p className="text-sm text-slate-500 text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm text-slate-500 text-center mt-1 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                   {item.desc}
                 </p>
               </button>
@@ -832,7 +798,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
                 icon: Network,
