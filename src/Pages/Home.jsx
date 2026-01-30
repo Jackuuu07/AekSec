@@ -672,7 +672,7 @@ export default function Home() {
                   text: "Learn More",
                   path: "/products/ai-defense",
                 },
-                secondaryAction: {
+                fsecondaryAction: {
                   text: "Request Demo",
                   path: "/demo/ai-defense",
                 },
@@ -750,15 +750,7 @@ export default function Home() {
                       </span>
                     </button>
 
-                    <button
-                      onClick={() => navigate(card.secondaryAction.path)}
-                      className="flex items-center justify-between w-full px-4 py-3 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition-colors group/btn2 border border-slate-200"
-                    >
-                      <span>{card.secondaryAction.text}</span>
-                      <span className="transform group-hover/btn2:translate-x-2 transition-transform">
-                        →
-                      </span>
-                    </button>
+                    
                   </div>
                 </div>
               </div>
