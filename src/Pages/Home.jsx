@@ -1007,34 +1007,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-20 pb-12 pt-12 border-t w-full border-slate-300 bg-slate-100">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-700 mb-2">
-                  5000+
-                </div>
-                <div className="text-slate-600">
-                  Secure Enterprise Customers
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-700 mb-2">
-                  99.99%
-                </div>
-                <div className="text-slate-600">Security Uptime</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-700 mb-2">60%</div>
-                <div className="text-slate-600">Faster Threat Detection</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-700 mb-2">
-                  24/7
-                </div>
-                <div className="text-slate-600">Security Monitoring</div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
     </>
