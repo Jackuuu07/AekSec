@@ -3,11 +3,9 @@ import { Users, Shield, Globe, Award, Target, Lock } from 'lucide-react';
 
 export default function InclusionBelonging() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-gray-100 text-white">
       {/* Hero Section - Security Dark Theme */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-cyan-900/10"></div>
-        <div className="absolute inset-0 bg-white"></div>
         
         <div className="relative py-24 px-6 max-w-7xl mx-auto">
           <div className="flex items-center space-x-4 mb-8">
@@ -16,17 +14,17 @@ export default function InclusionBelonging() {
             </div>
             <div className="border-l-2 border-cyan-500 pl-4">
               <span className="text-cyan-400 text-sm font-mono tracking-wider">SECURE DIVERSITY</span>
-              <h1 className="text-5xl font-bold mt-1">Inclusion & Belonging</h1>
+              <h1 className="text-5xl text-black font-bold  mt-1">Inclusion & Belonging</h1>
             </div>
           </div>
           
-          <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
+          <p className="text-xl text-gray-500 max-w-3xl mb-12 leading-relaxed">
             At KalpTech Security, we believe diverse perspectives strengthen our defense capabilities. 
             Our inclusive culture drives innovation in cybersecurity solutions.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="border border-gray-800 rounded-xl p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-cyan-500/30 transition-all duration-300">
+            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
               <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-blue-900 to-blue-700 mb-6">
                 <Target className="w-6 h-6" />
               </div>
@@ -34,7 +32,7 @@ export default function InclusionBelonging() {
               <p className="text-gray-400">Multiple cultural and cognitive perspectives enhance our threat detection capabilities by 40%.</p>
             </div>
             
-            <div className="border border-gray-800 rounded-xl p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-cyan-500/30 transition-all duration-300">
+            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
               <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-purple-900 to-purple-700 mb-6">
                 <Lock className="w-6 h-6" />
               </div>
@@ -42,7 +40,7 @@ export default function InclusionBelonging() {
               <p className="text-gray-400">Products designed by diverse teams prevent 30% more edge-case vulnerabilities.</p>
             </div>
             
-            <div className="border border-gray-800 rounded-xl p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-cyan-500/30 transition-all duration-300">
+            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
               <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-cyan-900 to-cyan-700 mb-6">
                 <Globe className="w-6 h-6" />
               </div>
