@@ -107,9 +107,10 @@ import HelpCenter from "../connect/HelpCenter";
 import TermsAndConditions from "../connect/TermsAndConditions";
 import useScrollReveal from "../hooks/useScrollReveal";
 
-import CloudSecurity2024 from '../Pages/services/report/cloud-security-2024';
-import AIPoweredThreatIntelligence from '../Pages/services/report/ai-threat-intelligence';
-import ComplianceDigitalAge from '../Pages/services/report/compliance-digital-age';
+import CloudSecurity2024 from "../Pages/services/report/cloud-security-2024";
+import AIPoweredThreatIntelligence from "../Pages/services/report/ai-threat-intelligence";
+import ComplianceDigitalAge from "../Pages/services/report/compliance-digital-age";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function AppRouter() {
   // const location = useLocation();
@@ -118,7 +119,7 @@ export default function AppRouter() {
   return (
     <>
       <Navbar />
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
@@ -140,7 +141,7 @@ export default function AppRouter() {
         <Route path="/products/ai-platform" element={<AiPlatform />} />
         <Route path="/products/ai-defense" element={<AiDefence />} />
         <Route path="/products/hyperfabric" element={<AiNexsus />} />
-        
+
         <Route
           path="/report/AiReadiness-report"
           element={<AiReadinessReport />}
@@ -179,7 +180,6 @@ export default function AppRouter() {
           path="/reports/compliance-digital-age"
           element={<ComplianceDigitalAge />}
         />
-
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/applications" element={<Applications />} />

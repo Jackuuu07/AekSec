@@ -16,31 +16,20 @@ import {
   Lock,
   Key,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [currentLine, setCurrentLine] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const [fadeIn, setFadeIn] = useState(false);
 
-  const lines = [
-    "Redefining Intelligent Infrastructure",
-    "Where AI Meets Enterprise Excellence",
-    "Secure, Scalable, Future-Ready Solutions",
-  ];
+ 
 
   useEffect(() => {
     const initialDelay = setTimeout(() => {
-      setIsVisible(true);
-      setFadeIn(true);
     }, 500);
 
     const interval = setInterval(() => {
-      setFadeIn(false);
       setTimeout(() => {
-        setCurrentLine((prev) => (prev + 1) % lines.length);
-        setFadeIn(true);
+        (true);
       }, 500);
     }, 3000);
 
@@ -48,7 +37,6 @@ export default function Home() {
       clearTimeout(initialDelay);
       clearInterval(interval);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
