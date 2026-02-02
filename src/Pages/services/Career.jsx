@@ -1,10 +1,7 @@
 import React from 'react';
 import { Briefcase, MapPin, DollarSign, Clock, Users, Trophy, Award, Heart, BookOpen, Coffee, Globe, Shield } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 export default function Career() {
-  const navigate = useNavigate();
-  
   const openPositions = [
     {
       title: "Senior Security Engineer",
@@ -136,6 +133,29 @@ export default function Career() {
     }
   ];
 
+  const applicationSteps = [
+    {
+      step: "01",
+      title: "Application Submission",
+      description: "Send your resume to careers@kalptechitsolutions.com"
+    },
+    {
+      step: "02",
+      title: "Initial Screening",
+      description: "HR call to discuss role fit and expectations (15-30 mins)"
+    },
+    {
+      step: "03",
+      title: "Technical Interview",
+      description: "Technical assessment and problem-solving discussion"
+    },
+    {
+      step: "04",
+      title: "Final Interview",
+      description: "Meet with team leads and HR at our Ahmedabad office"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
@@ -157,6 +177,9 @@ export default function Career() {
                 <Clock className="w-5 h-5" />
                 <span className="text-lg">Monday to Friday, 9:30 AM - 6:30 PM</span>
               </div>
+            </div>
+            <div className="mt-8 text-lg">
+              <p>Email your resume to: <span className="font-semibold">careers@kalptechitsolutions.com</span></p>
             </div>
           </div>
         </div>
@@ -309,15 +332,16 @@ export default function Career() {
                     </div>
                   </div>
                   
-                  <div className="lg:w-48">
-                    <button 
-                      onClick={() => window.location.href = `mailto:careers@kalptechitsolutions.com?subject=Application%20for%20${position.title}&body=Dear%20Hiring%20Manager,%0A%0AI%20am%20interested%20in%20applying%20for%20the%20${position.title}%20position%20at%20KalpTech%20Ahmedabad.%0A%0AThanks%20and%20regards,`}
-                      className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all"
-                    >
-                      Apply Now
-                    </button>
-                    <p className="text-xs text-gray-500 text-center mt-2">
-                      Email resume to careers@kalptechitsolutions.com
+                  <div className="lg:w-48 text-center">
+                    <div className="mb-2">
+                      <span className="text-lg font-semibold text-blue-600">Apply via Email</span>
+                    </div>
+                    <p className="text-sm text-gray-600">
+                      Send resume to:<br />
+                      <span className="font-medium">careers@kalptechitsolutions.com</span>
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2">
+                      Mention position title in subject
                     </p>
                   </div>
                 </div>
@@ -396,28 +420,7 @@ export default function Career() {
           <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Our Hiring Process in Ahmedabad</h2>
           
           <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Application Submission",
-                description: "Send your resume to careers@kalptechitsolutions.com"
-              },
-              {
-                step: "02",
-                title: "Initial Screening",
-                description: "HR call to discuss role fit and expectations (15-30 mins)"
-              },
-              {
-                step: "03",
-                title: "Technical Interview",
-                description: "Technical assessment and problem-solving discussion"
-              },
-              {
-                step: "04",
-                title: "Final Interview",
-                description: "Meet with team leads and HR at our Ahmedabad office"
-              }
-            ].map((step, index) => (
+            {applicationSteps.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                   {step.step}
@@ -437,23 +440,17 @@ export default function Career() {
           <p className="text-xl opacity-90 mb-8">
             Join India's premier cybersecurity company based in Ahmedabad
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => window.location.href = "mailto:careers@kalptechitsolutions.com?subject=Career%20Inquiry%20at%20KalpTech%20Ahmedabad&body=Dear%20Hiring%20Team,%0A%0AI%20am%20interested%20in%20career%20opportunities%20at%20KalpTech%20Ahmedabad.%20Please%20let%20me%20know%20about%20suitable%20openings.%0A%0AThanks%20and%20regards,"}
-              className="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Submit Your Resume
-            </button>
-            <button 
-              onClick={() => navigate("/contact")}
-              className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors"
-            >
-              Visit Our Ahmedabad Office
-            </button>
+          <div className="space-y-4">
+            <div className="text-lg">
+              <p>Email your resume to:</p>
+              <p className="text-2xl font-bold mt-2">careers@kalptechitsolutions.com</p>
+            </div>
+            <div className="pt-6 border-t border-white/20">
+              <p className="text-lg mb-2">Visit Our Office</p>
+              <p className="text-white/90">Corporate Tower, SG Highway, Ahmedabad</p>
+              <p className="text-white/90">Monday to Friday, 9:30 AM - 6:30 PM</p>
+            </div>
           </div>
-          <p className="text-white/80 text-sm mt-6">
-            📍 Corporate Tower, SG Highway, Ahmedabad | 📧 careers@kalptechitsolutions.com
-          </p>
         </div>
       </section>
     </div>

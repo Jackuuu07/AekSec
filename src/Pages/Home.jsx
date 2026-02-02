@@ -606,7 +606,7 @@ export default function Home() {
                   "Experience real-time security telemetry, AI insights, and team collaboration in a protected workspace.",
                 category: "Security Launch",
                 icon: Shield,
-                primaryAction: { text: "Watch Demo", path: "/ai-canvas/demo" },
+                primaryAction: { text: "Watch Demo", path: "/AiCanvaslearning-inside" },
                 secondaryAction: {
                   text: "Learn Methodology",
                   path: "/ai-approach",
@@ -639,7 +639,7 @@ export default function Home() {
                   "From secure AI PODs to managed AI stacks, see how KalpTech protects enterprise AI with NVIDIA's computing.",
                 primaryAction: {
                   text: "Explore Partnership",
-                  path: "/partners/nvidia",
+                  path: "/SecureAi-inside",
                 },
                 secondaryAction: {
                   text: "Security Details",
@@ -656,7 +656,7 @@ export default function Home() {
                   "Unlock scalable, high-performance AI with our portfolio of secure infrastructure solutions.",
                 primaryAction: {
                   text: "Explore Portfolio",
-                  path: "/infrastructure",
+                  path: "/AekSec-infrastructure",
                 },
                 secondaryAction: {
                   text: "Security Architecture",
@@ -709,12 +709,7 @@ export default function Home() {
 
           <div className="mt-20 text-center">
             <div className="inline-flex flex-col sm:flex-row gap-8 items-center justify-center">
-              <button
-                onClick={() => navigate("/innovation")}
-                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-blue-900 hover:shadow-xl transition-all duration-300"
-              >
-                Explore Innovation Center
-              </button>
+              
               <button
                 onClick={() => navigate("/why/whyKalpTech")}
                 className="flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"

@@ -8,6 +8,7 @@ import {
   Globe,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function AiReadinessReport() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -46,10 +47,7 @@ export default function AiReadinessReport() {
               AI era defined by speed, scale, and security.
             </p>
 
-            <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full text-sm font-medium transition">
-              Download the latest report
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            
           </div>
         </section>
 
@@ -248,9 +246,9 @@ export default function AiReadinessReport() {
             <h2 className="text-3xl font-light">
               Design your AI future with confidence
             </h2>
-            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-medium transition">
+            <Link to="/" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-medium transition">
               Get started with KalpTech
-            </button>
+            </Link>
           </div>
         </section>
       </div>

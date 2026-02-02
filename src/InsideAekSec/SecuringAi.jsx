@@ -35,15 +35,7 @@ export default function SecuringAi() {
               speed digitization without increasing cyber risks.
             </p>
 
-            <div className="flex gap-4">
-              <button className="px-6 py-3 bg-white text-black rounded-full font-medium">
-                Get IDC InfoBrief
-              </button>
-
-              <button className="flex items-center gap-2 text-white hover:underline">
-                Watch webinar <ArrowRight size={16} />
-              </button>
-            </div>
+            
           </div>
         </section>
 
@@ -90,12 +82,7 @@ export default function SecuringAi() {
                 ))}
               </div>
 
-              {/* CTA */}
-              <div className="text-center mt-16">
-                <button className="px-8 py-3 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition">
-                  Get IDC InfoBrief
-                </button>
-              </div>
+              
             </div>
           </div>
         </section>
@@ -198,9 +185,9 @@ export default function SecuringAi() {
                 Schedule a free, no-obligation consultation with one of our
                 IT/OT cybersecurity experts.
               </p>
-              <button className="px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 font-medium">
+              <Link to="/contact" className="px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 font-medium">
                 Request consultation
-              </button>
+              </Link>
             </div>
           </div>
         </section>

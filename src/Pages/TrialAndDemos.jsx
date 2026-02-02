@@ -255,23 +255,7 @@ export default function TrialsAndDemos() {
 
             {/* RESULTS */}
             <div className="lg:col-span-3">
-              {/* SEARCH & SORT */}
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
-                <div className="relative w-full md:w-96">
-                  <FiSearch className="absolute left-4 top-3 text-gray-400" />
-                  <input
-                    type="text"
-                    placeholder="Find a trial or a demo"
-                    className="w-full border rounded-full pl-10 pr-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-
-                <select className="border rounded-full px-6 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option>Title A–Z</option>
-                  <option>Newest</option>
-                  <option>Most Popular</option>
-                </select>
-              </div>
+              
 
               <div className="flex justify-between items-center mb-8">
                 <p className="text-gray-500">66 Results</p>
@@ -395,7 +379,7 @@ export default function TrialsAndDemos() {
 
             <div className="relative">
               <img
-                src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
+                src="https://cdn.mos.cms.futurecdn.net/cuJ2nHdA2cLngX4bhsHsye-1920-80.jpg"
                 alt="dCloud demos"
                 className="w-full rounded-2xl shadow-xl"
               />

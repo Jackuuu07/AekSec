@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Building, User, MessageSquare } from 'lucide-react';
 
 export default function Contact() {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
-    phone: '',
     subject: '',
     message: ''
   });
@@ -20,7 +17,7 @@ export default function Contact() {
     console.log('Form submitted:', formData);
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: '', email: '', company: '', phone: '', subject: '', message: '' });
+    setFormData({ name: '', email: '', company: '', subject: '', message: '' });
   };
 
   const handleChange = (e) => {
@@ -30,110 +27,124 @@ export default function Contact() {
     });
   };
 
-  const offices = [
+  const contactMethods = [
     {
-      city: "Ahmedabad HQ",
-      address: "KalpTech IT Solutions, Corporate Tower, 5th Floor, SG Highway",
-      phone: "+91 79 1234 5678",
-      email: "info@kalptechitsolutions.com",
-      hours: "Mon-Fri, 9AM-6PM IST"
+      icon: <Mail className="w-6 h-6" />,
+      title: "Sales Inquiries",
+      email: "sales@kalptechsolution.com",
+      description: "For product information, pricing, and commercial discussions"
     },
-    
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Human Resources",
+      email: "hr@kalptechsolution.com",
+      description: "For career opportunities, recruitment, and employment matters"
+    }
   ];
 
+  const officeInfo = {
+    city: "Ahmedabad HQ",
+    address: "KalpTech IT Solutions, Corporate Tower, 5th Floor, SG Highway",
+    hours: "Monday - Friday: 9:00 AM - 6:00 PM (IST)"
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16 px-6 bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Contact Us
+            <h1 className="text-4xl font-light text-gray-900 mb-4">
+              Contact KalpTech Solutions
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Connect with our cybersecurity experts. We're here to help secure your digital assets.
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Connect with our enterprise solutions team for business inquiries and professional discussions.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form & Info */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
+      {/* Main Content */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a message</h2>
+            <div className="bg-white rounded-xl border border-gray-200 p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <MessageSquare className="w-6 h-6 text-blue-600" />
+                <h2 className="text-2xl font-light text-gray-900">Send a Message</h2>
+              </div>
               
               {submitted ? (
-                <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-                  <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-700">
-                    Thank you for contacting KalpTech. Our security experts will get back to you within 24 hours.
-                  </p>
+                <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+                  <div className="flex flex-col items-center">
+                    <CheckCircle className="w-12 h-12 text-green-600 mb-4" />
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">Message Received</h3>
+                    <p className="text-gray-600">
+                      Thank you for contacting KalpTech Solutions. Our team will respond to your inquiry within 24-48 hours.
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Full Name *
                       </label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="John Smith"
-                      />
+                      <div className="relative">
+                        <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                          <User className="w-5 h-5 text-gray-400" />
+                        </div>
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                          placeholder="Enter your full name"
+                        />
+                      </div>
                     </div>
                     
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Email Address *
                       </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="john@company.com"
-                      />
+                      <div className="relative">
+                        <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                          <Mail className="w-5 h-5 text-gray-400" />
+                        </div>
+                        <input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                          placeholder="your.email@company.com"
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Company
                       </label>
-                      <input
-                        type="text"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="Your Company"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="+91 12345 67890"
-                      />
+                      <div className="relative">
+                        <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
+                          <Building className="w-5 h-5 text-gray-400" />
+                        </div>
+                        <input
+                          type="text"
+                          name="company"
+                          value={formData.company}
+                          onChange={handleChange}
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                          placeholder="Your company name"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -146,14 +157,13 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     >
-                      <option value="">Select a subject</option>
-                      <option value="sales">Sales Inquiry</option>
-                      <option value="support">Technical Support</option>
-                      <option value="partnership">Partnership Opportunity</option>
-                      <option value="career">Careers</option>
-                      <option value="other">Other</option>
+                      <option value="">Select inquiry type</option>
+                      <option value="sales">Sales and Product Information</option>
+                      <option value="business">Business Partnership</option>
+                      <option value="technical">Technical Inquiry</option>
+                      <option value="general">General Information</option>
                     </select>
                   </div>
 
@@ -166,100 +176,99 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows="6"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="Tell us how we can help..."
+                      rows="5"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Please provide details about your inquiry..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-3"
+                    className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
-                    Send Message
+                    Submit Inquiry
                   </button>
                 </form>
               )}
             </div>
 
             {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in touch</h2>
-              
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-100 rounded-xl">
-                    <Mail className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Sales Inquiries</h3>
-                    <p className="text-gray-600 mb-1">For product information and pricing</p>
-                    <a href="mailto:sales@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
-                      sales@kalptechitsolutions.com
-                    </a>
-                  </div>
+            <div className="space-y-8">
+              {/* Contact Methods */}
+              <div className="space-y-6">
+                <h2 className="text-2xl font-light text-gray-900 mb-4">Contact Methods</h2>
+                
+                <div className="space-y-4">
+                  {contactMethods.map((method, index) => (
+                    <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="p-3 bg-blue-50 rounded-lg">
+                          <div className="text-blue-600">
+                            {method.icon}
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-medium text-gray-900 mb-1">
+                            {method.title}
+                          </h3>
+                          <p className="text-gray-600 text-sm mb-3">
+                            {method.description}
+                          </p>
+                          <div className="text-blue-600 font-medium">
+                            {method.email}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
+              </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-100 rounded-xl">
-                    <Mail className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">General Inquiries</h3>
-                    <p className="text-gray-600 mb-1">For non-urgent matters</p>
-                    <a href="mailto:info@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
-                      info@kalptechitsolutions.com
-                    </a>
-                  </div>
+              {/* Office Information */}
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-6">
+                  <MapPin className="w-6 h-6 text-blue-600" />
+                  <h2 className="text-2xl font-light text-gray-900">Office Location</h2>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-100 rounded-xl">
-                    <Mail className="w-6 h-6 text-blue-600" />
-                  </div>
+                
+                <div className="space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Support</h3>
-                    <p className="text-gray-600 mb-1">Technical assistance and troubleshooting</p>
-                    <a href="mailto:support@kalptechitsolutions.com" className="text-blue-600 font-medium hover:text-blue-700">
-                      support@kalptechitsolutions.com
-                    </a>
+                    <h3 className="font-medium text-gray-900 mb-1">{officeInfo.city}</h3>
+                    <p className="text-gray-600">{officeInfo.address}</p>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-100 rounded-xl">
-                    <Clock className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM (IST)</p>
-                    <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM (IST)</p>
+                  
+                  <div className="pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-3 text-gray-600">
+                      <Clock className="w-5 h-5" />
+                      <span>{officeInfo.hours}</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Global Offices */}
-              <div className="mt-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Offices</h3>
-                <div className="grid sm:grid-cols-2 gap-6">
-                  {offices.map((office, index) => (
-                    <div key={index} className="bg-white rounded-xl border border-gray-200 p-6">
-                      <div className="flex items-start gap-3 mb-4">
-                        <MapPin className="w-5 h-5 text-blue-600 mt-1" />
-                        <div>
-                          <h4 className="font-semibold text-gray-900">{office.city}</h4>
-                          <p className="text-sm text-gray-600 mt-1">{office.address}</p>
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <a href={`mailto:${office.email}`} className="block text-sm text-gray-600 hover:text-blue-600">
-                          {office.email}
-                        </a>
-                        <p className="text-sm text-gray-600">{office.hours}</p>
-                      </div>
-                    </div>
-                  ))}
+              {/* Response Information */}
+              <div className="bg-blue-50 border border-blue-100 rounded-lg p-6">
+                <h3 className="font-medium text-gray-900 mb-3">Response Time</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <p className="text-gray-700 text-sm">
+                      Sales inquiries typically receive a response within 24 hours
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <p className="text-gray-700 text-sm">
+                      HR inquiries are processed within 2-3 business days
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                    <p className="text-gray-700 text-sm">
+                      Technical inquiries may require additional time for detailed responses
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -267,63 +276,28 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Quick Links */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Quick Links</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Technical Support",
-                description: "Get help with your existing KalpTech products",
-                buttonText: "Get Support",
-                onClick: () => navigate("/Support")
-              },
-              {
-                title: "Partner Program",
-                description: "Become a KalpTech partner and grow your business",
-                buttonText: "Learn More",
-                onClick: () => navigate("/values/partners")
-              },
-              {
-                title: "Training & Certification",
-                description: "Enhance your skills with our security training programs",
-                buttonText: "Browse Courses",
-                onClick: () => navigate("/Training")
-              }
-            ].map((link, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg p-6 text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{link.title}</h3>
-                <p className="text-gray-600 mb-6">{link.description}</p>
-                <button
-                  onClick={link.onClick}
-                  className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors"
-                >
-                  {link.buttonText}
-                </button>
-              </div>
-            ))}
+      {/* Additional Information */}
+      <section className="py-16 px-6 bg-white border-t border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-4">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Business Inquiries</h3>
+              <p className="text-gray-600">
+                For partnership opportunities, enterprise solutions, and business development discussions, 
+                please contact our sales team. We work with organizations across various industries to 
+                provide customized IT solutions.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Career Opportunities</h3>
+              <p className="text-gray-600">
+                For employment inquiries, recruitment processes, and career-related questions, 
+                please direct all communications to our HR department. We welcome talented professionals 
+                to join our growing team.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">Schedule a Security Consultation</h2>
-          <p className="text-xl opacity-90 mb-8">
-            Speak directly with our security experts about your organization's unique challenges.
-          </p>
-          <button 
-            onClick={() => {
-              // In a real app, this would open a calendar booking system
-              window.location.href = `mailto:sales@kalptechitsolutions.com?subject=Schedule%20a%20Security%20Consultation&body=Hello%20KalpTech%20Team,%0A%0AI%20would%20like%20to%20schedule%20a%20security%20consultation.%0A%0ABest%20regards,`;
-            }}
-            className="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-colors"
-          >
-            Book a Demo
-          </button>
         </div>
       </section>
     </div>

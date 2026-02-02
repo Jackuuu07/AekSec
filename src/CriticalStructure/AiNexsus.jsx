@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function AiNexsus() {
   return (
@@ -22,14 +23,7 @@ export default function AiNexsus() {
               architecture of KalpTech Nexus HyperFabric.
             </p>
 
-            <div className="flex gap-4">
-              <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
-                Free trial
-              </button>
-              <button className="px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition">
-                Watch video (01:00)
-              </button>
-            </div>
+           
           </div>
 
           {/* RIGHT */}
@@ -55,7 +49,7 @@ export default function AiNexsus() {
             using a unified cloud-managed experience.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left mb-10">
             <div className="bg-gray-50 p-8 rounded-xl">
             <img src="https://www.cisco.com/content/dam/cisco-cdc/site/images/icons-and-shapes/networking/data-center-networking/nexus-hyperfabric/icon-hyperfabric-simplicity.svg" className="w-20"/>
               <h3 className="text-xl font-medium mb-3">
@@ -92,70 +86,91 @@ export default function AiNexsus() {
             </div>
           </div>
 
-          <button className="mt-16 px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-50">
+          <Link to="/blog" className="mt-16 px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-50">
             Read blog
-          </button>
+          </Link>
         </div>
       </section>
 
-      <section className="bg-gray-50 py-28">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <h2 className="text-4xl font-light mb-6">
-              Manage your data center fabric through the cloud
-            </h2>
+ <section className="bg-gray-50 py-28">
+  <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div>
+      <h2 className="text-4xl font-light mb-6">
+        Manage your data center fabric through the cloud
+      </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Retain full control of your data center fabric from anywhere.
-              KalpTech Nexus HyperFabric provides cloud-managed orchestration,
-              automated upgrades, secure fabric underlay management, and
-              seamless integration with applications and workloads.
-            </p>
+      <p className="text-gray-600 leading-relaxed mb-10">
+        Retain full control of your data center fabric from anywhere.
+        KalpTech Nexus HyperFabric provides cloud-managed orchestration,
+        automated upgrades, secure fabric underlay management, and
+        seamless integration with applications and workloads.
+      </p>
 
-            <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700">
-              See FAQ
-            </button>
-          </div>
-
-          <div className="w-full">
-  <img
-    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
-    alt="Cloud fabric management"
-    className="w-full h-full object-cover"
-  />
-</div>
-
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">Centralized monitoring dashboard</span>
         </div>
-      </section>
-
-      <section className="bg-white py-28">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="w-full">
-            <img
-              src="https://cdn.aitimes.com/news/photo/202212/148344_156697_5059.jpg"
-              alt="AI infrastructure"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div>
-            <h2 className="text-4xl font-light mb-6">
-              KalpTech Nexus HyperFabric AI: AI for all
-            </h2>
-
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Deploy AI clusters with a single click. HyperFabric AI combines
-              cloud-native operations with optimized high-performance networking
-              to support GPU-accelerated workloads, AI pipelines, and
-              large-scale model training.
-            </p>
-
-            <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700">
-              Deliver AI results
-            </button>
-          </div>
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">Automated policy enforcement</span>
         </div>
-      </section>
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">Predictive analytics</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="w-full">
+      <img
+        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+        alt="Cloud fabric management"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+<section className="bg-white py-28">
+  <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div className="w-full">
+      <img
+        src="https://cdn.aitimes.com/news/photo/202212/148344_156697_5059.jpg"
+        alt="AI infrastructure"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div>
+      <h2 className="text-4xl font-light mb-6">
+        KalpTech Nexus HyperFabric AI: AI for all
+      </h2>
+
+      <p className="text-gray-600 leading-relaxed mb-10">
+        Deploy AI clusters with a single click. HyperFabric AI combines
+        cloud-native operations with optimized high-performance networking
+        to support GPU-accelerated workloads, AI pipelines, and
+        large-scale model training.
+      </p>
+
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">One-click AI cluster deployment</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">GPU-optimized networking</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <span className="text-gray-700">Scalable model training</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="bg-gray-50 py-28">
         <div className="max-w-7xl mx-auto px-8">
@@ -215,14 +230,7 @@ export default function AiNexsus() {
             </div>
           </div>
 
-          <div className="text-center mt-16 space-x-6">
-            <a className="text-blue-600 hover:underline cursor-pointer">
-              Read data sheet →
-            </a>
-            <a className="text-blue-600 hover:underline cursor-pointer">
-              Read white paper →
-            </a>
-          </div>
+         
         </div>
       </section>
 
@@ -241,9 +249,9 @@ export default function AiNexsus() {
               and go.
             </p>
 
-            <button className="px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700">
+            <Link to="/" className="px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700">
               Get started
-            </button>
+            </Link>
           </div>
         </div>
       </section>

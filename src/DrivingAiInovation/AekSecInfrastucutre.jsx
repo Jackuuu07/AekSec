@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function KulpTechInfrastructre() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -27,45 +28,45 @@ export default function KulpTechInfrastructre() {
       ],
     },
     portfolio: {
-      title: "Cisco portfolio for Mass-Scale AI Infrastructure",
+      title: "KalpTechportfolio for Mass-Scale AI Infrastructure",
       desc: "Explore a complete portfolio purpose-built to power, connect, and secure AI data centers.",
       products: [
         {
-          name: "Cisco Nexus 9000 Series Switches",
+          name: "KalpTechNexus 9000 Series Switches",
           text: "High-performance, power-efficient switches optimized for scalable AI Ethernet fabrics.",
         },
         {
-          name: "Cisco 8000 Series Switches with SONiC",
+          name: "KalpTech8000 Series Switches with SONiC",
           text: "Open, flexible networking powered by Silicon One for hyperscale AI environments.",
         },
         {
-          name: "Cisco Smart Switches with DPUs",
+          name: "KalpTechSmart Switches with DPUs",
           text: "Reimagine AI data center designs with intelligent DPU-based switching.",
         },
         {
-          name: "Cisco Nexus Dashboard",
+          name: "KalpTechNexus Dashboard",
           text: "Centralized visibility and control across AI network fabrics and data centers.",
         },
       ],
     },
     workloads: {
       title: "AI Infrastructure for the Agentic Era",
-      desc: "Whether building pre-training clusters, inference farms, or distributed edge AI—Cisco has you covered.",
+      desc: "Whether building pre-training clusters, inference farms, or distributed edge AI—KalpTechhas you covered.",
       cta: "Read the white paper",
     },
     resources: {
       title: "Featured Resources",
       resources: [
         {
-          name: "Cisco AI Summit",
+          name: "KalpTechAI Summit",
           text: "Hear from AI visionaries and leaders shaping the future of AI innovation.",
         },
         {
-          name: "Cisco Secure AI Factory with NVIDIA",
+          name: "KalpTechSecure AI Factory with NVIDIA",
           text: "Learn how scalable, secure AI infrastructure is delivered at every layer.",
         },
         {
-          name: "Cisco AI Defense",
+          name: "KalpTechAI Defense",
           text: "Protect AI applications with end-to-end security across development and deployment.",
         },
       ],
@@ -87,9 +88,7 @@ export default function KulpTechInfrastructre() {
               Unlock scalable, high-performance AI with advanced infrastructure
               products that power, connect, and secure AI workloads.
             </p>
-            <button className="bg-white text-black px-6 py-3 rounded-full font-medium">
-              Read the white paper
-            </button>
+            
           </div>
         </section>
 
@@ -195,9 +194,7 @@ export default function KulpTechInfrastructre() {
                 you covered.
               </p>
 
-              <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-3 rounded-full font-medium">
-                Read the white paper
-              </button>
+             
             </div>
 
             {/* RIGHT IMAGE */}
@@ -222,11 +219,9 @@ export default function KulpTechInfrastructre() {
             </h2>
             <p className="text-gray-700 text-lg mb-8">
               Accelerate AI deployments and simplify operations with modern,
-              secure full-stack infrastructure and Cisco Validated Designs.
+              secure full-stack infrastructure and KalpTechValidated Designs.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-full">
-              Learn more
-            </button>
+            
           </div>
         </section>
 
@@ -241,13 +236,13 @@ export default function KulpTechInfrastructre() {
               <div className="bg-white border shadow-sm overflow-hidden">
                 <img
                   src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/cisco-ai-summit-775x436.jpg"
-                  alt="Cisco AI Summit"
+                  alt="KalpTechAI Summit"
                   className="w-full h-52 object-cover"
                 />
 
                 <div className="p-8">
                   <h3 className="font-semibold text-lg mb-4">
-                    Cisco AI Summit
+                    KalpTechAI Summit
                   </h3>
 
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -256,9 +251,9 @@ export default function KulpTechInfrastructre() {
                     most groundbreaking technology.
                   </p>
 
-                  <a className="text-blue-600 font-medium hover:underline cursor-pointer">
+                  <Link to="/report/AiReadiness-report" className="text-blue-600 font-medium hover:underline cursor-pointer">
                     Get the details →
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -272,7 +267,7 @@ export default function KulpTechInfrastructre() {
 
                 <div className="p-8">
                   <h3 className="font-semibold text-lg mb-4">
-                    Cisco Secure AI Factory with NVIDIA
+                    KalpTechSecure AI Factory with NVIDIA
                   </h3>
 
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -281,9 +276,9 @@ export default function KulpTechInfrastructre() {
                     at every layer.
                   </p>
 
-                  <a className="text-blue-600 font-medium hover:underline cursor-pointer">
+                  <Link to="/explore" className="text-blue-600 font-medium hover:underline cursor-pointer">
                     Explore Secure AI Factory →
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -291,13 +286,13 @@ export default function KulpTechInfrastructre() {
               <div className="bg-white border shadow-sm overflow-hidden">
                 <img
                   src="https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/cisco-ai-defense-775x436.jpg"
-                  alt="Cisco AI Defense"
+                  alt="KalpTechAI Defense"
                   className="w-full h-52 object-cover"
                 />
 
                 <div className="p-8">
                   <h3 className="font-semibold text-lg mb-4">
-                    Cisco AI Defense
+                    KalpTechAI Defense
                   </h3>
 
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -306,9 +301,9 @@ export default function KulpTechInfrastructre() {
                     confidence.
                   </p>
 
-                  <a className="text-blue-600 font-medium hover:underline cursor-pointer">
+                  <Link to="/products/ai-defense" className="text-blue-600 font-medium hover:underline cursor-pointer">
                     Read the announcement →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -320,11 +315,11 @@ export default function KulpTechInfrastructre() {
           <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row justify-between items-center gap-10">
             <div>
               <p className="text-sm mb-2">Go even further</p>
-              <h2 className="text-4xl font-light">Cisco AI blogs</h2>
+              <h2 className="text-4xl font-light">KalpTechAI blogs</h2>
             </div>
-            <button className="bg-blue-600 px-8 py-3 rounded-full">
+            <Link to="/blog" className="bg-blue-600 px-8 py-3 rounded-full">
               Read the AI blogs
-            </button>
+            </Link>
           </div>
         </section>
       </div>

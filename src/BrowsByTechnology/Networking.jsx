@@ -9,7 +9,6 @@ import {
   Briefcase,
   ChevronLeft,
   ChevronRight,
-  ArrowRight,
   PlayCircle,
 } from "lucide-react";
 import { useState } from "react";
@@ -22,19 +21,16 @@ export default function Networking() {
       title: "Routed Optical Networking",
       icon: Network,
       desc: "Converge IP and optical layers to simplify operations, reduce power consumption, and improve end-to-end visibility across high-capacity networks.",
-      link: "Explore details",
     },
     {
       title: "Hybrid Work",
       icon: Briefcase,
       desc: "Enable secure access for users working anywhere with intelligent networking, optimized application performance, and built-in security.",
-      link: "Explore hybrid work solution",
     },
     {
       title: "Software-defined WAN",
       icon: Cloud,
       desc: "Secure access to any cloud from any location with SASE-enabled SD-WAN, improving performance and reducing operational complexity.",
-      link: "Explore SD-WAN and SASE",
     },
   ];
 
@@ -49,7 +45,6 @@ export default function Networking() {
 
   return (
     <>
-
       <div className="w-full bg-white text-gray-900">
         {/* ================= HERO ================= */}
         <section className="relative h-[520px]">
@@ -97,22 +92,22 @@ export default function Networking() {
             <Feature
               icon={Network}
               title="Simplify onboarding and provisioning"
-              text="Automated workflows quickly configure and provision devices according to policy."
+              text="Automated workflows quickly configure and provision devices according to policy. Reduce manual configuration time by up to 80% with intelligent automation."
             />
             <Feature
               icon={ShieldCheck}
               title="Control access with ease"
-              text="AI/ML identifies endpoints, enforces policies, and highlights critical alerts."
+              text="AI/ML identifies endpoints, enforces policies, and highlights critical alerts. Real-time threat detection prevents unauthorized access attempts."
             />
             <Feature
               icon={BarChart3}
               title="Maintain network health"
-              text="Telemetry and analytics deliver real-time client, network, and app insights."
+              text="Telemetry and analytics deliver real-time client, network, and app insights. Predictive maintenance alerts identify potential issues before they impact performance."
             />
             <Feature
               icon={Cloud}
               title="Scale on demand"
-              text="Flexible licensing and dynamic port activation support growth."
+              text="Flexible licensing and dynamic port activation support growth. Elastic scaling adapts to changing business requirements without hardware changes."
             />
           </div>
         </section>
@@ -123,7 +118,7 @@ export default function Networking() {
             {/* Header */}
             <div className="flex items-start justify-between mb-12">
               <h2 className="text-5xl font-light/100 text-gray-900">
-                Find what you’re looking for
+                Find what you're looking for
               </h2>
 
               <img
@@ -136,42 +131,26 @@ export default function Networking() {
             <hr className="mb-12" />
 
             {/* Top Links */}
-            <div className="grid md:grid-cols-3 gap-14 text-blue-600 mb-16 text-sm">
+            <div className="grid md:grid-cols-3 gap-14 mb-16 text-sm">
               <div className="space-y-4">
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Access networking <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Network security <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Visibility <ArrowRight className="w-3 h-3" />
-                </p>
+                <h4 className="font-medium text-gray-900 mb-2">Access & Security</h4>
+                <p className="text-gray-600">Enterprise-grade access networking solutions</p>
+                <p className="text-gray-600">Network security with zero-trust architecture</p>
+                <p className="text-gray-600">Comprehensive network visibility and analytics</p>
               </div>
 
               <div className="space-y-4">
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Data center and cloud networking{" "}
-                  <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Network software <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Wide-area networking (WAN) <ArrowRight className="w-3 h-3" />
-                </p>
+                <h4 className="font-medium text-gray-900 mb-2">Core Infrastructure</h4>
+                <p className="text-gray-600">Data center and cloud networking solutions</p>
+                <p className="text-gray-600">Network software and management platforms</p>
+                <p className="text-gray-600">Wide-area networking (WAN) optimization</p>
               </div>
 
               <div className="space-y-4">
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Industrial IoT networking <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Silicon and optics <ArrowRight className="w-3 h-3" />
-                </p>
-                <p className="flex items-center gap-1 cursor-pointer hover:underline">
-                  Service assurance <ArrowRight className="w-3 h-3" />
-                </p>
+                <h4 className="font-medium text-gray-900 mb-2">Specialized Solutions</h4>
+                <p className="text-gray-600">Industrial IoT networking for OT environments</p>
+                <p className="text-gray-600">Silicon and optics for high-performance networks</p>
+                <p className="text-gray-600">Service assurance and monitoring tools</p>
               </div>
             </div>
 
@@ -183,70 +162,59 @@ export default function Networking() {
                 <h4 className="font-medium mb-2">
                   Access software for switching
                 </h4>
-
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Benefit from the latest switching and management innovations
-                  as soon as they’re released.
+                  as soon as they're released. Continuous updates ensure your
+                  network stays current with security patches and performance
+                  enhancements.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore switching software <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
 
               <div>
                 <h4 className="font-medium mb-2">Switches</h4>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Build a network with multigigabit switches that constantly
-                  learn, adapt, and protect.
+                  learn, adapt, and protect. Intelligent switching provides
+                  automated traffic optimization and threat prevention.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore switching <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
 
               <div>
                 <h4 className="font-medium mb-2">
                   Access software for wireless
                 </h4>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Get continual feature innovations delivered by subscription.
+                  Wireless management software provides centralized control
+                  across all access points.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore wireless software <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
 
               <div>
                 <h4 className="font-medium mb-2">KalpTech wireless</h4>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Build future-proof workspaces with intelligent, secure, and
-                  assured Wi-Fi 7.
+                  assured Wi-Fi 7. Enterprise-grade wireless solutions support
+                  high-density environments and mission-critical applications.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore wireless <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
 
               <div>
                 <h4 className="font-medium mb-2">WAN software</h4>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Take advantage of the latest WAN innovations delivered
-                  continually by subscription.
+                  continually by subscription. Cloud-managed WAN solutions
+                  simplify branch connectivity and security.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore WAN software <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
 
               <div>
                 <h4 className="font-medium mb-2">Routers</h4>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-gray-600 mb-3">
                   Simplify your WAN architecture and make it easier to deploy,
-                  manage, and operate.
+                  manage, and operate. Advanced routing capabilities support
+                  multi-cloud and hybrid network environments.
                 </p>
-                <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore routing <ArrowRight className="w-4 h-4" />
-                </span>
               </div>
             </div>
           </div>
@@ -262,20 +230,21 @@ export default function Networking() {
               <img
                 className="hidden md:block max-w-[420px]"
                 src="https://www.cisco.com/content/dam/cisco-cdc/site/us/en/images/networking/networking-portfolio-dashboard-568x330.png"
+                alt="Network dashboard"
               />
             </div>
             <div className="grid md:grid-cols-3 gap-12">
               <Platform
                 title="KalpTech Catalyst Center"
-                text="Automate, secure, and optimize wireless and switching access networks."
+                text="Automate, secure, and optimize wireless and switching access networks. Centralized management provides visibility across campus environments."
               />
               <Platform
                 title="KalpTech Meraki platform"
-                text="Scale and secure your entire network with cloud management."
+                text="Scale and secure your entire network with cloud management. Zero-touch deployment and AI-powered insights simplify operations."
               />
               <Platform
                 title="KalpTech Nexus Dashboard"
-                text="Operate and analyze across data center and cloud environments."
+                text="Operate and analyze across data center and cloud environments. Unified management for multi-domain network infrastructure."
               />
             </div>
           </div>
@@ -285,7 +254,7 @@ export default function Networking() {
         <section className="py-24 max-w-7xl mx-auto px-10 grid lg:grid-cols-2 gap-16 items-center">
           <img
             src="https://www.cisco.com/content/dam/cisco-cdc/site/us/en/images/networking/networking-portfolio-lifestyle-800x450.jpg"
-            alt="Solutions"
+            alt="Network solutions"
           />
 
           <div>
@@ -294,12 +263,25 @@ export default function Networking() {
             </h2>
             <p className="text-gray-600 mb-8">
               Secure and manage diverse traffic, bandwidth, and latency demands
-              with an AI-enabled platform architecture.
+              with an AI-enabled platform architecture. Enterprise networks
+              require reliable performance across distributed locations, cloud
+              connectivity, and remote workforce support.
             </p>
-
-            <button className="px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
-              Uplevel your network
-            </button>
+            
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <span className="text-gray-700">Multi-cloud network integration</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <span className="text-gray-700">AI-driven network optimization</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <span className="text-gray-700">Enterprise-grade security policies</span>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -340,10 +322,9 @@ export default function Networking() {
                   {outcomes[activeIndex].desc}
                 </p>
 
-                <span className="inline-flex items-center gap-1 text-blue-600 font-medium cursor-pointer hover:underline">
-                  {outcomes[activeIndex].link}
-                  <ChevronRight className="w-4 h-4" />
-                </span>
+                <div className="text-sm text-gray-500 mt-4">
+                  Learn how organizations achieve these outcomes with KalpTech solutions
+                </div>
               </div>
 
               {/* Dots */}
@@ -376,31 +357,45 @@ export default function Networking() {
                 <h3 className="text-xl font-medium text-gray-900">
                   KalpTech Professional Services
                 </h3>
-                <p className="text-gray-600 leading-relaxed max-w-md">
+                <p className="text-gray-600 leading-relaxed">
                   Optimize and transform your IT environment with measurable
                   business outcomes. Our experts help design, deploy, and
-                  accelerate innovation across your network.
+                  accelerate innovation across your network. Professional
+                  services include network assessment, design consultation,
+                  implementation planning, and ongoing optimization support.
                 </p>
-                <span className="inline-flex items-center gap-1 text-blue-600 font-medium cursor-pointer hover:underline">
-                  View Professional Services
-                  <span>›</span>
-                </span>
+                <div className="pt-4">
+                  <h4 className="font-medium text-gray-800 mb-2">Service Offerings:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• Network architecture design and planning</li>
+                    <li>• Implementation and deployment services</li>
+                    <li>• Performance optimization and tuning</li>
+                    <li>• Security assessment and hardening</li>
+                  </ul>
+                </div>
               </div>
 
               {/* Service 2 */}
               <div className="space-y-4">
                 <h3 className="text-xl font-medium text-gray-900">
-                  KalpTech Services
+                  KalpTech Technical Services
                 </h3>
-                <p className="text-gray-600 leading-relaxed max-w-md">
+                <p className="text-gray-600 leading-relaxed">
                   Deploy faster, improve security, and enhance visibility with
                   lifecycle services designed to keep your network resilient and
-                  future-ready.
+                  future-ready. Technical services provide ongoing support,
+                  maintenance, and updates to ensure network reliability and
+                  performance over time.
                 </p>
-                <span className="inline-flex items-center gap-1 text-blue-600 font-medium cursor-pointer hover:underline">
-                  Explore all services
-                  <span>›</span>
-                </span>
+                <div className="pt-4">
+                  <h4 className="font-medium text-gray-800 mb-2">Support Options:</h4>
+                  <ul className="text-gray-600 space-y-1">
+                    <li>• 24/7 technical support and troubleshooting</li>
+                    <li>• Software updates and security patches</li>
+                    <li>• Hardware maintenance and replacement</li>
+                    <li>• Remote monitoring and management</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -418,24 +413,8 @@ function Feature({ icon: Icon, title, text }) {
       <Icon className="w-8 h-8 text-blue-600 mt-1" />
       <div>
         <h4 className="font-medium mb-1">{title}</h4>
-        <p className="text-gray-600 text-sm">{text}</p>
+        <p className="text-gray-600">{text}</p>
       </div>
-    </div>
-  );
-}
-
-function LinkGroup({ title }) {
-  return (
-    <div className="space-y-3 text-sm">
-      <p className="font-medium text-gray-900">{title}</p>
-      {["Network security", "Visibility", "WAN"].map((item) => (
-        <p
-          key={item}
-          className="flex items-center gap-1 hover:underline cursor-pointer"
-        >
-          {item} <ArrowRight className="w-3 h-3" />
-        </p>
-      ))}
     </div>
   );
 }
@@ -444,36 +423,7 @@ function Platform({ title, text }) {
   return (
     <div>
       <h4 className="font-medium mb-2">{title}</h4>
-      <p className="text-gray-600 text-sm mb-3">{text}</p>
-      <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer">
-        Explore <ArrowRight className="w-4 h-4" />
-      </span>
-    </div>
-  );
-}
-
-function Outcome({ title }) {
-  return (
-    <div className="border-l pl-6">
-      <h4 className="font-medium mb-2">{title}</h4>
-      <p className="text-gray-600 text-sm mb-3">
-        Secure access, optimize performance, and enable innovation.
-      </p>
-      <span className="text-blue-600 text-sm flex items-center gap-1 cursor-pointer">
-        Explore <ArrowRight className="w-4 h-4" />
-      </span>
-    </div>
-  );
-}
-
-function Service({ title, text }) {
-  return (
-    <div>
-      <h4 className="font-medium mb-2">{title}</h4>
-      <p className="text-gray-600 mb-3">{text}</p>
-      <span className="text-blue-600 flex items-center gap-1 cursor-pointer">
-        Learn more <ArrowRight className="w-4 h-4" />
-      </span>
+      <p className="text-gray-600">{text}</p>
     </div>
   );
 }

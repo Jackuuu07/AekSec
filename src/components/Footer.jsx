@@ -15,9 +15,6 @@ export default function Footer() {
             <Link to="/career" className="hover:text-blue-600">
               Careers
             </Link>
-            <Link to="/contact" className="hover:text-blue-600">
-              Contact
-            </Link>
             <Link to="/connect" className="hover:text-blue-600">
               Connect with KalpTech
             </Link>
@@ -30,17 +27,6 @@ export default function Footer() {
             </Link>
             <Link to="/about" className="hover:text-blue-600 transition">
               <Instagram className="w-5 h-5" />
-            </Link>
-            <Link to="/about" className="hover:text-blue-600 transition">
-              <Twitter className="w-5 h-5" />
-            </Link>
-
-            {/* Threads & X */}
-            <Link
-              to="/about"
-              className="font-semibold hover:text-blue-600 transition"
-            >
-              Threads
             </Link>
             <Link
               to="/about"

@@ -61,12 +61,9 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center p-4 bg-blue-100 rounded-2xl mb-6">
-            <Shield className="w-12 h-12 text-blue-600" />
-          </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             KalpTech Security Privacy Policy
           </h1>
@@ -112,26 +109,7 @@ const PrivacyPolicy = () => {
           ))}
         </div>
 
-        {/* Contact Information */}
-        <div className="mt-12 bg-blue-50 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Contact Our Privacy Team</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <p className="font-semibold text-gray-900 mb-2">Data Protection Officer</p>
-              <p className="text-gray-700">Email: dpo@KalpTech.com</p>
-              <p className="text-gray-700">Phone: +1-800-KULP-PRIVACY</p>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-900 mb-2">Privacy Requests</p>
-              <p className="text-gray-700">
-                Submit privacy-related requests through our{' '}
-                <a href="/privacy-portal" className="text-blue-600 font-semibold underline">
-                  Privacy Portal
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+       
 
         {/* Updates */}
         <div className="mt-8 p-6 bg-gray-100 rounded-xl">

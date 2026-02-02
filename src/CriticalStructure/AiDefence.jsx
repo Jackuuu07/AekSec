@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Search, AlertTriangle, Bug } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function AiDefence() {
   const [openVideo, setOpenVideo] = useState(null);
@@ -53,14 +54,7 @@ export default function AiDefence() {
             critical AI-driven operations.
           </p>
 
-          <div className="mt-12 flex gap-4">
-            <button className="bg-white text-black px-8 py-3 rounded-full">
-              Explore AI Defense
-            </button>
-            <button className="border border-white px-8 py-3 rounded-full">
-              Read solution overview
-            </button>
-          </div>
+          
         </div>
       </section>
 
@@ -199,14 +193,7 @@ export default function AiDefence() {
             protects AI models and pipelines against evolving threats.
           </p>
 
-          <button
-            onClick={() =>
-              setOpenVideo("https://www.youtube.com/embed/dQw4w9WgXcQ")
-            }
-            className="text-blue-600 font-medium"
-          >
-            ▶ Watch solution walkthrough (12:18)
-          </button>
+          
         </div>
       </section>
 
@@ -228,7 +215,7 @@ export default function AiDefence() {
                 Insights from KalpTech researchers and security architects on
                 protecting AI at scale.
               </p>
-              <a className="text-blue-600">Read blog →</a>
+              <Link to="/blog" className="text-blue-600">Read blog →</Link>
             </div>
           ))}
         </div>
@@ -251,14 +238,7 @@ export default function AiDefence() {
               AI while maintaining visibility, control, and trust.
             </p>
 
-            <button
-              onClick={() =>
-                setOpenVideo("https://www.youtube.com/embed/dQw4w9WgXcQ")
-              }
-              className="text-blue-600 font-medium"
-            >
-              ▶ Watch panel discussion (03:44)
-            </button>
+            
           </div>
         </div>
       </section>

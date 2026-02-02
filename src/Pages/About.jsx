@@ -319,11 +319,7 @@ export default function About() {
                                             <p className="text-gray-600">We invest in your growth with dedicated learning budgets, conferences, and mentorship programs.</p>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <Link to="/career" className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl">
-                                    View Open Positions →
-                                </Link>
+                                </div> 
                             </div>
                             
                             <div className="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl shadow-xl border border-blue-100">
@@ -539,11 +535,7 @@ export default function About() {
                                         <span className="text-sm text-purple-600 font-medium">Every third Wednesday at 10am IST</span>
                                     </Link>
                                     
-                                    <Link to="/Downloads" className="p-5 bg-gradient-to-r from-white to-green-50 rounded-xl border border-green-100 hover:shadow-md transition block">
-                                        <h4 className="font-bold text-lg mb-2">Open Source Contributions</h4>
-                                        <p className="text-gray-600 mb-3">Contribute to our open-source security tools and frameworks</p>
-                                        <span className="text-sm text-green-600 font-medium">Access resources & tools</span>
-                                    </Link>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -650,10 +642,7 @@ export default function About() {
                             </Link>
                         </div>
                         
-                        <div className="mt-16 pt-10 border-t border-gray-300 text-center text-gray-600">
-                            <p className="mb-4">© 2026 KalpTech IT Solutions. All rights reserved.</p>
-                            <p className="text-sm">AI infrastructure security for the next generation of enterprise innovation.</p>
-                        </div>
+                        
                     </div>
                 </section>
             </main>

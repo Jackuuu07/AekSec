@@ -258,14 +258,7 @@ export default function PartnerEcosystem() {
             <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
               Partner with KalpTech Security to deliver comprehensive protection and drive mutual growth in the cybersecurity market.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-500 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                Become a Partner
-              </button>
-              <button className="px-8 py-4 border border-gray-700 text-gray-300 rounded-lg font-semibold hover:bg-gray-800/50 transition-colors">
-                Access Partner Portal
-              </button>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const DATA = {
   Networking: {
@@ -242,9 +242,7 @@ export default function ProductandServiceShows() {
 
             <p className="text-slate-600 max-w-3xl">{content.intro}</p>
 
-            <button className="mt-8 rounded-full bg-blue-600 px-8 py-3 text-white font-medium hover:bg-blue-700 transition">
-              {content.cta}
-            </button>
+          
 
             <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
               {content.sections.map((sec, i) => (
@@ -253,10 +251,7 @@ export default function ProductandServiceShows() {
 
                   <p className="mt-2 text-slate-600">{sec.desc}</p>
 
-                  <button className="mt-3 inline-flex items-center gap-2 text-blue-600 font-medium hover:underline">
-                    Explore
-                    <FiArrowRight className="mt-[1px]" />
-                  </button>
+                  
                 </div>
               ))}
             </div>
@@ -275,19 +270,19 @@ export default function ProductandServiceShows() {
               Trials and demos
             </h1>
 
-            <p className="text-slate-600 max-w-xl">
+            <p className="text-slate-600 max-w-xl mb-10">
               Check out our trials and demos to learn how our products and
               technologies can support your business.
             </p>
 
-            <button className="mt-8 rounded-full bg-blue-600 px-8 py-3 text-white font-medium hover:bg-blue-700 transition">
+            <Link to="/trial-demos" className="mt-8 rounded-full bg-blue-600 px-8 py-3 text-white font-medium hover:bg-blue-700 transition">
               View trials and demos
-            </button>
+            </Link>
           </div>
 
           {/* RIGHT IMAGE */}
           <img
-            src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
+            src="https://www.recordskeeper.ai/wp-content/uploads/2024/11/AI-Powered-Audit-Trail-Management.png"
             alt="Trials and demos"
             className="
         w-full
@@ -318,10 +313,10 @@ export default function ProductandServiceShows() {
             <p className="mt-2 text-slate-600">
               Explore software for security, networking, and computing.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
+            <Link to="/explore" className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
               Explore software
               <FiChevronRight />
-            </button>
+            </Link>
           </div>
 
           {/* SOLUTIONS */}
@@ -330,10 +325,10 @@ export default function ProductandServiceShows() {
             <p className="mt-2 text-slate-600">
               Solutions that tackle issues unique to your industry.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
+            <Link to="/solutions/solution-lab" className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
               Explore solutions
               <FiChevronRight />
-            </button>
+            </Link>
           </div>
 
           {/* SERVICES */}
@@ -342,10 +337,10 @@ export default function ProductandServiceShows() {
             <p className="mt-2 text-slate-600">
               Transform your IT environment and deliver business value.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
+            <Link to="/services/applications" className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
               Explore KalpTech Services
               <FiChevronRight />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -368,21 +363,7 @@ export default function ProductandServiceShows() {
               documented approaches, including possible network configurations.
             </p>
 
-            <button
-              className="
-          mt-8
-          inline-flex items-center
-          rounded-full
-          border border-blue-600
-          px-8 py-3
-          text-blue-600
-          font-medium
-          hover:bg-blue-50
-          transition
-        "
-            >
-              Browse design zone
-            </button>
+            
           </div>
 
           {/* RIGHT IMAGE */}
@@ -453,9 +434,9 @@ export default function ProductandServiceShows() {
               We're here to help you make informed decisions every step of the
               way.
             </p>
-            <a className="mt-4 inline-block text-blue-400 hover:underline">
+            <Link to="/contact" className="mt-4 inline-block text-blue-400 hover:underline">
               Contact KalpTech →
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -464,9 +445,9 @@ export default function ProductandServiceShows() {
               Find a partner with the expertise and commitment to help you
               succeed.
             </p>
-            <a className="mt-4 inline-block text-blue-400 hover:underline">
+            <Link to="/values/partners" className="mt-4 inline-block text-blue-400 hover:underline">
               Find a partner →
-            </a>
+            </Link>
           </div>
         </div>
       </section>

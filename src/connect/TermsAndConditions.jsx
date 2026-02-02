@@ -64,12 +64,10 @@ const TermsAndConditions = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center p-4 bg-gray-100 rounded-2xl mb-6">
-            <Scale className="w-12 h-12 text-gray-700" />
-          </div>
+          
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             KalpTech Security Terms and Conditions
           </h1>
@@ -106,20 +104,7 @@ const TermsAndConditions = () => {
           </div>
         </div>
 
-        {/* Download Section */}
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-blue-50 rounded-2xl p-6 mb-8">
-          <div className="flex items-center mb-4 sm:mb-0">
-            <FileText className="w-8 h-8 text-blue-600 mr-4" />
-            <div>
-              <p className="font-semibold text-gray-900">Full Legal Document</p>
-              <p className="text-gray-600">Download for your records</p>
-            </div>
-          </div>
-          <button className="flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-            <Download className="w-5 h-5 mr-2" />
-            Download PDF Version
-          </button>
-        </div>
+        
 
         {/* Terms Sections */}
         <div className="space-y-4">
@@ -158,11 +143,11 @@ const TermsAndConditions = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-5 bg-white rounded-xl border">
               <p className="font-semibold text-gray-900 mb-2">For Questions</p>
-              <p className="text-gray-600">legal@KalpTech.com</p>
+              <p className="text-gray-600">hr@kalptech.com</p>
             </div>
             <div className="p-5 bg-white rounded-xl border">
               <p className="font-semibold text-gray-900 mb-2">For Enterprise Contracts</p>
-              <p className="text-gray-600">sales@KalpTech.com</p>
+              <p className="text-gray-600">sales@kalptech.com</p>
             </div>
           </div>
 

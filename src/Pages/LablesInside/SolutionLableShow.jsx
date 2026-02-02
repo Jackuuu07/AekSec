@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 const DATA = {
   Technologies: {
     title: "Technologies",
@@ -208,10 +208,6 @@ export default function SolutionShow() {
 
                   <p className="mt-2 text-slate-600">{sec.desc}</p>
 
-                  <button className="mt-3 inline-flex items-center gap-2 text-blue-600 font-medium hover:underline">
-                    Explore
-                    <FiArrowRight className="mt-[1px]" />
-                  </button>
                 </div>
               ))}
             </div>
@@ -226,14 +222,14 @@ export default function SolutionShow() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* RIGHT IMAGE */}
           <img
-            src="https://www.KalpTech.com/content/dam/KalpTech-cdc/site/images/icons-and-shapes/products/prodindex-trials-demos-spotlight-1316x606.jpg"
+            src="https://tse2.mm.bing.net/th/id/OIP.ka-hqAx6hOgYwrAfmIPVRgHaED?pid=Api&P=0&h=180"
             alt="Trials and demos"
             className="
-        w-full
-        h-[220px]
-        object-cover
-        rounded-xl
-      "
+              w-full
+              h-[220px]
+              object-cover
+              rounded-xl
+            "
           />
 
           {/* LEFT CONTENT */}
@@ -242,14 +238,14 @@ export default function SolutionShow() {
               Trials and demos
             </h1>
 
-            <p className="text-slate-600 max-w-xl">
+            <p className="text-slate-600 max-w-xl mb-14">
               Check out our trials and demos to learn how our products and
               technologies can support your business.
             </p>
 
-            <button className="mt-8 rounded-full bg-blue-600 px-8 py-3 text-white font-medium hover:bg-blue-700 transition">
+            <Link to="/trial-demos" className="mt-8 rounded-full bg-blue-600 px-8 py-3 text-white font-medium hover:bg-blue-700 transition">
               View trials and demos
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -273,10 +269,7 @@ export default function SolutionShow() {
             <p className="mt-2 text-slate-600">
               Explore software for security, networking, and computing.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
-              Explore software
-              <FiChevronRight />
-            </button>
+            
           </div>
 
           {/* SOLUTIONS */}
@@ -285,10 +278,7 @@ export default function SolutionShow() {
             <p className="mt-2 text-slate-600">
               Solutions that tackle issues unique to your industry.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
-              Explore solutions
-              <FiChevronRight />
-            </button>
+            
           </div>
 
           {/* SERVICES */}
@@ -297,10 +287,7 @@ export default function SolutionShow() {
             <p className="mt-2 text-slate-600">
               Transform your IT environment and deliver business value.
             </p>
-            <button className="mt-3 inline-flex items-center gap-1 text-blue-600 font-medium hover:underline">
-              Explore KalpTech Services
-              <FiChevronRight />
-            </button>
+           
           </div>
         </div>
       </section>
@@ -320,9 +307,9 @@ export default function SolutionShow() {
               We're here to help you make informed decisions every step of the
               way.
             </p>
-            <a className="mt-4 inline-block text-blue-400 hover:underline">
+            <Link to="/contact" className="mt-4 inline-block text-blue-400 hover:underline">
               Contact KalpTech →
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -331,9 +318,9 @@ export default function SolutionShow() {
               Find a partner with the expertise and commitment to help you
               succeed.
             </p>
-            <a className="mt-4 inline-block text-blue-400 hover:underline">
+            <Link to="/values/partners" className="mt-4 inline-block text-blue-400 hover:underline">
               Find a partner →
-            </a>
+            </Link>
           </div>
         </div>
       </section>

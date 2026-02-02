@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function AiPlatform() {
   const [openVideo, setOpenVideo] = useState(null);
@@ -44,14 +45,6 @@ export default function AiPlatform() {
             to defend AI-scale, cloud-first, and modern enterprise environments.
           </p>
 
-          <div className="mt-10 flex gap-4">
-            <button className="bg-white text-black px-8 py-3 rounded-full">
-              Stay informed
-            </button>
-            <button className="border border-white px-8 py-3 rounded-full">
-              Read solution overview
-            </button>
-          </div>
         </div>
       </section>
 
@@ -157,14 +150,7 @@ export default function AiPlatform() {
             with AI-native protection and autonomous enforcement.
           </p>
 
-          <button
-            onClick={() =>
-              setOpenVideo("https://www.youtube.com/embed/dQw4w9WgXcQ")
-            }
-            className="text-blue-600 font-medium"
-          >
-            ▶ Watch launch event (1:08:49)
-          </button>
+          
         </div>
       </section>
 
@@ -186,7 +172,7 @@ export default function AiPlatform() {
                 Insight into how KalpTech Hypershield addresses modern attack
                 surfaces and unknown threats.
               </p>
-              <a className="text-blue-600">Read blog →</a>
+              <Link to="/blog" className="text-blue-600">Read blog →</Link>
             </div>
           ))}
         </div>
@@ -209,14 +195,7 @@ export default function AiPlatform() {
               against AI-scale attacks and autonomous threats.
             </p>
 
-            <button
-              onClick={() =>
-                setOpenVideo("https://www.youtube.com/embed/dQw4w9WgXcQ")
-              }
-              className="text-blue-600 font-medium"
-            >
-              ▶ Watch video (03:44)
-            </button>
+            
           </div>
         </div>
       </section>

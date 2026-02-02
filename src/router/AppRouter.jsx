@@ -111,6 +111,7 @@ import CloudSecurity2024 from "../Pages/services/report/cloud-security-2024";
 import AIPoweredThreatIntelligence from "../Pages/services/report/ai-threat-intelligence";
 import ComplianceDigitalAge from "../Pages/services/report/compliance-digital-age";
 import ScrollToTop from "../components/ScrollToTop";
+import SecurityObservability from "../BrowsByTechnology/Observability";
 
 export default function AppRouter() {
   // const location = useLocation();
@@ -156,7 +157,7 @@ export default function AppRouter() {
           path="/AekSec-infrastructure"
           element={<AekSecInfrastructre />}
         />
-
+        <Route path="/observability" element={<SecurityObservability />} />
         <Route path="/AekSec-SecureAiFactory" element={<SecureAiNVIDIA />} />
         <Route path="/Exploremoreai-news" element={<ExploreMoreAINews />} />
         <Route path="/AiCanvaslearning-inside" element={<AiCanvasPopUp />} />

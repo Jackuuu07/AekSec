@@ -138,7 +138,7 @@ export default function Computing() {
             </p>
 
             <button
-              onClick={() => navigate("/about")}
+              onClick={() => navigate("/contact")}
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-10 py-3 rounded-full hover:bg-blue-700 transition"
             >
               Talk to an expert
