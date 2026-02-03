@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Cpu, Shield, Cloud, Database, Code, Globe, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Applications() {
   const applications = [
@@ -107,10 +108,6 @@ export default function Applications() {
                       </div>
                     ))}
                   </div>
-                  
-                  <button className="w-full px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-medium hover:bg-gray-50 transition-colors">
-                    Learn More
-                  </button>
                 </div>
               </div>
             ))}
@@ -178,12 +175,12 @@ export default function Applications() {
             Schedule a personalized demo to see how our applications can drive your digital transformation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-white text-slate-900 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <Link to="/trial-demos" className="px-8 py-3 bg-white text-slate-900 rounded-full font-semibold hover:bg-gray-100 transition-colors">
               Schedule Demo
-            </button>
-            <button className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors">
+            </Link>
+            <Link to="/contact" className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors">
               Contact Sales
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,49 +1,204 @@
 import React from 'react';
-import { Wifi, Shield, Satellite, Cpu, Network, Signal } from 'lucide-react';
+import { Wifi, Shield, Satellite, Cpu, Network, Signal, Globe, Lock, Users, Database } from 'lucide-react';
 
 export default function Telecom() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-blue-50 text-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-slate-100 to-gray-100 text-gray-800">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-blue-500 text-white">
-        <div className="absolute inset-0 bg-opacity-20 bg-white"></div>
-        <div className="relative py-20 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-              <Satellite className="w-8 h-8" />
-            </div>
-            <div>
-              <h1 className="text-5xl font-bold mb-2">Telecommunications Security</h1>
-              <p className="text-xl opacity-90">Securing network infrastructure and communications</p>
+      <div className="relative overflow-hidden bg-slate-200 text-gray-900">
+        <div className="relative py-24 px-6 max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+            <div className="max-w-3xl">
+              <div className="flex items-center space-x-6 mb-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-800 to-gray-900 rounded-xl flex items-center justify-center shadow-lg border border-gray-300">
+                  <Satellite className="w-9 h-9 text-white" />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Telecommunications Security</h1>
+                  <p className="text-xl text-gray-700">Protecting network infrastructure and communication systems</p>
+                </div>
+              </div>
+              <p className="text-lg md:text-xl max-w-3xl text-gray-600 leading-relaxed">
+                KalpTech provides comprehensive security solutions for telecommunications networks, 
+                safeguarding critical infrastructure, protecting customer communications, and securing 
+                next-generation network technologies against evolving cyber threats.
+              </p>
             </div>
           </div>
-          <p className="text-lg max-w-3xl opacity-90">
-            KalpTech protects telecom networks with comprehensive security for 5G, IoT, 
-            and critical communication infrastructure against sophisticated cyber threats.
-          </p>
         </div>
       </div>
 
-      <div className="py-16 px-6">
+      {/* Solutions Grid */}
+      <div className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-cyan-100">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-400 flex items-center justify-center mb-6">
-                <Network className="w-7 h-7 text-white" />
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Network Infrastructure Protection</h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Our telecommunications security solutions are designed to protect complex network 
+              environments, ensuring service availability, data confidentiality, and regulatory 
+              compliance across all communication channels.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-gray-800 to-slate-700 flex items-center justify-center mb-6 shadow-md">
+                <Network className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">5G Network Security</h3>
-              <p className="text-gray-600 mb-4">End-to-end protection for 5G core networks, edge computing, and network slicing.</p>
-              <div className="text-sm text-cyan-600 font-semibold">Zero Trust Architecture</div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Comprehensive protection for 5G core networks, edge computing infrastructure, 
+                and network slicing implementations with zero-trust architecture principles.
+              </p>
+              <div className="flex items-center text-gray-700 font-medium">
+                <Shield className="w-4 h-4 mr-2" />
+                Network slicing security
+              </div>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-400 flex items-center justify-center mb-6">
-                <Wifi className="w-7 h-7 text-white" />
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-slate-700 to-gray-800 flex items-center justify-center mb-6 shadow-md">
+                <Wifi className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">IoT Device Security</h3>
-              <p className="text-gray-600 mb-4">Device authentication, secure onboarding, and continuous monitoring for connected devices.</p>
-              <div className="text-sm text-blue-600 font-semibold">Millions of Devices</div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                End-to-end security for connected devices including secure authentication, 
+                encrypted communication, and continuous device behavior monitoring.
+              </p>
+              <div className="flex items-center text-slate-700 font-medium">
+                <Lock className="w-4 h-4 mr-2" />
+                Device authentication
+              </div>
             </div>
+            
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-gray-900 to-slate-800 flex items-center justify-center mb-6 shadow-md">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Critical Infrastructure</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Protection for core telecommunications infrastructure including switching centers, 
+                transmission networks, and satellite communication systems.
+              </p>
+              <div className="flex items-center text-gray-800 font-medium">
+                <Database className="w-4 h-4 mr-2" />
+                Infrastructure protection
+              </div>
+            </div>
+          </div>
+
+          {/* Detailed Capabilities */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-12 border border-gray-100 mb-16">
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-gray-800 to-slate-700 flex items-center justify-center mr-4">
+                    <Cpu className="w-6 h-6 text-white" />
+                  </div>
+                  Network Security Framework
+                </h3>
+                <ul className="space-y-5">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Real-time threat detection across network layers and protocols</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Secure software-defined networking and network function virtualization</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Subscriber identity protection and secure authentication systems</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-slate-700 to-gray-800 flex items-center justify-center mr-4">
+                    <Signal className="w-6 h-6 text-white" />
+                  </div>
+                  Communication Protection
+                </h3>
+                <ul className="space-y-5">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Encrypted voice and data transmission across all network types</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Messaging security for SMS and multimedia communication services</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Subscriber privacy protection and lawful interception security</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Network Technology Coverage */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Network Technology Protection</h3>
+            <div className="bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl p-8 border border-gray-200">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                Our security solutions are optimized for diverse telecommunications technologies, 
+                providing specialized protection for each network type and communication protocol.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Network className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">5G Networks</div>
+                  <div className="text-sm text-gray-500">Next-generation mobile</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Wifi className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">IoT Networks</div>
+                  <div className="text-sm text-gray-500">Connected devices</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Satellite className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">Satellite Comms</div>
+                  <div className="text-sm text-gray-500">Global connectivity</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Signal className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">Fixed Networks</div>
+                  <div className="text-sm text-gray-500">Fiber & broadband</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Integration Section */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Telecom Infrastructure Integration</h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              KalpTech's telecommunications security platform integrates seamlessly with network 
+              management systems, operations support systems, and business support systems. 
+              Our solutions are designed to work within existing telecom operations and 
+              network architecture frameworks.
+            </p>
           </div>
         </div>
       </div>

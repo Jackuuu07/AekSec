@@ -112,6 +112,8 @@ import AIPoweredThreatIntelligence from "../Pages/services/report/ai-threat-inte
 import ComplianceDigitalAge from "../Pages/services/report/compliance-digital-age";
 import ScrollToTop from "../components/ScrollToTop";
 import SecurityObservability from "../BrowsByTechnology/Observability";
+import Electronics from "../Pages/subsection/Iot";
+import Iot from "../Pages/subsection/Electronics";
 
 export default function AppRouter() {
   // const location = useLocation();
@@ -183,6 +185,7 @@ export default function AppRouter() {
         />
 
         <Route path="/contact" element={<Contact />} />
+
         <Route path="/services/applications" element={<Applications />} />
         <Route
           path="/services/kulp-intelligence"
@@ -266,6 +269,8 @@ export default function AppRouter() {
           path="/industries/technology/cloud-services"
           element={<CloudServices />}
         />
+        <Route path="/industries/hi-tech/iot" element={<Iot/>}/>
+        <Route path="/industries/hi-tech/electronics" element={<Electronics/>}/>
 
         <Route path="/connect" element={<ConnectWithKulpTech />} />
         <Route path="/feedback" element={<Feedback />} />

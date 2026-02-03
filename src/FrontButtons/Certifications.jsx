@@ -66,7 +66,7 @@ export default function Certifications() {
           jobs: ["Security Analyst", "IT Support"],
         },
         {
-          name: "Network Security Basics",
+          name: "Network Basics",
           duration: "3 months",
           jobs: ["Network Admin", "SOC L1"],
         },

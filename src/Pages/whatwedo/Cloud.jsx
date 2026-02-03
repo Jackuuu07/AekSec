@@ -49,7 +49,7 @@ export default function Cloud1() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-900 to-cyan-900 text-white">
+      <section className="py-20 px-6 bg-gradient-to-r from-slate-900 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <Cloud className="w-16 h-16 mx-auto mb-6" />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Cloud Solutions</h1>

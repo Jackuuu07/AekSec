@@ -1,190 +1,205 @@
 import React from 'react';
-import { Database, Shield, Network, BarChart, Lock, Cpu } from 'lucide-react';
+import { Database, Shield, Network, BarChart, Lock, Cpu, Users, Key, Globe, FileCheck } from 'lucide-react';
 
 export default function InfoServices() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-gray-50 text-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-slate-100 to-gray-100 text-gray-800">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-slate-700 to-gray-600 text-white">
-        <div className="absolute inset-0 bg-opacity-20 bg-white"></div>
+      <div className="relative overflow-hidden bg-slate-200 text-gray-900">
         <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-              <Database className="w-10 h-10" />
-            </div>
-            <div>
-              <h1 className="text-5xl font-bold mb-3">Information Services Security</h1>
-              <p className="text-xl opacity-90">Protecting data intelligence and information assets</p>
-            </div>
-          </div>
-          <p className="text-lg max-w-3xl opacity-90 mb-12">
-            KalpTech secures data analytics platforms, research databases, and information services 
-            with advanced encryption, access controls, and threat intelligence.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold mb-2">100+</div>
-              <div className="text-slate-200">Data Platforms</div>
-            </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold mb-2">PB/Day</div>
-              <div className="text-slate-200">Data Protected</div>
-            </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold mb-2">99.99%</div>
-              <div className="text-slate-200">Uptime SLA</div>
-            </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold mb-2">ISO 27001</div>
-              <div className="text-slate-200">Certified</div>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+            <div className="max-w-3xl">
+              <div className="flex items-center space-x-6 mb-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-800 to-gray-900 rounded-xl flex items-center justify-center shadow-lg border border-gray-300">
+                  <Database className="w-9 h-9 text-white" />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4">Information Services Security</h1>
+                  <p className="text-xl text-gray-700">Protecting data intelligence, research, and information assets</p>
+                </div>
+              </div>
+              <p className="text-lg md:text-xl max-w-3xl text-gray-600 leading-relaxed">
+                KalpTech provides comprehensive security solutions for information services providers, 
+                research organizations, and data analytics platforms, ensuring the confidentiality, 
+                integrity, and availability of critical information assets.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* Solutions Grid */}
       <div className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-slate-600 to-gray-500 flex items-center justify-center mb-6">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Information Services Protection</h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Our security solutions are designed to address the unique challenges of information 
+              services providers, protecting sensitive data, research information, and analytical 
+              assets across diverse platforms and delivery channels.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-gray-800 to-slate-700 flex items-center justify-center mb-6 shadow-md">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Data Classification & Protection</h3>
-              <p className="text-gray-600 mb-6">
-                Automated data classification with tiered protection levels for sensitive information, 
-                research data, and proprietary intelligence.
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Automated data classification systems with tiered protection levels for sensitive 
+                information, proprietary research data, and business intelligence assets.
               </p>
-              <div className="flex items-center text-slate-600 font-semibold">
-                <Lock className="w-5 h-5 mr-2" />
-                Multi-layer Encryption
+              <div className="flex items-center text-gray-700 font-medium">
+                <Lock className="w-4 h-4 mr-2" />
+                Tiered protection
               </div>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center mb-6">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-slate-700 to-gray-800 flex items-center justify-center mb-6 shadow-md">
                 <Network className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">API Security & Integration</h3>
-              <p className="text-gray-600 mb-6">
-                Comprehensive API security for data exchange platforms with rate limiting, 
-                authentication, and real-time threat detection.
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Comprehensive API security for data exchange platforms with advanced authentication, 
+                rate limiting, and real-time threat detection for information services.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold">
-                <Cpu className="w-5 h-5 mr-2" />
-                10K+ API Endpoints
+              <div className="flex items-center text-slate-700 font-medium">
+                <Cpu className="w-4 h-4 mr-2" />
+                Secure integration
               </div>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 flex items-center justify-center mb-6">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:border-slate-200 transition-colors">
+              <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-gray-900 to-slate-800 flex items-center justify-center mb-6 shadow-md">
                 <BarChart className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Analytics Platform Security</h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 Secure business intelligence and analytics environments with data masking, 
-                anonymization, and role-based access controls.
+                anonymization, and role-based access controls for sensitive data analysis.
               </p>
-              <div className="flex items-center text-purple-600 font-semibold">
-                <Database className="w-5 h-5 mr-2" />
-                GDPR Compliant
+              <div className="flex items-center text-gray-800 font-medium">
+                <Key className="w-4 h-4 mr-2" />
+                Access controls
               </div>
             </div>
           </div>
 
-          {/* Industry Challenges */}
-          <div className="bg-gradient-to-r from-slate-700 to-gray-600 rounded-3xl p-12 text-white mb-16">
-            <h2 className="text-3xl font-bold mb-10 text-center">Information Services Challenges</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-4 h-4 bg-red-400 rounded-full"></div>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">Data Breach Prevention</h4>
-                    <p className="text-slate-300">Protecting sensitive research data and proprietary information from unauthorized access.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">Compliance Management</h4>
-                    <p className="text-slate-300">Meeting GDPR, CCPA, and industry-specific data protection regulations.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-4 h-4 bg-green-400 rounded-full"></div>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">Third-party Risk</h4>
-                    <p className="text-slate-300">Managing security risks from data providers, analytics tools, and integration partners.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-2">Data Integrity</h4>
-                    <p className="text-slate-300">Ensuring accuracy and reliability of information while preventing tampering.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Solutions Section */}
-          <div className="bg-white rounded-3xl shadow-xl p-12 border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">KalpTech Solutions</h2>
+          {/* Detailed Capabilities */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-12 border border-gray-100 mb-16">
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Security Architecture</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-green-500 to-emerald-400 flex items-center justify-center flex-shrink-0">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-800 mb-1">Data Loss Prevention</h4>
-                      <p className="text-gray-600">Advanced DLP solutions preventing unauthorized data transfers and leaks.</p>
-                    </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-gray-800 to-slate-700 flex items-center justify-center mr-4">
+                    <Database className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center flex-shrink-0">
-                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                  Data Protection Framework
+                </h3>
+                <ul className="space-y-5">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
                     </div>
-                    <div>
-                      <h4 className="text-lg font-bold text-gray-800 mb-1">Zero Trust Framework</h4>
-                      <p className="text-gray-600">Continuous verification and least privilege access for all data interactions.</p>
+                    <span className="text-gray-700">Automated data classification and sensitivity labeling systems</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
                     </div>
-                  </div>
-                </div>
+                    <span className="text-gray-700">Information lifecycle management and retention policy enforcement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Data loss prevention for sensitive research and proprietary information</span>
+                  </li>
+                </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Implementation Benefits</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-                    <span className="text-gray-700">Data Breach Reduction</span>
-                    <span className="text-green-600 font-bold">-85%</span>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-slate-700 to-gray-800 flex items-center justify-center mr-4">
+                    <Users className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-                    <span className="text-gray-700">Compliance Efficiency</span>
-                    <span className="text-blue-600 font-bold">+60%</span>
+                  Access & Governance
+                </h3>
+                <ul className="space-y-5">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Fine-grained access controls for information services and data repositories</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">User behavior analytics for detecting anomalous data access patterns</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                      <div className="w-2 h-2 bg-slate-700 rounded-full"></div>
+                    </div>
+                    <span className="text-gray-700">Audit trail management and compliance reporting capabilities</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Information Service Types */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Information Service Specialization</h3>
+            <div className="bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl p-8 border border-gray-200">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                Our security solutions are tailored to meet the specific requirements of different 
+                information service providers, ensuring appropriate protection for various data 
+                types and delivery models.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <BarChart className="w-7 h-7 text-white" />
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-                    <span className="text-gray-700">Incident Response Time</span>
-                    <span className="text-purple-600 font-bold">-75%</span>
+                  <div className="text-gray-800 font-semibold">Market Research</div>
+                  <div className="text-sm text-gray-500">Analytics & insights</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Globe className="w-7 h-7 text-white" />
                   </div>
+                  <div className="text-gray-800 font-semibold">News Services</div>
+                  <div className="text-sm text-gray-500">Content & media</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <FileCheck className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">Financial Data</div>
+                  <div className="text-sm text-gray-500">Market intelligence</div>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Database className="w-7 h-7 text-white" />
+                  </div>
+                  <div className="text-gray-800 font-semibold">Research Databases</div>
+                  <div className="text-sm text-gray-500">Academic & scientific</div>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Integration Section */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Information Technology Integration</h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              KalpTech's information services security platform integrates seamlessly with content 
+              management systems, data warehouses, research platforms, and information delivery 
+              systems. Our solutions are designed to work within existing information technology 
+              infrastructure and service delivery models.
+            </p>
           </div>
         </div>
       </div>

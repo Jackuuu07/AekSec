@@ -40,7 +40,6 @@ const industrySubmenus = {
       { label: "Telecommunications", to: "/industries/comms/telecom" },
       { label: "Media & Entertainment", to: "/industries/comms/media" },
       { label: "Information Services", to: "/industries/comms/info-services" },
-      { label: "Broadcasting", to: "/industries/comms/broadcasting" },
     ],
   },
   Consumer: {
@@ -70,21 +69,11 @@ const industrySubmenus = {
   
   "Hi-Tech": {
     items: [
-      { label: "Semiconductors", to: "/industries/hi-tech/semiconductors" },
       { label: "Electronics", to: "/industries/hi-tech/electronics" },
-      { label: "Robotics", to: "/industries/hi-tech/robotics" },
       { label: "IoT", to: "/industries/hi-tech/iot" },
     ],
   },
-  
-  "Platforms, Software Products and Gaming": {
-    items: [
-      { label: "Enterprise Software", to: "/industries/platforms/enterprise" },
-      { label: "Consumer Software", to: "/industries/platforms/consumer" },
-      { label: "Mobile Apps", to: "/industries/platforms/mobile-apps" },
-      { label: "Video Games", to: "/industries/platforms/gaming" },
-    ],
-  },
+
 };
 
 export default function MegaMenu({
@@ -96,6 +85,7 @@ export default function MegaMenu({
 }) {
   const [hoveredIndustry, setHoveredIndustry] = useState(null);
   const [isSubmenuHovered, setIsSubmenuHovered] = useState(false);
+  const [openIndustry, setOpenIndustry] = useState(null);
   const submenuRef = useRef(null);
   const industryItemsRef = useRef({});
 
@@ -161,7 +151,7 @@ export default function MegaMenu({
             {
               icon: <FiBriefcase />,
               label: "Business Process Services",
-              to: "/services/business-process",
+              to: "/services/business-process-services",
             },
             { icon: <FiCloud />, label: "Cloud", to: "/services/cloud" },
             {
@@ -223,10 +213,7 @@ export default function MegaMenu({
               icon: <MdDevicesOther />,
               label: "Hi-Tech",
             },
-            {
-              icon: <FiMonitor />,
-              label: "Platforms, Software Products and Gaming",
-            },
+            
           ],
         },
       ],
@@ -324,11 +311,7 @@ export default function MegaMenu({
     hoveredIndustry && industrySubmenus[hoveredIndustry];
 
   // Mobile version layout
- // Mobile version layout
 if (isMobile) {
-  // Add state to track which industry is open in mobile
-  const [openIndustry, setOpenIndustry] = useState(null);
-
   return (
     <div className="bg-gray-50 p-4">
       <div className="flex items-center justify-between mb-4">

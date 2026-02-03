@@ -1,5 +1,6 @@
 import React from 'react';
 import { Workflow, Settings, Target, TrendingUp, Users, Clock, Shield, BarChart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function BusinessProcessServices() {
   const services = [
@@ -53,11 +54,7 @@ export default function BusinessProcessServices() {
       processes: ["Loan Processing", "KYC/AML", "Claims Management"],
       color: "border-blue-200 bg-blue-50"
     },
-    {
-      name: "Healthcare",
-      processes: ["Patient Onboarding", "Claims Processing", "Appointment Scheduling"],
-      color: "border-green-200 bg-green-50"
-    },
+    
     {
       name: "Manufacturing",
       processes: ["Supply Chain", "Quality Control", "Inventory Management"],
@@ -73,7 +70,7 @@ export default function BusinessProcessServices() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-teal-900 to-emerald-900 text-white">
+      <section className="py-20 px-6 bg-gradient-to-r from-slate-900 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Business Process Services</h1>
@@ -201,12 +198,7 @@ export default function BusinessProcessServices() {
                 solution: "Automated loan approval workflow",
                 results: "Processing time reduced to 2 hours"
               },
-              {
-                company: "Healthcare Provider",
-                challenge: "Patient onboarding delays",
-                solution: "Digital patient intake system",
-                results: "Onboarding time reduced by 80%"
-              },
+              
               {
                 company: "Manufacturer",
                 challenge: "Supply chain inefficiencies",
@@ -241,20 +233,18 @@ export default function BusinessProcessServices() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-teal-600 to-emerald-600">
-        <div className="max-w-4xl mx-auto text-center text-white">
+      <section className="py-20 px-6 bg-blue-50">
+        <div className="max-w-4xl mx-auto text-center text-black">
           <Workflow className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-6">Transform Your Business Processes</h2>
           <p className="text-xl opacity-90 mb-8">
             Let us help you achieve operational excellence through intelligent process automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-white text-teal-600 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-gray-400 border rounded-full">
               Schedule Consultation
-            </button>
-            <button className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors">
-              Download Brochure
-            </button>
+            </Link>
+            
           </div>
         </div>
       </section>

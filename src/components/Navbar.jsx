@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Search, Menu, X } from "lucide-react";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { useState, useEffect, useRef } from "react";
