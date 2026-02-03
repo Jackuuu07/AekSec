@@ -6,7 +6,7 @@ export default function About() {
         <>  
             <main className="bg-white text-gray-800">
                 {/* ================= HERO / ABOUT ================= */}
-                <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-28 px-10 overflow-hidden">
+                <section className="relative bg-white py-28 px-10 overflow-hidden">
                     <div className="absolute inset-0 bg-grid-blue-100/20 [mask-image:linear-gradient(0deg,transparent,black)]"></div>
                     <div className="max-w-7xl mx-auto relative">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -53,7 +53,7 @@ export default function About() {
                 </section>
 
                 {/* ================= OUR STORY ================= */}
-                <section className="py-24 px-10 bg-gradient-to-b from-white to-gray-50">
+                <section className="py-24 px-10 bg-gray-100">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl font-bold mb-6">Our Story</h2>
@@ -192,7 +192,7 @@ export default function About() {
                 </section>
 
                 {/* ================= OUR VALUES ================= */}
-                <section className="py-24 px-10 bg-gradient-to-b from-white to-blue-50">
+                <section className="py-24 px-10 bg-slate-100">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl font-bold mb-6">Our Values</h2>
@@ -358,7 +358,7 @@ export default function About() {
                 </section>
 
                 {/* ================= CONTACT ================= */}
-                <section className="py-24 px-10 bg-gradient-to-b from-white to-gray-50">
+                <section className="py-24 px-10 bg-gray-100">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-16">
                             <div>
@@ -543,7 +543,7 @@ export default function About() {
                 </section>
 
                 {/* ================= FEEDBACK ================= */}
-                <section className="py-24 px-10 bg-gradient-to-b from-white to-blue-50">
+                <section className="py-24 px-10 bg-gray-50">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-4xl font-bold mb-8">We Value Your Feedback</h2>
                         <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto mb-12">
@@ -581,7 +581,7 @@ export default function About() {
                 </section>
 
                 {/* ================= LEGAL SECTIONS ================= */}
-                <section className="py-24 px-10 bg-gradient-to-b from-gray-100 to-gray-200">
+                <section className="py-24 px-10 bg-blue-50">
                     <div className="max-w-7xl mx-auto">
                         <h2 className="text-3xl font-bold mb-12 text-center">Policies & Information</h2>
                         

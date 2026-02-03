@@ -117,10 +117,10 @@ export default function WhatWeThink() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <section className="py-20 px-6 bg-white text-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-light mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
               KalpTech Insights & Research
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto mb-10">
@@ -128,17 +128,15 @@ export default function WhatWeThink() {
               artificial intelligence, and digital transformation. Our thought leadership provides 
               actionable insights for enterprise security and technology leaders.
             </p>
-            
-            
           </div>
         </div>
       </section>
 
       {/* Thought Leadership */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Thought Leadership</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Thought Leadership</h2>
             <p className="text-gray-600 max-w-3xl">
               In-depth analysis and expert perspectives on critical cybersecurity topics, 
               emerging technologies, and strategic approaches to digital risk management.
@@ -169,7 +167,7 @@ export default function WhatWeThink() {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{article.title}</h3>
+                <h3 className="text-2xl font-light text-gray-900 mb-4">{article.title}</h3>
                 <p className="text-gray-600 mb-6">{article.description}</p>
                 
                 <div className="pt-6 border-t border-gray-200">
@@ -193,7 +191,7 @@ export default function WhatWeThink() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Research Publications</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Research Publications</h2>
             <p className="text-gray-600 max-w-3xl">
               Comprehensive studies and detailed analysis based on extensive research 
               across enterprise environments, security operations, and emerging threats.
@@ -213,7 +211,7 @@ export default function WhatWeThink() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{report.title}</h3>
+                <h3 className="text-xl font-light text-gray-900 mb-4">{report.title}</h3>
                 <p className="text-gray-600 mb-6">{report.description}</p>
                 
                 <div className="space-y-4">
@@ -236,7 +234,7 @@ export default function WhatWeThink() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Expert Perspectives</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Expert Perspectives</h2>
             <p className="text-gray-600 max-w-3xl">
               Insights and analysis from KalpTech's security leadership team, 
               drawing on decades of experience across enterprise security domains.

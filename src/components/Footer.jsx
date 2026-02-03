@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 px-10 pt-16 pb-8 text-gray-500">
+    <footer className="bg-gray-50 px-10 pt-16 pb-8 text-gray-500">
       <div className="max-w-7xl mx-auto">
         {/* ===== Top Row ===== */}
         <div className="flex flex-col md:flex-row justify-between gap-10 cursor-pointer">
