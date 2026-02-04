@@ -1,248 +1,277 @@
 import React from 'react';
-import { TrendingUp, DollarSign, Target, Rocket, Building, Users, PieChart, BarChart } from 'lucide-react';
+import { TrendingUp, DollarSign, Target, Rocket, Building, Users, PieChart, BarChart, CheckCircle } from 'lucide-react';
 
 export default function KulpTechVentures() {
+  const investmentStats = [
+    {
+      value: "$500M",
+      label: "Fund Size",
+      description: "Total investment capital"
+    },
+    {
+      value: "35+",
+      label: "Portfolio Companies",
+      description: "Strategic investments"
+    },
+    {
+      value: "12",
+      label: "Strategic Acquisitions",
+      description: "Successful integrations"
+    },
+    {
+      value: "4.2x",
+      label: "Average ROI",
+      description: "Portfolio performance"
+    }
+  ];
+
+  const focusAreas = [
+    {
+      icon: Target,
+      title: "Enterprise Security",
+      description: "Solutions addressing sophisticated enterprise threats including advanced persistent threats, insider risks, and supply chain vulnerabilities.",
+      stats: ["Portfolio: 15 companies", "Average Check: $8M"],
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      icon: Rocket,
+      title: "Emerging Technologies",
+      description: "Investing in quantum security, AI-powered defense, blockchain security, and other next-generation security paradigms.",
+      stats: ["Portfolio: 12 companies", "Early Stage Focus"],
+      color: "from-purple-600 to-pink-600"
+    },
+    {
+      icon: Building,
+      title: "Critical Infrastructure",
+      description: "Protection solutions for energy grids, transportation systems, healthcare networks, and other essential national infrastructure.",
+      stats: ["Portfolio: 8 companies", "Government Focus"],
+      color: "from-cyan-600 to-blue-600"
+    },
+    {
+      icon: Users,
+      title: "Human-Centric Security",
+      description: "Technologies addressing human factors in security including training platforms, behavioral analytics, and insider threat detection.",
+      stats: ["Portfolio: 10 companies", "Series A-B Focus"],
+      color: "from-orange-600 to-yellow-600"
+    }
+  ];
+
+  const portfolioMetrics = [
+    {
+      label: "Overall Portfolio IRR",
+      value: "42%",
+      description: "Internal rate of return"
+    },
+    {
+      label: "Strategic Acquisition Rate",
+      value: "35%",
+      description: "Portfolio companies acquired"
+    },
+    {
+      label: "Follow-on Investment Rate",
+      value: "60%",
+      description: "Subsequent funding rounds"
+    }
+  ];
+
+  const stageDistribution = [
+    {
+      stage: "Seed Stage",
+      percentage: "25%",
+      color: "bg-green-500"
+    },
+    {
+      stage: "Series A",
+      percentage: "40%",
+      color: "bg-blue-500"
+    },
+    {
+      stage: "Series B+",
+      percentage: "35%",
+      color: "bg-purple-500"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/30 to-emerald-900/20"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
-        
-        <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-emerald-600 to-green-500 rounded-lg flex items-center justify-center">
-              <TrendingUp className="w-7 h-7" />
-            </div>
-            <div className="border-l-2 border-emerald-500 pl-4">
-              <span className="text-emerald-400 text-sm font-mono tracking-wider">STRATEGIC INVESTMENT</span>
-              <h1 className="text-5xl font-bold mt-1">KalpTech Ventures</h1>
-            </div>
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <TrendingUp className="w-10 h-10 text-black" />
           </div>
-          
-          <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
-            Investing in the future of cybersecurity. Our venture arm identifies and accelerates 
-            breakthrough security technologies that complement our mission of enterprise protection.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">$500M</div>
-              <div className="text-gray-300">Fund Size</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">35+</div>
-              <div className="text-gray-300">Portfolio Companies</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">12</div>
-              <div className="text-gray-300">Strategic Acquisitions</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">4.2x</div>
-              <div className="text-gray-300">Average ROI</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Investment Strategy */}
-      <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Investment Focus Areas</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Strategic investments in technologies that address critical security gaps and emerging threats
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              KalpTech Ventures
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Investing in the future of cybersecurity. Our venture arm identifies and accelerates 
+              breakthrough security technologies that complement our mission of enterprise protection.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6 p-8 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-emerald-500/30 transition-all duration-300">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center flex-shrink-0">
-                  <Target className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Enterprise Security</h3>
-                  <p className="text-gray-400 mb-6">
-                    Solutions addressing sophisticated enterprise threats including advanced persistent threats, 
-                    insider risks, and supply chain vulnerabilities.
-                  </p>
-                  <div className="flex items-center space-x-4">
-                    <span className="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">Portfolio: 15 companies</span>
-                    <span className="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-sm">Average Check: $8M</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6 p-8 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-purple-500/30 transition-all duration-300">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-purple-900 to-purple-700 flex items-center justify-center flex-shrink-0">
-                  <Rocket className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Emerging Technologies</h3>
-                  <p className="text-gray-400 mb-6">
-                    Investing in quantum security, AI-powered defense, blockchain security, and other 
-                    next-generation security paradigms.
-                  </p>
-                  <div className="flex items-center space-x-4">
-                    <span className="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm">Portfolio: 12 companies</span>
-                    <span className="px-3 py-1 bg-cyan-900/30 text-cyan-400 rounded-full text-sm">Early Stage Focus</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6 p-8 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-cyan-500/30 transition-all duration-300">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-cyan-900 to-cyan-700 flex items-center justify-center flex-shrink-0">
-                  <Building className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Critical Infrastructure</h3>
-                  <p className="text-gray-400 mb-6">
-                    Protection solutions for energy grids, transportation systems, healthcare networks, 
-                    and other essential national infrastructure.
-                  </p>
-                  <div className="flex items-center space-x-4">
-                    <span className="px-3 py-1 bg-cyan-900/30 text-cyan-400 rounded-full text-sm">Portfolio: 8 companies</span>
-                    <span className="px-3 py-1 bg-red-900/30 text-red-400 rounded-full text-sm">Government Focus</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6 p-8 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-orange-500/30 transition-all duration-300">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-orange-900 to-orange-700 flex items-center justify-center flex-shrink-0">
-                  <Users className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Human-Centric Security</h3>
-                  <p className="text-gray-400 mb-6">
-                    Technologies addressing human factors in security including training platforms, 
-                    behavioral analytics, and insider threat detection.
-                  </p>
-                  <div className="flex items-center space-x-4">
-                    <span className="px-3 py-1 bg-orange-900/30 text-orange-400 rounded-full text-sm">Portfolio: 10 companies</span>
-                    <span className="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">Series A-B Focus</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Portfolio Performance */}
-      <div className="py-20 px-6 bg-gradient-to-b from-gray-900/50 to-transparent">
+      {/* Main Content */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="w-1 h-12 bg-gradient-to-b from-emerald-500 to-green-400"></div>
-            <h2 className="text-3xl font-bold">Portfolio Performance</h2>
+          {/* Investment Stats */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            {investmentStats.map((stat, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 text-center">
+                <div className="text-4xl font-bold text-green-600 mb-3">
+                  {stat.value}
+                </div>
+                <div className="text-lg font-medium text-gray-900 mb-2">
+                  {stat.label}
+                </div>
+                <div className="text-gray-600 text-sm">
+                  {stat.description}
+                </div>
+              </div>
+            ))}
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-8">Investment Returns</h3>
-                
+
+          {/* Investment Focus Areas */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Investment Focus Areas
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Strategic investments in technologies that address critical security gaps and emerging threats.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {focusAreas.map((area, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${area.color} flex items-center justify-center mb-6 shadow-md`}>
+                  <area.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  {area.title}
+                </h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {area.description}
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {area.stats.map((stat, idx) => (
+                    <span key={idx} className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+                      {stat}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Portfolio Performance */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Portfolio Performance
+            </h3>
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Investment Returns */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <h4 className="text-xl font-bold text-gray-900 mb-8">
+                  Investment Returns
+                </h4>
                 <div className="space-y-8">
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Overall Portfolio IRR</span>
-                      <span className="text-emerald-400 font-bold">42%</span>
+                  {portfolioMetrics.map((metric, index) => (
+                    <div key={index}>
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="text-lg font-medium text-gray-900">
+                          {metric.label}
+                        </div>
+                        <div className="text-2xl font-bold text-green-600">
+                          {metric.value}
+                        </div>
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {metric.description}
+                      </div>
                     </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-emerald-600 to-green-400 w-3/5"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Strategic Acquisition Rate</span>
-                      <span className="text-blue-400 font-bold">35%</span>
-                    </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-blue-600 to-cyan-400 w-1/3"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Follow-on Investment Rate</span>
-                      <span className="text-purple-400 font-bold">60%</span>
-                    </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-purple-600 to-pink-400 w-3/5"></div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </div>
-            
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-green-900 to-emerald-700 flex items-center justify-center">
-                    <PieChart className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold">Stage Distribution</h3>
-                    <p className="text-gray-400">Current portfolio composition</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                      <span>Seed Stage</span>
-                    </div>
-                    <span className="text-emerald-400 text-sm font-semibold">25%</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                      <span>Series A</span>
-                    </div>
-                    <span className="text-blue-400 text-sm font-semibold">40%</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                      <span>Series B+</span>
-                    </div>
-                    <span className="text-purple-400 text-sm font-semibold">35%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-2xl p-12 text-center">
-            <DollarSign className="w-16 h-16 mx-auto mb-8 text-emerald-400" />
-            <h3 className="text-3xl font-bold mb-6">Partner with KalpTech Ventures</h3>
-            <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
-              Access strategic capital, enterprise partnerships, and security expertise to accelerate 
-              your security technology company's growth.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-emerald-600 to-green-500 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                Submit for Investment
-              </button>
-              <button className="px-8 py-4 border border-gray-700 text-gray-300 rounded-lg font-semibold hover:bg-gray-800/50 transition-colors">
-                View Portfolio Companies
-              </button>
+              {/* Stage Distribution */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center">
+                    <PieChart className="w-7 h-7 text-gray-700" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900">
+                      Stage Distribution
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Current portfolio composition
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-6">
+                  {stageDistribution.map((stage, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-3 h-3 rounded-full ${stage.color}`}></div>
+                        <span className="font-medium text-gray-900">{stage.stage}</span>
+                      </div>
+                      <div className="text-lg font-bold text-gray-900">
+                        {stage.percentage}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Value Beyond Capital
+            </h3>
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                KalpTech Ventures provides more than just funding. Our portfolio companies benefit from 
+                deep cybersecurity expertise, enterprise partnerships, go-to-market strategy, and 
+                integration opportunities with KalpTech's global security platform.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Access to enterprise customer base</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Technical validation and integration</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Market intelligence and threat data</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Strategic guidance from security experts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Building the Future of Security
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Through strategic investments and partnerships, we're accelerating innovation in 
+              cybersecurity and shaping the security landscape of tomorrow while delivering 
+              strong returns to our investors.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

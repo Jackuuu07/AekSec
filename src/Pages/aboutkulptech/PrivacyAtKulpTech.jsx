@@ -2,263 +2,354 @@ import React from 'react';
 import { Lock, Shield, EyeOff, FileText, CheckCircle, Key, Globe, Users } from 'lucide-react';
 
 export default function PrivacyAtKulpTech() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-cyan-900/20"></div>
-        <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
-        
-        <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-500 rounded-lg flex items-center justify-center">
-              <Lock className="w-7 h-7" />
-            </div>
-            <div className="border-l-2 border-cyan-500 pl-4">
-              <span className="text-cyan-400 text-sm font-mono tracking-wider">PRIVACY BY DESIGN</span>
-              <h1 className="text-5xl font-bold mt-1">Privacy at KalpTech</h1>
-            </div>
-          </div>
-          
-          <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
-            Zero-trust privacy architecture ensuring data protection, transparency, and compliance 
-            across all security operations and customer engagements.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-green-400 mb-2">GDPR</div>
-              <div className="text-gray-300">Compliant</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">CCPA</div>
-              <div className="text-gray-300">Certified</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">ISO 27001</div>
-              <div className="text-gray-300">Certified</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">SOC 2</div>
-              <div className="text-gray-300">Type II</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  const complianceCertifications = [
+    {
+      name: "GDPR",
+      status: "Compliant",
+      description: "General Data Protection Regulation"
+    },
+    {
+      name: "CCPA",
+      status: "Certified",
+      description: "California Consumer Privacy Act"
+    },
+    {
+      name: "ISO 27001",
+      status: "Certified",
+      description: "Information security management"
+    },
+    {
+      name: "SOC 2",
+      status: "Type II",
+      description: "Service organization controls"
+    }
+  ];
 
-      {/* Privacy Principles */}
-      <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Privacy Principles</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Foundational principles guiding our approach to data protection and privacy management
+  const privacyPrinciples = [
+    {
+      icon: Shield,
+      title: "Data Minimization",
+      description: "Collect only essential data required for security operations. Automatic data retention policies ensure unnecessary information is regularly purged from our systems.",
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      icon: EyeOff,
+      title: "Privacy by Default",
+      description: "All security products and services are configured with maximum privacy settings enabled. Customer data is pseudonymized and encrypted at rest and in transit.",
+      color: "from-purple-600 to-pink-600"
+    },
+    {
+      icon: Key,
+      title: "End-to-End Encryption",
+      description: "Military-grade encryption protects all customer data. Zero-knowledge architecture ensures only authorized parties can access decrypted information.",
+      color: "from-green-600 to-emerald-600"
+    },
+    {
+      icon: Globe,
+      title: "Global Compliance",
+      description: "Adherence to international privacy regulations including GDPR, CCPA, PIPEDA, and APEC CBPR. Regional data sovereignty requirements fully supported.",
+      color: "from-cyan-600 to-blue-600"
+    }
+  ];
+
+  const complianceStandards = [
+    {
+      standard: "ISO/IEC 27001:2022",
+      status: "Certified",
+      description: "Information security management"
+    },
+    {
+      standard: "ISO/IEC 27701 (Privacy)",
+      status: "Certified",
+      description: "Privacy information management"
+    },
+    {
+      standard: "SOC 2 Type II",
+      status: "Audited",
+      description: "Trust services criteria"
+    },
+    {
+      standard: "NIST Cybersecurity Framework",
+      status: "Aligned",
+      description: "Cybersecurity best practices"
+    }
+  ];
+
+  const dataProtectionMetrics = [
+    {
+      metric: "Data Encryption Coverage",
+      value: "100%",
+      description: "Complete data protection"
+    },
+    {
+      metric: "Privacy Impact Assessments",
+      value: "Quarterly",
+      description: "Regular privacy reviews"
+    },
+    {
+      metric: "Employee Privacy Training",
+      value: "Annual",
+      description: "Ongoing education"
+    }
+  ];
+
+  const privacyOperations = [
+    {
+      icon: Users,
+      metric: "Dedicated Privacy Team",
+      value: "50+ specialists",
+      description: "Privacy experts"
+    },
+    {
+      icon: FileText,
+      metric: "Compliance Monitoring",
+      value: "Automated",
+      description: "Continuous oversight"
+    },
+    {
+      icon: Lock,
+      metric: "Privacy Incident Response",
+      value: "24/7",
+      description: "Rapid response capability"
+    }
+  ];
+
+  const privacyPerformance = [
+    {
+      value: "99.99%",
+      label: "Privacy Compliance Uptime",
+      description: "Continuous compliance"
+    },
+    {
+      value: "0",
+      label: "Privacy Breaches",
+      description: "Since 2020"
+    },
+    {
+      value: "4 hours",
+      label: "Average Response Time",
+      description: "Privacy requests"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Lock className="w-10 h-10 text-black" />
+          </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Privacy at KalpTech
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Zero-trust privacy architecture ensuring data protection, transparency, and compliance 
+              across all security operations and customer engagements.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6 p-6 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-cyan-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Data Minimization</h3>
-                  <p className="text-gray-400">
-                    Collect only essential data required for security operations. Automatic data retention policies 
-                    ensure unnecessary information is regularly purged from our systems.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6 p-6 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-cyan-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-purple-900 to-purple-700 flex items-center justify-center flex-shrink-0">
-                  <EyeOff className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Privacy by Default</h3>
-                  <p className="text-gray-400">
-                    All security products and services are configured with maximum privacy settings enabled. 
-                    Customer data is pseudonymized and encrypted at rest and in transit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6 p-6 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-cyan-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-green-900 to-emerald-700 flex items-center justify-center flex-shrink-0">
-                  <Key className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">End-to-End Encryption</h3>
-                  <p className="text-gray-400">
-                    Military-grade encryption protects all customer data. Zero-knowledge architecture ensures 
-                    only authorized parties can access decrypted information.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-6 p-6 bg-gradient-to-br from-gray-900/50 to-transparent border border-gray-800 rounded-2xl hover:border-cyan-500/30 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-cyan-900 to-cyan-700 flex items-center justify-center flex-shrink-0">
-                  <Globe className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Global Compliance</h3>
-                  <p className="text-gray-400">
-                    Adherence to international privacy regulations including GDPR, CCPA, PIPEDA, and APEC CBPR. 
-                    Regional data sovereignty requirements fully supported.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Compliance Framework */}
-      <div className="py-20 px-6 bg-gradient-to-b from-gray-900/50 to-transparent">
+      {/* Main Content */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-cyan-400"></div>
-            <h2 className="text-3xl font-bold">Compliance Framework</h2>
+          {/* Compliance Certifications */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            {complianceCertifications.map((cert, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-3">
+                  {cert.name}
+                </div>
+                <div className="text-lg font-medium text-gray-900 mb-2">
+                  {cert.status}
+                </div>
+                <div className="text-gray-600 text-sm">
+                  {cert.description}
+                </div>
+              </div>
+            ))}
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-8">Certifications & Standards</h3>
-                
+
+          {/* Privacy Principles */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Privacy Principles
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Foundational principles guiding our approach to data protection and privacy management.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {privacyPrinciples.map((principle, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${principle.color} flex items-center justify-center mb-6 shadow-md`}>
+                  <principle.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  {principle.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {principle.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Compliance Framework */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Compliance Framework
+            </h3>
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Certifications & Standards */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <h4 className="text-xl font-bold text-gray-900 mb-8">
+                  Certifications & Standards
+                </h4>
                 <div className="space-y-6">
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-400" />
-                      <span>ISO/IEC 27001:2022</span>
+                  {complianceStandards.map((standard, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <div>
+                          <div className="font-medium text-gray-900">{standard.standard}</div>
+                          <div className="text-gray-600 text-sm">{standard.description}</div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="font-bold text-gray-900">{standard.status}</div>
+                      </div>
                     </div>
-                    <span className="text-green-400 text-sm font-semibold">Certified</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-400" />
-                      <span>ISO/IEC 27701 (Privacy)</span>
-                    </div>
-                    <span className="text-green-400 text-sm font-semibold">Certified</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-400" />
-                      <span>SOC 2 Type II</span>
-                    </div>
-                    <span className="text-green-400 text-sm font-semibold">Audited</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-400" />
-                      <span>NIST Cybersecurity Framework</span>
-                    </div>
-                    <span className="text-green-400 text-sm font-semibold">Aligned</span>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </div>
-            
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-8">Data Protection Measures</h3>
-                
+
+              {/* Data Protection Measures */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <h4 className="text-xl font-bold text-gray-900 mb-8">
+                  Data Protection Measures
+                </h4>
                 <div className="space-y-8">
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Data Encryption Coverage</span>
-                      <span className="text-blue-400 font-bold">100%</span>
+                  {dataProtectionMetrics.map((metric, index) => (
+                    <div key={index}>
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="text-lg font-medium text-gray-900">
+                          {metric.metric}
+                        </div>
+                        <div className="text-lg font-bold text-gray-900">
+                          {metric.value}
+                        </div>
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {metric.description}
+                      </div>
                     </div>
-                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-blue-600 to-cyan-400 w-full"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Privacy Impact Assessments</span>
-                      <span className="text-purple-400 font-bold">Quarterly</span>
-                    </div>
-                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-purple-600 to-pink-400 w-3/4"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Employee Privacy Training</span>
-                      <span className="text-green-400 font-bold">Annual</span>
-                    </div>
-                    <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-green-600 to-emerald-400 w-4/5"></div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Privacy Operations */}
-      <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-2xl p-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl font-bold mb-6">Privacy Operations Center</h3>
-                <p className="text-gray-300 mb-8">
+          {/* Privacy Operations Center */}
+          <div className="bg-white rounded-2xl shadow-xl p-12 border border-blue-100 mb-16">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Privacy Operations Center
+                </h3>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
                   Our dedicated Privacy Operations Center monitors data protection across all systems, 
                   ensuring continuous compliance and rapid response to privacy incidents.
                 </p>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Users className="w-5 h-5 text-cyan-400" />
-                    <span>Dedicated Privacy Team: 50+ specialists</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FileText className="w-5 h-5 text-green-400" />
-                    <span>Automated Compliance Monitoring</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Lock className="w-5 h-5 text-blue-400" />
-                    <span>24/7 Privacy Incident Response</span>
-                  </div>
-                </div>
               </div>
-              
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
-                <div className="text-center mb-8">
-                  <div className="text-4xl font-bold text-green-400 mb-2">99.99%</div>
-                  <div className="text-gray-400">Privacy Compliance Uptime</div>
+
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-6">
+                    Privacy Operations
+                  </h4>
+                  <div className="space-y-6">
+                    {privacyOperations.map((operation, index) => (
+                      <div key={index} className="flex items-center gap-4">
+                        <operation.icon className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                        <div>
+                          <div className="font-medium text-gray-900">{operation.metric}</div>
+                          <div className="text-gray-600 text-sm">
+                            {operation.value} • {operation.description}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white mb-2">0</div>
-                    <div className="text-gray-400">Privacy Breaches</div>
-                    <div className="text-sm text-green-400">Since 2020</div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white mb-2">4 hours</div>
-                    <div className="text-gray-400">Average Response Time</div>
-                    <div className="text-sm text-blue-400">Privacy Requests</div>
-                  </div>
+
+                <div className="grid grid-cols-3 gap-6">
+                  {privacyPerformance.map((performance, index) => (
+                    <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
+                      <div className="text-2xl font-bold text-gray-900 mb-2">
+                        {performance.value}
+                      </div>
+                      <div className="text-sm font-medium text-gray-900 mb-1">
+                        {performance.label}
+                      </div>
+                      <div className="text-gray-600 text-xs">
+                        {performance.description}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Privacy Commitment
+            </h3>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                We are committed to maintaining the highest standards of data protection and privacy 
+                across all our operations. Our privacy program is built on transparency, security, 
+                and accountability, ensuring that customer data is protected throughout its lifecycle.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Regular privacy impact assessments and audits</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Transparent data processing and sharing practices</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Robust incident response and breach notification</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Continuous improvement of privacy controls</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Trust Through Transparency
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              By implementing rigorous privacy controls and maintaining transparent data practices, 
+              we build and maintain trust with our customers while protecting their sensitive 
+              information against evolving threats.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -1,129 +1,220 @@
 import React from 'react';
-import { Users, Shield, Globe, Award, Target, Lock } from 'lucide-react';
+import { Users, Shield, Globe, Award, Target, Lock, CheckCircle } from 'lucide-react';
 
 export default function InclusionBelonging() {
-  return (
-    <div className="min-h-screen bg-gray-100 text-white">
-      {/* Hero Section - Security Dark Theme */}
-      <div className="relative overflow-hidden">
-        
-        <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-              <Shield className="w-7 h-7" />
-            </div>
-            <div className="border-l-2 border-cyan-500 pl-4">
-              <span className="text-cyan-400 text-sm font-mono tracking-wider">SECURE DIVERSITY</span>
-              <h1 className="text-5xl text-black font-bold  mt-1">Inclusion & Belonging</h1>
-            </div>
-          </div>
-          
-          <p className="text-xl text-gray-500 max-w-3xl mb-12 leading-relaxed">
-            At KalpTech Security, we believe diverse perspectives strengthen our defense capabilities. 
-            Our inclusive culture drives innovation in cybersecurity solutions.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
-              <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-blue-900 to-blue-700 mb-6">
-                <Target className="w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Diverse Threat Perspectives</h3>
-              <p className="text-gray-400">Multiple cultural and cognitive perspectives enhance our threat detection capabilities by 40%.</p>
-            </div>
-            
-            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
-              <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-purple-900 to-purple-700 mb-6">
-                <Lock className="w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Inclusive Security Design</h3>
-              <p className="text-gray-400">Products designed by diverse teams prevent 30% more edge-case vulnerabilities.</p>
-            </div>
-            
-            <div className="border border-gray-800 rounded-xl p-8 bg-gray-500 hover:border-cyan-500/30 transition-all duration-300">
-              <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-cyan-900 to-cyan-700 mb-6">
-                <Globe className="w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Global Security Mindset</h3>
-              <p className="text-gray-400">25 nationalities provide localized threat intelligence for global protection strategies.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  const diversityMetrics = [
+    {
+      value: "45%",
+      label: "Women in Security Roles",
+      description: "Exceeds industry average by 20%"
+    },
+    {
+      value: "30+",
+      label: "Employee Resource Groups",
+      description: "Cybersecurity-focused communities"
+    },
+    {
+      value: "85%",
+      label: "Inclusion Training",
+      description: "Annual security diversity certification"
+    },
+    {
+      value: "200+",
+      label: "Underrepresented Hires",
+      description: "Through security apprenticeship program"
+    }
+  ];
 
-      {/* Metrics Section */}
-      <div className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Security Through Diversity</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Our diverse workforce strengthens our security posture and innovation capabilities
+  const securityPrograms = [
+    {
+      title: "Cybersecurity Apprenticeship Program",
+      description: "Providing hands-on security training to underrepresented groups, creating a pipeline of diverse cybersecurity talent.",
+      highlights: [
+        "120 Graduates",
+        "95% Retention rate"
+      ],
+      icon: Shield,
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      title: "Neurodiverse Threat Analysis Team",
+      description: "Specialized teams leveraging unique cognitive patterns to identify sophisticated cyber attack patterns.",
+      highlights: [
+        "40% improved pattern detection",
+        "Zero-day attack discovery"
+      ],
+      icon: Target,
+      color: "from-purple-600 to-pink-600"
+    },
+    {
+      title: "Global Security Culture Initiative",
+      description: "Cross-cultural security awareness training ensuring our solutions respect local privacy norms and regulations.",
+      highlights: [
+        "12 Global regions covered",
+        "GDPR compliant"
+      ],
+      icon: Globe,
+      color: "from-green-600 to-emerald-600"
+    }
+  ];
+
+  const corePrinciples = [
+    {
+      icon: Target,
+      title: "Diverse Threat Perspectives",
+      description: "Multiple cultural and cognitive perspectives enhance our threat detection capabilities by 40%.",
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      icon: Lock,
+      title: "Inclusive Security Design",
+      description: "Products designed by diverse teams prevent 30% more edge-case vulnerabilities.",
+      color: "from-purple-600 to-pink-600"
+    },
+    {
+      icon: Globe,
+      title: "Global Security Mindset",
+      description: "25 nationalities provide localized threat intelligence for global protection strategies.",
+      color: "from-green-600 to-emerald-600"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Users className="w-10 h-10 text-black" />
+          </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Inclusion & Belonging
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              At KalpTech, we believe diverse perspectives strengthen our defense capabilities. 
+              Our inclusive culture drives innovation in cybersecurity solutions.
             </p>
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-3">45%</div>
-              <div className="text-gray-300">Women in Security Roles</div>
-              <div className="text-sm text-gray-500 mt-2">Exceeds industry average by 20%</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-3">30+</div>
-              <div className="text-gray-300">Employee Resource Groups</div>
-              <div className="text-sm text-gray-500 mt-2">Cybersecurity-focused communities</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-3">85%</div>
-              <div className="text-gray-300">Inclusion Training</div>
-              <div className="text-sm text-gray-500 mt-2">Annual security diversity certification</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-3">200+</div>
-              <div className="text-gray-300">Underrepresented Hires</div>
-              <div className="text-sm text-gray-500 mt-2">Through security apprenticeship program</div>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Programs Section */}
-      <div className="py-20 px-6 bg-gray-950">
+      {/* Main Content */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-cyan-400"></div>
-            <h2 className="text-3xl font-bold">Inclusive Security Programs</h2>
+          {/* Core Principles */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Security Through Diversity
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Our diverse workforce strengthens our security posture and innovation capabilities.
+            </p>
           </div>
-          
-          <div className="space-y-8">
-            <div className="border-l-4 border-cyan-500 pl-8 py-6 hover:bg-gray-900/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-3">Cybersecurity Apprenticeship Program</h3>
-              <p className="text-gray-400 mb-4">Providing hands-on security training to underrepresented groups, creating a pipeline of diverse cybersecurity talent.</p>
-              <div className="flex items-center space-x-4">
-                <span className="px-3 py-1 bg-cyan-900/30 text-cyan-400 rounded-full text-sm">120 Graduates</span>
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">95% Retention</span>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            {corePrinciples.map((principle, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${principle.color} flex items-center justify-center mb-6 shadow-md`}>
+                  <principle.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  {principle.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {principle.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Metrics Section */}
+          <div className="bg-white rounded-2xl shadow-xl p-12 border border-blue-100 mb-16">
+            <div className="max-w-6xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-12 text-center">
+                Our Diversity & Inclusion Metrics
+              </h3>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                {diversityMetrics.map((metric, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-4xl font-bold text-blue-600 mb-3">
+                      {metric.value}
+                    </div>
+                    <div className="text-lg font-medium text-gray-900 mb-2">
+                      {metric.label}
+                    </div>
+                    <div className="text-gray-600 text-sm">
+                      {metric.description}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            
-            <div className="border-l-4 border-blue-500 pl-8 py-6 hover:bg-gray-900/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-3">Neurodiverse Threat Analysis Team</h3>
-              <p className="text-gray-400 mb-4">Specialized teams leveraging unique cognitive patterns to identify sophisticated cyber attack patterns.</p>
-              <div className="flex items-center space-x-4">
-                <span className="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">Pattern Detection +40%</span>
-                <span className="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm">Zero-Day Discovery</span>
-              </div>
+          </div>
+
+          {/* Programs Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Inclusive Security Programs
+            </h3>
+            <div className="space-y-8">
+              {securityPrograms.map((program, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                  <div className="flex flex-col md:flex-row md:items-start gap-6">
+                    <div className="md:w-1/4">
+                      <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${program.color} flex items-center justify-center mb-4 shadow-md`}>
+                        <program.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">
+                        {program.title}
+                      </h4>
+                    </div>
+                    <div className="md:w-3/4">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        {program.description}
+                      </p>
+                      <div className="flex flex-wrap gap-3">
+                        {program.highlights.map((highlight, idx) => (
+                          <span key={idx} className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+                            {highlight}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-            
-            <div className="border-l-4 border-purple-500 pl-8 py-6 hover:bg-gray-900/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-3">Global Security Culture Initiative</h3>
-              <p className="text-gray-400 mb-4">Cross-cultural security awareness training ensuring our solutions respect local privacy norms and regulations.</p>
-              <div className="flex items-center space-x-4">
-                <span className="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm">12 Regions</span>
-                <span className="px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-sm">GDPR Compliant</span>
-              </div>
+          </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Building a Diverse Security Culture
+            </h3>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our commitment to inclusion extends beyond hiring to create an environment where 
+                all voices are heard and valued. We actively foster belonging through mentorship 
+                programs, bias training, and creating spaces for diverse perspectives to shape 
+                our security strategies and product development.
+              </p>
             </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Stronger Security Through Diversity
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              By embracing diverse perspectives and experiences, we build more robust security 
+              solutions that protect against a wider range of threats and serve our global 
+              customer base more effectively.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

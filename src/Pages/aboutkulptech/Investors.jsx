@@ -1,176 +1,234 @@
 import React from 'react';
-import { TrendingUp, BarChart, Shield, DollarSign, Users, Target } from 'lucide-react';
+import { TrendingUp, BarChart, Shield, DollarSign, Users, Target, CheckCircle } from 'lucide-react';
 
 export default function Investors() {
+  const financialMetrics = [
+    {
+      label: "Annual Revenue Growth",
+      value: "+42%",
+      description: "Year-over-year growth",
+      color: "text-green-600"
+    },
+    {
+      label: "Enterprise Customer Growth",
+      value: "+65%",
+      description: "New enterprise clients",
+      color: "text-blue-600"
+    },
+    {
+      label: "Recurring Revenue",
+      value: "92%",
+      description: "Subscription-based revenue",
+      color: "text-purple-600"
+    }
+  ];
+
+  const marketPosition = [
+    {
+      value: "#2",
+      label: "XDR Market Share",
+      description: "Gartner 2024",
+      icon: BarChart
+    },
+    {
+      value: "99.8%",
+      label: "Customer Retention",
+      description: "Enterprise Tier",
+      icon: Users
+    },
+    {
+      value: "+500",
+      label: "Fortune 500 Clients",
+      description: "Global Coverage",
+      icon: Target
+    },
+    {
+      value: "$2.3B",
+      label: "ARR Projection",
+      description: "2025 Target",
+      icon: DollarSign
+    }
+  ];
+
+  const investmentStrategy = [
+    {
+      icon: Shield,
+      title: "R&D Investment",
+      description: "25% of revenue reinvested in security research, AI threat detection, and zero-day protection.",
+      amount: "$450M",
+      period: "Annual R&D Budget",
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      icon: Target,
+      title: "Strategic Acquisitions",
+      description: "Targeted investments in complementary security technologies and threat intelligence platforms.",
+      amount: "$1.2B",
+      period: "Acquisition Capital",
+      color: "from-green-600 to-emerald-600"
+    },
+    {
+      icon: Users,
+      title: "Global Expansion",
+      description: "Investment in international SOCs, regional compliance centers, and local threat research.",
+      amount: "$300M",
+      period: "Expansion Funding",
+      color: "from-purple-600 to-pink-600"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-950">
-        
-        <div className="relative py-24 px-6 max-w-7xl">
-          <div className="flex items-start justify-between mb-12">
-            <div>
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-emerald-500 rounded-lg flex items-center justify-center">
-                  <TrendingUp className="w-7 h-7" />
-                </div>
-                <div className="border-l-2 border-emerald-500 pl-4">
-                  <span className="text-emerald-400 text-sm font-mono tracking-wider">INVESTOR RELATIONS</span>
-                  <h1 className="text-5xl font-bold mt-1">Security Investment</h1>
-                </div>
-              </div>
-              <p className="text-xl text-gray-300 max-w-2xl">
-                Investing in the future of cybersecurity. KalpTech Security delivers superior returns through 
-                market-leading protection technology and sustained revenue growth.
-              </p>
-            </div>
-            
-            <div className="hidden lg:block">
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 backdrop-blur-sm">
-                <div className="text-4xl font-bold text-green-400 mb-2">$4.2B</div>
-                <div className="text-gray-400">Market Valuation</div>
-              </div>
-            </div>
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <TrendingUp className="w-10 h-10 text-black" />
           </div>
-        </div>
-      </div>
-
-      {/* Financial Highlights */}
-      <div className="py-20 px-6 bg-gray-900/30">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-            <div>
-              <div className="flex items-center space-x-3 mb-8">
-                <div className="w-1 h-8 bg-gradient-to-b from-green-500 to-emerald-400"></div>
-                <h2 className="text-3xl font-bold">Financial Performance</h2>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="border-b border-gray-800 pb-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-400">Annual Revenue Growth</span>
-                    <span className="text-green-400 font-bold">+42%</span>
-                  </div>
-                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-green-600 to-emerald-400 w-3/4"></div>
-                  </div>
-                </div>
-                
-                <div className="border-b border-gray-800 pb-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-400">Enterprise Customer Growth</span>
-                    <span className="text-blue-400 font-bold">+65%</span>
-                  </div>
-                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-blue-600 to-cyan-400 w-4/5"></div>
-                  </div>
-                </div>
-                
-                <div className="border-b border-gray-800 pb-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-400">Recurring Revenue</span>
-                    <span className="text-purple-400 font-bold">92%</span>
-                  </div>
-                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-purple-600 to-pink-400 w-[92%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <div className="flex items-center space-x-3 mb-8">
-                <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-cyan-400"></div>
-                <h2 className="text-3xl font-bold">Market Position</h2>
-              </div>
-              
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
-                <div className="grid grid-cols-2 gap-8">
-                  <div>
-                    <div className="text-3xl font-bold text-white mb-2">#2</div>
-                    <div className="text-gray-400">XDR Market Share</div>
-                    <div className="text-sm text-blue-400 mt-1">Gartner 2024</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-white mb-2">99.8%</div>
-                    <div className="text-gray-400">Customer Retention</div>
-                    <div className="text-sm text-green-400 mt-1">Enterprise Tier</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-white mb-2">+500</div>
-                    <div className="text-gray-400">Fortune 500 Clients</div>
-                    <div className="text-sm text-purple-400 mt-1">Global Coverage</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-white mb-2">$2.3B</div>
-                    <div className="text-gray-400">ARR Projection</div>
-                    <div className="text-sm text-emerald-400 mt-1">2025 Target</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Investment Strategy */}
-      <div className="py-20 px-6 bg-gray-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Strategic Security Investment</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Our capital allocation focuses on market-leading security technology and sustainable growth
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Investor Relations
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Investing in the future of cybersecurity. KalpTech delivers superior returns through 
+              market-leading protection technology and sustained revenue growth.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-xl border border-gray-800 p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-blue-500/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center mb-6">
-                  <Shield className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">R&D Investment</h3>
-                <p className="text-gray-400 mb-6">
-                  25% of revenue reinvested in security research, AI threat detection, and zero-day protection.
-                </p>
-                <div className="text-3xl font-bold text-blue-400">$450M</div>
-                <div className="text-sm text-gray-500">Annual R&D Budget</div>
-              </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Market Valuation */}
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 mb-16 text-center">
+            <div className="text-5xl font-bold text-green-600 mb-3">
+              $4.2B
             </div>
-            
-            <div className="group relative overflow-hidden rounded-xl border border-gray-800 p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-green-500/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-green-900 to-emerald-700 flex items-center justify-center mb-6">
-                  <Target className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Strategic Acquisitions</h3>
-                <p className="text-gray-400 mb-6">
-                  Targeted investments in complementary security technologies and threat intelligence platforms.
-                </p>
-                <div className="text-3xl font-bold text-green-400">$1.2B</div>
-                <div className="text-sm text-gray-500">Acquisition Capital</div>
-              </div>
+            <div className="text-lg font-medium text-gray-900">
+              Market Valuation
             </div>
-            
-            <div className="group relative overflow-hidden rounded-xl border border-gray-800 p-8 bg-gradient-to-b from-gray-900/50 to-transparent hover:border-purple-500/30 transition-all duration-500">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-purple-900 to-purple-700 flex items-center justify-center mb-6">
-                  <Users className="w-7 h-7" />
+          </div>
+
+          {/* Financial Performance */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Financial Performance
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {financialMetrics.map((metric, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                  <div className={`text-3xl font-bold ${metric.color} mb-3`}>
+                    {metric.value}
+                  </div>
+                  <div className="text-lg font-medium text-gray-900 mb-2">
+                    {metric.label}
+                  </div>
+                  <div className="text-gray-600">
+                    {metric.description}
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Global Expansion</h3>
-                <p className="text-gray-400 mb-6">
-                  Investment in international SOCs, regional compliance centers, and local threat research.
-                </p>
-                <div className="text-3xl font-bold text-purple-400">$300M</div>
-                <div className="text-sm text-gray-500">Expansion Funding</div>
+              ))}
+            </div>
+          </div>
+
+          {/* Market Position */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Market Position
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {marketPosition.map((position, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 text-center">
+                  <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mx-auto mb-6">
+                    <position.icon className="w-8 h-8 text-gray-700" />
+                  </div>
+                  <div className="text-3xl font-bold text-gray-900 mb-3">
+                    {position.value}
+                  </div>
+                  <div className="text-lg font-medium text-gray-900 mb-2">
+                    {position.label}
+                  </div>
+                  <div className="text-gray-600">
+                    {position.description}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Investment Strategy */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Strategic Security Investment
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              {investmentStrategy.map((strategy, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                  <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${strategy.color} flex items-center justify-center mb-6 shadow-md`}>
+                    <strategy.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-4">
+                    {strategy.title}
+                  </h4>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {strategy.description}
+                  </p>
+                  <div className="pt-4 border-t border-gray-200">
+                    <div className="text-2xl font-bold text-gray-900 mb-2">
+                      {strategy.amount}
+                    </div>
+                    <div className="text-gray-600">
+                      {strategy.period}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Growth Strategy
+            </h3>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                Our growth is driven by the increasing global demand for advanced cybersecurity solutions, 
+                digital transformation across industries, and the rising sophistication of cyber threats. 
+                We maintain a disciplined approach to capital allocation while investing aggressively in 
+                areas with the highest potential for market leadership and shareholder value creation.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Expanding enterprise customer base</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Product innovation and R&D investment</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-700">Strategic partnerships and acquisitions</span>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Building Shareholder Value
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              We are committed to creating long-term shareholder value through disciplined financial 
+              management, strategic investments in market-leading technology, and delivering consistent 
+              growth in an expanding cybersecurity market.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

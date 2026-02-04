@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Users, Globe, Recycle, TreePine, Award } from 'lucide-react';
+import { Heart, Users, Globe, Recycle, TreePine, Award, CheckCircle } from 'lucide-react';
 
 export default function CorporateSustainability() {
   const sustainabilityInitiatives = [
@@ -98,16 +98,45 @@ export default function CorporateSustainability() {
     }
   ];
 
+  const impactMetrics = [
+    {
+      value: "45%",
+      label: "Carbon Reduction",
+      description: "Since 2020 baseline"
+    },
+    {
+      value: "10K+",
+      label: "Volunteer Hours",
+      description: "Annual community service"
+    },
+    {
+      value: "100%",
+      label: "Renewable Energy Goal",
+      description: "For all data centers"
+    },
+    {
+      value: "$5M",
+      label: "Community Investment",
+      description: "Annual contributions"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-green-900 to-emerald-900 text-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <Heart className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Corporate Sustainability</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Building a secure digital future while protecting our planet and empowering our communities.
-          </p>
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Heart className="w-10 h-10 text-black" />
+          </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Corporate Sustainability
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Building a secure digital future while protecting our planet and empowering our communities.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -115,89 +144,128 @@ export default function CorporateSustainability() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Mission Statement */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Sustainability Mission</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              At KalpTech, we believe that cybersecurity and sustainability go hand in hand. We're committed to protecting 
-              digital assets while minimizing our environmental impact and maximizing our positive social contribution.
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our Sustainability Mission
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              At KalpTech, we believe that cybersecurity and sustainability go hand in hand. 
+              We're committed to protecting digital assets while minimizing our environmental 
+              impact and maximizing our positive social contribution.
             </p>
           </div>
 
           {/* Initiatives Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {sustainabilityInitiatives.map((initiative, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-100">
-                <div className={`p-4 rounded-xl bg-gradient-to-br ${initiative.color} w-fit mb-6`}>
-                  <initiative.icon className="w-10 h-10 text-white" />
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${initiative.color} flex items-center justify-center mb-6 shadow-md`}>
+                  <initiative.icon className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">{initiative.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  {initiative.title}
+                </h3>
                 
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Pillars</h4>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {initiative.pillars.map((pillar, i) => (
-                      <li key={i} className="flex items-center text-gray-700">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                        {pillar}
+                      <li key={i} className="flex items-start text-gray-700">
+                        <CheckCircle className="w-4 h-4 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                        <span className="text-sm">{pillar}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 
                 <div className="pt-4 border-t border-gray-200">
-                  <p className="text-sm text-gray-500">Recent Achievement</p>
-                  <p className="text-lg font-semibold text-gray-900">{initiative.achievements}</p>
+                  <p className="text-lg font-bold text-gray-900">
+                    {initiative.achievements}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Upcoming Events */}
-          <div className="mb-20">
-            <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Upcoming Sustainability Events</h2>
-            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-12">
-              <div className="max-w-4xl mx-auto">
-                {events.map((event, index) => (
-                  <div key={index} className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8 last:mb-0 p-6 bg-white rounded-xl shadow-sm">
-                    <div className="min-w-48">
-                      <p className="text-lg font-bold text-blue-600">{event.date}</p>
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Upcoming Sustainability Events
+            </h3>
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-blue-100">
+              {events.map((event, index) => (
+                <div key={index} className="mb-8 last:mb-0 pb-8 last:pb-0 border-b last:border-0 border-gray-200">
+                  <div className="flex flex-col md:flex-row md:items-start gap-4">
+                    <div className="md:w-48">
+                      <p className="text-lg font-medium text-blue-600">{event.date}</p>
+                      <p className="text-sm text-gray-500 mt-2">
+                        Participants: {event.participants}
+                      </p>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{event.title}</h3>
-                      <p className="text-gray-600 mb-3">{event.description}</p>
-                      <p className="text-gray-700 font-semibold">Participants: {event.participants}</p>
+                      <h4 className="text-xl font-bold text-gray-900 mb-2">
+                        {event.title}
+                      </h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        {event.description}
+                      </p>
                     </div>
-                    <button className="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                      Register
-                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Impact Metrics */}
+          <div className="bg-white rounded-2xl shadow-xl p-12 border border-blue-100 mb-16">
+            <div className="max-w-6xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-12 text-center">
+                Our Sustainability Impact
+              </h3>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                {impactMetrics.map((metric, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-4xl font-bold text-blue-600 mb-3">
+                      {metric.value}
+                    </div>
+                    <div className="text-lg font-medium text-gray-900 mb-2">
+                      {metric.label}
+                    </div>
+                    <div className="text-gray-600 text-sm">
+                      {metric.description}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Impact Metrics */}
-          <div className="bg-gradient-to-r from-gray-900 to-slate-900 rounded-3xl p-12 text-white">
-            <h3 className="text-3xl font-bold text-center mb-12">Our Sustainability Impact</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-3">45%</div>
-                <div className="text-gray-300">Carbon Reduction</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-3">10K+</div>
-                <div className="text-gray-300">Volunteer Hours</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-3">100%</div>
-                <div className="text-gray-300">Renewable Energy Goal</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-3">$5M</div>
-                <div className="text-gray-300">Community Investment</div>
-              </div>
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Commitment to Sustainability
+            </h3>
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our sustainability initiatives are integrated into every aspect of our business, 
+                from product development and operations to employee engagement and community 
+                partnerships. We continuously measure and improve our environmental and social 
+                impact while maintaining our commitment to delivering world-class cybersecurity 
+                solutions.
+              </p>
             </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Sustainable Security for the Future
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              By combining technological innovation with sustainable practices, we aim to create 
+              a secure digital future that benefits businesses, communities, and the planet.
+            </p>
           </div>
         </div>
       </section>

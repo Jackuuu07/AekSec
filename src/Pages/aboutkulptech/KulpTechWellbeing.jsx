@@ -1,298 +1,324 @@
 import React from 'react';
-import { Heart, Users, Brain, Shield, Coffee, Activity, Moon, Sun } from 'lucide-react';
+import { Heart, Users, Brain, Shield, Coffee, Activity, Moon, Sun, CheckCircle } from 'lucide-react';
 
 export default function KulpTechWellbeing() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-900/20 to-rose-900/10"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
-        
-        <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-rose-500 rounded-lg flex items-center justify-center">
-              <Heart className="w-7 h-7" />
-            </div>
-            <div className="border-l-2 border-pink-500 pl-4">
-              <span className="text-pink-400 text-sm font-mono tracking-wider">SECURITY MINDSET</span>
-              <h1 className="text-5xl font-bold mt-1">Security Wellbeing</h1>
-            </div>
-          </div>
-          
-          <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
-            Protecting our security professionals' mental and physical wellbeing is essential 
-            for maintaining optimal threat detection and response capabilities.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-pink-400 mb-2">94%</div>
-              <div className="text-gray-300">Employee Satisfaction</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-green-400 mb-2">+25%</div>
-              <div className="text-gray-300">Productivity Gain</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">0</div>
-              <div className="text-gray-300">Burnout Cases</div>
-            </div>
-            <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">24/7</div>
-              <div className="text-gray-300">Mental Health Support</div>
-            </div>
-          </div>
-        </div>
-      </div>
+  const wellbeingStats = [
+    {
+      value: "94%",
+      label: "Employee Satisfaction",
+      description: "Overall job satisfaction rate"
+    },
+    {
+      value: "+25%",
+      label: "Productivity Gain",
+      description: "Since program implementation"
+    },
+    {
+      value: "0",
+      label: "Burnout Cases",
+      description: "Last 12 months"
+    },
+    {
+      value: "24/7",
+      label: "Mental Health Support",
+      description: "Round-the-clock availability"
+    }
+  ];
 
-      {/* Wellbeing Programs */}
-      <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">Holistic Security Professional Support</h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Comprehensive programs designed to sustain peak performance in high-stress security operations
+  const wellbeingPrograms = [
+    {
+      icon: Brain,
+      title: "Mental Resilience Training",
+      description: "Specialized programs for security analysts to maintain cognitive performance during extended threat monitoring and incident response scenarios.",
+      features: [
+        "Mindfulness & Meditation Programs",
+        "Cognitive Load Management",
+        "Stress Inoculation Training"
+      ],
+      color: "from-pink-600 to-rose-600"
+    },
+    {
+      icon: Shield,
+      title: "Operational Wellness",
+      description: "Optimized shift patterns, ergonomic work environments, and fatigue management systems for 24/7 security operations center staff.",
+      features: [
+        "Circadian Rhythm Optimization",
+        "Ergonomic Threat Analysis Stations",
+        "Fatigue Risk Management"
+      ],
+      color: "from-blue-600 to-cyan-600"
+    },
+    {
+      icon: Users,
+      title: "Peer Support Networks",
+      description: "Structured support systems where security professionals can share experiences, debrief critical incidents, and maintain psychological safety.",
+      features: [
+        "Critical Incident Debriefing",
+        "Security Professional Communities",
+        "Mentorship Programs"
+      ],
+      color: "from-green-600 to-emerald-600"
+    }
+  ];
+
+  const performanceMetrics = [
+    {
+      label: "Threat Detection Accuracy",
+      value: "+18%",
+      description: "Improvement since program start"
+    },
+    {
+      label: "Incident Response Time",
+      value: "-32%",
+      description: "Reduction in response time"
+    },
+    {
+      label: "Analyst Retention Rate",
+      value: "+25%",
+      description: "Increase in retention"
+    }
+  ];
+
+  const programParticipation = [
+    {
+      icon: Coffee,
+      program: "Mental Health Sessions",
+      participation: "85%",
+      description: "Monthly participation rate"
+    },
+    {
+      icon: Sun,
+      program: "Wellness Workshops",
+      participation: "75%",
+      description: "Average attendance"
+    },
+    {
+      icon: Moon,
+      program: "Sleep Optimization",
+      participation: "90%",
+      description: "Employee engagement"
+    }
+  ];
+
+  const researchInitiatives = [
+    "Cognitive Performance Studies",
+    "Stress Management Protocols",
+    "Resilience Training Development"
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
+      {/* Hero Section */}
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Heart className="w-10 h-10 text-black" />
+          </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Security Wellbeing
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Protecting our security professionals' mental and physical wellbeing is essential 
+              for maintaining optimal threat detection and response capabilities.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-transparent p-8 hover:border-pink-500/50 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-pink-900 to-pink-700 flex items-center justify-center mb-6">
-                  <Brain className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Mental Resilience Training</h3>
-                <p className="text-gray-400 mb-6">
-                  Specialized programs for security analysts to maintain cognitive performance during 
-                  extended threat monitoring and incident response scenarios.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                    Mindfulness & Meditation Programs
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                    Cognitive Load Management
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                    Stress Inoculation Training
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-transparent p-8 hover:border-blue-500/50 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center mb-6">
-                  <Shield className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Operational Wellness</h3>
-                <p className="text-gray-400 mb-6">
-                  Optimized shift patterns, ergonomic work environments, and fatigue management 
-                  systems for 24/7 security operations center staff.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                    Circadian Rhythm Optimization
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                    Ergonomic Threat Analysis Stations
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                    Fatigue Risk Management
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-transparent p-8 hover:border-green-500/50 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-900/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-green-900 to-emerald-700 flex items-center justify-center mb-6">
-                  <Users className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Peer Support Networks</h3>
-                <p className="text-gray-400 mb-6">
-                  Structured support systems where security professionals can share experiences, 
-                  debrief critical incidents, and maintain psychological safety.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    Critical Incident Debriefing
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    Security Professional Communities
-                  </div>
-                  <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    Mentorship Programs
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Wellness Metrics */}
-      <div className="py-20 px-6 bg-gradient-to-b from-gray-900/50 to-transparent">
+      {/* Main Content */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-12">
-            <div className="w-1 h-12 bg-gradient-to-b from-pink-500 to-rose-400"></div>
-            <h2 className="text-3xl font-bold">Wellbeing Impact Metrics</h2>
+          {/* Wellbeing Stats */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            {wellbeingStats.map((stat, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 text-center">
+                <div className="text-4xl font-bold text-pink-600 mb-3">
+                  {stat.value}
+                </div>
+                <div className="text-lg font-medium text-gray-900 mb-2">
+                  {stat.label}
+                </div>
+                <div className="text-gray-600 text-sm">
+                  {stat.description}
+                </div>
+              </div>
+            ))}
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-8">Performance Improvements</h3>
-                
+
+          {/* Wellbeing Programs */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Holistic Security Professional Support
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
+              Comprehensive programs designed to sustain peak performance in high-stress security operations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            {wellbeingPrograms.map((program, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${program.color} flex items-center justify-center mb-6 shadow-md`}>
+                  <program.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  {program.title}
+                </h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {program.description}
+                </p>
+                <ul className="space-y-3">
+                  {program.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start text-gray-700">
+                      <CheckCircle className="w-4 h-4 mr-3 text-green-500 flex-shrink-0 mt-1" />
+                      <span className="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Wellbeing Impact */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Wellbeing Impact Metrics
+            </h3>
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Performance Improvements */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <h4 className="text-xl font-bold text-gray-900 mb-8">
+                  Performance Improvements
+                </h4>
                 <div className="space-y-8">
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Threat Detection Accuracy</span>
-                      <span className="text-green-400 font-bold">+18%</span>
+                  {performanceMetrics.map((metric, index) => (
+                    <div key={index}>
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="text-lg font-medium text-gray-900">
+                          {metric.label}
+                        </div>
+                        <div className="text-2xl font-bold text-green-600">
+                          {metric.value}
+                        </div>
+                      </div>
+                      <div className="text-gray-600 text-sm">
+                        {metric.description}
+                      </div>
                     </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-green-600 to-emerald-400 w-2/5"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Incident Response Time</span>
-                      <span className="text-blue-400 font-bold">-32%</span>
-                    </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-blue-600 to-cyan-400 w-3/5"></div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-400">Analyst Retention Rate</span>
-                      <span className="text-purple-400 font-bold">+25%</span>
-                    </div>
-                    <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-purple-600 to-pink-400 w-3/5"></div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </div>
-            
-            <div>
-              <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-8">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-rose-900 to-pink-700 flex items-center justify-center">
-                    <Activity className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold">Wellness Program Participation</h3>
-                    <p className="text-gray-400">Monthly engagement metrics</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <Coffee className="w-5 h-5 text-amber-400" />
-                      <span>Mental Health Sessions</span>
-                    </div>
-                    <span className="text-green-400 text-sm font-semibold">85% Participation</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <Sun className="w-5 h-5 text-yellow-400" />
-                      <span>Wellness Workshops</span>
-                    </div>
-                    <span className="text-blue-400 text-sm font-semibold">75% Attendance</span>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gray-900/50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <Moon className="w-5 h-5 text-indigo-400" />
-                      <span>Sleep Optimization</span>
-                    </div>
-                    <span className="text-purple-400 text-sm font-semibold">90% Engagement</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Research & Development */}
-      <div className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-2xl p-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl font-bold mb-6">Wellbeing Research Initiative</h3>
-                <p className="text-gray-300 mb-8">
-                  Our dedicated research team studies the intersection of cybersecurity operations 
-                  and human performance, developing evidence-based practices for sustaining security 
-                  professional effectiveness.
-                </p>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-pink-900 to-pink-700 flex items-center justify-center">
-                      <Brain className="w-4 h-4" />
-                    </div>
-                    <span>Cognitive Performance Studies</span>
+              {/* Program Participation */}
+              <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-100">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center">
+                    <Activity className="w-7 h-7 text-gray-700" />
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
-                      <Heart className="w-4 h-4" />
-                    </div>
-                    <span>Stress Management Protocols</span>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900">
+                      Wellness Program Participation
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Monthly engagement metrics
+                    </p>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-green-900 to-emerald-700 flex items-center justify-center">
-                      <Shield className="w-4 h-4" />
+                </div>
+                <div className="space-y-6">
+                  {programParticipation.map((program, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <program.icon className="w-5 h-5 text-gray-600" />
+                        <span className="font-medium text-gray-900">{program.program}</span>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-lg font-bold text-gray-900">
+                          {program.participation}
+                        </div>
+                        <div className="text-gray-600 text-sm">
+                          {program.description}
+                        </div>
+                      </div>
                     </div>
-                    <span>Resilience Training Development</span>
-                  </div>
+                  ))}
                 </div>
               </div>
-              
-              <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
-                <div className="text-center mb-8">
-                  <div className="text-4xl font-bold text-pink-400 mb-2">40%</div>
-                  <div className="text-gray-400">Reduction in Alert Fatigue</div>
+            </div>
+          </div>
+
+          {/* Research Initiative */}
+          <div className="bg-white rounded-2xl shadow-xl p-12 border border-blue-100 mb-16">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    Wellbeing Research Initiative
+                  </h3>
+                  <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                    Our dedicated research team studies the intersection of cybersecurity operations 
+                    and human performance, developing evidence-based practices for sustaining security 
+                    professional effectiveness.
+                  </p>
+                  <ul className="space-y-4">
+                    {researchInitiatives.map((initiative, index) => (
+                      <li key={index} className="flex items-center text-gray-700">
+                        <CheckCircle className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />
+                        <span>{initiative}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white mb-2">3.5x</div>
-                    <div className="text-gray-400">Increased Job Satisfaction</div>
-                    <div className="text-sm text-green-400">Post-program implementation</div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white mb-2">100%</div>
-                    <div className="text-gray-400">Management Participation</div>
-                    <div className="text-sm text-blue-400">Wellness Leadership Training</div>
+                <div className="text-center">
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+                    <div className="text-4xl font-bold text-gray-900 mb-3">
+                      40%
+                    </div>
+                    <div className="text-lg font-medium text-gray-900 mb-2">
+                      Reduction in Alert Fatigue
+                    </div>
+                    <div className="text-gray-600 mb-8">
+                      Since program implementation
+                    </div>
+                    <div className="text-2xl font-bold text-green-600 mb-3">
+                      3.5x
+                    </div>
+                    <div className="text-gray-700">
+                      Increased Job Satisfaction
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Sustainable Security Operations
+            </h3>
+            <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-8 border border-pink-200">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our wellbeing initiatives are designed to prevent burnout and maintain high performance 
+                levels among security professionals. By prioritizing mental health and work-life balance, 
+                we ensure our team can effectively protect our clients while maintaining their own wellbeing.
+              </p>
+            </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Protecting Those Who Protect
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              The effectiveness of our security operations depends on the wellbeing of our team. 
+              Through comprehensive support systems and evidence-based practices, we ensure our 
+              security professionals can perform at their best while maintaining their health and wellbeing.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

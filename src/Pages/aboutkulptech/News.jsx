@@ -1,5 +1,5 @@
 import React from 'react';
-import { Newspaper, Shield, AlertTriangle, TrendingUp, Globe, Lock } from 'lucide-react';
+import { Newspaper, Shield, AlertTriangle, TrendingUp, Globe, Lock, CheckCircle } from 'lucide-react';
 
 export default function News() {
   const newsItems = [
@@ -54,171 +54,256 @@ export default function News() {
   ];
 
   const colorClasses = {
-    red: "bg-red-900/20 text-red-400 border-red-800",
-    blue: "bg-blue-900/20 text-blue-400 border-blue-800",
-    purple: "bg-purple-900/20 text-purple-400 border-purple-800",
-    orange: "bg-orange-900/20 text-orange-400 border-orange-800",
-    cyan: "bg-cyan-900/20 text-cyan-400 border-cyan-800",
-    green: "bg-green-900/20 text-green-400 border-green-800"
+    red: "bg-red-100 text-red-800",
+    blue: "bg-blue-100 text-blue-800",
+    purple: "bg-purple-100 text-purple-800",
+    orange: "bg-orange-100 text-orange-800",
+    cyan: "bg-cyan-100 text-cyan-800",
+    green: "bg-green-100 text-green-800"
   };
 
+  const threatLevels = [
+    {
+      category: "Nation-State Activity",
+      level: "75%",
+      description: "Advanced persistent threats"
+    },
+    {
+      category: "Ransomware Attacks",
+      level: "65%",
+      description: "Current threat volume"
+    },
+    {
+      category: "Supply Chain Threats",
+      level: "50%",
+      description: "Third-party vulnerabilities"
+    }
+  ];
+
+  const globalThreatStats = [
+    {
+      value: "HIGH",
+      label: "Global Threat Level",
+      description: "Current assessment"
+    },
+    {
+      value: "100+",
+      label: "Daily Threat Alerts",
+      description: "Average volume"
+    },
+    {
+      value: "24/7",
+      label: "Monitoring",
+      description: "Continuous protection"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-950">
-        
-        <div className="relative py-24 px-6 max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-500 rounded-lg flex items-center justify-center">
-              <Newspaper className="w-7 h-7" />
-            </div>
-            <div className="border-l-2 border-blue-500 pl-4">
-              <span className="text-blue-400 text-sm font-mono tracking-wider">SECURITY INTELLIGENCE</span>
-              <h1 className="text-5xl font-bold mt-1">Threat Intelligence & News</h1>
-            </div>
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Newspaper className="w-10 h-10 text-black" />
           </div>
-          
-          <p className="text-xl text-gray-300 max-w-3xl mb-12 leading-relaxed">
-            Stay informed about emerging threats, security breakthroughs, and industry developments 
-            from KalpTech Security's global research network.
-          </p>
-          
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-              <span className="text-sm text-gray-400">Active Threat</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-              <span className="text-sm text-gray-400">Industry News</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              <span className="text-sm text-gray-400">Research</span>
-            </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Threat Intelligence & News
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Stay informed about emerging threats, security breakthroughs, and industry developments 
+              from KalpTech Security's global research network.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* News Grid */}
-      <div className="py-20 px-6">
+      {/* Main Content */}
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Featured News */}
-            <div className="lg:col-span-2">
-              <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-800">
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="px-4 py-1 bg-red-900/30 text-red-400 rounded-full text-sm font-mono tracking-wider">BREAKING THREAT</span>
-                    <span className="text-gray-500 text-sm">March 18, 2024</span>
-                  </div>
-                  <h2 className="text-3xl font-bold mb-6">
-                    Zero-Day Exploit in Enterprise VPNs Actively Exploited in the Wild
-                  </h2>
-                  <p className="text-gray-300 text-lg mb-8">
-                    Our threat intelligence team has identified a critical vulnerability being exploited 
-                    across multiple enterprise VPN solutions. Immediate patching recommended.
-                  </p>
-                  <div className="flex items-center space-x-6">
-                    <button className="px-6 py-3 bg-gradient-to-r from-red-600 to-orange-500 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                      Read Threat Advisory
-                    </button>
-                    <div className="flex items-center space-x-2 text-gray-400">
-                      <AlertTriangle className="w-5 h-5" />
-                      <span>Severity: Critical</span>
-                    </div>
-                  </div>
+          {/* Global Threat Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            {globalThreatStats.map((stat, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-3">
+                  {stat.value}
                 </div>
-              </div>
-            </div>
-            
-            {/* News List */}
-            {newsItems.map((item, index) => (
-              <div key={index} className="group border border-gray-800 rounded-xl overflow-hidden hover:border-blue-500/30 transition-all duration-300">
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${colorClasses[item.color]}`}>
-                      {item.category}
-                    </span>
-                    <span className="text-gray-500 text-sm">{item.date}</span>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold mb-4 group-hover:text-blue-400 transition-colors">
-                    {item.title}
-                  </h3>
-                  
-                  <p className="text-gray-400 mb-6 line-clamp-2">
-                    {item.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex space-x-2">
-                      {item.tags.map((tag, tagIndex) => (
-                        <span key={tagIndex} className="px-3 py-1 bg-gray-900 text-gray-400 rounded-full text-xs">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    <button className="text-blue-400 hover:text-blue-300 text-sm font-semibold">
-                      Read More →
-                    </button>
-                  </div>
+                <div className="text-lg font-medium text-gray-900 mb-2">
+                  {stat.label}
+                </div>
+                <div className="text-gray-600 text-sm">
+                  {stat.description}
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* Threat Level Indicator */}
-      <div className="py-16 px-6 bg-gradient-to-r from-gray-900 to-gray-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
-            <div className="flex items-center justify-between mb-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Global Threat Level</h3>
-                <p className="text-gray-400">Real-time assessment based on our global threat intelligence</p>
+          {/* Featured News */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Latest Security Intelligence
+            </h2>
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-red-200 mb-12">
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">
+                  BREAKING THREAT
+                </span>
+                <span className="text-gray-600 text-sm">March 18, 2024</span>
               </div>
-              <div className="text-right">
-                <div className="text-4xl font-bold text-red-400 mb-2">HIGH</div>
-                <div className="text-sm text-gray-500">Updated: Today, 14:30 UTC</div>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400">Nation-State Activity</span>
-                <div className="flex items-center space-x-2">
-                  <div className="w-48 h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-red-500 w-3/4"></div>
-                  </div>
-                  <span className="text-red-400 font-bold">75%</span>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Zero-Day Exploit in Enterprise VPNs Actively Exploited in the Wild
+              </h3>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                Our threat intelligence team has identified a critical vulnerability being exploited 
+                across multiple enterprise VPN solutions. Immediate patching recommended.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <AlertTriangle className="w-5 h-5 text-red-600" />
+                  <span className="font-medium">Severity: Critical</span>
                 </div>
-              </div>
-              
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400">Ransomware Attacks</span>
-                <div className="flex items-center space-x-2">
-                  <div className="w-48 h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-orange-500 w-2/3"></div>
-                  </div>
-                  <span className="text-orange-400 font-bold">65%</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-between">
-                <span className="text-gray-400">Supply Chain Threats</span>
-                <div className="flex items-center space-x-2">
-                  <div className="w-48 h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-yellow-500 w-1/2"></div>
-                  </div>
-                  <span className="text-yellow-400 font-bold">50%</span>
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Shield className="w-5 h-5 text-blue-600" />
+                  <span className="font-medium">Status: Active</span>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* News Grid */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Recent Updates & Reports
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {newsItems.map((item, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                  <div className="flex items-center justify-between mb-6">
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${colorClasses[item.color]}`}>
+                      {item.category}
+                    </span>
+                    <span className="text-gray-600 text-sm">{item.date}</span>
+                  </div>
+                  
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">
+                    {item.title}
+                  </h4>
+                  
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {item.description}
+                  </p>
+                  
+                  <div className="pt-4 border-t border-gray-200">
+                    <div className="flex flex-wrap gap-2">
+                      {item.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Threat Level Assessment */}
+          <div className="bg-white rounded-2xl shadow-xl p-12 border border-blue-100 mb-16">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Global Threat Level Assessment
+                </h3>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                  Real-time threat assessment based on our global security intelligence and monitoring systems.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <div className="flex items-center justify-between mb-8">
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Current Threat Landscape</h4>
+                    <p className="text-gray-600">Updated: Today, 14:30 UTC</p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-3xl font-bold text-red-600 mb-2">HIGH</div>
+                    <div className="text-gray-600 text-sm">Overall Threat Level</div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  {threatLevels.map((threat, index) => (
+                    <div key={index}>
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="text-lg font-medium text-gray-900">
+                          {threat.category}
+                        </div>
+                        <div className="text-lg font-bold text-gray-900">
+                          {threat.level}
+                        </div>
+                      </div>
+                      <div className="text-gray-600 text-sm mb-2">
+                        {threat.description}
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-blue-600 to-cyan-600" 
+                          style={{ width: threat.level }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="pt-8 border-t border-gray-200">
+                <h4 className="text-xl font-bold text-gray-900 mb-6">Security Recommendations</h4>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Implement multi-factor authentication</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Regular security patch updates</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Continuous threat monitoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Security Intelligence Network
+            </h3>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our global threat intelligence network monitors emerging threats across multiple 
+                vectors including nation-state activity, ransomware campaigns, and supply chain 
+                vulnerabilities. This real-time intelligence informs our security products and 
+                helps protect clients against evolving cyber threats.
+              </p>
+            </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Staying Ahead of Threats
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Through continuous research, threat intelligence sharing, and global monitoring, 
+              we provide timely insights and actionable intelligence to help organizations 
+              protect against today's most sophisticated cyber threats.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -385,25 +385,26 @@ export default function About() {
                                         </div>
                                     </Link>
                                     
-                                    <Link to="/values/partners" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
-                                        <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                                            <Users className="text-green-600" size={22} />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-lg">Partnerships</h4>
-                                            <p className="text-gray-600">partners@kalptechitsolutions.com</p>
-                                        </div>
-                                    </Link>
-                                    
                                     <Link to="/Support" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
                                             <MessageCircle className="text-purple-600" size={22} />
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-lg">Technical Support</h4>
-                                            <p className="text-gray-600">support@kalptechitsolutions.com</p>
+                                            <p className="text-gray-600">hr@kalptechitsolutions.com</p>
                                         </div>
                                     </Link>
+
+                                    <Link to="/values/partners" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
+                                        <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                                            <Users className="text-green-600" size={22} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-lg">Partnerships</h4>
+                                        </div>
+                                    </Link>
+                                    
+                                    
                                     
                                     <Link to="/about/case-studies" className="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-colors">
                                         <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
@@ -411,7 +412,6 @@ export default function About() {
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-lg">Research Collaborations</h4>
-                                            <p className="text-gray-600">research@kalptechitsolutions.com</p>
                                         </div>
                                     </Link>
                                 </div>

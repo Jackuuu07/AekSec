@@ -77,82 +77,99 @@ export default function AwardsRecognitions() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50 text-gray-800">
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-slate-900 to-gray-900 text-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <Trophy className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Awards & Recognitions</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Celebrating excellence and innovation in cybersecurity recognized by industry leaders and independent organizations.
-          </p>
+      <section className="py-20 px-6 bg-slate-100 text-black">
+        <div className="max-w-7xl mx-auto flex items-start gap-8">
+          <div className="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <Trophy className="w-10 h-10 text-black" />
+          </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+              Awards & Recognitions
+            </h1>
+            <p className="text-xl text-gray-700 max-w-3xl">
+              Celebrating excellence and innovation in cybersecurity recognized by industry leaders and independent organizations.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Awards Timeline */}
+      {/* Main Content */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industry Recognition Timeline</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Industry Recognition Timeline
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl">
               Our commitment to innovation and excellence has been consistently recognized by leading industry organizations.
             </p>
           </div>
 
           {/* Awards by Year */}
           {awards.map((yearGroup, yearIndex) => (
-            <div key={yearIndex} className="mb-20">
-              <div className="flex items-center mb-10">
-                <div className="w-32 h-1 bg-gradient-to-r from-gray-300 to-transparent"></div>
-                <h3 className="text-4xl font-bold text-gray-900 mx-6">{yearGroup.year}</h3>
-                <div className="flex-1 h-1 bg-gradient-to-l from-gray-300 to-transparent"></div>
+            <div key={yearIndex} className="mb-20 last:mb-0">
+              <div className="flex items-center justify-center mb-12">
+                <div className="w-20 h-1 bg-gray-300"></div>
+                <h3 className="text-4xl font-bold text-gray-900 mx-8">
+                  {yearGroup.year}
+                </h3>
+                <div className="w-20 h-1 bg-gray-300"></div>
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {yearGroup.awards.map((award, awardIndex) => (
-                  <div key={awardIndex} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-8 border border-gray-100">
-                    <div className={`p-4 rounded-xl bg-gradient-to-br ${award.color} w-fit mb-6`}>
-                      <award.icon className="w-10 h-10 text-white" />
+                  <div key={awardIndex} className="bg-white rounded-xl shadow-lg p-8 border border-slate-100 hover:border-blue-200 transition-colors">
+                    <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${award.color} flex items-center justify-center mb-6 shadow-md`}>
+                      <award.icon className="w-8 h-8 text-white" />
                     </div>
                     
-                    <div className="mb-4">
-                      <span className="inline-block px-3 py-1 text-sm font-semibold bg-gray-100 text-gray-700 rounded-full mb-3">
+                    <div className="mb-6">
+                      <span className="inline-block px-3 py-1 text-sm font-medium bg-gray-100 text-gray-700 rounded-full mb-4">
                         {award.organization}
                       </span>
-                      <h4 className="text-2xl font-bold text-gray-900 mb-2">{award.title}</h4>
-                      <p className="text-lg font-semibold text-gray-700 mb-4">{award.category}</p>
+                      <h4 className="text-2xl font-bold text-gray-900 mb-2">
+                        {award.title}
+                      </h4>
+                      <p className="text-lg font-semibold text-gray-700 mb-4">
+                        {award.category}
+                      </p>
                     </div>
                     
-                    <p className="text-gray-600">{award.description}</p>
+                    <p className="text-gray-600 leading-relaxed">
+                      {award.description}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
           ))}
 
-          {/* Statistics Section */}
-          <div className="bg-gradient-to-r from-gray-900 to-slate-900 rounded-3xl p-12 text-white">
-            <div className="max-w-6xl mx-auto">
-              <h3 className="text-3xl font-bold text-center mb-12">Our Recognition in Numbers</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="text-5xl font-bold mb-3">25+</div>
-                  <div className="text-gray-300">Industry Awards</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-5xl font-bold mb-3">15+</div>
-                  <div className="text-gray-300">Years of Recognition</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-5xl font-bold mb-3">50+</div>
-                  <div className="text-gray-300">Independent Reviews</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-5xl font-bold mb-3">100%</div>
-                  <div className="text-gray-300">Positive Analyst Ratings</div>
-                </div>
-              </div>
+   
+          {/* Additional Content */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Recognition Categories
+            </h3>
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our awards span across multiple categories including technical innovation, customer success, 
+                partner programs, and industry leadership. Each recognition represents our commitment to 
+                excellence in cybersecurity and continuous improvement in protecting enterprise environments.
+              </p>
             </div>
+          </div>
+
+          {/* Final Note */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Commitment to Excellence
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              These awards and recognitions reflect our ongoing dedication to innovation, 
+              security excellence, and delivering exceptional value to our customers worldwide.
+            </p>
           </div>
         </div>
       </section>
